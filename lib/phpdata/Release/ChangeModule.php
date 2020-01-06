@@ -33,4 +33,13 @@
 		public function getModuleId(): string {
 			return $this->module_id;
 		}
+		
+		public function toJson(): array {
+			$changes = [];
+			foreach ($this->changes as $change) {
+				$changes[] = $change->toJson();
+			}
+			
+			return $changes;
+		}
 	}

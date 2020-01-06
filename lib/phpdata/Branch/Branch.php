@@ -95,6 +95,14 @@
 				return self::Create($version);
 			}
 			
+			return self::LoadFromPath($path);
+		}
+		
+		public static function LoadFromPath(string $path): ?Branch {
+			if (!file_exists($path) || !is_readable($path)) {
+				return null;
+			}
+			
 			$xml = simplexml_load_string(file_get_contents($path));
 			if (!$xml) {
 				throw new DomainException('Unable to parse the XML; ' . error_get_last()['message']);
@@ -106,7 +114,7 @@
 			$eol_security_str = (string)$xml->eol_security;
 			$eol_security     = $eol_security_str ? new DateTimeImmutable($eol_security_str) : null;
 			
-			return new Branch($version, $eol, $eol_security);
+			return new Branch((string)$xml->version, $eol, $eol_security);
 		}
 		
 		public function save() {

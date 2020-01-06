@@ -22,4 +22,8 @@
 		public function getData(): string {
 			return $this->data;
 		}
+		
+		public function toJson(): object {
+			return (object)['type' => $this->type, 'value' => $this->data];
+		}
 	}

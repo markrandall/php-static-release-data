@@ -45,8 +45,11 @@
 		}
 		
 		public static function LoadVersion(string $version): ?Release {
-			$path = self::PathFromVersion($version);
+			return self::LoadFromFile(self::PathFromVersion($version));
 			
+		}
+		
+		public static function LoadFromFile(string $path): Release {
 			if (!file_exists($path) || !is_readable($path)) {
 				throw new DomainException('Cannot open ' . $path);
 			}
@@ -108,7 +111,7 @@
 			return $release;
 		}
 		
-		public function save() {
+		public function toXml(): SimpleXMLElement {
 			$ee = function (string $data): string {
 				return htmlspecialchars($data);
 			};
@@ -165,7 +168,39 @@
 				$xml_tags->addChild('tag', $ee($tag));
 			}
 			
-			$xml_str  = XmlHelpers::SimpleXmlToFormatted($element);
+			return $element;
+		}
+		
+		public function toJson(): object {
+			$announcements = [];
+			foreach ($this->announcements as $announcement) {
+				$announcements[$announcement->getLang()] = $announcement->getContent();
+			}
+			
+			$changes = [];
+			foreach ($this->changed_modules as $module) {
+				$changes['modules'][strtolower($module->getModuleId())] = $module->toJson();
+			}
+			
+			$sources = [];
+			foreach ($this->sources as $source) {
+				$sources[] = $source->toJson();
+			}
+			
+			return (object)[
+				'version'       => $this->getVersionString(),
+				'date'          => $this->date->format('Y-m-d'),
+				'changes'       => $changes,
+				'announcements' => $announcements,
+				'tags'          => $this->tags,
+				'source'        => $sources,
+			];
+		}
+		
+		public function save() {
+			$xml = $this->toXml();
+			
+			$xml_str  = XmlHelpers::SimpleXmlToFormatted($xml);
 			$xml_path = self::PathFromVersion($this->version);
 			
 			file_put_contents($xml_path, $xml_str);

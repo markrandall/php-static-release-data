@@ -7,6 +7,7 @@
 	use phpdata\Release\Commands\CreateReleaseCommand;
 	use phpdata\Release\Commands\ImportNewsCommand;
 	use phpdata\Release\Commands\RemoveTagsConsoleCommand;
+	use phpdata\Tools\Commands\CompileCommand;
 	use Symfony\Component\Console\Application;
 	
 	if (function_exists('opcache_reset')) {
@@ -30,6 +31,9 @@
 			
 			/* modify branch */
 			new ModifyDatesCommand(),
+			
+			/* utility */
+			new CompileCommand()
 		]
 	);
 	
