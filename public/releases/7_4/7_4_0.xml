@@ -1,0 +1,1451 @@
+<?xml version="1.0"?>
+<release version="1" release="7.4.0">
+  <release>7.4.0</release>
+  <date>2019-11-28</date>
+  <sources>
+    <source>
+      <name>PHP 7.4.0 (tar.bz2)</name>
+      <filename>php-7.4.0.tar.bz2</filename>
+      <date>2019-11-28</date>
+      <sha256>bf206be96a39e643180013df39ddcd0493966692a2422c4b7d3355b6a15a01c0</sha256>
+    </source>
+    <source>
+      <name>PHP 7.4.0 (tar.gz)</name>
+      <filename>php-7.4.0.tar.gz</filename>
+      <date>2019-11-28</date>
+      <sha256>004a1a8176176ee1b5c112e73d705977507803f425f9e48cb4a84f42b22abf22</sha256>
+    </source>
+    <source>
+      <name>PHP 7.4.0 (tar.xz)</name>
+      <filename>php-7.4.0.tar.xz</filename>
+      <date>2019-11-28</date>
+      <sha256>9bb751b20e5d6cc1ea9b1ebf23ef2d5f07f99b2d9cc417bf1d70c04f8b20ec42</sha256>
+    </source>
+  </sources>
+  <announcements>
+    <announcement lang="en">The PHP development team announces the immediate availability of PHP 7.4.0. This release marks the fourth feature update to the PHP 7 series.
+
+PHP 7.4.0 comes with numerous improvements and new features such as:
+
+- [Typed Properties](https://www.php.net/manual/migration74.new-features.php#migration74.new-features.core.typed-properties)
+- [Arrow Functions](https://www.php.net/manual/migration74.new-features.php#migration74.new-features.core.arrow-functions)
+- [Limited Return Type Covariance and Argument Type Contravariance](https://www.php.net/manual/migration74.new-features.php#migration74.new-features.core.type-variance)
+- [Unpacking Inside Arrays](https://www.php.net/manual/migration74.new-features.php#migration74.new-features.core.unpack-inside-array)
+- [Numeric Literal Separator](https://www.php.net/manual/migration74.new-features.php#migration74.new-features.core.numeric-literal-separator)
+- [Weak References](https://www.php.net/manual/migration74.new-features.php#migration74.new-features.core.weakreference)
+- [Allow Exceptions from __toString()](https://www.php.net/manual/migration74.new-features.php#migration74.new-features.core.tostring-exceptions)
+- [Opcache Preloading](https://www.php.net/manual/opcache.configuration.php#ini.opcache.preload)
+- [Several Deprecations](https://www.php.net/manual/migration74.deprecated.php)
+- [Extensions Removed from the Core](https://www.php.net/manual/migration74.removed-extensions.php)
+
+The [migration guide](http://php.net/manual/en/migration74.php) is available in the PHP Manual. Please consult it for the detailed list of new features and backward incompatible changes.
+
+Many thanks to all the contributors and supporters!</announcement>
+  </announcements>
+  <changes>
+    <module id="core">
+      <change>
+        <description>Implemented RFC: Deprecate curly brace syntax for accessing array elementsand string offsets.https://wiki.php.net/rfc/deprecate_curly_braces_array_access (Andrey Gromov)</description>
+        <references/>
+      </change>
+      <change>
+        <description>Implemented RFC: Deprecations for PHP 7.4.https://wiki.php.net/rfc/deprecations_php_7_4 (Kalle, Nikita)</description>
+        <references/>
+      </change>
+      <change>
+        <description>(Crash when lexing)</description>
+        <references>
+          <reference type="bugfix">52752</reference>
+          <reference type="author">Nikita</reference>
+        </references>
+      </change>
+      <change>
+        <description>(CGI doesn't properly validate shebang line contains #!).(Nikita)</description>
+        <references>
+          <reference type="bugfix">60677</reference>
+        </references>
+      </change>
+      <change>
+        <description>(Self-assignment in list() may have inconsistent behavior).(Nikita)</description>
+        <references>
+          <reference type="bugfix">71030</reference>
+        </references>
+      </change>
+      <change>
+        <description>(Use After Free in GC with Certain Destructors)</description>
+        <references>
+          <reference type="bugfix">72530</reference>
+          <reference type="author">Nikita</reference>
+        </references>
+      </change>
+      <change>
+        <description>(Inconsistent: No warning in some cases when stdObj iscreated on the fly)</description>
+        <references>
+          <reference type="bugfix">75921</reference>
+          <reference type="author">David Walker</reference>
+        </references>
+      </change>
+      <change>
+        <description>(Add array_key_exists() to the list of speciallycompiled functions)</description>
+        <references>
+          <reference type="feature-request">76148</reference>
+          <reference type="author">Majkl578</reference>
+        </references>
+      </change>
+      <change>
+        <description>(__METHOD__ inconsistent outside of method).(Ryan McCullagh, Nikita)</description>
+        <references>
+          <reference type="bugfix">76430</reference>
+        </references>
+      </change>
+      <change>
+        <description>(Aliases during inheritance type checks affected byopcache)</description>
+        <references>
+          <reference type="bugfix">76451</reference>
+          <reference type="author">Nikita</reference>
+        </references>
+      </change>
+      <change>
+        <description>(Support custom CFLAGS and LDFLAGS from environment).(cmb)</description>
+        <references>
+          <reference type="feature-request">77230</reference>
+        </references>
+      </change>
+      <change>
+        <description>(Stack Overflow caused by circular reference in garbagecollection)</description>
+        <references>
+          <reference type="bugfix">77345</reference>
+          <reference type="author">Alexandru Patranescu</reference>
+          <reference type="author">Nikita</reference>
+          <reference type="author">Dmitry</reference>
+        </references>
+      </change>
+      <change>
+        <description>(Interactive mode does not support PHP 7.3-style heredoc).(cmb, Nikita)</description>
+        <references>
+          <reference type="bugfix">77812</reference>
+        </references>
+      </change>
+      <change>
+        <description>(call_user_func() passes $this to static methods).(Dmitry)</description>
+        <references>
+          <reference type="bugfix">77877</reference>
+        </references>
+      </change>
+      <change>
+        <description>(PHP eats the first byte of a program that comes fromprocess substitution)</description>
+        <references>
+          <reference type="bugfix">78066</reference>
+          <reference type="author">Nikita</reference>
+        </references>
+      </change>
+      <change>
+        <description>(Segfault caused by indirect expressions in PHP 7.4a1).(Nikita)</description>
+        <references>
+          <reference type="bugfix">78151</reference>
+        </references>
+      </change>
+      <change>
+        <description>(SEND_VAR_NO_REF does not always send reference)</description>
+        <references>
+          <reference type="bugfix">78154</reference>
+          <reference type="author">Nikita</reference>
+        </references>
+      </change>
+      <change>
+        <description>(Segmentation fault during by-reference propertyassignment)</description>
+        <references>
+          <reference type="bugfix">78182</reference>
+          <reference type="author">Nikita</reference>
+        </references>
+      </change>
+      <change>
+        <description>(Segfault in built-in webserver)</description>
+        <references>
+          <reference type="bugfix">78212</reference>
+          <reference type="author">cmb</reference>
+        </references>
+      </change>
+      <change>
+        <description>(Can't access OneDrive folder)</description>
+        <references>
+          <reference type="bugfix">78220</reference>
+          <reference type="author">cmb</reference>
+          <reference type="author">ab</reference>
+        </references>
+      </change>
+      <change>
+        <description>(Unexpected __set behavior with typed properties)</description>
+        <references>
+          <reference type="bugfix">78226</reference>
+          <reference type="author">Nikita</reference>
+        </references>
+      </change>
+      <change>
+        <description>(Deprecation notice during string conversion converted toexception hangs)</description>
+        <references>
+          <reference type="bugfix">78239</reference>
+          <reference type="author">Nikita</reference>
+        </references>
+      </change>
+      <change>
+        <description>(Static properties/variables containing cycles report asleak)</description>
+        <references>
+          <reference type="bugfix">78335</reference>
+          <reference type="author">Nikita</reference>
+        </references>
+      </change>
+      <change>
+        <description>(Include of stream wrapper not reading whole file).(Nikita)</description>
+        <references>
+          <reference type="bugfix">78340</reference>
+        </references>
+      </change>
+      <change>
+        <description>(Segmentation fault on zend_check_protected)</description>
+        <references>
+          <reference type="bugfix">78344</reference>
+          <reference type="author">Nikita</reference>
+        </references>
+      </change>
+      <change>
+        <description>(Array returned from ArrayAccess is incorrectly unpackedas argument)</description>
+        <references>
+          <reference type="bugfix">78356</reference>
+          <reference type="author">Nikita</reference>
+        </references>
+      </change>
+      <change>
+        <description>(Cast to object confuses GC, causes crash)</description>
+        <references>
+          <reference type="bugfix">78379</reference>
+          <reference type="author">Dmitry</reference>
+        </references>
+      </change>
+      <change>
+        <description>(fstat mode has unexpected value on PHP 7.4)</description>
+        <references>
+          <reference type="bugfix">78386</reference>
+          <reference type="author">cmb</reference>
+        </references>
+      </change>
+      <change>
+        <description>(Second file_put_contents in Shutdown hangs script).(Nikita)</description>
+        <references>
+          <reference type="bugfix">78396</reference>
+        </references>
+      </change>
+      <change>
+        <description>(Broken file includes with user-defined stream filters).(Nikita)</description>
+        <references>
+          <reference type="bugfix">78406</reference>
+        </references>
+      </change>
+      <change>
+        <description>(Corruption when __unserializing deeply nested structures).(cmb, Nikita)</description>
+        <references>
+          <reference type="bugfix">78438</reference>
+        </references>
+      </change>
+      <change>
+        <description>(Parse error due to heredoc identifier followed by digit).(cmb)</description>
+        <references>
+          <reference type="bugfix">78441</reference>
+        </references>
+      </change>
+      <change>
+        <description>(Consecutive numeric separators cause OOM error).(Theodore Brown)</description>
+        <references>
+          <reference type="bugfix">78454</reference>
+        </references>
+      </change>
+      <change>
+        <description>(PEAR installation failure)</description>
+        <references>
+          <reference type="bugfix">78460</reference>
+          <reference type="author">Peter Kokot</reference>
+          <reference type="author">L. Declercq</reference>
+        </references>
+      </change>
+      <change>
+        <description>(Crash when using undefined variable as object)</description>
+        <references>
+          <reference type="bugfix">78531</reference>
+          <reference type="author">Dmitry</reference>
+        </references>
+      </change>
+      <change>
+        <description>(auto_detect_line_endings value not parsed as bool).(bugreportuser)</description>
+        <references>
+          <reference type="bugfix">78535</reference>
+        </references>
+      </change>
+      <change>
+        <description>(token_get_all() does not properly tokenize FOO&lt;?php withshort_open_tag=0)</description>
+        <references>
+          <reference type="bugfix">78604</reference>
+          <reference type="author">Nikita</reference>
+        </references>
+      </change>
+      <change>
+        <description>(Does not compile with DTRACE anymore).(tz at FreeBSD dot org)</description>
+        <references>
+          <reference type="bugfix">78614</reference>
+        </references>
+      </change>
+      <change>
+        <description>(Out of memory error)</description>
+        <references>
+          <reference type="bugfix">78620</reference>
+          <reference type="author">cmb</reference>
+          <reference type="author">Nikita</reference>
+        </references>
+      </change>
+      <change>
+        <description>(method_exists() in php74 works differently from php73 inchecking priv. methods)</description>
+        <references>
+          <reference type="bugfix">78632</reference>
+          <reference type="author">Nikita</reference>
+        </references>
+      </change>
+      <change>
+        <description>(SEGFAULT in ZEND_UNSET_OBJ_SPEC_VAR_CONST_HANDLER).(Nikita)</description>
+        <references>
+          <reference type="bugfix">78644</reference>
+        </references>
+      </change>
+      <change>
+        <description>(Memory corruption using Closure::bindTo)</description>
+        <references>
+          <reference type="bugfix">78658</reference>
+          <reference type="author">Nikita</reference>
+        </references>
+      </change>
+      <change>
+        <description>(Parse errors classified as highest log-level)</description>
+        <references>
+          <reference type="bugfix">78656</reference>
+          <reference type="author">ErikLundin</reference>
+        </references>
+      </change>
+      <change>
+        <description>(stream_write bad error detection)</description>
+        <references>
+          <reference type="bugfix">78662</reference>
+          <reference type="author">Remi</reference>
+        </references>
+      </change>
+      <change>
+        <description>(redefinition of typedef zend_property_info)</description>
+        <references>
+          <reference type="bugfix">78768</reference>
+          <reference type="author">Nikita</reference>
+        </references>
+      </change>
+      <change>
+        <description>(./configure generates invalid php_version.h)</description>
+        <references>
+          <reference type="bugfix">78788</reference>
+          <reference type="author">max</reference>
+        </references>
+      </change>
+      <change>
+        <description>Fixed incorrect usage of QM_ASSIGN instruction. It must not return IS_VAR.As a side effect, this allowed passing left hand list() "by reference",instead of compile-time error</description>
+        <references>
+          <reference type="author">Dmitry</reference>
+        </references>
+      </change>
+    </module>
+    <module id="cli">
+      <change>
+        <description>The built-in CLI server now reports the request method in log files.(Simon Welsh)</description>
+        <references/>
+      </change>
+    </module>
+    <module id="com">
+      <change>
+        <description>Deprecated registering of case-insensitive constants from typelibs</description>
+        <references>
+          <reference type="author">cmb</reference>
+        </references>
+      </change>
+      <change>
+        <description>(new COM Crash)</description>
+        <references>
+          <reference type="bugfix">78650</reference>
+          <reference type="author">cmb</reference>
+        </references>
+      </change>
+      <change>
+        <description>(Appending to a variant array causes segfault)</description>
+        <references>
+          <reference type="bugfix">78694</reference>
+          <reference type="author">cmb</reference>
+        </references>
+      </change>
+    </module>
+    <module id="curl">
+      <change>
+        <description>(Use curl_multi_wait() so that timeouts are respected).(Pierrick)</description>
+        <references>
+          <reference type="bugfix">76480</reference>
+        </references>
+      </change>
+      <change>
+        <description>(CURLFile should support UNICODE filenames)</description>
+        <references>
+          <reference type="feature-request">77711</reference>
+          <reference type="author">cmb</reference>
+        </references>
+      </change>
+      <change>
+        <description>Deprecated CURLPIPE_HTTP1</description>
+        <references>
+          <reference type="author">cmb</reference>
+        </references>
+      </change>
+      <change>
+        <description>Deprecated $version parameter of curl_version()</description>
+        <references>
+          <reference type="author">cmb</reference>
+        </references>
+      </change>
+    </module>
+    <module id="date">
+      <change>
+        <description>Updated timelib to 2018.02</description>
+        <references>
+          <reference type="author">Derick</reference>
+        </references>
+      </change>
+      <change>
+        <description>(discrepency between time and microtime)</description>
+        <references>
+          <reference type="bugfix">69044</reference>
+          <reference type="author">krakjoe</reference>
+        </references>
+      </change>
+      <change>
+        <description>(\DateInterval incorrectly unserialized)</description>
+        <references>
+          <reference type="bugfix">70153</reference>
+          <reference type="author">Maksim Iakunin</reference>
+        </references>
+      </change>
+      <change>
+        <description>(print_r of DateTime creating side-effect)</description>
+        <references>
+          <reference type="bugfix">75232</reference>
+          <reference type="author">Nikita</reference>
+        </references>
+      </change>
+      <change>
+        <description>(Casting a DateTime to array no longer returns itsproperties)</description>
+        <references>
+          <reference type="bugfix">78383</reference>
+          <reference type="author">Nikita</reference>
+        </references>
+      </change>
+      <change>
+        <description>(Serialising DatePeriod converts DateTimeImmutable)</description>
+        <references>
+          <reference type="bugfix">78751</reference>
+          <reference type="author">cmb</reference>
+        </references>
+      </change>
+    </module>
+    <module id="exif">
+      <change>
+        <description>(Exif crash (bus error) due to wrong alignment andinvalid cast)</description>
+        <references>
+          <reference type="bugfix">78333</reference>
+          <reference type="author">Nikita</reference>
+        </references>
+      </change>
+      <change>
+        <description>(heap-buffer-overflow on exif_process_user_comment)</description>
+        <references>
+          <reference type="bugfix">78256</reference>
+          <reference type="cve">CVE-2019-11042</reference>
+          <reference type="author">Stas</reference>
+        </references>
+      </change>
+      <change>
+        <description>(heap-buffer-overflow on exif_scan_thumbnail)</description>
+        <references>
+          <reference type="bugfix">78222</reference>
+          <reference type="cve">CVE-2019-11041</reference>
+          <reference type="author">Stas</reference>
+        </references>
+      </change>
+    </module>
+    <module id="fileinfo">
+      <change>
+        <description>(finfo_file treats JSON file as text/plain)</description>
+        <references>
+          <reference type="bugfix">78075</reference>
+          <reference type="author">Anatol</reference>
+        </references>
+      </change>
+      <change>
+        <description>(finfo_file shows wrong mime-type for .tga file).</description>
+        <references>
+          <reference type="bugfix">78183</reference>
+        </references>
+      </change>
+    </module>
+    <module id="filter">
+      <change>
+        <description>The filter extension no longer has the --with-pcre-dir on Unix builds,allowing the extension to be once more compiled as shared using./configure</description>
+        <references>
+          <reference type="author">Kalle</reference>
+        </references>
+      </change>
+    </module>
+    <module id="ffi">
+      <change>
+        <description>Added FFI extension</description>
+        <references>
+          <reference type="author">Dmitry</reference>
+        </references>
+      </change>
+      <change>
+        <description>(OOB in ZEND_FUNCTION(ffi_trampoline))</description>
+        <references>
+          <reference type="bugfix">78488</reference>
+          <reference type="author">Dmitry</reference>
+        </references>
+      </change>
+      <change>
+        <description>(is_callable() on FFI\CData throws Exception)</description>
+        <references>
+          <reference type="bugfix">78543</reference>
+          <reference type="author">cmb</reference>
+        </references>
+      </change>
+      <change>
+        <description>(Function name mangling is wrong for some parametertypes)</description>
+        <references>
+          <reference type="bugfix">78716</reference>
+          <reference type="author">cmb</reference>
+        </references>
+      </change>
+      <change>
+        <description>(Failing FFI::cast() may leak memory)</description>
+        <references>
+          <reference type="bugfix">78762</reference>
+          <reference type="author">cmb</reference>
+        </references>
+      </change>
+      <change>
+        <description>(Zend memory heap corruption with preload and casting).(cmb)</description>
+        <references>
+          <reference type="bugfix">78761</reference>
+        </references>
+      </change>
+      <change>
+        <description>Implement FR #78270 (Support __vectorcall convention with FFI)</description>
+        <references>
+          <reference type="author">cmb</reference>
+        </references>
+      </change>
+      <change>
+        <description>Added missing FFI::isNull()</description>
+        <references>
+          <reference type="author">Philip Hofstetter</reference>
+        </references>
+      </change>
+    </module>
+    <module id="fpm">
+      <change>
+        <description>(systemd service should be hardened)</description>
+        <references>
+          <reference type="feature-request">72510</reference>
+          <reference type="author">Craig Andrews</reference>
+        </references>
+      </change>
+      <change>
+        <description>(master PHP-fpm is stopped on multiple reloads).(Maksim Nikulin)</description>
+        <references>
+          <reference type="bugfix">74083</reference>
+        </references>
+      </change>
+      <change>
+        <description>(fpm log prefix message includes wrong stdout/stderrnotation)</description>
+        <references>
+          <reference type="bugfix">78334</reference>
+          <reference type="author">Tsuyoshi Sadakata</reference>
+        </references>
+      </change>
+      <change>
+        <description>(env_path_info underflow in fpm_main.c can lead to RCE)</description>
+        <references>
+          <reference type="bugfix">78599</reference>
+          <reference type="cve">CVE-2019-11043</reference>
+          <reference type="author">Jakub Zelenka</reference>
+        </references>
+      </change>
+    </module>
+    <module id="gd">
+      <change>
+        <description>Implemented the scatter filter (IMG_FILTER_SCATTER)</description>
+        <references>
+          <reference type="author">Kalle</reference>
+        </references>
+      </change>
+      <change>
+        <description>The bundled libgd behaves now like system libgd wrt. IMG_CROP_DEFAULT neverfalling back to IMG_CROP_SIDES.</description>
+        <references/>
+      </change>
+      <change>
+        <description>The default $mode parameter of imagecropauto() has been changed toIMG_CROP_DEFAULT; passing -1 is now deprecated.</description>
+        <references/>
+      </change>
+      <change>
+        <description>Added support for aspect ratio preserving scaling to a fixed height forimagescale()</description>
+        <references>
+          <reference type="author">Andreas Treichel</reference>
+        </references>
+      </change>
+      <change>
+        <description>Added TGA read support</description>
+        <references>
+          <reference type="author">cmb</reference>
+        </references>
+      </change>
+      <change>
+        <description>(imagecropauto() $threshold differs from external libgd).(cmb)</description>
+        <references>
+          <reference type="bugfix">73291</reference>
+        </references>
+      </change>
+      <change>
+        <description>(cannot detect recent versions of freetype withpkg-config)</description>
+        <references>
+          <reference type="bugfix">76324</reference>
+          <reference type="author">Eli Schwartz</reference>
+        </references>
+      </change>
+      <change>
+        <description>(missing freetype support/functions with external gd).(Remi)</description>
+        <references>
+          <reference type="bugfix">78314</reference>
+        </references>
+      </change>
+    </module>
+    <module id="gmp">
+      <change>
+        <description>(broken shared build)</description>
+        <references>
+          <reference type="bugfix">78574</reference>
+          <reference type="author">Remi</reference>
+        </references>
+      </change>
+    </module>
+    <module id="hash">
+      <change>
+        <description>The hash extension is now an integral part of PHP and cannot be disabledas per RFC: https://wiki.php.net/rfc/permanent_hash_ext</description>
+        <references>
+          <reference type="author">Kalle</reference>
+        </references>
+      </change>
+      <change>
+        <description>(crc32c checksum algorithm)</description>
+        <references>
+          <reference type="feature-request">71890</reference>
+          <reference type="author">Andrew Brampton</reference>
+        </references>
+      </change>
+    </module>
+    <module id="iconv">
+      <change>
+        <description>(Bus error in configure test for iconv //IGNORE)</description>
+        <references>
+          <reference type="bugfix">78342</reference>
+          <reference type="author">RainerJung</reference>
+        </references>
+      </change>
+      <change>
+        <description>(Wrong libiconv version displayed). (gedas at martynas,cmb).</description>
+        <references>
+          <reference type="bugfix">78642</reference>
+        </references>
+      </change>
+    </module>
+    <module id="libxml">
+      <change>
+        <description>(libxml_disable_entity_loader settings is shared betweenrequests (cgi-fcgi))</description>
+        <references>
+          <reference type="bugfix">78279</reference>
+          <reference type="author">Nikita</reference>
+        </references>
+      </change>
+    </module>
+    <module id="interbase">
+      <change>
+        <description>Unbundled the InterBase extension and moved it to PECL</description>
+        <references>
+          <reference type="author">Kalle</reference>
+        </references>
+      </change>
+    </module>
+    <module id="intl">
+      <change>
+        <description>Raised requirements to ICU &#x2265; 50.1</description>
+        <references>
+          <reference type="author">cmb</reference>
+        </references>
+      </change>
+      <change>
+        <description>Changed ResourceBundle to implement Countable</description>
+        <references>
+          <reference type="author">LeSuisse</reference>
+        </references>
+      </change>
+      <change>
+        <description>Changed default of $variant parameter of idn_to_ascii() and idn_to_utf8().(cmb)</description>
+        <references/>
+      </change>
+    </module>
+    <module id="ldap">
+      <change>
+        <description>Deprecated ldap_control_paged_result_response and ldap_control_paged_result</description>
+        <references/>
+      </change>
+    </module>
+    <module id="litespeed">
+      <change>
+        <description>Updated to LiteSpeed SAPI V7.5 (Fixed clean shutdown)</description>
+        <references>
+          <reference type="author">George Wang</reference>
+        </references>
+      </change>
+      <change>
+        <description>Updated to LiteSpeed SAPI V7.4.3 (increased response header count limit from100 to 1000, added crash handler to cleanly shutdown PHP request, addedCloudLinux mod_lsapi mode)</description>
+        <references>
+          <reference type="author">George Wang</reference>
+        </references>
+      </change>
+      <change>
+        <description>(After "POST data can't be buffered", using php://inputmakes huge tmp files)</description>
+        <references>
+          <reference type="bugfix">76058</reference>
+          <reference type="author">George Wang</reference>
+        </references>
+      </change>
+    </module>
+    <module id="mbstring">
+      <change>
+        <description>(mb-functions do not respect default_encoding)</description>
+        <references>
+          <reference type="bugfix">77907</reference>
+          <reference type="author">Nikita</reference>
+        </references>
+      </change>
+      <change>
+        <description>(mb_decode_numericentity: args number inconsistency).(cmb)</description>
+        <references>
+          <reference type="bugfix">78579</reference>
+        </references>
+      </change>
+      <change>
+        <description>(mb_check_encoding() no longer supports stringableobjects)</description>
+        <references>
+          <reference type="bugfix">78609</reference>
+          <reference type="author">cmb</reference>
+        </references>
+      </change>
+    </module>
+    <module id="mysqli">
+      <change>
+        <description>(Reading $dbc-&gt;stat modifies $dbc-&gt;affected_rows).(Derick)</description>
+        <references>
+          <reference type="bugfix">67348</reference>
+        </references>
+      </change>
+      <change>
+        <description>(SSL settings aren't respected when persistent connectionsare used)</description>
+        <references>
+          <reference type="bugfix">76809</reference>
+          <reference type="author">fabiomsouto</reference>
+        </references>
+      </change>
+      <change>
+        <description>(MariaDB server version incorrectly detected)</description>
+        <references>
+          <reference type="bugfix">78179</reference>
+          <reference type="author">cmb</reference>
+        </references>
+      </change>
+      <change>
+        <description>(Empty row pocket)</description>
+        <references>
+          <reference type="bugfix">78213</reference>
+          <reference type="author">cmb</reference>
+        </references>
+      </change>
+    </module>
+    <module id="mysqlnd">
+      <change>
+        <description>Fixed connect_attr issues and added the _server_host connection attribute.(Qianqian Bu)</description>
+        <references/>
+      </change>
+      <change>
+        <description>(mysqlnd exposes 160 lines of stats in phpinfo)</description>
+        <references>
+          <reference type="bugfix">60594</reference>
+          <reference type="author">PeeHaa</reference>
+        </references>
+      </change>
+    </module>
+    <module id="odbc">
+      <change>
+        <description>(odbc_close() closes arbitrary resources)</description>
+        <references>
+          <reference type="bugfix">78473</reference>
+          <reference type="author">cmb</reference>
+        </references>
+      </change>
+    </module>
+    <module id="opcache">
+      <change>
+        <description>Implemented preloading RFC: https://wiki.php.net/rfc/preload</description>
+        <references>
+          <reference type="author">Dmitry</reference>
+        </references>
+      </change>
+      <change>
+        <description>Add opcache.preload_user INI directive</description>
+        <references>
+          <reference type="author">Dmitry</reference>
+        </references>
+      </change>
+      <change>
+        <description>Added new INI directive opcache.cache_id (Windows only)</description>
+        <references>
+          <reference type="author">cmb</reference>
+        </references>
+      </change>
+      <change>
+        <description>(Path resolution fails if opcache disabled during request).(Nikita)</description>
+        <references>
+          <reference type="bugfix">78106</reference>
+        </references>
+      </change>
+      <change>
+        <description>(Preloading segfaults at preload time and at runtime).(Dmitry)</description>
+        <references>
+          <reference type="bugfix">78175</reference>
+        </references>
+      </change>
+      <change>
+        <description>(Opcache stats for cache hits are capped at 32bit NUM).(cmb)</description>
+        <references>
+          <reference type="bugfix">78202</reference>
+        </references>
+      </change>
+      <change>
+        <description>(Invalid result of if-else)</description>
+        <references>
+          <reference type="bugfix">78271</reference>
+          <reference type="author">Nikita</reference>
+        </references>
+      </change>
+      <change>
+        <description>(Failure to detect smart branch in DFA pass)</description>
+        <references>
+          <reference type="bugfix">78341</reference>
+          <reference type="author">Nikita</reference>
+        </references>
+      </change>
+      <change>
+        <description>(Incorrect preloading of constant static properties).(Dmitry)</description>
+        <references>
+          <reference type="bugfix">78376</reference>
+        </references>
+      </change>
+      <change>
+        <description>(opcache_compile_file(__FILE__); segfaults)</description>
+        <references>
+          <reference type="bugfix">78429</reference>
+          <reference type="author">cmb</reference>
+        </references>
+      </change>
+      <change>
+        <description>(Cannot make preload work)</description>
+        <references>
+          <reference type="bugfix">78512</reference>
+          <reference type="author">Dmitry</reference>
+        </references>
+      </change>
+      <change>
+        <description>(Preloading segfaults with inherited typed property).(Nikita)</description>
+        <references>
+          <reference type="bugfix">78514</reference>
+        </references>
+      </change>
+      <change>
+        <description>(Incorrectly computed opcache checksum on files withnon-ascii characters)</description>
+        <references>
+          <reference type="bugfix">78654</reference>
+          <reference type="author">mhagstrand</reference>
+        </references>
+      </change>
+    </module>
+    <module id="openssl">
+      <change>
+        <description>Added TLS 1.3 support to streams including new tlsv1.3 stream.(Codarren Velvindron, Jakub Zelenka)</description>
+        <references/>
+      </change>
+      <change>
+        <description>Added openssl_x509_verify function</description>
+        <references>
+          <reference type="author">Ben Scholzen</reference>
+        </references>
+      </change>
+      <change>
+        <description>openssl_random_pseudo_bytes() now throws in error conditions.(Sammy Kaye Powers)</description>
+        <references/>
+      </change>
+      <change>
+        <description>Changed the default config path (Windows only)</description>
+        <references>
+          <reference type="author">cmb</reference>
+        </references>
+      </change>
+      <change>
+        <description>(Segmentation fault upon stream_socket_accept of exportedsocket-to-stream)</description>
+        <references>
+          <reference type="bugfix">78231</reference>
+          <reference type="author">Nikita</reference>
+        </references>
+      </change>
+      <change>
+        <description>(Assertion failure in openssl_random_pseudo_bytes).(Nikita)</description>
+        <references>
+          <reference type="bugfix">78391</reference>
+        </references>
+      </change>
+      <change>
+        <description>(TLS issues from HTTP request affecting other encryptedconnections)</description>
+        <references>
+          <reference type="bugfix">78775</reference>
+          <reference type="author">Nikita</reference>
+        </references>
+      </change>
+    </module>
+    <module id="pcntl">
+      <change>
+        <description>(PHP is preventing SIGALRM from specifying SA_RESTART).(Nikita)</description>
+        <references>
+          <reference type="bugfix">77335</reference>
+        </references>
+      </change>
+    </module>
+    <module id="pcre">
+      <change>
+        <description>(Support flags in preg_replace_callback)</description>
+        <references>
+          <reference type="feature-request">77094</reference>
+          <reference type="author">Nikita</reference>
+        </references>
+      </change>
+      <change>
+        <description>(Repeated UTF-8 validation of same string in UTF-8 mode).(Nikita)</description>
+        <references>
+          <reference type="bugfix">72685</reference>
+        </references>
+      </change>
+      <change>
+        <description>(Preg_match_all should return NULLs on trailing optionalcapture groups).</description>
+        <references>
+          <reference type="bugfix">73948</reference>
+        </references>
+      </change>
+      <change>
+        <description>(Array cross-border reading in PCRE)</description>
+        <references>
+          <reference type="bugfix">78338</reference>
+          <reference type="author">cmb</reference>
+        </references>
+      </change>
+      <change>
+        <description>(Bundled pcre2 library missing LICENCE file)</description>
+        <references>
+          <reference type="bugfix">78349</reference>
+          <reference type="author">Peter Kokot</reference>
+        </references>
+      </change>
+    </module>
+    <module id="pdo">
+      <change>
+        <description>(Allow escaping question mark placeholders).https://wiki.php.net/rfc/pdo_escape_placeholders (Matteo)</description>
+        <references>
+          <reference type="feature-request">71885</reference>
+        </references>
+      </change>
+      <change>
+        <description>(Disable cloning of PDO handle/connection objects).(camporter)</description>
+        <references>
+          <reference type="bugfix">77849</reference>
+        </references>
+      </change>
+      <change>
+        <description>(PDO - support username &amp; password specified inDSN)</description>
+        <references>
+          <reference type="feature-request">78033</reference>
+          <reference type="author">sjon</reference>
+        </references>
+      </change>
+    </module>
+    <module id="pdo_firebird">
+      <change>
+        <description>(PDO_Firebird should also support dialect 1).(Simonov Denis)</description>
+        <references>
+          <reference type="feature-request">65690</reference>
+        </references>
+      </change>
+      <change>
+        <description>(PDO firebird support type Boolean in inputparameters)</description>
+        <references>
+          <reference type="feature-request">77863</reference>
+          <reference type="author">Simonov Denis</reference>
+        </references>
+      </change>
+    </module>
+    <module id="pdo_mysql">
+      <change>
+        <description>(SP call yields additional empty result set)</description>
+        <references>
+          <reference type="bugfix">41997</reference>
+          <reference type="author">cmb</reference>
+        </references>
+      </change>
+      <change>
+        <description>(Regression caused by "SP call yields additional emptyresult set")</description>
+        <references>
+          <reference type="bugfix">78623</reference>
+          <reference type="author">cmb</reference>
+        </references>
+      </change>
+    </module>
+    <module id="pdo_oci">
+      <change>
+        <description>Support Oracle Database tracing attributes ACTION, MODULE,CLIENT_INFO, and CLIENT_IDENTIFIER</description>
+        <references>
+          <reference type="author">Cameron Porter</reference>
+        </references>
+      </change>
+      <change>
+        <description>(PDO_OCI getColumnMeta() not implemented).(Valentin Collet, Chris Jones, Remi)</description>
+        <references>
+          <reference type="feature-request">76908</reference>
+        </references>
+      </change>
+    </module>
+    <module id="pdo_sqlite">
+      <change>
+        <description>Implemented sqlite_stmt_readonly in PDO_SQLite</description>
+        <references>
+          <reference type="author">BohwaZ</reference>
+        </references>
+      </change>
+      <change>
+        <description>Raised requirements to SQLite 3.5.0</description>
+        <references>
+          <reference type="author">cmb</reference>
+        </references>
+      </change>
+      <change>
+        <description>(SegFault when reuse statement after schema has changed).(Vincent Quatrevieux)</description>
+        <references>
+          <reference type="bugfix">78192</reference>
+        </references>
+      </change>
+      <change>
+        <description>(Remove -lrt from pdo_sqlite.so)</description>
+        <references>
+          <reference type="bugfix">78348</reference>
+          <reference type="author">Peter Kokot</reference>
+        </references>
+      </change>
+    </module>
+    <module id="phar">
+      <change>
+        <description>(Potential UAF in Phar RSHUTDOWN)</description>
+        <references>
+          <reference type="bugfix">77919</reference>
+          <reference type="author">cmb</reference>
+        </references>
+      </change>
+    </module>
+    <module id="phpdbg">
+      <change>
+        <description>(phpdbg support for display_errors=stderr)</description>
+        <references>
+          <reference type="bugfix">76596</reference>
+          <reference type="author">kabel</reference>
+        </references>
+      </change>
+      <change>
+        <description>(too many open files)</description>
+        <references>
+          <reference type="bugfix">76801</reference>
+          <reference type="author">alekitto</reference>
+        </references>
+      </change>
+      <change>
+        <description>(phpdbg segfaults on listing some conditional breakpoints).(krakjoe)</description>
+        <references>
+          <reference type="bugfix">77800</reference>
+        </references>
+      </change>
+      <change>
+        <description>(phpdbg build fails when readline is shared)</description>
+        <references>
+          <reference type="bugfix">77805</reference>
+          <reference type="author">krakjoe</reference>
+        </references>
+      </change>
+    </module>
+    <module id="recode">
+      <change>
+        <description>Unbundled the recode extension</description>
+        <references>
+          <reference type="author">cmb</reference>
+        </references>
+      </change>
+    </module>
+    <module id="reflection">
+      <change>
+        <description>(Unserialized reflection objects are broken, theyshouldn't be serializable)</description>
+        <references>
+          <reference type="bugfix">76737</reference>
+          <reference type="author">Nikita</reference>
+        </references>
+      </change>
+      <change>
+        <description>(\ReflectionReference::fromArrayElement() returns nullwhile item is a reference)</description>
+        <references>
+          <reference type="bugfix">78263</reference>
+          <reference type="author">Nikita</reference>
+        </references>
+      </change>
+      <change>
+        <description>(Cannot "manually" unserialize class that is final andextends an internal one)</description>
+        <references>
+          <reference type="bugfix">78410</reference>
+          <reference type="author">Nikita</reference>
+        </references>
+      </change>
+      <change>
+        <description>(ReflectionClass::implementsInterface - inaccurate errormessage with traits)</description>
+        <references>
+          <reference type="bugfix">78697</reference>
+          <reference type="author">villfa</reference>
+        </references>
+      </change>
+      <change>
+        <description>(ReflectionNamedType on Typed Properties Crash)</description>
+        <references>
+          <reference type="bugfix">78774</reference>
+          <reference type="author">Nikita</reference>
+        </references>
+      </change>
+    </module>
+    <module id="session">
+      <change>
+        <description>(session_gc return value for user defined sessionhandlers)</description>
+        <references>
+          <reference type="bugfix">78624</reference>
+          <reference type="author">bshaffer</reference>
+        </references>
+      </change>
+    </module>
+    <module id="simplexml">
+      <change>
+        <description>(SimpleXMLElement could register as implementingCountable)</description>
+        <references>
+          <reference type="feature-request">65215</reference>
+          <reference type="author">LeSuisse</reference>
+        </references>
+      </change>
+      <change>
+        <description>(Don't set content of elements with only whitespaces).(eriklundin)</description>
+        <references>
+          <reference type="bugfix">75245</reference>
+        </references>
+      </change>
+    </module>
+    <module id="sockets">
+      <change>
+        <description>(Validate length on socket_write)</description>
+        <references>
+          <reference type="bugfix">67619</reference>
+          <reference type="author">thiagooak</reference>
+        </references>
+      </change>
+      <change>
+        <description>(Multicasting may leak memory)</description>
+        <references>
+          <reference type="bugfix">78665</reference>
+          <reference type="author">cmb</reference>
+        </references>
+      </change>
+    </module>
+    <module id="sodium">
+      <change>
+        <description>(sign_detached() strings not terminated)</description>
+        <references>
+          <reference type="bugfix">77646</reference>
+          <reference type="author">Frank</reference>
+        </references>
+      </change>
+      <change>
+        <description>(Partially uninitialized buffer returned bysodium_crypto_generichash_init())</description>
+        <references>
+          <reference type="bugfix">78510</reference>
+          <reference type="author">Frank Denis</reference>
+          <reference type="author">cmb</reference>
+        </references>
+      </change>
+      <change>
+        <description>(password_hash(): Memory cost is not in allowed range).(cmb, Nikita)</description>
+        <references>
+          <reference type="bugfix">78516</reference>
+        </references>
+      </change>
+    </module>
+    <module id="spl">
+      <change>
+        <description>(SeekableIterator::seek() should accept 'int' typehint asdocumented)</description>
+        <references>
+          <reference type="bugfix">77518</reference>
+          <reference type="author">Nikita</reference>
+        </references>
+      </change>
+      <change>
+        <description>(Segfault when creating instance of ArrayIterator withoutconstructor)</description>
+        <references>
+          <reference type="bugfix">78409</reference>
+          <reference type="author">Nikita</reference>
+        </references>
+      </change>
+      <change>
+        <description>(Missing addref in SplPriorityQueue EXTR_BOTH mode).(Nikita)</description>
+        <references>
+          <reference type="bugfix">78436</reference>
+        </references>
+      </change>
+      <change>
+        <description>(Segfault when serializing SplDoublyLinkedList)</description>
+        <references>
+          <reference type="bugfix">78456</reference>
+          <reference type="author">Nikita</reference>
+        </references>
+      </change>
+    </module>
+    <module id="sqlite3">
+      <change>
+        <description>Unbundled libsqlite</description>
+        <references>
+          <reference type="author">cmb</reference>
+        </references>
+      </change>
+      <change>
+        <description>Raised requirements to SQLite 3.7.4</description>
+        <references>
+          <reference type="author">cmb</reference>
+        </references>
+      </change>
+      <change>
+        <description>Forbid (un)serialization of SQLite3, SQLite3Stmt and SQLite3Result</description>
+        <references>
+          <reference type="author">cmb</reference>
+        </references>
+      </change>
+      <change>
+        <description>Added support for the SQLite @name notation</description>
+        <references>
+          <reference type="author">cmb</reference>
+          <reference type="author">BohwaZ</reference>
+        </references>
+      </change>
+      <change>
+        <description>Added SQLite3Stmt::getSQL() to retrieve the SQL of the statement</description>
+        <references>
+          <reference type="author">Bohwaz</reference>
+        </references>
+      </change>
+      <change>
+        <description>Implement FR ##70950 (Make SQLite3 Online Backup API available)</description>
+        <references>
+          <reference type="author">BohwaZ</reference>
+        </references>
+      </change>
+    </module>
+    <module id="standard">
+      <change>
+        <description>Implemented password hashing registry RFC:https://wiki.php.net/rfc/password_registry</description>
+        <references>
+          <reference type="author">Sara</reference>
+        </references>
+      </change>
+      <change>
+        <description>Implemented RFC where password_hash() has argon2i(d) implementations fromext/sodium when PHP is built without libargon:https://wiki.php.net/rfc/sodium.argon.hash (Sara)</description>
+        <references/>
+      </change>
+      <change>
+        <description>(field enclosure behavior in fputcsv)</description>
+        <references>
+          <reference type="feature-request">38301</reference>
+          <reference type="author">cmb</reference>
+        </references>
+      </change>
+      <change>
+        <description>(fgetcsv should take empty string as an escape)</description>
+        <references>
+          <reference type="feature-request">51496</reference>
+          <reference type="author">cmb</reference>
+        </references>
+      </change>
+      <change>
+        <description>(php_sockop_write() returns 0 on error, can be used totrigger Denial of Service)</description>
+        <references>
+          <reference type="bugfix">73535</reference>
+          <reference type="author">Nikita</reference>
+        </references>
+      </change>
+      <change>
+        <description>(Bindto IPv6 works with file_get_contents but fails withstream_socket_client)</description>
+        <references>
+          <reference type="bugfix">74764</reference>
+          <reference type="author">Ville Hukkam&#xE4;ki</reference>
+        </references>
+      </change>
+      <change>
+        <description>(stream_get_line skips data if used with data-generatingfilter)</description>
+        <references>
+          <reference type="bugfix">76859</reference>
+          <reference type="author">kkopachev</reference>
+        </references>
+      </change>
+      <change>
+        <description>(No way to handle CTRL+C in Windows)</description>
+        <references>
+          <reference type="feature-request">77377</reference>
+          <reference type="author">Anatol</reference>
+        </references>
+      </change>
+      <change>
+        <description>(stream_copy_to_stream should use mmap more often).(Nikita)</description>
+        <references>
+          <reference type="bugfix">77930</reference>
+        </references>
+      </change>
+      <change>
+        <description>(Make proc_open accept command array)</description>
+        <references>
+          <reference type="feature-request">78177</reference>
+          <reference type="author">Nikita</reference>
+        </references>
+      </change>
+      <change>
+        <description>(password_needs_rehash() with an unknown algo should alwaysreturn true)</description>
+        <references>
+          <reference type="bugfix">78208</reference>
+          <reference type="author">Sara</reference>
+        </references>
+      </change>
+      <change>
+        <description>(touch() does not handle dates after 2038 in PHP 64-bit)</description>
+        <references>
+          <reference type="bugfix">78241</reference>
+          <reference type="author">cmb</reference>
+        </references>
+      </change>
+      <change>
+        <description>(atime and mtime mismatch)</description>
+        <references>
+          <reference type="bugfix">78282</reference>
+          <reference type="author">cmb</reference>
+        </references>
+      </change>
+      <change>
+        <description>(improper memory deallocation on stream_get_contents()with fixed length buffer)</description>
+        <references>
+          <reference type="bugfix">78326</reference>
+          <reference type="author">Albert Casademont</reference>
+        </references>
+      </change>
+      <change>
+        <description>(strip_tags no longer handling nested php tags)</description>
+        <references>
+          <reference type="bugfix">78346</reference>
+          <reference type="author">cmb</reference>
+        </references>
+      </change>
+      <change>
+        <description>(Error in a php_user_filter::filter() is not reported).(Nikita)</description>
+        <references>
+          <reference type="bugfix">78506</reference>
+        </references>
+      </change>
+      <change>
+        <description>(Stack overflow due to nested serialized input)</description>
+        <references>
+          <reference type="bugfix">78549</reference>
+          <reference type="author">Nikita</reference>
+        </references>
+      </change>
+      <change>
+        <description>(array_search in $GLOBALS)</description>
+        <references>
+          <reference type="bugfix">78759</reference>
+          <reference type="author">Nikita</reference>
+        </references>
+      </change>
+    </module>
+    <module id="testing">
+      <change>
+        <description>(PCRE bug72463_2 test is sending emails on Linux)</description>
+        <references>
+          <reference type="bugfix">78684</reference>
+          <reference type="author">cmb</reference>
+        </references>
+      </change>
+    </module>
+    <module id="tidy">
+      <change>
+        <description>Added TIDY_TAG_* constants for HTML5 elements</description>
+        <references>
+          <reference type="author">cmb</reference>
+        </references>
+      </change>
+      <change>
+        <description>(wrong reflection for tidy_get_head, tidy_get_html,tidy_get_root, and tidy_getopt) (tandre)</description>
+        <references>
+          <reference type="bugfix">76736</reference>
+        </references>
+      </change>
+    </module>
+    <module id="wddx">
+      <change>
+        <description>Deprecated and unbundled the WDDX extension</description>
+        <references>
+          <reference type="author">cmb</reference>
+        </references>
+      </change>
+    </module>
+    <module id="zip">
+      <change>
+        <description>(addGlob can modify given remove_path value)</description>
+        <references>
+          <reference type="bugfix">78641</reference>
+          <reference type="author">cmb</reference>
+        </references>
+      </change>
+    </module>
+  </changes>
+  <tags/>
+</release>
