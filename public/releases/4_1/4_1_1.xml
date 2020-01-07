@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
-<release version="1" id="4.1.1">
-  <release>4.1.1</release>
-  <date>26 Dec 2001</date>
+<release version="4.1.1">
+  <version>4.1.1</version>
+  <date>2001-12-26</date>
   <sources>
     <source>
       <name>Source (tar.gz)</name>
       <filename>php-4.1.1.tar.gz</filename>
-      <date/>
-      <sha256/>
+      <date>2020-01-07</date>
+      <md5/>
     </source>
   </sources>
   <announcements>
@@ -31,6 +31,8 @@ Full list of fixes:
 - Fixed a bug where the is_file() family of functions would in-correctly give an error when they were given filenames that didn't exist. (Sterling)
 - Fixed a bug in the strtotime() function where it was incorrectly recognizing GMT +0100 and GMT -0100. (Derick)</announcement>
   </announcements>
+  <changes>
+    <modules/>
+  </changes>
   <tags/>
-  <changes/>
 </release>

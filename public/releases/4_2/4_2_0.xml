@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
-<release version="1" id="4.2.0">
-  <release>4.2.0</release>
-  <date>22 April 2002</date>
+<release version="4.2.0">
+  <version>4.2.0</version>
+  <date>2002-04-22</date>
   <sources>
     <source>
       <name>Source (tar.gz)</name>
       <filename>php-4.2.0.tar.gz</filename>
-      <date/>
-      <sha256/>
+      <date>2020-01-07</date>
+      <md5/>
     </source>
   </sources>
   <announcements>
@@ -48,63 +48,65 @@ PHP 4.2.0 includes several improvements:
 
  For a full list of changes in PHP 4.2.0, [see the ChangeLog](/ChangeLog-4.php#4.2.0).</announcement>
   </announcements>
-  <tags/>
   <changes>
-    <module id="Major modifications to the Sockets Extension and its API (Jason)">
-      <change>
-        <description>Fixed numerous bugs.</description>
-        <references/>
-      </change>
-      <change>
-        <description>Added automatic host lookup capability to all functions that take addr's. example: socket_connect($sock, 'www.yahoo.com', 80);</description>
-        <references/>
-      </change>
-      <change>
-        <description>Corrected and standardized host lookup errors</description>
-        <references/>
-      </change>
-      <change>
-        <description>Modified socket_recv() behavior. [$r=socket_recv($sock, $buf, $len, $flags)]</description>
-        <references/>
-      </change>
-      <change>
-        <description>Added socket_set_block() which changes a socket into blocking IO mode</description>
-        <references/>
-      </change>
-      <change>
-        <description>Modified socket_last_error() to not clear the last error</description>
-        <references/>
-      </change>
-      <change>
-        <description>Added socket_clear_error() which clears the last error on a socket</description>
-        <references/>
-      </change>
-      <change>
-        <description>Removed all code pertaining to fd_sets (socket_fd_*)</description>
-        <references/>
-      </change>
-      <change>
-        <description>Modified/Improved socket_select() to accept array of resources instead of fd_sets. example: ```</description>
-        <references/>
-      </change>
-    </module>
-    <module id="Cleaned up the posix extension: (Markus)">
-      <change>
-        <description>Removed unwanted warning messages</description>
-        <references/>
-      </change>
-      <change>
-        <description>Added posix_errno() and posix_strerror() for fetching error messages</description>
-        <references/>
-      </change>
-      <change>
-        <description>Changed the way posix_getgrnam() and posix_getgrgid() return their values (breaks BC but makes more sense)</description>
-        <references/>
-      </change>
-      <change>
-        <description>Does not include functions in symbol table which aren't supported on host system.</description>
-        <references/>
-      </change>
-    </module>
+    <modules>
+      <module id="major modifications to the sockets extension and its api (jason)">
+        <change>
+          <description>Fixed numerous bugs.</description>
+          <references/>
+        </change>
+        <change>
+          <description>Added automatic host lookup capability to all functions that take addr's. example: socket_connect($sock, 'www.yahoo.com', 80);</description>
+          <references/>
+        </change>
+        <change>
+          <description>Corrected and standardized host lookup errors</description>
+          <references/>
+        </change>
+        <change>
+          <description>Modified socket_recv() behavior. [$r=socket_recv($sock, $buf, $len, $flags)]</description>
+          <references/>
+        </change>
+        <change>
+          <description>Added socket_set_block() which changes a socket into blocking IO mode</description>
+          <references/>
+        </change>
+        <change>
+          <description>Modified socket_last_error() to not clear the last error</description>
+          <references/>
+        </change>
+        <change>
+          <description>Added socket_clear_error() which clears the last error on a socket</description>
+          <references/>
+        </change>
+        <change>
+          <description>Removed all code pertaining to fd_sets (socket_fd_*)</description>
+          <references/>
+        </change>
+        <change>
+          <description>Modified/Improved socket_select() to accept array of resources instead of fd_sets. example: ```</description>
+          <references/>
+        </change>
+      </module>
+      <module id="cleaned up the posix extension: (markus)">
+        <change>
+          <description>Removed unwanted warning messages</description>
+          <references/>
+        </change>
+        <change>
+          <description>Added posix_errno() and posix_strerror() for fetching error messages</description>
+          <references/>
+        </change>
+        <change>
+          <description>Changed the way posix_getgrnam() and posix_getgrgid() return their values (breaks BC but makes more sense)</description>
+          <references/>
+        </change>
+        <change>
+          <description>Does not include functions in symbol table which aren't supported on host system.</description>
+          <references/>
+        </change>
+      </module>
+    </modules>
   </changes>
+  <tags/>
 </release>

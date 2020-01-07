@@ -1,19 +1,19 @@
 <?xml version="1.0"?>
-<release version="1" id="5.1.6">
-  <release>5.1.6</release>
-  <date>24 Aug 2006</date>
+<release version="5.1.6">
+  <version>5.1.6</version>
+  <date>2006-08-24</date>
   <sources>
     <source>
       <name>Source (tar.bz2)</name>
       <filename>php-5.1.6.tar.bz2</filename>
-      <date/>
-      <sha256/>
+      <date>2020-01-07</date>
+      <md5/>
     </source>
     <source>
       <name>Source (tar.gz)</name>
       <filename>php-5.1.6.tar.gz</filename>
-      <date/>
-      <sha256/>
+      <date>2020-01-07</date>
+      <md5/>
     </source>
   </sources>
   <announcements>
@@ -21,6 +21,8 @@
 
  For a full list of changes in PHP 5.1.6, see the [ChangeLog](/ChangeLog-5.php#5.1.6).</announcement>
   </announcements>
+  <changes>
+    <modules/>
+  </changes>
   <tags/>
-  <changes/>
 </release>

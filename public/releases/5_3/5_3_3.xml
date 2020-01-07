@@ -1,19 +1,19 @@
 <?xml version="1.0"?>
-<release version="1" id="5.3.3">
-  <release>5.3.3</release>
-  <date>22 July 2010</date>
+<release version="5.3.3">
+  <version>5.3.3</version>
+  <date>2010-07-22</date>
   <sources>
     <source>
       <name>PHP 5.3.3 (tar.bz2)</name>
       <filename>php-5.3.3.tar.bz2</filename>
-      <date>22 July 2010</date>
-      <sha256/>
+      <date>2010-07-22</date>
+      <md5/>
     </source>
     <source>
       <name>PHP 5.3.3 (tar.gz)</name>
       <filename>php-5.3.3.tar.gz</filename>
-      <date>22 July 2010</date>
-      <sha256/>
+      <date>2010-07-22</date>
+      <md5/>
     </source>
   </sources>
   <announcements>
@@ -63,6 +63,8 @@ For users upgrading from PHP 5.2 there is a migration guide available on [http:/
 
  For a full list of changes in PHP 5.3.3, see the [ChangeLog](/ChangeLog-5.php#5.3.3).</announcement>
   </announcements>
+  <changes>
+    <modules/>
+  </changes>
   <tags/>
-  <changes/>
 </release>

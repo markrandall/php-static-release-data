@@ -1,19 +1,19 @@
 <?xml version="1.0"?>
-<release version="1" id="5.1.5">
-  <release>5.1.5</release>
-  <date>17 Aug 2006</date>
+<release version="5.1.5">
+  <version>5.1.5</version>
+  <date>2006-08-17</date>
   <sources>
     <source>
       <name>Source (tar.bz2)</name>
       <filename>php-5.1.5.tar.bz2</filename>
-      <date/>
-      <sha256/>
+      <date>2020-01-07</date>
+      <md5/>
     </source>
     <source>
       <name>Source (tar.gz)</name>
       <filename>php-5.1.5.tar.gz</filename>
-      <date/>
-      <sha256/>
+      <date>2020-01-07</date>
+      <md5/>
     </source>
   </sources>
   <announcements>
@@ -31,6 +31,8 @@ In addition to the security fixes, both releases include a small number of non-s
 
  For a full list of changes in PHP 5.1.5, see the [ChangeLog](/ChangeLog-5.php#5.1.5).</announcement>
   </announcements>
+  <changes>
+    <modules/>
+  </changes>
   <tags/>
-  <changes/>
 </release>

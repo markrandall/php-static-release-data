@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
-<release version="1" id="4.2.2">
-  <release>4.2.2</release>
-  <date>22 July 2002</date>
+<release version="4.2.2">
+  <version>4.2.2</version>
+  <date>2002-07-22</date>
   <sources>
     <source>
       <name>Source (tar.gz)</name>
       <filename>php-4.2.2.tar.gz</filename>
-      <date/>
-      <sha256/>
+      <date>2020-01-07</date>
+      <md5/>
     </source>
   </sources>
   <announcements>
@@ -53,6 +53,8 @@ Credits
 
  The PHP Group would like to thank Stefan Esser of e-matters GmbH for discovering this vulnerability. e-matters GmbH has also released an [independent advisory](http://security.e-matters.de/advisories/022002.html), describing the vulnerability in more detail.</announcement>
   </announcements>
+  <changes>
+    <modules/>
+  </changes>
   <tags/>
-  <changes/>
 </release>

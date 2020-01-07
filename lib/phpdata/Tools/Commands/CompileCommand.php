@@ -38,7 +38,7 @@
 				$branch_ver = str_replace('_', '.', $branch_name);
 				
 				$xml_branch = $xml_releases->addChild('branch');
-				$xml_branch->addAttribute('version', (string)$branch_ver);
+				$xml_branch->addAttribute('id', (string)$branch_ver);
 				
 				$xml_branch_releases = $xml_branch->addChild('releases');
 				$branch_xml_path     = $branch_path . DIRECTORY_SEPARATOR . 'branch.xml';
@@ -62,6 +62,8 @@
 				
 				foreach (glob($branch_path . DIRECTORY_SEPARATOR . '?_?_*.xml') as $xml_path) {
 					$release = Release::LoadFromFile($xml_path);
+					$release->save();
+					
 					$xml_branch_releases
 						->addChild(
 							'release', $branch_name . '/' . str_replace('.', '_', $release->getVersionString()) . '.xml'
@@ -72,7 +74,7 @@
 				}
 			}
 			
-			$json_str  = json_encode($all_branches);
+			$json_str  = json_encode($all_branches, JSON_PRETTY_PRINT);
 			$json_path = __DIR__ . '/../../../../public/releases/releases.json';
 			
 			if (!file_exists($json_path) || file_get_contents($json_path) !== $json_str) {

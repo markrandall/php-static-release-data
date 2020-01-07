@@ -1,19 +1,19 @@
 <?xml version="1.0"?>
-<release version="1" id="5.3.2">
-  <release>5.3.2</release>
-  <date>04 Mar 2010</date>
+<release version="5.3.2">
+  <version>5.3.2</version>
+  <date>2010-03-04</date>
   <sources>
     <source>
       <name>PHP 5.3.2 (tar.bz2)</name>
       <filename>php-5.3.2.tar.bz2</filename>
-      <date>04 Mar 2010</date>
-      <sha256/>
+      <date>2010-03-04</date>
+      <md5/>
     </source>
     <source>
       <name>PHP 5.3.2 (tar.gz)</name>
       <filename>php-5.3.2.tar.gz</filename>
-      <date>04 Mar 2010</date>
-      <sha256/>
+      <date>2010-03-04</date>
+      <md5/>
     </source>
   </sources>
   <announcements>
@@ -43,21 +43,23 @@ For users upgrading from PHP 5.2 there is a migration guide available [here](htt
 
  For a full list of changes in PHP 5.3.2, see the [ChangeLog](/ChangeLog-5.php#5.3.2).</announcement>
   </announcements>
-  <tags/>
   <changes>
-    <module id="Core">
-      <change>
-        <description>Improved LCG entropy. (Rasmus, Samy Kamkar)</description>
-        <references/>
-      </change>
-      <change>
-        <description>Fixed safe_mode validation inside tempnam() when the directory path does not end with a /). (Martin Jansen)</description>
-        <references/>
-      </change>
-      <change>
-        <description>Fixed a possible open_basedir/safe_mode bypass in the session extension identified by Grzegorz Stachowiak. (Ilia)</description>
-        <references/>
-      </change>
-    </module>
+    <modules>
+      <module id="core">
+        <change>
+          <description>Improved LCG entropy. (Rasmus, Samy Kamkar)</description>
+          <references/>
+        </change>
+        <change>
+          <description>Fixed safe_mode validation inside tempnam() when the directory path does not end with a /). (Martin Jansen)</description>
+          <references/>
+        </change>
+        <change>
+          <description>Fixed a possible open_basedir/safe_mode bypass in the session extension identified by Grzegorz Stachowiak. (Ilia)</description>
+          <references/>
+        </change>
+      </module>
+    </modules>
   </changes>
+  <tags/>
 </release>

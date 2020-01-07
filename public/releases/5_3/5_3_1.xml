@@ -1,19 +1,19 @@
 <?xml version="1.0"?>
-<release version="1" id="5.3.1">
-  <release>5.3.1</release>
-  <date>19 Nov 2009</date>
+<release version="5.3.1">
+  <version>5.3.1</version>
+  <date>2009-11-19</date>
   <sources>
     <source>
       <name>PHP 5.3.1 (tar.bz2)</name>
       <filename>php-5.3.1.tar.bz2</filename>
-      <date>19 Nov 2009</date>
-      <sha256/>
+      <date>2009-11-19</date>
+      <md5/>
     </source>
     <source>
       <name>PHP 5.3.1 (tar.gz)</name>
       <filename>php-5.3.1.tar.gz</filename>
-      <date>19 Nov 2009</date>
-      <sha256/>
+      <date>2009-11-19</date>
+      <md5/>
     </source>
   </sources>
   <announcements>
@@ -41,31 +41,33 @@ For users upgrading from PHP 5.2 there is a migration guide available [here](htt
 
  For a full list of changes in PHP 5.3.1, see the [ChangeLog](/ChangeLog-5.php#5.3.1).</announcement>
   </announcements>
-  <tags/>
   <changes>
-    <module id="Core">
-      <change>
-        <description>Added "max_file_uploads" INI directive, which can be set to limit the number of file uploads per-request to 20 by default, to prevent possible DOS via temporary file exhaustion. (Ilia)</description>
-        <references/>
-      </change>
-      <change>
-        <description>Added missing sanity checks around exif processing. (Ilia)</description>
-        <references/>
-      </change>
-      <change>
-        <description>Fixed a safe_mode bypass in tempnam(). (Rasmus)</description>
-        <references/>
-      </change>
-      <change>
-        <description>Fixed a open_basedir bypass in posix_mkfifo(). (Rasmus)</description>
-        <references/>
-      </change>
-      <change>
-        <description>(safe_mode_include_dir fails). (Johannes, christian at elmerot dot se)</description>
-        <references>
-          <reference type="bugfix">50063</reference>
-        </references>
-      </change>
-    </module>
+    <modules>
+      <module id="core">
+        <change>
+          <description>Added "max_file_uploads" INI directive, which can be set to limit the number of file uploads per-request to 20 by default, to prevent possible DOS via temporary file exhaustion. (Ilia)</description>
+          <references/>
+        </change>
+        <change>
+          <description>Added missing sanity checks around exif processing. (Ilia)</description>
+          <references/>
+        </change>
+        <change>
+          <description>Fixed a safe_mode bypass in tempnam(). (Rasmus)</description>
+          <references/>
+        </change>
+        <change>
+          <description>Fixed a open_basedir bypass in posix_mkfifo(). (Rasmus)</description>
+          <references/>
+        </change>
+        <change>
+          <description>(safe_mode_include_dir fails). (Johannes, christian at elmerot dot se)</description>
+          <references>
+            <reference type="bugfix">50063</reference>
+          </references>
+        </change>
+      </module>
+    </modules>
   </changes>
+  <tags/>
 </release>

@@ -1,19 +1,19 @@
 <?xml version="1.0"?>
-<release version="1" id="5.2.4">
-  <release>5.2.4</release>
-  <date>30 August 2007</date>
+<release version="5.2.4">
+  <version>5.2.4</version>
+  <date>2007-08-30</date>
   <sources>
     <source>
       <name>Source (tar.bz2)</name>
       <filename>php-5.2.4.tar.bz2</filename>
-      <date/>
-      <sha256/>
+      <date>2020-01-07</date>
+      <md5/>
     </source>
     <source>
       <name>Source (tar.gz)</name>
       <filename>php-5.2.4.tar.gz</filename>
-      <date/>
-      <sha256/>
+      <date>2020-01-07</date>
+      <md5/>
     </source>
   </sources>
   <announcements>
@@ -48,59 +48,61 @@ For users upgrading from PHP 5.0 and PHP 5.1, an upgrade guide is available [her
 
  For a full list of changes in PHP 5.2.4, see the [ChangeLog](/ChangeLog-5.php#5.2.4).</announcement>
   </announcements>
-  <tags/>
   <changes>
-    <module id="Core">
-      <change>
-        <description>Fixed "Floating point exception" inside wordwrap(). (Mattias Bengtsson, Ilia)</description>
-        <references/>
-      </change>
-      <change>
-        <description>Fixed several integer overflows in ImageCreate(), ImageCreateTrueColor(), ImageCopyResampled() and ImageFilledPolygon() reported by Mattias Bengtsson. (Tony)</description>
-        <references/>
-      </change>
-      <change>
-        <description>Fixed size calculation in chunk_split(). (Stas)</description>
-        <references/>
-      </change>
-      <change>
-        <description>Fixed integer overflow in str[c]spn(). (Stas)</description>
-        <references/>
-      </change>
-      <change>
-        <description>Fixed money_format() not to accept multiple %i or %n tokens. (Stas, Ilia)</description>
-        <references/>
-      </change>
-      <change>
-        <description>Fixed zend_alter_ini_entry() memory_limit interruption vulnerability. (Ilia)</description>
-        <references/>
-      </change>
-      <change>
-        <description>Fixed INFILE LOCAL option handling with MySQL extensions not to be allowed when open_basedir or safe_mode is active. (Stas)</description>
-        <references/>
-      </change>
-      <change>
-        <description>Fixed session.save_path and error_log values to be checked against open_basedir and safe_mode (CVE-2007-3378) (Stas, Maksymilian Arciemowicz)</description>
-        <references>
-          <reference type="cve">CVE-2007-3378</reference>
-        </references>
-      </change>
-      <change>
-        <description>Fixed possible invalid read in glob() win32 implementation  (Tony)</description>
-        <references>
-          <reference type="cve">CVE-2007-3806</reference>
-        </references>
-      </change>
-      <change>
-        <description>Improved fix for MOPB-03-2007. (Ilia)</description>
-        <references/>
-      </change>
-      <change>
-        <description>Corrected fix for CVE-2007-2872. (Ilia)</description>
-        <references>
-          <reference type="cve">CVE-2007-2872</reference>
-        </references>
-      </change>
-    </module>
+    <modules>
+      <module id="core">
+        <change>
+          <description>Fixed "Floating point exception" inside wordwrap(). (Mattias Bengtsson, Ilia)</description>
+          <references/>
+        </change>
+        <change>
+          <description>Fixed several integer overflows in ImageCreate(), ImageCreateTrueColor(), ImageCopyResampled() and ImageFilledPolygon() reported by Mattias Bengtsson. (Tony)</description>
+          <references/>
+        </change>
+        <change>
+          <description>Fixed size calculation in chunk_split(). (Stas)</description>
+          <references/>
+        </change>
+        <change>
+          <description>Fixed integer overflow in str[c]spn(). (Stas)</description>
+          <references/>
+        </change>
+        <change>
+          <description>Fixed money_format() not to accept multiple %i or %n tokens. (Stas, Ilia)</description>
+          <references/>
+        </change>
+        <change>
+          <description>Fixed zend_alter_ini_entry() memory_limit interruption vulnerability. (Ilia)</description>
+          <references/>
+        </change>
+        <change>
+          <description>Fixed INFILE LOCAL option handling with MySQL extensions not to be allowed when open_basedir or safe_mode is active. (Stas)</description>
+          <references/>
+        </change>
+        <change>
+          <description>Fixed session.save_path and error_log values to be checked against open_basedir and safe_mode (CVE-2007-3378) (Stas, Maksymilian Arciemowicz)</description>
+          <references>
+            <reference type="cve">CVE-2007-3378</reference>
+          </references>
+        </change>
+        <change>
+          <description>Fixed possible invalid read in glob() win32 implementation  (Tony)</description>
+          <references>
+            <reference type="cve">CVE-2007-3806</reference>
+          </references>
+        </change>
+        <change>
+          <description>Improved fix for MOPB-03-2007. (Ilia)</description>
+          <references/>
+        </change>
+        <change>
+          <description>Corrected fix for CVE-2007-2872. (Ilia)</description>
+          <references>
+            <reference type="cve">CVE-2007-2872</reference>
+          </references>
+        </change>
+      </module>
+    </modules>
   </changes>
+  <tags/>
 </release>

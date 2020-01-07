@@ -64,7 +64,7 @@
 		
 		public static function FromXml(SimpleXMLElement $xml): Release {
 			$release          = new Release();
-			$release->version = (string)$xml->release;
+			$release->version = (string)$xml->attributes()->version;
 			$release->date    = new DateTimeImmutable((string)$xml->date);
 			
 			foreach ($xml->announcements->announcement as $announcement) {
@@ -86,7 +86,12 @@
 				$release->sources[$source->getFilename()] = $source;
 			}
 			
-			foreach ($xml->changes->module as $module) {
+			/* bc upgrade fix */
+			$xml_module_changes = $xml->changes->module->count()
+				? $xml->changes->module
+				: $xml->changes->modules->module;
+			
+			foreach ($xml_module_changes as $module) {
 				$changes = [];
 				
 				foreach ($module->change as $change) {
@@ -113,15 +118,13 @@
 		
 		public function toXml(): SimpleXMLElement {
 			$ee = function (string $data): string {
-				return htmlspecialchars($data);
+				return htmlspecialchars($data, ENT_NOQUOTES);
 			};
 			
 			
 			$element = new SimpleXMLElement('<release></release>');
-			$element->addAttribute('version', '1');
-			$element->addAttribute('release', $this->getVersionString());
-			
-			$element->addChild('release', $this->getVersionString());
+			$element->addAttribute('version', $this->getVersionString());
+			$element->addChild('version', $this->getVersionString());
 			$element->addChild('date', $this->date->format('Y-m-d'));
 			
 			$sources = $element->addChild('sources');
@@ -145,7 +148,7 @@
 				$xml_announcement->addAttribute('lang', $announcement->getLang());
 			}
 			
-			$xml_changes = $element->addChild('changes');
+			$xml_changes = $element->addChild('changes')->addChild('modules');
 			foreach ($this->changed_modules as $module) {
 				$xml_module = $xml_changes->addChild('module');
 				$xml_module->addAttribute('id', strtolower($module->getModuleId()));

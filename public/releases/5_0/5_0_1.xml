@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
-<release version="1" id="5.0.1">
-  <release>5.0.1</release>
-  <date>12 Aug 2004</date>
+<release version="5.0.1">
+  <version>5.0.1</version>
+  <date>2004-08-12</date>
   <sources>
     <source>
       <name>Source (tar.gz)</name>
       <filename>php-5.0.1.tar.gz</filename>
-      <date/>
-      <sha256/>
+      <date>2020-01-07</date>
+      <md5/>
     </source>
   </sources>
   <announcements>
@@ -47,6 +47,8 @@
 - [ncurses_show_panel](/manual/en/function.ncurses-show-panel.php)
 - [runkit_class_adopt](/manual/en/function.runkit-class-adopt.php)</announcement>
   </announcements>
+  <changes>
+    <modules/>
+  </changes>
   <tags/>
-  <changes/>
 </release>

@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
-<release version="1" id="4.3.5">
-  <release>4.3.5</release>
-  <date>26 March 2004</date>
+<release version="4.3.5">
+  <version>4.3.5</version>
+  <date>2004-03-26</date>
   <sources>
     <source>
       <name>Source (tar.gz)</name>
       <filename>php-4.3.5.tar.gz</filename>
-      <date/>
-      <sha256/>
+      <date>2020-01-07</date>
+      <md5/>
     </source>
   </sources>
   <announcements>
@@ -36,25 +36,27 @@ Bugfix release
 
  For a full list of changes in PHP 4.3.5, see the [ChangeLog](/ChangeLog-4.php#4.3.5).</announcement>
   </announcements>
-  <tags/>
   <changes>
-    <module id="Improved the sybase_ct module: (Timm)">
-      <change>
-        <description>Added ability to define a message handler not only globally, but also per connection.</description>
-        <references/>
-      </change>
-      <change>
-        <description>Added "sybct.packet_size" php.ini option.</description>
-        <references/>
-      </change>
-      <change>
-        <description>Changed "sybct.login_timeout" php.ini option changeable at runtime.</description>
-        <references/>
-      </change>
-      <change>
-        <description>Fixed memory leak in sybase_set_message_handler().</description>
-        <references/>
-      </change>
-    </module>
+    <modules>
+      <module id="improved the sybase_ct module: (timm)">
+        <change>
+          <description>Added ability to define a message handler not only globally, but also per connection.</description>
+          <references/>
+        </change>
+        <change>
+          <description>Added "sybct.packet_size" php.ini option.</description>
+          <references/>
+        </change>
+        <change>
+          <description>Changed "sybct.login_timeout" php.ini option changeable at runtime.</description>
+          <references/>
+        </change>
+        <change>
+          <description>Fixed memory leak in sybase_set_message_handler().</description>
+          <references/>
+        </change>
+      </module>
+    </modules>
   </changes>
+  <tags/>
 </release>

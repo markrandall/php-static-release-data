@@ -1,19 +1,19 @@
 <?xml version="1.0"?>
-<release version="1" id="5.2.6">
-  <release>5.2.6</release>
-  <date>01 May 2008</date>
+<release version="5.2.6">
+  <version>5.2.6</version>
+  <date>2008-05-01</date>
   <sources>
     <source>
       <name>PHP 5.2.6 (tar.bz2)</name>
       <filename>php-5.2.6.tar.bz2</filename>
-      <date>01 May 2008</date>
-      <sha256/>
+      <date>2008-05-01</date>
+      <md5/>
     </source>
     <source>
       <name>PHP 5.2.6 (tar.gz)</name>
       <filename>php-5.2.6.tar.gz</filename>
-      <date>01 May 2008</date>
-      <sha256/>
+      <date>2008-05-01</date>
+      <md5/>
     </source>
   </sources>
   <announcements>
@@ -45,31 +45,33 @@ For users upgrading from PHP 5.0 and PHP 5.1, an upgrade guide is available [her
 
  For a full list of changes in PHP 5.2.6, see the [ChangeLog](/ChangeLog-5.php#5.2.6).</announcement>
   </announcements>
-  <tags/>
   <changes>
-    <module id="Core">
-      <change>
-        <description>Fixed possible stack buffer overflow in FastCGI SAPI. (Andrei Nigmatulin)</description>
-        <references/>
-      </change>
-      <change>
-        <description>Properly address incomplete multibyte chars inside escapeshellcmd() (Ilia, Stefan Esser)</description>
-        <references/>
-      </change>
-      <change>
-        <description>Fixed security issue detailed in CVE-2008-0599. (Rasmus)</description>
-        <references>
-          <reference type="cve">CVE-2008-0599</reference>
-        </references>
-      </change>
-      <change>
-        <description>Fixed a safe_mode bypass in cURL identified by Maksymilian Arciemowicz. (Ilia)</description>
-        <references/>
-      </change>
-      <change>
-        <description>Upgraded PCRE to version 7.6 (Nuno)</description>
-        <references/>
-      </change>
-    </module>
+    <modules>
+      <module id="core">
+        <change>
+          <description>Fixed possible stack buffer overflow in FastCGI SAPI. (Andrei Nigmatulin)</description>
+          <references/>
+        </change>
+        <change>
+          <description>Properly address incomplete multibyte chars inside escapeshellcmd() (Ilia, Stefan Esser)</description>
+          <references/>
+        </change>
+        <change>
+          <description>Fixed security issue detailed in CVE-2008-0599. (Rasmus)</description>
+          <references>
+            <reference type="cve">CVE-2008-0599</reference>
+          </references>
+        </change>
+        <change>
+          <description>Fixed a safe_mode bypass in cURL identified by Maksymilian Arciemowicz. (Ilia)</description>
+          <references/>
+        </change>
+        <change>
+          <description>Upgraded PCRE to version 7.6 (Nuno)</description>
+          <references/>
+        </change>
+      </module>
+    </modules>
   </changes>
+  <tags/>
 </release>

@@ -1,19 +1,19 @@
 <?xml version="1.0"?>
-<release version="1" id="4.4.6">
-  <release>4.4.6</release>
-  <date>01 Mar 2007</date>
+<release version="4.4.6">
+  <version>4.4.6</version>
+  <date>2007-03-01</date>
   <sources>
     <source>
       <name>Source (tar.bz2)</name>
       <filename>php-4.4.6.tar.bz2</filename>
-      <date/>
-      <sha256/>
+      <date>2020-01-07</date>
+      <md5/>
     </source>
     <source>
       <name>Source (tar.gz)</name>
       <filename>php-4.4.6.tar.gz</filename>
-      <date/>
-      <sha256/>
+      <date>2020-01-07</date>
+      <md5/>
     </source>
   </sources>
   <announcements>
@@ -21,6 +21,8 @@
 
  For a full list of changes in PHP 4.4.6, see the [ChangeLog](/ChangeLog-4.php#4.4.6).</announcement>
   </announcements>
+  <changes>
+    <modules/>
+  </changes>
   <tags/>
-  <changes/>
 </release>

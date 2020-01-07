@@ -1,19 +1,19 @@
 <?xml version="1.0"?>
-<release version="1" id="5.2.16">
-  <release>5.2.16</release>
-  <date>16 December 2010</date>
+<release version="5.2.16">
+  <version>5.2.16</version>
+  <date>2010-12-16</date>
   <sources>
     <source>
       <name>PHP 5.2.16 (tar.bz2)</name>
       <filename>php-5.2.16.tar.bz2</filename>
-      <date>16 December 2010</date>
-      <sha256/>
+      <date>2010-12-16</date>
+      <md5/>
     </source>
     <source>
       <name>PHP 5.2.16 (tar.gz)</name>
       <filename>php-5.2.16.tar.gz</filename>
-      <date>16 December 2010</date>
-      <sha256/>
+      <date>2010-12-16</date>
+      <md5/>
     </source>
   </sources>
   <announcements>
@@ -23,6 +23,8 @@ To prepare for upgrading to PHP 5.3, now that PHP 5.2's support ended, a migrati
 
 For a full list of changes in PHP 5.2.16 see the ChangeLog at [http://www.php.net/ChangeLog-5.php#5.2.16](/ChangeLog-5.php#5.2.16).</announcement>
   </announcements>
+  <changes>
+    <modules/>
+  </changes>
   <tags/>
-  <changes/>
 </release>

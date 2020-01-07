@@ -1,19 +1,19 @@
 <?xml version="1.0"?>
-<release version="1" id="4.3.2">
-  <release>4.3.2</release>
-  <date>29 May 2003</date>
+<release version="4.3.2">
+  <version>4.3.2</version>
+  <date>2003-05-29</date>
   <sources>
     <source>
       <name>Source (tar.gz)</name>
       <filename>php-4.3.2.tar.gz</filename>
-      <date/>
-      <sha256/>
+      <date>2020-01-07</date>
+      <md5/>
     </source>
     <source>
       <name>Source (tar.bz2)</name>
       <filename>php-4.3.2.tar.bz2</filename>
-      <date/>
-      <sha256/>
+      <date>2020-01-07</date>
+      <md5/>
     </source>
   </sources>
   <announcements>
@@ -40,29 +40,31 @@ Bugfix release
 
  For a full list of changes in PHP 4.3.2, see the [ChangeLog](/ChangeLog-4.php#4.3.2).</announcement>
   </announcements>
-  <tags/>
   <changes>
-    <module id="Improved dba extension (Marcus)">
-      <change>
-        <description>Added support for internal error handling of Berkeley db libraries.</description>
-        <references/>
-      </change>
-      <change>
-        <description>Disallowed Berkeley db versions 4.1.0 to 4.1.24 due to locking problems.</description>
-        <references/>
-      </change>
-      <change>
-        <description>Disallowed linkage of Berkeley db submodules against libraries with different major versions.</description>
-        <references/>
-      </change>
-      <change>
-        <description>Disallowed configuring of more than one Berkeley db handler.</description>
-        <references/>
-      </change>
-      <change>
-        <description>Reenabled dba_popen() with new persistent STDIO streams.</description>
-        <references/>
-      </change>
-    </module>
+    <modules>
+      <module id="improved dba extension (marcus)">
+        <change>
+          <description>Added support for internal error handling of Berkeley db libraries.</description>
+          <references/>
+        </change>
+        <change>
+          <description>Disallowed Berkeley db versions 4.1.0 to 4.1.24 due to locking problems.</description>
+          <references/>
+        </change>
+        <change>
+          <description>Disallowed linkage of Berkeley db submodules against libraries with different major versions.</description>
+          <references/>
+        </change>
+        <change>
+          <description>Disallowed configuring of more than one Berkeley db handler.</description>
+          <references/>
+        </change>
+        <change>
+          <description>Reenabled dba_popen() with new persistent STDIO streams.</description>
+          <references/>
+        </change>
+      </module>
+    </modules>
   </changes>
+  <tags/>
 </release>

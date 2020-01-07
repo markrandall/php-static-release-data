@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
-<release version="1" id="3.0.x (latest)">
-  <release>3.0.x (latest)</release>
-  <date>20 Oct 2000</date>
+<release version="3.0.x (latest)">
+  <version>3.0.x (latest)</version>
+  <date>2000-10-20</date>
   <sources>
     <source>
       <name>PHP 3.0.18 Source Code</name>
       <filename>php-3.0.18.tar.gz</filename>
-      <date/>
-      <sha256/>
+      <date>2020-01-07</date>
+      <md5/>
     </source>
   </sources>
   <announcements>
@@ -47,6 +47,8 @@
 - [ingres_escape_string](/manual/en/function.ingres-escape-string.php)
 - [ibase_service_attach](/manual/en/function.ibase-service-attach.php)</announcement>
   </announcements>
+  <changes>
+    <modules/>
+  </changes>
   <tags/>
-  <changes/>
 </release>

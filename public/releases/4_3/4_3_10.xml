@@ -1,19 +1,19 @@
 <?xml version="1.0"?>
-<release version="1" id="4.3.10">
-  <release>4.3.10</release>
-  <date>15 Dec 2004</date>
+<release version="4.3.10">
+  <version>4.3.10</version>
+  <date>2004-12-15</date>
   <sources>
     <source>
       <name>Source (tar.gz)</name>
       <filename>php-4.3.10.tar.gz</filename>
-      <date/>
-      <sha256/>
+      <date>2020-01-07</date>
+      <md5/>
     </source>
     <source>
       <name>Source (tar.bz2)</name>
       <filename>php-4.3.10.tar.bz2</filename>
-      <date/>
-      <sha256/>
+      <date>2020-01-07</date>
+      <md5/>
     </source>
   </sources>
   <announcements>
@@ -54,6 +54,8 @@ Bugfix release
 
  For a full list of changes in PHP 4.3.10, see the [ChangeLog](/ChangeLog-4.php#4.3.10).</announcement>
   </announcements>
+  <changes>
+    <modules/>
+  </changes>
   <tags/>
-  <changes/>
 </release>

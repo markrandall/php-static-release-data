@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
-<release version="1" id="4.3.4">
-  <release>4.3.4</release>
-  <date>03 November 2003</date>
+<release version="4.3.4">
+  <version>4.3.4</version>
+  <date>2003-11-03</date>
   <sources>
     <source>
       <name>Source (tar.gz)</name>
       <filename>php-4.3.4.tar.gz</filename>
-      <date/>
-      <sha256/>
+      <date>2020-01-07</date>
+      <md5/>
     </source>
   </sources>
   <announcements>
@@ -31,6 +31,8 @@ Bugfix release
 
  For a full list of changes in PHP 4.3.4, see the [ChangeLog](/ChangeLog-4.php#4.3.4).</announcement>
   </announcements>
+  <changes>
+    <modules/>
+  </changes>
   <tags/>
-  <changes/>
 </release>

@@ -1,19 +1,19 @@
 <?xml version="1.0"?>
-<release version="1" id="5.2.12">
-  <release>5.2.12</release>
-  <date>17 December 2009</date>
+<release version="5.2.12">
+  <version>5.2.12</version>
+  <date>2009-12-17</date>
   <sources>
     <source>
       <name>PHP 5.2.12 (tar.bz2)</name>
       <filename>php-5.2.12.tar.bz2</filename>
-      <date>17 December 2009</date>
-      <sha256/>
+      <date>2009-12-17</date>
+      <md5/>
     </source>
     <source>
       <name>PHP 5.2.12 (tar.gz)</name>
       <filename>php-5.2.12.tar.gz</filename>
-      <date>17 December 2009</date>
-      <sha256/>
+      <date>2009-12-17</date>
+      <md5/>
     </source>
   </sources>
   <announcements>
@@ -44,31 +44,33 @@ For users upgrading from PHP 5.0 and PHP 5.1, an upgrade guide is available [her
 
  For a full list of changes in PHP 5.2.12, see the [ChangeLog](/ChangeLog-5.php#5.2.12).</announcement>
   </announcements>
-  <tags/>
   <changes>
-    <module id="Core">
-      <change>
-        <description>Fixed a safe_mode bypass in tempnam() identified by Grzegorz Stachowiak. (Rasmus)</description>
-        <references/>
-      </change>
-      <change>
-        <description>Fixed a open_basedir bypass in posix_mkfifo() identified by Grzegorz Stachowiak. (Rasmus)</description>
-        <references/>
-      </change>
-      <change>
-        <description>Added "max_file_uploads" INI directive, which can be set to limit the number of file uploads per-request to 20 by default, to prevent possible DOS via temporary file exhaustion. (Ilia)</description>
-        <references/>
-      </change>
-      <change>
-        <description>Added protection for $_SESSION from interrupt corruption and improved "session.save_path" check, identified by Stefan Esser. (Stas)</description>
-        <references/>
-      </change>
-      <change>
-        <description>(insufficient input string validation of htmlspecialchars()). (Moriyoshi, hello at iwamot dot com)</description>
-        <references>
-          <reference type="bugfix">49785</reference>
-        </references>
-      </change>
-    </module>
+    <modules>
+      <module id="core">
+        <change>
+          <description>Fixed a safe_mode bypass in tempnam() identified by Grzegorz Stachowiak. (Rasmus)</description>
+          <references/>
+        </change>
+        <change>
+          <description>Fixed a open_basedir bypass in posix_mkfifo() identified by Grzegorz Stachowiak. (Rasmus)</description>
+          <references/>
+        </change>
+        <change>
+          <description>Added "max_file_uploads" INI directive, which can be set to limit the number of file uploads per-request to 20 by default, to prevent possible DOS via temporary file exhaustion. (Ilia)</description>
+          <references/>
+        </change>
+        <change>
+          <description>Added protection for $_SESSION from interrupt corruption and improved "session.save_path" check, identified by Stefan Esser. (Stas)</description>
+          <references/>
+        </change>
+        <change>
+          <description>(insufficient input string validation of htmlspecialchars()). (Moriyoshi, hello at iwamot dot com)</description>
+          <references>
+            <reference type="bugfix">49785</reference>
+          </references>
+        </change>
+      </module>
+    </modules>
   </changes>
+  <tags/>
 </release>

@@ -1,19 +1,19 @@
 <?xml version="1.0"?>
-<release version="1" id="5.2.8">
-  <release>5.2.8</release>
-  <date>08 December 2008</date>
+<release version="5.2.8">
+  <version>5.2.8</version>
+  <date>2008-12-08</date>
   <sources>
     <source>
       <name>PHP 5.2.8 (tar.bz2)</name>
       <filename>php-5.2.8.tar.bz2</filename>
-      <date>08 December 2008</date>
-      <sha256/>
+      <date>2008-12-08</date>
+      <md5/>
     </source>
     <source>
       <name>PHP 5.2.8 (tar.gz)</name>
       <filename>php-5.2.8.tar.gz</filename>
-      <date>08 December 2008</date>
-      <sha256/>
+      <date>2008-12-08</date>
+      <md5/>
     </source>
   </sources>
   <announcements>
@@ -21,6 +21,8 @@
 
  For a full list of changes in PHP 5.2.8, see the [ChangeLog](/ChangeLog-5.php#5.2.8).</announcement>
   </announcements>
+  <changes>
+    <modules/>
+  </changes>
   <tags/>
-  <changes/>
 </release>

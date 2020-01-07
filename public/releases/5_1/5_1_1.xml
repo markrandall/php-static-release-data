@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
-<release version="1" id="5.1.1">
-  <release>5.1.1</release>
-  <date>28 Nov 2005</date>
+<release version="5.1.1">
+  <version>5.1.1</version>
+  <date>2005-11-28</date>
   <sources>
     <source>
       <name>Source (tar.gz)</name>
       <filename>php-5.1.1.tar.gz</filename>
-      <date/>
-      <sha256/>
+      <date>2020-01-07</date>
+      <md5/>
     </source>
   </sources>
   <announcements>
@@ -27,6 +27,8 @@ This is a regression correction release aimed at addressing several issues that 
 
  For a full list of changes in PHP 5.1.1, see the [ChangeLog](/ChangeLog-5.php#5.1.1).</announcement>
   </announcements>
+  <changes>
+    <modules/>
+  </changes>
   <tags/>
-  <changes/>
 </release>

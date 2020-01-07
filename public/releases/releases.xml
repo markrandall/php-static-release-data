@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <branches>
-  <branch version="3.0">
+  <branch id="3.0">
     <releases>
       <release version="3.0.x (latest)">3_0/3_0_x (latest).xml</release>
     </releases>
   </branch>
-  <branch version="4.0">
+  <branch id="4.0">
     <releases>
       <release version="4.0.0">4_0/4_0_0.xml</release>
       <release version="4.0.1">4_0/4_0_1.xml</release>
@@ -16,14 +16,14 @@
       <release version="4.0.6">4_0/4_0_6.xml</release>
     </releases>
   </branch>
-  <branch version="4.1">
+  <branch id="4.1">
     <releases>
       <release version="4.1.0">4_1/4_1_0.xml</release>
       <release version="4.1.1">4_1/4_1_1.xml</release>
       <release version="4.1.2">4_1/4_1_2.xml</release>
     </releases>
   </branch>
-  <branch version="4.2">
+  <branch id="4.2">
     <releases>
       <release version="4.2.0">4_2/4_2_0.xml</release>
       <release version="4.2.1">4_2/4_2_1.xml</release>
@@ -31,7 +31,7 @@
       <release version="4.2.3">4_2/4_2_3.xml</release>
     </releases>
   </branch>
-  <branch version="4.3">
+  <branch id="4.3">
     <releases>
       <release version="4.3.0">4_3/4_3_0.xml</release>
       <release version="4.3.1">4_3/4_3_1.xml</release>
@@ -47,7 +47,7 @@
       <release version="4.3.9">4_3/4_3_9.xml</release>
     </releases>
   </branch>
-  <branch version="4.4">
+  <branch id="4.4">
     <releases>
       <release version="4.4.0">4_4/4_4_0.xml</release>
       <release version="4.4.1">4_4/4_4_1.xml</release>
@@ -61,7 +61,7 @@
       <release version="4.4.9">4_4/4_4_9.xml</release>
     </releases>
   </branch>
-  <branch version="5.0">
+  <branch id="5.0">
     <releases>
       <release version="5.0.0">5_0/5_0_0.xml</release>
       <release version="5.0.1">5_0/5_0_1.xml</release>
@@ -71,7 +71,7 @@
       <release version="5.0.5">5_0/5_0_5.xml</release>
     </releases>
   </branch>
-  <branch version="5.1">
+  <branch id="5.1">
     <releases>
       <release version="5.1.0">5_1/5_1_0.xml</release>
       <release version="5.1.1">5_1/5_1_1.xml</release>
@@ -82,7 +82,7 @@
       <release version="5.1.6">5_1/5_1_6.xml</release>
     </releases>
   </branch>
-  <branch version="5.2">
+  <branch id="5.2">
     <releases>
       <release version="5.2.0">5_2/5_2_0.xml</release>
       <release version="5.2.1">5_2/5_2_1.xml</release>
@@ -103,7 +103,7 @@
       <release version="5.2.9">5_2/5_2_9.xml</release>
     </releases>
   </branch>
-  <branch version="5.3">
+  <branch id="5.3">
     <releases>
       <release version="5.3.0">5_3/5_3_0.xml</release>
       <release version="5.3.1">5_3/5_3_1.xml</release>
@@ -137,7 +137,7 @@
       <release version="5.3.9">5_3/5_3_9.xml</release>
     </releases>
   </branch>
-  <branch version="5.4">
+  <branch id="5.4">
     <releases>
       <release version="5.4.0">5_4/5_4_0.xml</release>
       <release version="5.4.1">5_4/5_4_1.xml</release>
@@ -187,7 +187,7 @@
       <release version="5.4.9">5_4/5_4_9.xml</release>
     </releases>
   </branch>
-  <branch version="5.5">
+  <branch id="5.5">
     <releases>
       <release version="5.5.0">5_5/5_5_0.xml</release>
       <release version="5.5.1">5_5/5_5_1.xml</release>
@@ -230,7 +230,7 @@
       <release version="5.5.9">5_5/5_5_9.xml</release>
     </releases>
   </branch>
-  <branch version="5.6">
+  <branch id="5.6">
     <releases>
       <release version="5.6.0">5_6/5_6_0.xml</release>
       <release version="5.6.1">5_6/5_6_1.xml</release>
@@ -275,7 +275,7 @@
       <release version="5.6.9">5_6/5_6_9.xml</release>
     </releases>
   </branch>
-  <branch version="7.0">
+  <branch id="7.0">
     <releases>
       <release version="7.0.0">7_0/7_0_0.xml</release>
       <release version="7.0.1">7_0/7_0_1.xml</release>
@@ -313,7 +313,7 @@
       <release version="7.0.9">7_0/7_0_9.xml</release>
     </releases>
   </branch>
-  <branch version="7.1">
+  <branch id="7.1">
     <releases>
       <release version="7.1.0">7_1/7_1_0.xml</release>
       <release version="7.1.1">7_1/7_1_1.xml</release>
@@ -351,7 +351,7 @@
       <release version="7.1.9">7_1/7_1_9.xml</release>
     </releases>
   </branch>
-  <branch version="7.2">
+  <branch id="7.2">
     <releases>
       <release version="7.2.0">7_2/7_2_0.xml</release>
       <release version="7.2.1">7_2/7_2_1.xml</release>
@@ -382,7 +382,7 @@
       <release version="7.2.9">7_2/7_2_9.xml</release>
     </releases>
   </branch>
-  <branch version="7.3">
+  <branch id="7.3">
     <releases>
       <release version="7.3.0">7_3/7_3_0.xml</release>
       <release version="7.3.1">7_3/7_3_1.xml</release>
@@ -400,7 +400,7 @@
       <release version="7.3.9">7_3/7_3_9.xml</release>
     </releases>
   </branch>
-  <branch version="7.4">
+  <branch id="7.4">
     <releases>
       <release version="7.4.0">7_4/7_4_0.xml</release>
       <release version="7.4.1">7_4/7_4_1.xml</release>

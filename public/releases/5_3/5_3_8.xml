@@ -1,19 +1,19 @@
 <?xml version="1.0"?>
-<release version="1" id="5.3.8">
-  <release>5.3.8</release>
-  <date>23 August 2011</date>
+<release version="5.3.8">
+  <version>5.3.8</version>
+  <date>2011-08-23</date>
   <sources>
     <source>
       <name>PHP 5.3.8 (tar.bz2)</name>
       <filename>php-5.3.8.tar.bz2</filename>
-      <date>23 August 2011</date>
-      <sha256/>
+      <date>2011-08-23</date>
+      <md5/>
     </source>
     <source>
       <name>PHP 5.3.8 (tar.gz)</name>
       <filename>php-5.3.8.tar.gz</filename>
-      <date>23 August 2011</date>
-      <sha256/>
+      <date>2011-08-23</date>
+      <md5/>
     </source>
   </sources>
   <announcements>
@@ -24,21 +24,23 @@
 
 All PHP users should note that the PHP 5.2 series is NOT supported anymore. All users are strongly encouraged to upgrade to PHP 5.3.8.</announcement>
   </announcements>
-  <tags/>
   <changes>
-    <module id="Core">
-      <change>
-        <description>(crypt() returns only the salt for MD5). (Stas)</description>
-        <references>
-          <reference type="bugfix">55439</reference>
-        </references>
-      </change>
-    </module>
-    <module id="OpenSSL">
-      <change>
-        <description>Reverted a change in timeout handling restoring PHP 5.3.6 behavior, as the new behavior caused mysqlnd SSL connections to hang ( bug [#55283](http://bugs.php.net/55283)). (Pierre, Andrey, Johannes)</description>
-        <references/>
-      </change>
-    </module>
+    <modules>
+      <module id="core">
+        <change>
+          <description>(crypt() returns only the salt for MD5). (Stas)</description>
+          <references>
+            <reference type="bugfix">55439</reference>
+          </references>
+        </change>
+      </module>
+      <module id="openssl">
+        <change>
+          <description>Reverted a change in timeout handling restoring PHP 5.3.6 behavior, as the new behavior caused mysqlnd SSL connections to hang ( bug [#55283](http://bugs.php.net/55283)). (Pierre, Andrey, Johannes)</description>
+          <references/>
+        </change>
+      </module>
+    </modules>
   </changes>
+  <tags/>
 </release>

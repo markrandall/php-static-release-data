@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
-<release version="1" id="4.0.5">
-  <release>4.0.5</release>
-  <date>30 April 2001</date>
+<release version="4.0.5">
+  <version>4.0.5</version>
+  <date>2001-04-30</date>
   <sources>
     <source>
       <name>Source (tar.gz)</name>
       <filename>php-4.0.5.tar.gz</filename>
-      <date/>
-      <sha256/>
+      <date>2020-01-07</date>
+      <md5/>
     </source>
   </sources>
   <announcements>
@@ -47,6 +47,8 @@
 - [ncurses_show_panel](/manual/en/function.ncurses-show-panel.php)
 - [ncurses_move_panel](/manual/en/function.ncurses-move-panel.php)</announcement>
   </announcements>
+  <changes>
+    <modules/>
+  </changes>
   <tags/>
-  <changes/>
 </release>

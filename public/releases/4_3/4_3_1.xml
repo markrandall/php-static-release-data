@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
-<release version="1" id="4.3.1">
-  <release>4.3.1</release>
-  <date>17 February 2003</date>
+<release version="4.3.1">
+  <version>4.3.1</version>
+  <date>2003-02-17</date>
   <sources>
     <source>
       <name>Source (tar.gz)</name>
       <filename>php-4.3.1.tar.gz</filename>
-      <date/>
-      <sha256/>
+      <date>2020-01-07</date>
+      <md5/>
     </source>
   </sources>
   <announcements>
@@ -41,6 +41,8 @@ Credits
 
  The PHP Group would like to thank Kosmas Skiadopoulos for discovering this vulnerability.</announcement>
   </announcements>
+  <changes>
+    <modules/>
+  </changes>
   <tags/>
-  <changes/>
 </release>

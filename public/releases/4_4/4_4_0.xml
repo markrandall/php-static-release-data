@@ -1,19 +1,19 @@
 <?xml version="1.0"?>
-<release version="1" id="4.4.0">
-  <release>4.4.0</release>
-  <date>11 Jul 2005</date>
+<release version="4.4.0">
+  <version>4.4.0</version>
+  <date>2005-07-11</date>
   <sources>
     <source>
       <name>Source (tar.gz)</name>
       <filename>php-4.4.0.tar.gz</filename>
-      <date/>
-      <sha256/>
+      <date>2020-01-07</date>
+      <md5/>
     </source>
     <source>
       <name>Source (tar.bz2)</name>
       <filename>php-4.4.0.tar.bz2</filename>
-      <date/>
-      <sha256/>
+      <date>2020-01-07</date>
+      <md5/>
     </source>
   </sources>
   <announcements>
@@ -36,6 +36,8 @@ Bugfix release
 
  For a full list of changes in PHP 4.4.0, see the [ChangeLog](/ChangeLog-4.php#4.4.0).</announcement>
   </announcements>
+  <changes>
+    <modules/>
+  </changes>
   <tags/>
-  <changes/>
 </release>

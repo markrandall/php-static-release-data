@@ -1,19 +1,19 @@
 <?xml version="1.0"?>
-<release version="1" id="5.4.1">
-  <release>5.4.1</release>
-  <date>26 April 2012</date>
+<release version="5.4.1">
+  <version>5.4.1</version>
+  <date>2012-04-26</date>
   <sources>
     <source>
       <name>PHP 5.4.1 (tar.bz2)</name>
       <filename>php-5.4.1.tar.bz2</filename>
-      <date>26 April 2012</date>
-      <sha256/>
+      <date>2012-04-26</date>
+      <md5/>
     </source>
     <source>
       <name>PHP 5.4.1 (tar.gz)</name>
       <filename>php-5.4.1.tar.gz</filename>
-      <date>26 April 2012</date>
-      <sha256/>
+      <date>2012-04-26</date>
+      <md5/>
     </source>
   </sources>
   <announcements>
@@ -33,133 +33,135 @@ For a full list of changes in PHP 5.4.1, see the [ChangeLog](/ChangeLog-5.php#5.
 
 All users of PHP are strongly encouraged to upgrade to PHP 5.4.1.</announcement>
   </announcements>
-  <tags/>
   <changes>
-    <module id="Core">
-      <change>
-        <description>(missing checks around malloc() calls).</description>
-        <references>
-          <reference type="bugfix">61461</reference>
-        </references>
-      </change>
-      <change>
-        <description>Implemented FR [#60850](http://bugs.php.net/60850) (Built in web server does not set $_SERVER['SCRIPT_FILENAME'] when using router).</description>
-        <references/>
-      </change>
-      <change>
-        <description>Fixed crash in ZTS using same class in many threads.</description>
-        <references/>
-      </change>
-      <change>
-        <description>(html_entity_decode tries to decode code points that don't exist in ISO-8859-1).</description>
-        <references>
-          <reference type="bugfix">61374</reference>
-        </references>
-      </change>
-      <change>
-        <description>(Incorrect lexing of 0b00*+&lt;NUM&gt;).</description>
-        <references>
-          <reference type="bugfix">61225</reference>
-        </references>
-      </change>
-      <change>
-        <description>(Segfault when using header_register_callback).</description>
-        <references>
-          <reference type="bugfix">61106</reference>
-        </references>
-      </change>
-      <change>
-        <description>(Missing error check in trait 'insteadof' clause).</description>
-        <references>
-          <reference type="bugfix">61052</reference>
-        </references>
-      </change>
-      <change>
-        <description>(Crash when an exception is thrown by __autoload accessing a static property).</description>
-        <references>
-          <reference type="bugfix">61011</reference>
-        </references>
-      </change>
-      <change>
-        <description>(exit code incorrect).</description>
-        <references>
-          <reference type="bugfix">60978</reference>
-        </references>
-      </change>
-      <change>
-        <description>(Confusing error message when extending traits).</description>
-        <references>
-          <reference type="bugfix">60911</reference>
-        </references>
-      </change>
-      <change>
-        <description>(Order of traits in use statement can cause a fatal error).</description>
-        <references>
-          <reference type="bugfix">60717</reference>
-        </references>
-      </change>
-      <change>
-        <description>(type hinting with "self" keyword causes weird errors).</description>
-        <references>
-          <reference type="bugfix">60573</reference>
-        </references>
-      </change>
-    </module>
-    <module id="Fileinfo">
-      <change>
-        <description>Fix fileinfo test problems.</description>
-        <references/>
-      </change>
-    </module>
-    <module id="Intl">
-      <change>
-        <description>(Incorrent bounds checking in grapheme_strpos).</description>
-        <references>
-          <reference type="bugfix">61487</reference>
-        </references>
-      </change>
-    </module>
-    <module id="mbstring">
-      <change>
-        <description>MFH mb_ereg_replace_callback() for security enhancements.</description>
-        <references/>
-      </change>
-    </module>
-    <module id="mysqlnd">
-      <change>
-        <description>(mysqlnd FTBFS when -Wformat-security is enabled).</description>
-        <references>
-          <reference type="bugfix">60948</reference>
-        </references>
-      </change>
-    </module>
-    <module id="Standard">
-      <change>
-        <description>Fixed memory leak in substr_replace.</description>
-        <references/>
-      </change>
-      <change>
-        <description>Make max_file_uploads ini directive settable outside of php.</description>
-        <references/>
-      </change>
-      <change>
-        <description>(Bad formatting on phpinfo()).</description>
-        <references>
-          <reference type="bugfix">61409</reference>
-        </references>
-      </change>
-      <change>
-        <description>(time_nanosleep() does validate input params).</description>
-        <references>
-          <reference type="bugfix">60222</reference>
-        </references>
-      </change>
-      <change>
-        <description>(stream_socket_server silently truncates long unix socket paths).</description>
-        <references>
-          <reference type="bugfix">60106</reference>
-        </references>
-      </change>
-    </module>
+    <modules>
+      <module id="core">
+        <change>
+          <description>(missing checks around malloc() calls).</description>
+          <references>
+            <reference type="bugfix">61461</reference>
+          </references>
+        </change>
+        <change>
+          <description>Implemented FR [#60850](http://bugs.php.net/60850) (Built in web server does not set $_SERVER['SCRIPT_FILENAME'] when using router).</description>
+          <references/>
+        </change>
+        <change>
+          <description>Fixed crash in ZTS using same class in many threads.</description>
+          <references/>
+        </change>
+        <change>
+          <description>(html_entity_decode tries to decode code points that don't exist in ISO-8859-1).</description>
+          <references>
+            <reference type="bugfix">61374</reference>
+          </references>
+        </change>
+        <change>
+          <description>(Incorrect lexing of 0b00*+&lt;NUM&gt;).</description>
+          <references>
+            <reference type="bugfix">61225</reference>
+          </references>
+        </change>
+        <change>
+          <description>(Segfault when using header_register_callback).</description>
+          <references>
+            <reference type="bugfix">61106</reference>
+          </references>
+        </change>
+        <change>
+          <description>(Missing error check in trait 'insteadof' clause).</description>
+          <references>
+            <reference type="bugfix">61052</reference>
+          </references>
+        </change>
+        <change>
+          <description>(Crash when an exception is thrown by __autoload accessing a static property).</description>
+          <references>
+            <reference type="bugfix">61011</reference>
+          </references>
+        </change>
+        <change>
+          <description>(exit code incorrect).</description>
+          <references>
+            <reference type="bugfix">60978</reference>
+          </references>
+        </change>
+        <change>
+          <description>(Confusing error message when extending traits).</description>
+          <references>
+            <reference type="bugfix">60911</reference>
+          </references>
+        </change>
+        <change>
+          <description>(Order of traits in use statement can cause a fatal error).</description>
+          <references>
+            <reference type="bugfix">60717</reference>
+          </references>
+        </change>
+        <change>
+          <description>(type hinting with "self" keyword causes weird errors).</description>
+          <references>
+            <reference type="bugfix">60573</reference>
+          </references>
+        </change>
+      </module>
+      <module id="fileinfo">
+        <change>
+          <description>Fix fileinfo test problems.</description>
+          <references/>
+        </change>
+      </module>
+      <module id="intl">
+        <change>
+          <description>(Incorrent bounds checking in grapheme_strpos).</description>
+          <references>
+            <reference type="bugfix">61487</reference>
+          </references>
+        </change>
+      </module>
+      <module id="mbstring">
+        <change>
+          <description>MFH mb_ereg_replace_callback() for security enhancements.</description>
+          <references/>
+        </change>
+      </module>
+      <module id="mysqlnd">
+        <change>
+          <description>(mysqlnd FTBFS when -Wformat-security is enabled).</description>
+          <references>
+            <reference type="bugfix">60948</reference>
+          </references>
+        </change>
+      </module>
+      <module id="standard">
+        <change>
+          <description>Fixed memory leak in substr_replace.</description>
+          <references/>
+        </change>
+        <change>
+          <description>Make max_file_uploads ini directive settable outside of php.</description>
+          <references/>
+        </change>
+        <change>
+          <description>(Bad formatting on phpinfo()).</description>
+          <references>
+            <reference type="bugfix">61409</reference>
+          </references>
+        </change>
+        <change>
+          <description>(time_nanosleep() does validate input params).</description>
+          <references>
+            <reference type="bugfix">60222</reference>
+          </references>
+        </change>
+        <change>
+          <description>(stream_socket_server silently truncates long unix socket paths).</description>
+          <references>
+            <reference type="bugfix">60106</reference>
+          </references>
+        </change>
+      </module>
+    </modules>
   </changes>
+  <tags/>
 </release>

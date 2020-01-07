@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
-<release version="1" id="5.1.2">
-  <release>5.1.2</release>
-  <date>12 Jan 2006</date>
+<release version="5.1.2">
+  <version>5.1.2</version>
+  <date>2006-01-12</date>
   <sources>
     <source>
       <name>Source (tar.gz)</name>
       <filename>php-5.1.2.tar.gz</filename>
-      <date/>
-      <sha256/>
+      <date>2020-01-07</date>
+      <md5/>
     </source>
   </sources>
   <announcements>
@@ -41,49 +41,51 @@ The release also includes over 85 bug fixes with a focus on:
 
  For a full list of changes in PHP 5.1.2, see the [ChangeLog](/ChangeLog-5.php#5.1.2).</announcement>
   </announcements>
-  <tags/>
   <changes>
-    <module id="Added new extensions: (Ilia, Wez)">
-      <change>
-        <description>XMLWriter</description>
-        <references/>
-      </change>
-      <change>
-        <description>Hash</description>
-        <references/>
-      </change>
-    </module>
-    <module id="Improved SPL extension: (Marcus)">
-      <change>
-        <description>Added class SplFileInfo as root class for DirectoryIterator and SplFileObject</description>
-        <references/>
-      </change>
-      <change>
-        <description>Added SplTempFileObject</description>
-        <references/>
-      </change>
-    </module>
-    <module id="Improved SimpleXML extension: (Marcus)">
-      <change>
-        <description>Fixed memleaks</description>
-        <references/>
-      </change>
-      <change>
-        <description>Fixed var_dump()</description>
-        <references/>
-      </change>
-      <change>
-        <description>Fixed isset/empty/(bool) behavior</description>
-        <references/>
-      </change>
-      <change>
-        <description>Fixed iterator edge cases</description>
-        <references/>
-      </change>
-      <change>
-        <description>Added methods getNamespaces(), getDocNamespaces()</description>
-        <references/>
-      </change>
-    </module>
+    <modules>
+      <module id="added new extensions: (ilia, wez)">
+        <change>
+          <description>XMLWriter</description>
+          <references/>
+        </change>
+        <change>
+          <description>Hash</description>
+          <references/>
+        </change>
+      </module>
+      <module id="improved spl extension: (marcus)">
+        <change>
+          <description>Added class SplFileInfo as root class for DirectoryIterator and SplFileObject</description>
+          <references/>
+        </change>
+        <change>
+          <description>Added SplTempFileObject</description>
+          <references/>
+        </change>
+      </module>
+      <module id="improved simplexml extension: (marcus)">
+        <change>
+          <description>Fixed memleaks</description>
+          <references/>
+        </change>
+        <change>
+          <description>Fixed var_dump()</description>
+          <references/>
+        </change>
+        <change>
+          <description>Fixed isset/empty/(bool) behavior</description>
+          <references/>
+        </change>
+        <change>
+          <description>Fixed iterator edge cases</description>
+          <references/>
+        </change>
+        <change>
+          <description>Added methods getNamespaces(), getDocNamespaces()</description>
+          <references/>
+        </change>
+      </module>
+    </modules>
   </changes>
+  <tags/>
 </release>

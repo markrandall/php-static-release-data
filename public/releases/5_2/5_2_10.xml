@@ -1,19 +1,19 @@
 <?xml version="1.0"?>
-<release version="1" id="5.2.10">
-  <release>5.2.10</release>
-  <date>18 June 2009</date>
+<release version="5.2.10">
+  <version>5.2.10</version>
+  <date>2009-06-18</date>
   <sources>
     <source>
       <name>PHP 5.2.10 (tar.bz2)</name>
       <filename>php-5.2.10.tar.bz2</filename>
-      <date>18 June 2009</date>
-      <sha256/>
+      <date>2009-06-18</date>
+      <md5/>
     </source>
     <source>
       <name>PHP 5.2.10 (tar.gz)</name>
       <filename>php-5.2.10.tar.gz</filename>
-      <date>18 June 2009</date>
-      <sha256/>
+      <date>2009-06-18</date>
+      <md5/>
     </source>
   </sources>
   <announcements>
@@ -40,15 +40,17 @@ For users upgrading from PHP 5.0 and PHP 5.1, an upgrade guide is available [her
 
  For a full list of changes in PHP 5.2.10, see the [ChangeLog](/ChangeLog-5.php#5.2.10).</announcement>
   </announcements>
-  <tags/>
   <changes>
-    <module id="Core">
-      <change>
-        <description>(exif_read_data() segfaults on certain corrupted .jpeg files). (Pierre)</description>
-        <references>
-          <reference type="bugfix">48378</reference>
-        </references>
-      </change>
-    </module>
+    <modules>
+      <module id="core">
+        <change>
+          <description>(exif_read_data() segfaults on certain corrupted .jpeg files). (Pierre)</description>
+          <references>
+            <reference type="bugfix">48378</reference>
+          </references>
+        </change>
+      </module>
+    </modules>
   </changes>
+  <tags/>
 </release>

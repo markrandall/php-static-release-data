@@ -1,19 +1,19 @@
 <?xml version="1.0"?>
-<release version="1" id="5.2.17">
-  <release>5.2.17</release>
-  <date>06 January 2011</date>
+<release version="5.2.17">
+  <version>5.2.17</version>
+  <date>2011-01-06</date>
   <sources>
     <source>
       <name>PHP 5.2.17 (tar.bz2)</name>
       <filename>php-5.2.17.tar.bz2</filename>
-      <date>06 January 2011</date>
-      <sha256/>
+      <date>2011-01-06</date>
+      <md5/>
     </source>
     <source>
       <name>PHP 5.2.17 (tar.gz)</name>
       <filename>php-5.2.17.tar.gz</filename>
-      <date>06 January 2011</date>
-      <sha256/>
+      <date>2011-01-06</date>
+      <md5/>
     </source>
   </sources>
   <announcements>
@@ -29,6 +29,8 @@ All users of PHP are strongly advised to update to these versions immediately.
 
 - Fixed bug #53632 (PHP hangs on numeric value 2.2250738585072011e-308). (CVE-2010-4645)</announcement>
   </announcements>
+  <changes>
+    <modules/>
+  </changes>
   <tags/>
-  <changes/>
 </release>

@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
-<release version="1" id="4.2.1">
-  <release>4.2.1</release>
-  <date>13 May 2002</date>
+<release version="4.2.1">
+  <version>4.2.1</version>
+  <date>2002-05-13</date>
   <sources>
     <source>
       <name>Source (tar.gz)</name>
       <filename>php-4.2.1.tar.gz</filename>
-      <date/>
-      <sha256/>
+      <date>2020-01-07</date>
+      <md5/>
     </source>
   </sources>
   <announcements>
@@ -42,25 +42,27 @@ External variables
 - [The PHP 4.1.0 release announcement](/release_4_1_0.php)
 - [Thomas Oertli's article on secure programming in PHP](http://www.zend.com/zend/art/art-oertli.php)</announcement>
   </announcements>
-  <tags/>
   <changes>
-    <module id="Major update of domxml. New functions, better DOM compliance and bug fixes">
-      <change>
-        <description>Changed the old $node-&gt;append_child() to $node-&gt;append_sibling() since the new append_child() behaves correctly (= W3C standard).</description>
-        <references/>
-      </change>
-      <change>
-        <description>Added domxml functions:</description>
-        <references/>
-      </change>
-      <change>
-        <description>Fixed a segfault in domxml_unlink().</description>
-        <references/>
-      </change>
-      <change>
-        <description>Added formatting option to domxml_dump_mem().</description>
-        <references/>
-      </change>
-    </module>
+    <modules>
+      <module id="major update of domxml. new functions, better dom compliance and bug fixes">
+        <change>
+          <description>Changed the old $node-&gt;append_child() to $node-&gt;append_sibling() since the new append_child() behaves correctly (= W3C standard).</description>
+          <references/>
+        </change>
+        <change>
+          <description>Added domxml functions:</description>
+          <references/>
+        </change>
+        <change>
+          <description>Fixed a segfault in domxml_unlink().</description>
+          <references/>
+        </change>
+        <change>
+          <description>Added formatting option to domxml_dump_mem().</description>
+          <references/>
+        </change>
+      </module>
+    </modules>
   </changes>
+  <tags/>
 </release>

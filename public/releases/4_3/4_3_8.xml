@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
-<release version="1" id="4.3.8">
-  <release>4.3.8</release>
-  <date>13 July 2004</date>
+<release version="4.3.8">
+  <version>4.3.8</version>
+  <date>2004-07-13</date>
   <sources>
     <source>
       <name>Source (tar.gz)</name>
       <filename>php-4.3.8.tar.gz</filename>
-      <date/>
-      <sha256/>
+      <date>2020-01-07</date>
+      <md5/>
     </source>
   </sources>
   <announcements>
@@ -20,6 +20,8 @@ Security Fixes release
 
  For a full list of changes in PHP 4.3.8, see the [ChangeLog](/ChangeLog-4.php#4.3.8).</announcement>
   </announcements>
+  <changes>
+    <modules/>
+  </changes>
   <tags/>
-  <changes/>
 </release>

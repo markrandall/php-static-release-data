@@ -1,19 +1,19 @@
 <?xml version="1.0"?>
-<release version="1" id="5.2.5">
-  <release>5.2.5</release>
-  <date>08 November 2007</date>
+<release version="5.2.5">
+  <version>5.2.5</version>
+  <date>2007-11-08</date>
   <sources>
     <source>
       <name>Source (tar.bz2)</name>
       <filename>php-5.2.5.tar.bz2</filename>
-      <date/>
-      <sha256/>
+      <date>2020-01-07</date>
+      <md5/>
     </source>
     <source>
       <name>Source (tar.gz)</name>
       <filename>php-5.2.5.tar.gz</filename>
-      <date/>
-      <sha256/>
+      <date>2020-01-07</date>
+      <md5/>
     </source>
   </sources>
   <announcements>
@@ -42,43 +42,45 @@ For users upgrading from PHP 5.0 and PHP 5.1, an upgrade guide is available [her
 
  For a full list of changes in PHP 5.2.5, see the [ChangeLog](/ChangeLog-5.php#5.2.5).</announcement>
   </announcements>
-  <tags/>
   <changes>
-    <module id="Core">
-      <change>
-        <description>Fixed dl() to only accept filenames. reported by Laurent Gaffie.</description>
-        <references/>
-      </change>
-      <change>
-        <description>Fixed dl() to limit argument size to MAXPATHLEN</description>
-        <references>
-          <reference type="cve">CVE-2007-4887</reference>
-        </references>
-      </change>
-      <change>
-        <description>Fixed htmlentities/htmlspecialchars not to accept partial multibyte sequences.</description>
-        <references/>
-      </change>
-      <change>
-        <description>Fixed possible triggering of buffer overflows inside glibc implementations of the fnmatch(), setlocale() and glob() functions. Reported by Laurent Gaffie.</description>
-        <references/>
-      </change>
-      <change>
-        <description>Fixed "mail.force_extra_parameters" php.ini directive not to be modifiable in .htaccess due to the security implications reported by SecurityReason.</description>
-        <references/>
-      </change>
-      <change>
-        <description>(automatic session id insertion adds sessions id to non-local forms).</description>
-        <references>
-          <reference type="bugfix">42869</reference>
-        </references>
-      </change>
-      <change>
-        <description>(Values set with php_admin_* in httpd.conf can be overwritten with ini_set()).</description>
-        <references>
-          <reference type="bugfix">41561</reference>
-        </references>
-      </change>
-    </module>
+    <modules>
+      <module id="core">
+        <change>
+          <description>Fixed dl() to only accept filenames. reported by Laurent Gaffie.</description>
+          <references/>
+        </change>
+        <change>
+          <description>Fixed dl() to limit argument size to MAXPATHLEN</description>
+          <references>
+            <reference type="cve">CVE-2007-4887</reference>
+          </references>
+        </change>
+        <change>
+          <description>Fixed htmlentities/htmlspecialchars not to accept partial multibyte sequences.</description>
+          <references/>
+        </change>
+        <change>
+          <description>Fixed possible triggering of buffer overflows inside glibc implementations of the fnmatch(), setlocale() and glob() functions. Reported by Laurent Gaffie.</description>
+          <references/>
+        </change>
+        <change>
+          <description>Fixed "mail.force_extra_parameters" php.ini directive not to be modifiable in .htaccess due to the security implications reported by SecurityReason.</description>
+          <references/>
+        </change>
+        <change>
+          <description>(automatic session id insertion adds sessions id to non-local forms).</description>
+          <references>
+            <reference type="bugfix">42869</reference>
+          </references>
+        </change>
+        <change>
+          <description>(Values set with php_admin_* in httpd.conf can be overwritten with ini_set()).</description>
+          <references>
+            <reference type="bugfix">41561</reference>
+          </references>
+        </change>
+      </module>
+    </modules>
   </changes>
+  <tags/>
 </release>

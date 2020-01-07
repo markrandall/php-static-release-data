@@ -1,19 +1,19 @@
 <?xml version="1.0"?>
-<release version="1" id="5.2.3">
-  <release>5.2.3</release>
-  <date>31 May 2007</date>
+<release version="5.2.3">
+  <version>5.2.3</version>
+  <date>2007-05-31</date>
   <sources>
     <source>
       <name>Source (tar.bz2)</name>
       <filename>php-5.2.3.tar.bz2</filename>
-      <date/>
-      <sha256/>
+      <date>2020-01-07</date>
+      <md5/>
     </source>
     <source>
       <name>Source (tar.gz)</name>
       <filename>php-5.2.3.tar.gz</filename>
-      <date/>
-      <sha256/>
+      <date>2020-01-07</date>
+      <md5/>
     </source>
   </sources>
   <announcements>
@@ -45,43 +45,45 @@ For users upgrading from PHP 5.0 and PHP 5.1, an upgrade guide is available [her
 
  For a full list of changes in PHP 5.2.3, see the [ChangeLog](/ChangeLog-5.php#5.2.3).</announcement>
   </announcements>
-  <tags/>
   <changes>
-    <module id="Core">
-      <change>
-        <description>Fixed an integer overflow inside chunk_split() (by Gerhard Wagner, CVE-2007-2872)</description>
-        <references>
-          <reference type="cve">CVE-2007-2872</reference>
-        </references>
-      </change>
-      <change>
-        <description>Fixed possible infinite loop in imagecreatefrompng. (by Xavier Roche, CVE-2007-2756)</description>
-        <references>
-          <reference type="cve">CVE-2007-2756</reference>
-        </references>
-      </change>
-      <change>
-        <description>Fixed ext/filter Email Validation Vulnerability (MOPB-45 by Stefan Esser, CVE-2007-1900)</description>
-        <references>
-          <reference type="cve">CVE-2007-1900</reference>
-        </references>
-      </change>
-      <change>
-        <description>(open_basedir/safe_mode bypass inside realpath()) (by bugs dot php dot net at chsc dot dk)</description>
-        <references>
-          <reference type="bugfix">41492</reference>
-        </references>
-      </change>
-      <change>
-        <description>Improved fix for CVE-2007-1887 to work with non-bundled sqlite2 lib.</description>
-        <references>
-          <reference type="cve">CVE-2007-1887</reference>
-        </references>
-      </change>
-      <change>
-        <description>Added mysql_set_charset() to allow runtime altering of connection encoding.</description>
-        <references/>
-      </change>
-    </module>
+    <modules>
+      <module id="core">
+        <change>
+          <description>Fixed an integer overflow inside chunk_split() (by Gerhard Wagner, CVE-2007-2872)</description>
+          <references>
+            <reference type="cve">CVE-2007-2872</reference>
+          </references>
+        </change>
+        <change>
+          <description>Fixed possible infinite loop in imagecreatefrompng. (by Xavier Roche, CVE-2007-2756)</description>
+          <references>
+            <reference type="cve">CVE-2007-2756</reference>
+          </references>
+        </change>
+        <change>
+          <description>Fixed ext/filter Email Validation Vulnerability (MOPB-45 by Stefan Esser, CVE-2007-1900)</description>
+          <references>
+            <reference type="cve">CVE-2007-1900</reference>
+          </references>
+        </change>
+        <change>
+          <description>(open_basedir/safe_mode bypass inside realpath()) (by bugs dot php dot net at chsc dot dk)</description>
+          <references>
+            <reference type="bugfix">41492</reference>
+          </references>
+        </change>
+        <change>
+          <description>Improved fix for CVE-2007-1887 to work with non-bundled sqlite2 lib.</description>
+          <references>
+            <reference type="cve">CVE-2007-1887</reference>
+          </references>
+        </change>
+        <change>
+          <description>Added mysql_set_charset() to allow runtime altering of connection encoding.</description>
+          <references/>
+        </change>
+      </module>
+    </modules>
   </changes>
+  <tags/>
 </release>

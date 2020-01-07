@@ -1,19 +1,19 @@
 <?xml version="1.0"?>
-<release version="1" id="5.2.15">
-  <release>5.2.15</release>
-  <date>09 December 2010</date>
+<release version="5.2.15">
+  <version>5.2.15</version>
+  <date>2010-12-09</date>
   <sources>
     <source>
       <name>PHP 5.2.15 (tar.bz2)</name>
       <filename>php-5.2.15.tar.bz2</filename>
-      <date>09 December 2010</date>
-      <sha256/>
+      <date>2010-12-09</date>
+      <md5/>
     </source>
     <source>
       <name>PHP 5.2.15 (tar.gz)</name>
       <filename>php-5.2.15.tar.gz</filename>
-      <date>09 December 2010</date>
-      <sha256/>
+      <date>2010-12-09</date>
+      <md5/>
     </source>
   </sources>
   <announcements>
@@ -37,6 +37,8 @@ To prepare for upgrading to PHP 5.3, now that PHP 5.2's support ended, a migrati
 
 For a full list of changes in PHP 5.2.15 see the ChangeLog at &lt;http://www.php.net/ChangeLog-5.php#5.2.15&gt;.</announcement>
   </announcements>
+  <changes>
+    <modules/>
+  </changes>
   <tags/>
-  <changes/>
 </release>
