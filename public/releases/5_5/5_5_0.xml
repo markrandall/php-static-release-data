@@ -2,32 +2,27 @@
 <release version="5.5.0">
   <version>5.5.0</version>
   <date>2013-06-20</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>PHP 5.5.0 (tar.bz2)</name>
       <filename>php-5.5.0.tar.bz2</filename>
       <date>2013-06-20</date>
-      <md5/>
-    </source>
-    <source>
+      <md5>daf2d54e79def9fd0fb2ac7dfcefb7f3</md5>
+    </file>
+    <file compression="tar.gz">
       <name>PHP 5.5.0 (tar.gz)</name>
       <filename>php-5.5.0.tar.gz</filename>
       <date>2013-06-20</date>
-      <md5/>
-    </source>
-    <source>
+      <md5>79c4e7a8cb0f8e2e072120775b92c523</md5>
+    </file>
+    <file compression="tar.xz">
       <name>PHP 5.5.0 (tar.xz)</name>
       <filename>php-5.5.0.tar.xz</filename>
       <date>2013-06-20</date>
-      <md5/>
-    </source>
-    <source>
-      <name>Windows 5.5.0 binaries and source</name>
-      <filename/>
-      <date>2020-01-07</date>
-      <md5/>
-    </source>
-  </sources>
+      <md5>c7df0cb28cfff4e277fd9cd9b73cebfb</md5>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en">The PHP development team is proud to announce the immediate availability of PHP [5.5.0](http://php.net/downloads.php#v5.5.0). This release includes a large number of new features and bug fixes.
 
@@ -995,5 +990,6 @@ For users upgrading from PHP 5.4, [a migration guide is available](http://php.ne
       </module>
     </modules>
   </changes>
+  <windows_builds/>
   <tags/>
 </release>

@@ -2,20 +2,21 @@
 <release version="5.5.8">
   <version>5.5.8</version>
   <date>2014-01-09</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>PHP 5.5.8 (tar.bz2)</name>
       <filename>php-5.5.8.tar.bz2</filename>
       <date>2014-01-09</date>
       <sha256>6d5f45659d13383fc8429f185cc9da0b30c7bb72dcae9baf568f0511eb7f8b68</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.gz">
       <name>PHP 5.5.8 (tar.gz)</name>
       <filename>php-5.5.8.tar.gz</filename>
       <date>2014-01-09</date>
       <sha256>67c74a9a2357dc65f5b1701cadb574f1309c4c3a20a2a5c56aeae4c4be90f2f8</sha256>
-    </source>
-  </sources>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en">The PHP Development Team announces the immediate availability of PHP 5.5.8. This release fixes about 20 bugs against PHP 5.5.7.</announcement>
   </announcements>
@@ -172,5 +173,6 @@
       </module>
     </modules>
   </changes>
+  <windows_builds/>
   <tags/>
 </release>

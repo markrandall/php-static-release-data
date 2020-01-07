@@ -2,14 +2,15 @@
 <release version="3.0.x (latest)">
   <version>3.0.x (latest)</version>
   <date>2000-10-20</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file>
       <name>PHP 3.0.18 Source Code</name>
       <filename>php-3.0.18.tar.gz</filename>
-      <date>2020-01-07</date>
-      <md5/>
-    </source>
-  </sources>
+      <date>2001-01-01</date>
+      <md5>b4b8f7f1151ce66d5f3910a066651133</md5>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en">PHP Function List
 
@@ -50,5 +51,6 @@
   <changes>
     <modules/>
   </changes>
+  <windows_builds/>
   <tags/>
 </release>

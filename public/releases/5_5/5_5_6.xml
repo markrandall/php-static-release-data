@@ -2,32 +2,27 @@
 <release version="5.5.6">
   <version>5.5.6</version>
   <date>2013-11-14</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>PHP 5.5.6 (tar.bz2)</name>
       <filename>php-5.5.6.tar.bz2</filename>
       <date>2013-11-14</date>
       <sha256>a9b7d291199d7e6b90ef1d78eb791d738944d66856e76bde9463ce2645b0e4a4</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.gz">
       <name>PHP 5.5.6 (tar.gz)</name>
       <filename>php-5.5.6.tar.gz</filename>
       <date>2013-11-14</date>
       <sha256>01f9c45154d4c9a47a825aa662bd64493082bd57dafdc720cf899ee194220a67</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.xz">
       <name>PHP 5.5.6 (tar.xz)</name>
       <filename>php-5.5.6.tar.xz</filename>
       <date>2013-11-14</date>
       <sha256>3235a5c15e8fc55498dd80fe43f4aecc51dba35a7fc916aee7ef12d4e1f8767a</sha256>
-    </source>
-    <source>
-      <name>Windows 5.5.6 binaries and source</name>
-      <filename/>
-      <date>2020-01-07</date>
-      <md5/>
-    </source>
-  </sources>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en">The PHP Development Team announces the immediate availability of PHP 5.5.6. This release fixes some bugs against PHP 5.5.5, and adds some performance improvements.</announcement>
   </announcements>
@@ -131,5 +126,6 @@
       </module>
     </modules>
   </changes>
+  <windows_builds/>
   <tags/>
 </release>

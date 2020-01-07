@@ -2,14 +2,15 @@
 <release version="4.2.2">
   <version>4.2.2</version>
   <date>2002-07-22</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.gz">
       <name>Source (tar.gz)</name>
       <filename>php-4.2.2.tar.gz</filename>
-      <date>2020-01-07</date>
+      <date>2001-01-01</date>
       <md5/>
-    </source>
-  </sources>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en">PHP Security Advisory: Vulnerability in PHP versions 4.2.0 and 4.2.1 
 [ [Version Fran&#xE7;aise](/releases/4_2_2_fr.php) ]
@@ -56,5 +57,6 @@ Credits
   <changes>
     <modules/>
   </changes>
+  <windows_builds/>
   <tags/>
 </release>

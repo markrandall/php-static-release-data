@@ -2,26 +2,27 @@
 <release version="7.1.2">
   <version>7.1.2</version>
   <date>2017-02-16</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>PHP 7.1.2 (tar.bz2)</name>
       <filename>php-7.1.2.tar.bz2</filename>
       <date>2017-02-16</date>
       <sha256>e0f2214e2366434ee231156ba70cfefd0c59790f050d8727a3f1dc2affa67004</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.gz">
       <name>PHP 7.1.2 (tar.gz)</name>
       <filename>php-7.1.2.tar.gz</filename>
       <date>2017-02-16</date>
       <sha256>e6773217c9c719ca22abb104ae3d437d53daceaf31faf2e5eeb1f9f5028005d8</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.xz">
       <name>PHP 7.1.2 (tar.xz)</name>
       <filename>php-7.1.2.tar.xz</filename>
       <date>2017-02-16</date>
       <sha256>d815a0c39fd57bab1434a77ff0610fb507c22f790c66cd6f26e27030c4b3e971</sha256>
-    </source>
-  </sources>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en"/>
   </announcements>
@@ -287,5 +288,6 @@
       </module>
     </modules>
   </changes>
+  <windows_builds/>
   <tags/>
 </release>

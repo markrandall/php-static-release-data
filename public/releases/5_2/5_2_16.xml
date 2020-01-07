@@ -2,20 +2,21 @@
 <release version="5.2.16">
   <version>5.2.16</version>
   <date>2010-12-16</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>PHP 5.2.16 (tar.bz2)</name>
       <filename>php-5.2.16.tar.bz2</filename>
       <date>2010-12-16</date>
-      <md5/>
-    </source>
-    <source>
+      <md5>3b0bd012bd53bac9a5fefca61eccd5c6</md5>
+    </file>
+    <file compression="tar.gz">
       <name>PHP 5.2.16 (tar.gz)</name>
       <filename>php-5.2.16.tar.gz</filename>
       <date>2010-12-16</date>
-      <md5/>
-    </source>
-  </sources>
+      <md5>68f2c92b5b33d131b1ea70ece9fc40ad</md5>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en">This release focuses on addressing a regression in open_basedir implementation introduced in 5.2.15 in addition to fixing a crash inside PDO::pgsql on data retrieval when the server is down. All users who have upgraded to 5.2.15 and are utilizing open_basedir are strongly encouraged to upgrade to 5.2.16 or 5.3.4.
 
@@ -26,5 +27,6 @@ For a full list of changes in PHP 5.2.16 see the ChangeLog at [http://www.php.ne
   <changes>
     <modules/>
   </changes>
+  <windows_builds/>
   <tags/>
 </release>

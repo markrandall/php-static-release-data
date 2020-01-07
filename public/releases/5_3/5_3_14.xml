@@ -2,26 +2,21 @@
 <release version="5.3.14">
   <version>5.3.14</version>
   <date>2012-06-14</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>PHP 5.3.14 (tar.bz2)</name>
       <filename>php-5.3.14.tar.bz2</filename>
       <date>2012-06-14</date>
-      <md5/>
-    </source>
-    <source>
+      <md5>370be99c5cdc2e756c82c44d774933c8</md5>
+    </file>
+    <file compression="tar.gz">
       <name>PHP 5.3.14 (tar.gz)</name>
       <filename>php-5.3.14.tar.gz</filename>
       <date>2012-06-14</date>
-      <md5/>
-    </source>
-    <source>
-      <name>Windows 5.3.14 binaries and source</name>
-      <filename/>
-      <date>2020-01-07</date>
-      <md5/>
-    </source>
-  </sources>
+      <md5>148730865242a031a638ee3bab4a9d4d</md5>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en">PHP 5.3.14 fixes an security issue in the implementation of crypt() and a heap overflow in the Phar extension. Over 30 bugs were fixed
 
@@ -161,5 +156,6 @@ Please note that php://fd is now only available if the CLI SAPI is used</announc
       </module>
     </modules>
   </changes>
+  <windows_builds/>
   <tags/>
 </release>

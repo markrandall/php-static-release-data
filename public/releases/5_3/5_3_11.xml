@@ -2,20 +2,21 @@
 <release version="5.3.11">
   <version>5.3.11</version>
   <date>2012-04-26</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>PHP 5.3.11 (tar.bz2)</name>
       <filename>php-5.3.11.tar.bz2</filename>
       <date>2012-04-26</date>
-      <md5/>
-    </source>
-    <source>
+      <md5>5b9529ed89dbc48c498e9693d1af3caf</md5>
+    </file>
+    <file compression="tar.gz">
       <name>PHP 5.3.11 (tar.gz)</name>
       <filename>php-5.3.11.tar.gz</filename>
       <date>2012-04-26</date>
-      <md5/>
-    </source>
-  </sources>
+      <md5>acd566dbd70f855c19d17fc3c0e876a2</md5>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en">The PHP development team announces the immediate availability of PHP 5.3.11. This release focuses on improving the stability of the PHP 5.3 branch with over 60 bug fixes, some of which are security related.
 
@@ -451,5 +452,6 @@ All users of PHP 5.3 are strongly encouraged to upgrade to PHP 5.3.11.</announce
       </module>
     </modules>
   </changes>
+  <windows_builds/>
   <tags/>
 </release>

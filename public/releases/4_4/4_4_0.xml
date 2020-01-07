@@ -2,20 +2,21 @@
 <release version="4.4.0">
   <version>4.4.0</version>
   <date>2005-07-11</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.gz">
       <name>Source (tar.gz)</name>
       <filename>php-4.4.0.tar.gz</filename>
-      <date>2020-01-07</date>
+      <date>2001-01-01</date>
       <md5/>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.bz2">
       <name>Source (tar.bz2)</name>
       <filename>php-4.4.0.tar.bz2</filename>
-      <date>2020-01-07</date>
+      <date>2001-01-01</date>
       <md5/>
-    </source>
-  </sources>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en">PHP 4.4. Release Announcement
 
@@ -39,5 +40,6 @@ Bugfix release
   <changes>
     <modules/>
   </changes>
+  <windows_builds/>
   <tags/>
 </release>

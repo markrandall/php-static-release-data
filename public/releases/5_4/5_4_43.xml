@@ -2,26 +2,21 @@
 <release version="5.4.43">
   <version>5.4.43</version>
   <date>2015-07-09</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>PHP 5.4.43 (tar.bz2)</name>
       <filename>php-5.4.43.tar.bz2</filename>
       <date>2015-07-09</date>
       <sha256>25d7724fb00ad1b520f5bad2173717031153d0a8e3de2c75e7a084c76f8ecd6b</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.gz">
       <name>PHP 5.4.43 (tar.gz)</name>
       <filename>php-5.4.43.tar.gz</filename>
       <date>2015-07-09</date>
       <sha256>cfc2176adc05f009666ecfab4a1cc66cc546c5d071245b2a048b3d113f67a2af</sha256>
-    </source>
-    <source>
-      <name>Windows 5.4.43 binaries and source</name>
-      <filename/>
-      <date>2020-01-07</date>
-      <md5/>
-    </source>
-  </sources>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en">Please note that PHP 5.4 branch is nearing the end of its [support timeframe](http://php.net/supported-versions.php). If your PHP installations is based on PHP 5.4, it may be a good time to start making the plans for the upgrade.</announcement>
   </announcements>
@@ -68,5 +63,6 @@
       </module>
     </modules>
   </changes>
+  <windows_builds/>
   <tags/>
 </release>

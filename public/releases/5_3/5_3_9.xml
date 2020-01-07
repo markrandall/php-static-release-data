@@ -2,20 +2,21 @@
 <release version="5.3.9">
   <version>5.3.9</version>
   <date>2012-01-10</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>PHP 5.3.9 (tar.bz2)</name>
       <filename>php-5.3.9.tar.bz2</filename>
       <date>2012-01-10</date>
-      <md5/>
-    </source>
-    <source>
+      <md5>dd3288ed5c08cd61ac5bf619cb357521</md5>
+    </file>
+    <file compression="tar.gz">
       <name>PHP 5.3.9 (tar.gz)</name>
       <filename>php-5.3.9.tar.gz</filename>
       <date>2012-01-10</date>
-      <md5/>
-    </source>
-  </sources>
+      <md5>c79e374c61423beb64a69da1eb5526b7</md5>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en">The PHP development team would like to announce the immediate availability of PHP 5.3.9. This release focuses on improving the stability of the PHP 5.3.x branch with over 90 bug fixes, some of which are security related.
 
@@ -700,5 +701,6 @@ All users are strongly encouraged to upgrade to PHP 5.3.9.</announcement>
       </module>
     </modules>
   </changes>
+  <windows_builds/>
   <tags/>
 </release>

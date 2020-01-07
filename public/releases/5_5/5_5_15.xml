@@ -2,26 +2,27 @@
 <release version="5.5.15">
   <version>5.5.15</version>
   <date>2014-07-24</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>PHP 5.5.15 (tar.bz2)</name>
       <filename>php-5.5.15.tar.bz2</filename>
       <date>2014-07-24</date>
       <sha256>00f24226b12fee27e332383b6304f1b9ed3f4d9173dd728a68c5c3f5a59b8ba7</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.gz">
       <name>PHP 5.5.15 (tar.gz)</name>
       <filename>php-5.5.15.tar.gz</filename>
       <date>2014-07-24</date>
       <sha256>578febd686018401c4857699b29502b1aecaf82bf43525d810867f583961ac6e</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.xz">
       <name>PHP 5.5.15 (tar.xz)</name>
       <filename>php-5.5.15.tar.xz</filename>
       <date>2014-07-24</date>
       <sha256>c20e360cf06bd4279ab423a7785d36aba0e2a9fdcd0b817883ab01cf0d914dd6</sha256>
-    </source>
-  </sources>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en">The PHP Development Team announces the immediate availability of PHP 5.5.15. This release fixes several bugs against PHP 5.5.14.</announcement>
   </announcements>
@@ -155,5 +156,6 @@
       </module>
     </modules>
   </changes>
+  <windows_builds/>
   <tags/>
 </release>

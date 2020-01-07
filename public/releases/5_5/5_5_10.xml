@@ -2,20 +2,21 @@
 <release version="5.5.10">
   <version>5.5.10</version>
   <date>2014-03-06</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>PHP 5.5.10 (tar.bz2)</name>
       <filename>php-5.5.10.tar.bz2</filename>
       <date>2014-03-06</date>
       <sha256>bb34e61f8e6f56c612867bfe85d144d5045cd5e44497539bc126a4e8c6795419</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.gz">
       <name>PHP 5.5.10 (tar.gz)</name>
       <filename>php-5.5.10.tar.gz</filename>
       <date>2014-03-06</date>
       <sha256>abf751810593844e0897007797210828b193a213d9b204f203e0331019cadb90</sha256>
-    </source>
-  </sources>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en">The PHP Development Team announces the immediate availability of PHP 5.5.10. This release fixes several bugs against PHP 5.5.9, as well as CVE-2014-1943, CVE-2014-2270 and CVE-2013-7327</announcement>
   </announcements>
@@ -110,5 +111,6 @@
       </module>
     </modules>
   </changes>
+  <windows_builds/>
   <tags/>
 </release>

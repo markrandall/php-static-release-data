@@ -2,26 +2,27 @@
 <release version="5.6.38">
   <version>5.6.38</version>
   <date>2018-09-13</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>PHP 5.6.38 (tar.bz2)</name>
       <filename>php-5.6.38.tar.bz2</filename>
       <date>2018-09-13</date>
       <sha256>d65b231bbdd63be4439ef5ced965cfd63e62983429dbd4dfcfb49981593ebc03</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.gz">
       <name>PHP 5.6.38 (tar.gz)</name>
       <filename>php-5.6.38.tar.gz</filename>
       <date>2018-09-13</date>
       <sha256>3b74d46cd79a45cce90c8059e09d8bd0beeb5de562cbb0cb42f96ff8fa665fd4</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.xz">
       <name>PHP 5.6.38 (tar.xz)</name>
       <filename>php-5.6.38.tar.xz</filename>
       <date>2018-09-13</date>
       <sha256>c2fac47dc6316bd230f0ea91d8a5498af122fb6a3eb43f796c9ea5f59b04aa1e</sha256>
-    </source>
-  </sources>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en"/>
   </announcements>
@@ -38,5 +39,6 @@
       </module>
     </modules>
   </changes>
+  <windows_builds/>
   <tags/>
 </release>

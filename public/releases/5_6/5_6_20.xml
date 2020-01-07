@@ -2,26 +2,27 @@
 <release version="5.6.20">
   <version>5.6.20</version>
   <date>2020-03-31</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>PHP 5.6.20 (tar.bz2)</name>
       <filename>php-5.6.20.tar.bz2</filename>
       <date>2020-03-31</date>
       <sha256>5ac7bf7caec7a79b18cf458e786fd1609ad2da771224b80bc15cc6f01b22bf1f</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.gz">
       <name>PHP 5.6.20 (tar.gz)</name>
       <filename>php-5.6.20.tar.gz</filename>
       <date>2020-03-31</date>
       <sha256>9a7ec6e1080ee93dcbe7df3e49ea1c3c3da5fc2258aff763f39ab3786baf8d56</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.xz">
       <name>PHP 5.6.20 (tar.xz)</name>
       <filename>php-5.6.20.tar.xz</filename>
       <date>2020-03-31</date>
       <sha256>2b87d40213361112af49157a435e0d4cdfd334c9b7c731c8b844932b1f444e7a</sha256>
-    </source>
-  </sources>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en"/>
   </announcements>
@@ -132,5 +133,6 @@
       </module>
     </modules>
   </changes>
+  <windows_builds/>
   <tags/>
 </release>

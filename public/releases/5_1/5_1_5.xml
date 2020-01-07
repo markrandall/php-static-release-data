@@ -2,20 +2,21 @@
 <release version="5.1.5">
   <version>5.1.5</version>
   <date>2006-08-17</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>Source (tar.bz2)</name>
       <filename>php-5.1.5.tar.bz2</filename>
-      <date>2020-01-07</date>
+      <date>2001-01-01</date>
       <md5/>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.gz">
       <name>Source (tar.gz)</name>
       <filename>php-5.1.5.tar.gz</filename>
-      <date>2020-01-07</date>
+      <date>2001-01-01</date>
       <md5/>
-    </source>
-  </sources>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en">This release provides the following security fixes:
 
@@ -34,5 +35,6 @@ In addition to the security fixes, both releases include a small number of non-s
   <changes>
     <modules/>
   </changes>
+  <windows_builds/>
   <tags/>
 </release>

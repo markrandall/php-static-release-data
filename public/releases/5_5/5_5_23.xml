@@ -2,26 +2,27 @@
 <release version="5.5.23">
   <version>5.5.23</version>
   <date>2015-02-20</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>PHP 5.5.23 (tar.bz2)</name>
       <filename>php-5.5.23.tar.bz2</filename>
       <date>2015-02-20</date>
       <sha256>a99ab264dcd40181baa9defeaa4b21eb2c20d4e9316b904cc05f628762e6ada7</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.gz">
       <name>PHP 5.5.23 (tar.gz)</name>
       <filename>php-5.5.23.tar.gz</filename>
       <date>2015-02-20</date>
       <sha256>bf1246d4aca5b1a4e26f5cea273565ad3ee4607f20b7f28a508e3cab1a4d0c82</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.xz">
       <name>PHP 5.5.23 (tar.xz)</name>
       <filename>php-5.5.23.tar.xz</filename>
       <date>2015-02-20</date>
       <sha256>2fc8315606cd6a51dae2e1fe9ac7a9bead76dace3eaf888ba372506695403af4</sha256>
-    </source>
-  </sources>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en"/>
   </announcements>
@@ -228,5 +229,6 @@
       </module>
     </modules>
   </changes>
+  <windows_builds/>
   <tags/>
 </release>

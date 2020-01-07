@@ -2,26 +2,27 @@
 <release version="5.5.30">
   <version>5.5.30</version>
   <date>2015-10-01</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>PHP 5.5.30 (tar.bz2)</name>
       <filename>php-5.5.30.tar.bz2</filename>
       <date>2015-10-01</date>
       <sha256>e7332a713cecdd1cb44a1b1336739885c9789f633f0f51236b25e48ab03c3b29</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.gz">
       <name>PHP 5.5.30 (tar.gz)</name>
       <filename>php-5.5.30.tar.gz</filename>
       <date>2015-10-01</date>
       <sha256>8ad57f4317391354e66c83d26752f67515b2e923277eb97b2b420dfeff3c1007</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.xz">
       <name>PHP 5.5.30 (tar.xz)</name>
       <filename>php-5.5.30.tar.xz</filename>
       <date>2015-10-01</date>
       <sha256>d00dc06fa5e0f3de048fb0cf940b3cc59b43b3f8cad825d4fffb35503cf2e8f2</sha256>
-    </source>
-  </sources>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en"/>
   </announcements>
@@ -45,5 +46,6 @@
       </module>
     </modules>
   </changes>
+  <windows_builds/>
   <tags/>
 </release>

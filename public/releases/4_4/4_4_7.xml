@@ -2,25 +2,27 @@
 <release version="4.4.7">
   <version>4.4.7</version>
   <date>2007-05-03</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>PHP 4.4.7 (tar.bz2)</name>
       <filename>php-4.4.7.tar.bz2</filename>
       <date>2007-05-03</date>
-      <md5/>
-    </source>
-    <source>
+      <md5>3f21b44d37a57ca3876d3aea713c700d</md5>
+    </file>
+    <file compression="tar.gz">
       <name>PHP 4.4.7 (tar.gz)</name>
       <filename>php-4.4.7.tar.gz</filename>
       <date>2007-05-03</date>
-      <md5/>
-    </source>
-  </sources>
+      <md5>2669d2049822ac14abb263703d24f643</md5>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en"/>
   </announcements>
   <changes>
     <modules/>
   </changes>
+  <windows_builds/>
   <tags/>
 </release>

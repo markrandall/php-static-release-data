@@ -2,26 +2,27 @@
 <release version="7.2.5">
   <version>7.2.5</version>
   <date>2018-04-26</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>PHP 7.2.5 (tar.bz2)</name>
       <filename>php-7.2.5.tar.bz2</filename>
       <date>2018-04-26</date>
       <sha256>f3820efa8efa79628b6e1b5b2f8c1b04c08d32e6721fa1654039ce5f89796031</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.gz">
       <name>PHP 7.2.5 (tar.gz)</name>
       <filename>php-7.2.5.tar.gz</filename>
       <date>2018-04-26</date>
       <sha256>c198aedd4cd16db0803e0ef955036722a1f4ce9ad3827546709fac05f1567ba5</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.xz">
       <name>PHP 7.2.5 (tar.xz)</name>
       <filename>php-7.2.5.tar.xz</filename>
       <date>2018-04-26</date>
       <sha256>af70a33b3f7a51510467199b39af151333fbbe4cc21923bad9c7cf64268cddb2</sha256>
-    </source>
-  </sources>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en">The PHP development team announces the immediate availability of PHP 7.2.5. This is a security release which also contains several minor bug fixes.</announcement>
   </announcements>
@@ -169,6 +170,7 @@
       </module>
     </modules>
   </changes>
+  <windows_builds/>
   <tags>
     <tag>security</tag>
   </tags>

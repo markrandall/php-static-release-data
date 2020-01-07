@@ -2,26 +2,27 @@
 <release version="7.0.0">
   <version>7.0.0</version>
   <date>2015-12-03</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>PHP 7.0.0 (tar.bz2)</name>
       <filename>php-7.0.0.tar.bz2</filename>
       <date>2015-12-03</date>
       <sha256>a92a54306832167a39f7c0ec00524fc6f3f7d985c806caa7632561d0ddedfcea</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.gz">
       <name>PHP 7.0.0 (tar.gz)</name>
       <filename>php-7.0.0.tar.gz</filename>
       <date>2015-12-03</date>
       <sha256>d6ae7b4a2e5c43a9945a97e83b6b3adfb7d0df0b91ef78b647a6dffefaa9c71b</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.xz">
       <name>PHP 7.0.0 (tar.xz)</name>
       <filename>php-7.0.0.tar.xz</filename>
       <date>2015-12-03</date>
       <sha256>7dbdda74c502960febe0544b3e3a7c430389a7a4260e94c73fd8ca26c33b8540</sha256>
-    </source>
-  </sources>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en">The PHP development team announces the immediate availability of PHP 7.0.0. This release marks the start of the new major PHP 7 series.
 
@@ -2284,5 +2285,6 @@ Grateful thanks to all the contributors and supporters!</announcement>
       </module>
     </modules>
   </changes>
+  <windows_builds/>
   <tags/>
 </release>

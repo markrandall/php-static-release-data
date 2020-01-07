@@ -2,14 +2,15 @@
 <release version="4.3.1">
   <version>4.3.1</version>
   <date>2003-02-17</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.gz">
       <name>Source (tar.gz)</name>
       <filename>php-4.3.1.tar.gz</filename>
-      <date>2020-01-07</date>
+      <date>2001-01-01</date>
       <md5/>
-    </source>
-  </sources>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en">PHP Security Advisory: CGI vulnerability in PHP version 4.3.0 
  Issued on: February 17, 2003 Software: PHP version 4.3.0 Platforms: All The PHP Group has learned of a serious security vulnerability in the CGI SAPI of PHP version 4.3.0.
@@ -44,5 +45,6 @@ Credits
   <changes>
     <modules/>
   </changes>
+  <windows_builds/>
   <tags/>
 </release>

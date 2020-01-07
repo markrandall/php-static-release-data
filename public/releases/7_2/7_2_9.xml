@@ -2,26 +2,27 @@
 <release version="7.2.9">
   <version>7.2.9</version>
   <date>2018-08-16</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>PHP 7.2.9 (tar.bz2)</name>
       <filename>php-7.2.9.tar.bz2</filename>
       <date>2018-08-16</date>
       <sha256>e9e3aaa6c317b7fea78246a758b017544366049d2789ad5a44fe9398464c53a8</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.gz">
       <name>PHP 7.2.9 (tar.gz)</name>
       <filename>php-7.2.9.tar.gz</filename>
       <date>2018-08-16</date>
       <sha256>23fcc1e4d10e06ddfdbc1163a8f0d147a7813467273f7946eb0de1b825d1d3e6</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.xz">
       <name>PHP 7.2.9 (tar.xz)</name>
       <filename>php-7.2.9.tar.xz</filename>
       <date>2018-08-16</date>
       <sha256>3585c1222e00494efee4f5a65a8e03a1e6eca3dfb834814236ee7f02c5248ae0</sha256>
-    </source>
-  </sources>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en">The PHP development team announces the immediate availability of PHP 7.2.9. This is a bugfix release.</announcement>
   </announcements>
@@ -97,5 +98,6 @@
       </module>
     </modules>
   </changes>
+  <windows_builds/>
   <tags/>
 </release>

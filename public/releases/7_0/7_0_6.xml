@@ -2,26 +2,27 @@
 <release version="7.0.6">
   <version>7.0.6</version>
   <date>2016-04-28</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>PHP 7.0.6 (tar.bz2)</name>
       <filename>php-7.0.6.tar.bz2</filename>
       <date>2016-04-28</date>
       <sha256>14ddf192a9965c858c1e742a61456be2f34a4db87556172c0d76f08de96329b7</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.gz">
       <name>PHP 7.0.6 (tar.gz)</name>
       <filename>php-7.0.6.tar.gz</filename>
       <date>2016-04-28</date>
       <sha256>f6b47cb3e02530d96787ae5c7888aefbd1db6ae4164d68b88808ee6f4da94277</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.xz">
       <name>PHP 7.0.6 (tar.xz)</name>
       <filename>php-7.0.6.tar.xz</filename>
       <date>2016-04-28</date>
       <sha256>1b237a9455e5476a425dbb9d99966bad68107747c601958cb9558a7fb49ab419</sha256>
-    </source>
-  </sources>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en">The PHP development team announces the immediate availability of PHP 7.0.6. This is a security release. Several security bugs were fixed in this release, including
 
@@ -396,6 +397,7 @@
       </module>
     </modules>
   </changes>
+  <windows_builds/>
   <tags>
     <tag>security</tag>
   </tags>

@@ -2,26 +2,27 @@
 <release version="7.1.33">
   <version>7.1.33</version>
   <date>2019-10-24</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>PHP 7.1.33 (tar.bz2)</name>
       <filename>php-7.1.33.tar.bz2</filename>
       <date>2019-10-24</date>
       <sha256>95a5e5f2e2b79b376b737a82d9682c91891e60289fa24183463a2aca158f4f4b</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.gz">
       <name>PHP 7.1.33 (tar.gz)</name>
       <filename>php-7.1.33.tar.gz</filename>
       <date>2019-10-24</date>
       <sha256>0055f368ffefe51d5a4483755bd17475e88e74302c08b727952831c5b2682ea2</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.xz">
       <name>PHP 7.1.33 (tar.xz)</name>
       <filename>php-7.1.33.tar.xz</filename>
       <date>2019-10-24</date>
       <sha256>bd7c0a9bd5433289ee01fd440af3715309faf583f75832b64fe169c100d52968</sha256>
-    </source>
-  </sources>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en">The PHP development team announces the immediate availability of PHP 7.1.33. This is a security release.</announcement>
   </announcements>
@@ -38,6 +39,104 @@
       </module>
     </modules>
   </changes>
+  <windows_builds>
+    <build name="ts-VC14-x64">
+      <label>Thread-Safe - Win64 - vc14</label>
+      <files>
+        <file name="zip">
+          <path>php-7.1.33-Win32-VC14-x64.zip</path>
+          <size>24117248</size>
+          <sha256>2f6b0c6b62de88cf5cc16e68ac6d5e3b73fc01bcb03b51fe8c8534965b8e808c</sha256>
+          <url>https://windows.php.net/downloads/releases/php-7.1.33-Win32-VC14-x64.zip</url>
+        </file>
+        <file name="debug_pack">
+          <path>php-debug-pack-7.1.33-Win32-VC14-x64.zip</path>
+          <size>23068672</size>
+          <sha256>116b137cf0ae50d2d0299f0ae76f7dfa2526e6b04e09626fa0876a23e2c1f16b</sha256>
+          <url>https://windows.php.net/downloads/releases/php-debug-pack-7.1.33-Win32-VC14-x64.zip</url>
+        </file>
+        <file name="devel_pack">
+          <path>php-devel-pack-7.1.33-Win32-VC14-x64.zip</path>
+          <size>1048576</size>
+          <sha256>0811d701c89ac085a59b82becb1f7f0da78d369845cd4a27628a3586e3b7f15c</sha256>
+          <url>https://windows.php.net/downloads/releases/php-devel-pack-7.1.33-Win32-VC14-x64.zip</url>
+        </file>
+      </files>
+      <dependencies/>
+    </build>
+    <build name="ts-VC14-x86">
+      <label>Thread-Safe - Win32 - vc14</label>
+      <files>
+        <file name="zip">
+          <path>php-7.1.33-Win32-VC14-x86.zip</path>
+          <size>22020096</size>
+          <sha256>a2d5370b5d6f9125c3fab937f4b85aea8068875af30b8e3b665c633019a2a718</sha256>
+          <url>https://windows.php.net/downloads/releases/php-7.1.33-Win32-VC14-x86.zip</url>
+        </file>
+        <file name="debug_pack">
+          <path>php-debug-pack-7.1.33-Win32-VC14-x86.zip</path>
+          <size>24117248</size>
+          <sha256>e801548a4bf56403dbc857974f67e9a428f9b350ace5a2222fbeb2b132c36f40</sha256>
+          <url>https://windows.php.net/downloads/releases/php-debug-pack-7.1.33-Win32-VC14-x86.zip</url>
+        </file>
+        <file name="devel_pack">
+          <path>php-devel-pack-7.1.33-Win32-VC14-x86.zip</path>
+          <size>1048576</size>
+          <sha256>aed2ecd859e3050d8c57cdb3863e57c2d00223b6afd2e1b096e3e276c0b2e681</sha256>
+          <url>https://windows.php.net/downloads/releases/php-devel-pack-7.1.33-Win32-VC14-x86.zip</url>
+        </file>
+      </files>
+      <dependencies/>
+    </build>
+    <build name="nts-VC14-x64">
+      <label>Non Thread Safe - Win64 - vc14</label>
+      <files>
+        <file name="zip">
+          <path>php-7.1.33-nts-Win32-VC14-x64.zip</path>
+          <size>24117248</size>
+          <sha256>071438be5bbaee8b34894ddba7852b6040991a3c853ab8141efcb1b6655bbbef</sha256>
+          <url>https://windows.php.net/downloads/releases/php-7.1.33-nts-Win32-VC14-x64.zip</url>
+        </file>
+        <file name="debug_pack">
+          <path>php-debug-pack-7.1.33-nts-Win32-VC14-x64.zip</path>
+          <size>23068672</size>
+          <sha256>f76f8cb865302705263327a07797ca88bc05ff73fcc14f06316e6d6b205c164e</sha256>
+          <url>https://windows.php.net/downloads/releases/php-debug-pack-7.1.33-nts-Win32-VC14-x64.zip</url>
+        </file>
+        <file name="devel_pack">
+          <path>php-devel-pack-7.1.33-nts-Win32-VC14-x64.zip</path>
+          <size>1048576</size>
+          <sha256>fd9466632a6580d4dadc6e4a9c044cb79d0af78a7f1f22e7e8c87db90de96978</sha256>
+          <url>https://windows.php.net/downloads/releases/php-devel-pack-7.1.33-nts-Win32-VC14-x64.zip</url>
+        </file>
+      </files>
+      <dependencies/>
+    </build>
+    <build name="nts-VC14-x86">
+      <label>Non Thread Safe - Win32 - vc14</label>
+      <files>
+        <file name="zip">
+          <path>php-7.1.33-nts-Win32-VC14-x86.zip</path>
+          <size>22020096</size>
+          <sha256>be810f87c0e88282fb8578a1fa3bbd8720c65425669b27e0437d6cde9aa90805</sha256>
+          <url>https://windows.php.net/downloads/releases/php-7.1.33-nts-Win32-VC14-x86.zip</url>
+        </file>
+        <file name="debug_pack">
+          <path>php-debug-pack-7.1.33-nts-Win32-VC14-x86.zip</path>
+          <size>24117248</size>
+          <sha256>9c379d9b1f2359c3767b2788a869885eb0c1f8bdecf8f7e7459fcff9405ba00a</sha256>
+          <url>https://windows.php.net/downloads/releases/php-debug-pack-7.1.33-nts-Win32-VC14-x86.zip</url>
+        </file>
+        <file name="devel_pack">
+          <path>php-devel-pack-7.1.33-nts-Win32-VC14-x86.zip</path>
+          <size>1048576</size>
+          <sha256>6ae42cd340216258977c13a89079e7a1a1c64cc357ae58263a7cffdadb6b553d</sha256>
+          <url>https://windows.php.net/downloads/releases/php-devel-pack-7.1.33-nts-Win32-VC14-x86.zip</url>
+        </file>
+      </files>
+      <dependencies/>
+    </build>
+  </windows_builds>
   <tags>
     <tag>security</tag>
   </tags>

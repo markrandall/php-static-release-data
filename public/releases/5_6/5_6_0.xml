@@ -2,26 +2,27 @@
 <release version="5.6.0">
   <version>5.6.0</version>
   <date>2014-08-28</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>PHP 5.6.0 (tar.bz2)</name>
       <filename>php-5.6.0.tar.bz2</filename>
       <date>2014-08-28</date>
       <sha256>097af1be34fc73965e6f8401fd10e73eb56e1969ed4ffd691fb7e91606d0fc09</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.gz">
       <name>PHP 5.6.0 (tar.gz)</name>
       <filename>php-5.6.0.tar.gz</filename>
       <date>2014-08-28</date>
       <sha256>284b85376c630a6a7163e5278d64b8526fa1324fe5fd5d21174b54e2c056533f</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.xz">
       <name>PHP 5.6.0 (tar.xz)</name>
       <filename>php-5.6.0.tar.xz</filename>
       <date>2014-08-28</date>
       <sha256>8fc5411cd05cc6cc663247e588931fe67b1dc0e42550fa28ab2c943ad84eda02</sha256>
-    </source>
-  </sources>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en">The PHP Development Team announces the immediate availability of PHP 5.6.0. This new version comes with new features, some backward incompatible changes and many improvements.
 
@@ -1672,5 +1673,6 @@ For a full list of new features, you may read [the new features chapter of the m
       </module>
     </modules>
   </changes>
+  <windows_builds/>
   <tags/>
 </release>

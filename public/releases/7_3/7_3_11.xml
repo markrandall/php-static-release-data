@@ -2,26 +2,27 @@
 <release version="7.3.11">
   <version>7.3.11</version>
   <date>2019-10-24</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>PHP 7.3.11 (tar.bz2)</name>
       <filename>php-7.3.11.tar.bz2</filename>
       <date>2019-10-24</date>
       <sha256>92d1ff4b13c7093635f1ec338a5e6891ca99b10e65fbcadd527e5bb84d11b5e7</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.gz">
       <name>PHP 7.3.11 (tar.gz)</name>
       <filename>php-7.3.11.tar.gz</filename>
       <date>2019-10-24</date>
       <sha256>8f385f5bdf9193791f6c0f6303f518f3c324b6655ac108fdb3c426da7f3cf4d4</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.xz">
       <name>PHP 7.3.11 (tar.xz)</name>
       <filename>php-7.3.11.tar.xz</filename>
       <date>2019-10-24</date>
       <sha256>657cf6464bac28e9490c59c07a2cf7bb76c200f09cfadf6e44ea64e95fa01021</sha256>
-    </source>
-  </sources>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en">The PHP development team announces the immediate availability of PHP 7.3.11. This is a security release which also contains several bug fixes.</announcement>
   </announcements>
@@ -154,6 +155,7 @@
       </module>
     </modules>
   </changes>
+  <windows_builds/>
   <tags>
     <tag>security</tag>
   </tags>

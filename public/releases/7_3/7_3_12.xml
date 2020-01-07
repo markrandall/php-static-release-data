@@ -2,26 +2,27 @@
 <release version="7.3.12">
   <version>7.3.12</version>
   <date>2019-11-21</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>PHP 7.3.12 (tar.bz2)</name>
       <filename>php-7.3.12.tar.bz2</filename>
       <date>2019-11-21</date>
       <sha256>d317b029f991410578cc38ba4b76c9f764ec29c67e7124e1fec57bceb3ad8c39</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.gz">
       <name>PHP 7.3.12 (tar.gz)</name>
       <filename>php-7.3.12.tar.gz</filename>
       <date>2019-11-21</date>
       <sha256>d617e5116f8472a628083f448ebe4afdbc4ac013c9a890b08946649dcbe61b34</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.xz">
       <name>PHP 7.3.12 (tar.xz)</name>
       <filename>php-7.3.12.tar.xz</filename>
       <date>2019-11-21</date>
       <sha256>aafe5e9861ad828860c6af8c88cdc1488314785962328eb1783607c1fdd855df</sha256>
-    </source>
-  </sources>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en">The PHP development team announces the immediate availability of PHP 7.3.12. This is a bug fix release.</announcement>
   </announcements>
@@ -123,5 +124,6 @@
       </module>
     </modules>
   </changes>
+  <windows_builds/>
   <tags/>
 </release>

@@ -2,26 +2,27 @@
 <release version="7.1.26">
   <version>7.1.26</version>
   <date>2019-01-10</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>PHP 7.1.26 (tar.bz2)</name>
       <filename>php-7.1.26.tar.bz2</filename>
       <date>2019-01-10</date>
       <sha256>5b351ca86bc7e4600778aaf1d61ab9e4e38864efa86ab4cc4d5b02ea7f542ae6</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.gz">
       <name>PHP 7.1.26 (tar.gz)</name>
       <filename>php-7.1.26.tar.gz</filename>
       <date>2019-01-10</date>
       <sha256>069315d3c3f964fd165bbbb3c2fc56005813e2cf97bed05055318dcc4e775328</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.xz">
       <name>PHP 7.1.26 (tar.xz)</name>
       <filename>php-7.1.26.tar.xz</filename>
       <date>2019-01-10</date>
       <sha256>10b7ae634c12852fae52a22dc2262e5f12418ad59fd20da2d00d71a212235d31</sha256>
-    </source>
-  </sources>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en">The PHP development team announces the immediate availability of PHP 7.1.26. This is a security release which also contains several bug fixes.</announcement>
   </announcements>
@@ -138,6 +139,7 @@
       </module>
     </modules>
   </changes>
+  <windows_builds/>
   <tags>
     <tag>security</tag>
   </tags>

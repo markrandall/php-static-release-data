@@ -2,14 +2,15 @@
 <release version="4.1.0">
   <version>4.1.0</version>
   <date>2001-12-10</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.gz">
       <name>Source (tar.gz)</name>
       <filename>php-4.1.0.tar.gz</filename>
-      <date>2020-01-07</date>
+      <date>2001-01-01</date>
       <md5/>
-    </source>
-  </sources>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en">After a lengthy QA process, PHP 4.1.0 is [finally out](/downloads.php)!
  [ [Version Fran&#xE7;aise](/releases/4_1_0_fr.php) ]
@@ -71,5 +72,6 @@ Now that we have that behind us, let's move on :)
   <changes>
     <modules/>
   </changes>
+  <windows_builds/>
   <tags/>
 </release>

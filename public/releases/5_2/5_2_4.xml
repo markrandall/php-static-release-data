@@ -2,20 +2,21 @@
 <release version="5.2.4">
   <version>5.2.4</version>
   <date>2007-08-30</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>Source (tar.bz2)</name>
       <filename>php-5.2.4.tar.bz2</filename>
-      <date>2020-01-07</date>
-      <md5/>
-    </source>
-    <source>
+      <date>2001-01-01</date>
+      <md5>55c97a671fdabf462cc7a82971a656d2</md5>
+    </file>
+    <file compression="tar.gz">
       <name>Source (tar.gz)</name>
       <filename>php-5.2.4.tar.gz</filename>
-      <date>2020-01-07</date>
-      <md5/>
-    </source>
-  </sources>
+      <date>2001-01-01</date>
+      <md5>0826e231c3148b29fd039d7a8c893ad3</md5>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en">**Security Enhancements and Fixes in PHP 5.2.4:**
 
@@ -104,5 +105,6 @@ For users upgrading from PHP 5.0 and PHP 5.1, an upgrade guide is available [her
       </module>
     </modules>
   </changes>
+  <windows_builds/>
   <tags/>
 </release>

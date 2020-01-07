@@ -2,14 +2,15 @@
 <release version="4.3.5">
   <version>4.3.5</version>
   <date>2004-03-26</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.gz">
       <name>Source (tar.gz)</name>
       <filename>php-4.3.5.tar.gz</filename>
-      <date>2020-01-07</date>
+      <date>2001-01-01</date>
       <md5/>
-    </source>
-  </sources>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en">[ [Version Fran&#xE7;aise](/releases/4_3_5_fr.php) ]
 
@@ -58,5 +59,6 @@ Bugfix release
       </module>
     </modules>
   </changes>
+  <windows_builds/>
   <tags/>
 </release>

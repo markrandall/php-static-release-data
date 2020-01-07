@@ -2,26 +2,27 @@
 <release version="7.0.26">
   <version>7.0.26</version>
   <date>2017-11-23</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>PHP 7.0.26 (tar.bz2)</name>
       <filename>php-7.0.26.tar.bz2</filename>
       <date>2017-11-23</date>
       <sha256>2590d722f7b23b6a903c5a00cf04e7ee728df79d10ae473e3a81ba41588509a7</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.gz">
       <name>PHP 7.0.26 (tar.gz)</name>
       <filename>php-7.0.26.tar.gz</filename>
       <date>2017-11-23</date>
       <sha256>04c345f7c9e3f1cd02f275bfec893a4e0290e724073f2f3d7282a219128b537c</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.xz">
       <name>PHP 7.0.26 (tar.xz)</name>
       <filename>php-7.0.26.tar.xz</filename>
       <date>2017-11-23</date>
       <sha256>ed5cbb4bbb0ddef8985f100bba2e94002ad22a230b5da2dccfe148915df5f199</sha256>
-    </source>
-  </sources>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en"/>
   </announcements>
@@ -163,5 +164,6 @@
       </module>
     </modules>
   </changes>
+  <windows_builds/>
   <tags/>
 </release>

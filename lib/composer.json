@@ -3,6 +3,7 @@
     "symfony/console": "*",
     "symfony/config": "*",
     "ext-simplexml": "*",
+    "guzzlehttp/guzzle": "*",
     "psr/log": "*",
     "ext-pdo": "*",
     "ext-json": "*",

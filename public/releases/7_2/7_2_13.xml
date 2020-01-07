@@ -2,26 +2,27 @@
 <release version="7.2.13">
   <version>7.2.13</version>
   <date>2018-12-06</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>PHP 7.2.13 (tar.bz2)</name>
       <filename>php-7.2.13.tar.bz2</filename>
       <date>2018-12-06</date>
       <sha256>5b4a46fb76491bcd3eee1213773382e570f6ecf9b22d623b24e2822298b3e92d</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.gz">
       <name>PHP 7.2.13 (tar.gz)</name>
       <filename>php-7.2.13.tar.gz</filename>
       <date>2018-12-06</date>
       <sha256>e563cee406b1ec96649c22ed2b35796cfe4e9aa9afa6eab6be4cf2fe5d724744</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.xz">
       <name>PHP 7.2.13 (tar.xz)</name>
       <filename>php-7.2.13.tar.xz</filename>
       <date>2018-12-06</date>
       <sha256>14b0429abdb46b65c843e5882c9a8c46b31dfbf279c747293b8ab950c2644a4b</sha256>
-    </source>
-  </sources>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en">The PHP development team announces the immediate availability of PHP 7.2.13. This is a security release.</announcement>
   </announcements>
@@ -149,6 +150,7 @@
       </module>
     </modules>
   </changes>
+  <windows_builds/>
   <tags>
     <tag>security</tag>
   </tags>

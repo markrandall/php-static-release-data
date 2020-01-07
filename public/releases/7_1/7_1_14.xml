@@ -2,26 +2,27 @@
 <release version="7.1.14">
   <version>7.1.14</version>
   <date>2018-02-01</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>PHP 7.1.14 (tar.bz2)</name>
       <filename>php-7.1.14.tar.bz2</filename>
       <date>2018-02-01</date>
       <sha256>63b2fd139ed7656756b0fa290bc42f8fff854723c3d2710a700e646370c581f4</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.gz">
       <name>PHP 7.1.14 (tar.gz)</name>
       <filename>php-7.1.14.tar.gz</filename>
       <date>2018-02-01</date>
       <sha256>8c7360209d255ee46d388bdcd43ef1a2d14b370c331be30ea628ece18a1e7683</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.xz">
       <name>PHP 7.1.14 (tar.xz)</name>
       <filename>php-7.1.14.tar.xz</filename>
       <date>2018-02-01</date>
       <sha256>c09f0c1074f5689b492d79034adb84e6a6c6d08c6763c02282e6318d41156779</sha256>
-    </source>
-  </sources>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en"/>
   </announcements>
@@ -157,5 +158,6 @@
       </module>
     </modules>
   </changes>
+  <windows_builds/>
   <tags/>
 </release>

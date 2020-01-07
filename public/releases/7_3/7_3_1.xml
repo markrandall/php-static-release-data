@@ -2,26 +2,27 @@
 <release version="7.3.1">
   <version>7.3.1</version>
   <date>2019-01-10</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>PHP 7.3.1 (tar.bz2)</name>
       <filename>php-7.3.1.tar.bz2</filename>
       <date>2019-01-10</date>
       <sha256>afef2b0cd7f2641274a1a0aabe67e30f2334970d7c530382dfa9d79cfe74388e</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.gz">
       <name>PHP 7.3.1 (tar.gz)</name>
       <filename>php-7.3.1.tar.gz</filename>
       <date>2019-01-10</date>
       <sha256>8006211f7a041dde22fffedc416d142e0ebf22066014077ca936d7e6f655ead5</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.xz">
       <name>PHP 7.3.1 (tar.xz)</name>
       <filename>php-7.3.1.tar.xz</filename>
       <date>2019-01-10</date>
       <sha256>cfe93e40be0350cd53c4a579f52fe5d8faf9c6db047f650a4566a2276bf33362</sha256>
-    </source>
-  </sources>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en">The PHP development team announces the immediate availability of PHP 7.3.1. This is a security release which also contains several bug fixes.</announcement>
   </announcements>
@@ -286,6 +287,7 @@
       </module>
     </modules>
   </changes>
+  <windows_builds/>
   <tags>
     <tag>security</tag>
   </tags>

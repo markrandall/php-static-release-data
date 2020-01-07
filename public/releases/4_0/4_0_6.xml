@@ -2,14 +2,15 @@
 <release version="4.0.6">
   <version>4.0.6</version>
   <date>2001-06-23</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.gz">
       <name>Source (tar.gz)</name>
       <filename>php-4.0.6.tar.gz</filename>
-      <date>2020-01-07</date>
+      <date>2001-01-01</date>
       <md5/>
-    </source>
-  </sources>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en">PHP Function List
 
@@ -50,5 +51,6 @@
   <changes>
     <modules/>
   </changes>
+  <windows_builds/>
   <tags/>
 </release>

@@ -2,26 +2,27 @@
 <release version="7.3.6">
   <version>7.3.6</version>
   <date>2019-05-30</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>PHP 7.3.6 (tar.bz2)</name>
       <filename>php-7.3.6.tar.bz2</filename>
       <date>2019-05-30</date>
       <sha256>1e5ac8700154835c0910e3a814517da9b87bb4a82cc7011fea1a82096b6f6f77</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.gz">
       <name>PHP 7.3.6 (tar.gz)</name>
       <filename>php-7.3.6.tar.gz</filename>
       <date>2019-05-30</date>
       <sha256>72fbf223ff8659a61eed08eebffb4ede0256e7a69d2151ae24affa5377b70bb8</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.xz">
       <name>PHP 7.3.6 (tar.xz)</name>
       <filename>php-7.3.6.tar.xz</filename>
       <date>2019-05-30</date>
       <sha256>fefc8967daa30ebc375b2ab2857f97da94ca81921b722ddac86b29e15c54a164</sha256>
-    </source>
-  </sources>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en">The PHP development team announces the immediate availability of PHP 7.3.6. This is a security release which also contains several bug fixes.</announcement>
   </announcements>
@@ -166,6 +167,7 @@
       </module>
     </modules>
   </changes>
+  <windows_builds/>
   <tags>
     <tag>security</tag>
   </tags>

@@ -2,26 +2,21 @@
 <release version="5.4.7">
   <version>5.4.7</version>
   <date>2012-09-13</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>PHP 5.4.7 (tar.bz2)</name>
       <filename>php-5.4.7.tar.bz2</filename>
       <date>2012-09-13</date>
-      <md5/>
-    </source>
-    <source>
+      <md5>9cd421f1cc8fa8e7f215e44a1b06199f</md5>
+    </file>
+    <file compression="tar.gz">
       <name>PHP 5.4.7 (tar.gz)</name>
       <filename>php-5.4.7.tar.gz</filename>
       <date>2012-09-13</date>
-      <md5/>
-    </source>
-    <source>
-      <name>Windows 5.4.7 binaries and source</name>
-      <filename/>
-      <date>2020-01-07</date>
-      <md5/>
-    </source>
-  </sources>
+      <md5>94661b761dcfdfdd5108e8b12e0dd4f8</md5>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en"/>
   </announcements>
@@ -215,5 +210,6 @@
       </module>
     </modules>
   </changes>
+  <windows_builds/>
   <tags/>
 </release>

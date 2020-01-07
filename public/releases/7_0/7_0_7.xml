@@ -2,26 +2,27 @@
 <release version="7.0.7">
   <version>7.0.7</version>
   <date>2016-05-26</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>PHP 7.0.7 (tar.bz2)</name>
       <filename>php-7.0.7.tar.bz2</filename>
       <date>2016-05-26</date>
       <sha256>474f2925c4782b94016e3afbb17b14ff9cc6f4fdb6f6e231b36a378bb18a3d1a</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.gz">
       <name>PHP 7.0.7 (tar.gz)</name>
       <filename>php-7.0.7.tar.gz</filename>
       <date>2016-05-26</date>
       <sha256>66282ff4a9f88fe9607d9574e15bf335885b964245591a1740adb3f79c514a67</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.xz">
       <name>PHP 7.0.7 (tar.xz)</name>
       <filename>php-7.0.7.tar.xz</filename>
       <date>2016-05-26</date>
       <sha256>9cc64a7459242c79c10e79d74feaf5bae3541f604966ceb600c3d2e8f5fe4794</sha256>
-    </source>
-  </sources>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en"/>
   </announcements>
@@ -251,6 +252,7 @@
       </module>
     </modules>
   </changes>
+  <windows_builds/>
   <tags>
     <tag>security</tag>
   </tags>

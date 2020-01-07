@@ -2,32 +2,27 @@
 <release version="5.5.3">
   <version>5.5.3</version>
   <date>2013-08-22</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>PHP 5.5.3 (tar.bz2)</name>
       <filename>php-5.5.3.tar.bz2</filename>
       <date>2013-08-22</date>
-      <md5/>
-    </source>
-    <source>
+      <md5>886b08ee6865d654911a6bb02ae98ee8</md5>
+    </file>
+    <file compression="tar.gz">
       <name>PHP 5.5.3 (tar.gz)</name>
       <filename>php-5.5.3.tar.gz</filename>
       <date>2013-08-22</date>
-      <md5/>
-    </source>
-    <source>
+      <md5>a5dfdd41ccf539942db966310f7429da</md5>
+    </file>
+    <file compression="tar.xz">
       <name>PHP 5.5.3 (tar.xz)</name>
       <filename>php-5.5.3.tar.xz</filename>
       <date>2013-08-22</date>
-      <md5/>
-    </source>
-    <source>
-      <name>Windows 5.5.3 binaries and source</name>
-      <filename/>
-      <date>2020-01-07</date>
-      <md5/>
-    </source>
-  </sources>
+      <md5>437e98144ef014dfab0922a9eed36853</md5>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en">The PHP development team announces the immediate availability of PHP 5.5.3. This release fixes a bug in the patch for CVE-2013-4248 in OpenSSL module.</announcement>
   </announcements>
@@ -43,5 +38,6 @@
       </module>
     </modules>
   </changes>
+  <windows_builds/>
   <tags/>
 </release>

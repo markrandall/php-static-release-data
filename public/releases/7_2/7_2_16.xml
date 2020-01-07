@@ -2,26 +2,27 @@
 <release version="7.2.16">
   <version>7.2.16</version>
   <date>2019-04-04</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>PHP 7.2.16 (tar.bz2)</name>
       <filename>php-7.2.16.tar.bz2</filename>
       <date>2019-03-07</date>
       <sha256>2c0ad10053d58694cd14323248ecd6d9ba71d2733d160973c356ad01d09e7f38</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.gz">
       <name>PHP 7.2.16 (tar.gz)</name>
       <filename>php-7.2.16.tar.gz</filename>
       <date>2019-03-07</date>
       <sha256>fb95e0bb69caba1dfd3bbac4eeef7a0485e5ea3d6191d35ad5657e18243aa02d</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.xz">
       <name>PHP 7.2.16 (tar.xz)</name>
       <filename>php-7.2.16.tar.xz</filename>
       <date>2019-03-07</date>
       <sha256>7d91ed3c1447c6358a3d53f84599ef854aca4c3622de7435e2df115bf196e482</sha256>
-    </source>
-  </sources>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en">The PHP development team announces the immediate availability of PHP 7.2.16. This is a security release which also contains several minor bug fixes.</announcement>
   </announcements>
@@ -124,6 +125,7 @@
       </module>
     </modules>
   </changes>
+  <windows_builds/>
   <tags>
     <tag>security</tag>
   </tags>

@@ -2,20 +2,21 @@
 <release version="5.3.2">
   <version>5.3.2</version>
   <date>2010-03-04</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>PHP 5.3.2 (tar.bz2)</name>
       <filename>php-5.3.2.tar.bz2</filename>
       <date>2010-03-04</date>
-      <md5/>
-    </source>
-    <source>
+      <md5>46f500816125202c48a458d0133254a4</md5>
+    </file>
+    <file compression="tar.gz">
       <name>PHP 5.3.2 (tar.gz)</name>
       <filename>php-5.3.2.tar.gz</filename>
       <date>2010-03-04</date>
-      <md5/>
-    </source>
-  </sources>
+      <md5>4480d7c6d6b4a86de7b8ec8f0c2d1871</md5>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en">The PHP development team is proud to announce the immediate release of PHP 5.3.2. This is a maintenance release in the 5.3 series, which includes a large number of bug fixes.
 
@@ -61,5 +62,6 @@ For users upgrading from PHP 5.2 there is a migration guide available [here](htt
       </module>
     </modules>
   </changes>
+  <windows_builds/>
   <tags/>
 </release>

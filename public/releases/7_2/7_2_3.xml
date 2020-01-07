@@ -2,26 +2,27 @@
 <release version="7.2.3">
   <version>7.2.3</version>
   <date>2018-03-01</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>PHP 7.2.3 (tar.bz2)</name>
       <filename>php-7.2.3.tar.bz2</filename>
       <date>2018-03-01</date>
       <sha256>4a735aac0ba764dd8208ea29007d3916396c5292e003ba8d3bec49edcdd5bf92</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.gz">
       <name>PHP 7.2.3 (tar.gz)</name>
       <filename>php-7.2.3.tar.gz</filename>
       <date>2018-03-01</date>
       <sha256>5dc98f2266db40c5e4d9b5edf5e29e2449e819fff8321a07eb3830cf0b104bbb</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.xz">
       <name>PHP 7.2.3 (tar.xz)</name>
       <filename>php-7.2.3.tar.xz</filename>
       <date>2018-03-01</date>
       <sha256>b3a94f1b562f413c0b96f54bc309706d83b29ac65d9b172bc7ed9fb40a5e651f</sha256>
-    </source>
-  </sources>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en">The PHP development team announces the immediate availability of PHP 7.2.3. This is a security release with also contains several minor bug fixes.</announcement>
   </announcements>
@@ -160,6 +161,7 @@
       </module>
     </modules>
   </changes>
+  <windows_builds/>
   <tags>
     <tag>security</tag>
   </tags>

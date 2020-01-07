@@ -2,26 +2,21 @@
 <release version="5.3.24">
   <version>5.3.24</version>
   <date>2013-04-11</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>PHP 5.3.24 (tar.bz2)</name>
       <filename>php-5.3.24.tar.bz2</filename>
       <date>2013-04-11</date>
-      <md5/>
-    </source>
-    <source>
+      <md5>9820604df98c648297dcd31ffb8214e8</md5>
+    </file>
+    <file compression="tar.gz">
       <name>PHP 5.3.24 (tar.gz)</name>
       <filename>php-5.3.24.tar.gz</filename>
       <date>2013-04-11</date>
-      <md5/>
-    </source>
-    <source>
-      <name>Windows 5.3.24 binaries and source</name>
-      <filename/>
-      <date>2020-01-07</date>
-      <md5/>
-    </source>
-  </sources>
+      <md5>cb0311a6a5ed6ffff8f41f713f9d8e84</md5>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en"/>
   </announcements>
@@ -79,5 +74,6 @@
       </module>
     </modules>
   </changes>
+  <windows_builds/>
   <tags/>
 </release>

@@ -2,26 +2,21 @@
 <release version="5.4.19">
   <version>5.4.19</version>
   <date>2013-08-22</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>PHP 5.4.19 (tar.bz2)</name>
       <filename>php-5.4.19.tar.bz2</filename>
       <date>2013-08-22</date>
-      <md5/>
-    </source>
-    <source>
+      <md5>f06f99b9872b503758adab5ba7a7e755</md5>
+    </file>
+    <file compression="tar.gz">
       <name>PHP 5.4.19 (tar.gz)</name>
       <filename>php-5.4.19.tar.gz</filename>
       <date>2013-08-22</date>
-      <md5/>
-    </source>
-    <source>
-      <name>Windows 5.4.19 binaries and source</name>
-      <filename/>
-      <date>2020-01-07</date>
-      <md5/>
-    </source>
-  </sources>
+      <md5>9e7ad2494ba3de519328f74267de8342</md5>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en">The PHP development team announces the immediate availability of PHP 5.4.19. This release fixes a bug in the patch for CVE-2013-4248 in OpenSSL module and compile failure with ZTS enabled.</announcement>
   </announcements>
@@ -45,5 +40,6 @@
       </module>
     </modules>
   </changes>
+  <windows_builds/>
   <tags/>
 </release>

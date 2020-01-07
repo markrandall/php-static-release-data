@@ -2,20 +2,21 @@
 <release version="5.4.3">
   <version>5.4.3</version>
   <date>2012-05-08</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>PHP 5.4.3 (tar.bz2)</name>
       <filename>php-5.4.3.tar.bz2</filename>
       <date>2012-05-08</date>
-      <md5/>
-    </source>
-    <source>
+      <md5>51f9488bf8682399b802c48656315cac</md5>
+    </file>
+    <file compression="tar.gz">
       <name>PHP 5.4.3 (tar.gz)</name>
       <filename>php-5.4.3.tar.gz</filename>
       <date>2012-05-08</date>
-      <md5/>
-    </source>
-  </sources>
+      <md5>c9dccc89cc89d39e84f6e6f0cf1c8a65</md5>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en">PHP 5.4.3 completes a fix for a vulnerability in CGI-based setups (CVE-2012-2311). Note: mod_php and php-fpm are not vulnerable to this attack.
 
@@ -24,5 +25,6 @@ A buffer overflow vulnerability in the apache_request_headers() was fixed (CVE-2
   <changes>
     <modules/>
   </changes>
+  <windows_builds/>
   <tags/>
 </release>

@@ -2,20 +2,21 @@
 <release version="5.3.0">
   <version>5.3.0</version>
   <date>2009-06-30</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>PHP 5.3.0 (tar.bz2)</name>
       <filename>php-5.3.0.tar.bz2</filename>
       <date>2009-06-30</date>
-      <md5/>
-    </source>
-    <source>
+      <md5>846760cd655c98dfd86d6d97c3d964b0</md5>
+    </file>
+    <file compression="tar.gz">
       <name>PHP 5.3.0 (tar.gz)</name>
       <filename>php-5.3.0.tar.gz</filename>
       <date>2009-06-30</date>
-      <md5/>
-    </source>
-  </sources>
+      <md5>f4905eca4497da3f0beb5c96863196b4</md5>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en">The PHP development team is proud to announce the immediate release of PHP 5.3.0. This release is a major improvement in the 5.X series, which includes a large number of new features and bug fixes.
 
@@ -722,5 +723,6 @@ For users upgrading from PHP 5.2 there is a migration guide available [here](htt
       </module>
     </modules>
   </changes>
+  <windows_builds/>
   <tags/>
 </release>

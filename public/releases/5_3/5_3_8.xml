@@ -2,20 +2,21 @@
 <release version="5.3.8">
   <version>5.3.8</version>
   <date>2011-08-23</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>PHP 5.3.8 (tar.bz2)</name>
       <filename>php-5.3.8.tar.bz2</filename>
       <date>2011-08-23</date>
-      <md5/>
-    </source>
-    <source>
+      <md5>704cd414a0565d905e1074ffdc1fadfb</md5>
+    </file>
+    <file compression="tar.gz">
       <name>PHP 5.3.8 (tar.gz)</name>
       <filename>php-5.3.8.tar.gz</filename>
       <date>2011-08-23</date>
-      <md5/>
-    </source>
-  </sources>
+      <md5>f4ce40d5d156ca66a996dbb8a0e7666a</md5>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en">The PHP development team would like to announce the immediate availability of PHP 5.3.8. This release fixes two issues introduced in the PHP 5.3.7 release:
 
@@ -42,5 +43,6 @@ All PHP users should note that the PHP 5.2 series is NOT supported anymore. All 
       </module>
     </modules>
   </changes>
+  <windows_builds/>
   <tags/>
 </release>

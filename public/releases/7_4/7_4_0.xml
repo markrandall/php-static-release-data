@@ -2,26 +2,27 @@
 <release version="7.4.0">
   <version>7.4.0</version>
   <date>2019-11-28</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>PHP 7.4.0 (tar.bz2)</name>
       <filename>php-7.4.0.tar.bz2</filename>
       <date>2019-11-28</date>
       <sha256>bf206be96a39e643180013df39ddcd0493966692a2422c4b7d3355b6a15a01c0</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.gz">
       <name>PHP 7.4.0 (tar.gz)</name>
       <filename>php-7.4.0.tar.gz</filename>
       <date>2019-11-28</date>
       <sha256>004a1a8176176ee1b5c112e73d705977507803f425f9e48cb4a84f42b22abf22</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.xz">
       <name>PHP 7.4.0 (tar.xz)</name>
       <filename>php-7.4.0.tar.xz</filename>
       <date>2019-11-28</date>
       <sha256>9bb751b20e5d6cc1ea9b1ebf23ef2d5f07f99b2d9cc417bf1d70c04f8b20ec42</sha256>
-    </source>
-  </sources>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en">The PHP development team announces the immediate availability of PHP 7.4.0. This release marks the fourth feature update to the PHP 7 series.
 
@@ -1449,5 +1450,6 @@ Many thanks to all the contributors and supporters!</announcement>
       </module>
     </modules>
   </changes>
+  <windows_builds/>
   <tags/>
 </release>

@@ -2,20 +2,21 @@
 <release version="5.2.9">
   <version>5.2.9</version>
   <date>2009-02-26</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>PHP 5.2.9 (tar.bz2)</name>
       <filename>php-5.2.9.tar.bz2</filename>
       <date>2009-02-26</date>
-      <md5/>
-    </source>
-    <source>
+      <md5>280d6cda7f72a4fc6de42fda21ac2db7</md5>
+    </file>
+    <file compression="tar.gz">
       <name>PHP 5.2.9 (tar.gz)</name>
       <filename>php-5.2.9.tar.gz</filename>
       <date>2009-02-26</date>
-      <md5/>
-    </source>
-  </sources>
+      <md5>98b647561dc664adefe296106056cf11</md5>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en">**Security Enhancements and Fixes in PHP 5.2.9:**
 
@@ -71,5 +72,6 @@ For users upgrading from PHP 5.0 and PHP 5.1, an upgrade guide is available [her
       </module>
     </modules>
   </changes>
+  <windows_builds/>
   <tags/>
 </release>

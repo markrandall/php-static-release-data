@@ -2,26 +2,27 @@
 <release version="7.1.24">
   <version>7.1.24</version>
   <date>2018-11-08</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>PHP 7.1.24 (tar.bz2)</name>
       <filename>php-7.1.24.tar.bz2</filename>
       <date>2018-11-08</date>
       <sha256>66de24e73c7f6006f090c1b187d6b218c8fa6a513acca4ff5c14b695a7391e0b</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.gz">
       <name>PHP 7.1.24 (tar.gz)</name>
       <filename>php-7.1.24.tar.gz</filename>
       <date>2018-11-08</date>
       <sha256>1e780b1af3eeb8fba9e5af6205c960184a0c3a0ef091aaa192e7b7d6b67405d0</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.xz">
       <name>PHP 7.1.24 (tar.xz)</name>
       <filename>php-7.1.24.tar.xz</filename>
       <date>2018-11-08</date>
       <sha256>e70dcec0ae28b6bc308b78972ec15aa850808819cc765f505aa51e5a7e2fa5d7</sha256>
-    </source>
-  </sources>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en">The PHP development team announces the immediate availability of PHP 7.1.24. This is a bugfix release.</announcement>
   </announcements>
@@ -115,5 +116,6 @@
       </module>
     </modules>
   </changes>
+  <windows_builds/>
   <tags/>
 </release>

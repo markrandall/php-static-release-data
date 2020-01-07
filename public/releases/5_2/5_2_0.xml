@@ -2,20 +2,21 @@
 <release version="5.2.0">
   <version>5.2.0</version>
   <date>2006-11-02</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>Source (tar.bz2)</name>
       <filename>php-5.2.0.tar.bz2</filename>
-      <date>2020-01-07</date>
-      <md5/>
-    </source>
-    <source>
+      <date>2001-01-01</date>
+      <md5>e6029fafcee029edcfa2ceed7a005333</md5>
+    </file>
+    <file compression="tar.gz">
       <name>Source (tar.gz)</name>
       <filename>php-5.2.0.tar.gz</filename>
-      <date>2020-01-07</date>
-      <md5/>
-    </source>
-  </sources>
+      <date>2001-01-01</date>
+      <md5>52d7e8b3d8d7573e75c97340f131f988</md5>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en"/>
   </announcements>
@@ -201,5 +202,6 @@
       </module>
     </modules>
   </changes>
+  <windows_builds/>
   <tags/>
 </release>

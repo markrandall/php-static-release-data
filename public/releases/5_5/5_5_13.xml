@@ -2,20 +2,21 @@
 <release version="5.5.13">
   <version>5.5.13</version>
   <date>2014-05-29</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>PHP 5.5.13 (tar.bz2)</name>
       <filename>php-5.5.13.tar.bz2</filename>
       <date>2014-05-29</date>
       <sha256>e58a4a754eb18d2d8b1a120cad5cce4ed24a7db5d49eca5830a40e4c8ca78b9c</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.gz">
       <name>PHP 5.5.13 (tar.gz)</name>
       <filename>php-5.5.13.tar.gz</filename>
       <date>2014-05-29</date>
       <sha256>15e34eb7c45e66963cbece29fb41e53cc6c6e3ec4a54c291a53cf6a1527771b6</sha256>
-    </source>
-  </sources>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en">The PHP Development Team announces the immediate availability of PHP 5.5.13. This release fixes several bugs against PHP 5.5.12, and addresses several CVEs in Fileinfo (CVE-2014-0238 and CVE-2014-0237).</announcement>
   </announcements>
@@ -165,5 +166,6 @@
       </module>
     </modules>
   </changes>
+  <windows_builds/>
   <tags/>
 </release>

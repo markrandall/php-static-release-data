@@ -2,26 +2,27 @@
 <release version="7.2.21">
   <version>7.2.21</version>
   <date>2019-08-01</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>PHP 7.2.21 (tar.bz2)</name>
       <filename>php-7.2.21.tar.bz2</filename>
       <date>2019-08-01</date>
       <sha256>343183a1be8336670171885c761d57ffcae99cbbcf1db43da7cb5565056b14ef</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.gz">
       <name>PHP 7.2.21 (tar.gz)</name>
       <filename>php-7.2.21.tar.gz</filename>
       <date>2019-08-01</date>
       <sha256>8327682bee4a8fd2edf5bbfcc393d986b945bec433fc74458d05e766701b313c</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.xz">
       <name>PHP 7.2.21 (tar.xz)</name>
       <filename>php-7.2.21.tar.xz</filename>
       <date>2019-08-01</date>
       <sha256>de06aff019d8f5079115795bd7d8eedd4cd03daecb62d58abb18f492dd995c95</sha256>
-    </source>
-  </sources>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en">The PHP development team announces the immediate availability of PHP 7.2.21. This is a security release which also contains several minor bug fixes.</announcement>
   </announcements>
@@ -169,6 +170,7 @@
       </module>
     </modules>
   </changes>
+  <windows_builds/>
   <tags>
     <tag>security</tag>
   </tags>

@@ -4,6 +4,8 @@
 	
 	namespace phpdata\Release;
 	
+	use SimpleXMLElement;
+	
 	class ChangeModule
 	{
 		private string $module_id;
@@ -41,5 +43,17 @@
 			}
 			
 			return $changes;
+		}
+		
+		public static function FromXmlElement(SimpleXMLElement $element): self {
+			$changes = [];
+			foreach (($element->change ?? []) as $change) {
+				$changes[] = Change::FromXmlElement($change);
+			}
+			
+			return new ChangeModule(
+				(string)$element->attributes()->id,
+				$changes
+			);
 		}
 	}

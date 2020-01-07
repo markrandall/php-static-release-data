@@ -2,20 +2,21 @@
 <release version="5.3.1">
   <version>5.3.1</version>
   <date>2009-11-19</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>PHP 5.3.1 (tar.bz2)</name>
       <filename>php-5.3.1.tar.bz2</filename>
       <date>2009-11-19</date>
-      <md5/>
-    </source>
-    <source>
+      <md5>63e97ad450f0f7259e785100b634c797</md5>
+    </file>
+    <file compression="tar.gz">
       <name>PHP 5.3.1 (tar.gz)</name>
       <filename>php-5.3.1.tar.gz</filename>
       <date>2009-11-19</date>
-      <md5/>
-    </source>
-  </sources>
+      <md5>41fbb368d86acb13fc3519657d277681</md5>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en">The PHP development team is proud to announce the immediate release of PHP 5.3.1. This is a maintenance release in the 5.3 series, which includes a large number of bug fixes.
 
@@ -69,5 +70,6 @@ For users upgrading from PHP 5.2 there is a migration guide available [here](htt
       </module>
     </modules>
   </changes>
+  <windows_builds/>
   <tags/>
 </release>

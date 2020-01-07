@@ -2,14 +2,15 @@
 <release version="4.2.0">
   <version>4.2.0</version>
   <date>2002-04-22</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.gz">
       <name>Source (tar.gz)</name>
       <filename>php-4.2.0.tar.gz</filename>
-      <date>2020-01-07</date>
+      <date>2001-01-01</date>
       <md5/>
-    </source>
-  </sources>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en">After an orderly QA process, PHP 4.2.0 is [out](/downloads.php)!
  [ [Version Fran&#xE7;aise](/releases/4_2_0_fr.php) ]
@@ -108,5 +109,6 @@ PHP 4.2.0 includes several improvements:
       </module>
     </modules>
   </changes>
+  <windows_builds/>
   <tags/>
 </release>

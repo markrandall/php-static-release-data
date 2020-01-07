@@ -2,26 +2,21 @@
 <release version="5.4.41">
   <version>5.4.41</version>
   <date>2015-05-14</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>PHP 5.4.41 (tar.bz2)</name>
       <filename>php-5.4.41.tar.bz2</filename>
       <date>2015-05-14</date>
       <sha256>5bc4b45a1280ff80a3cf5b8563716f325cfd0121d7fd25aa54d56ff38b3b8272</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.gz">
       <name>PHP 5.4.41 (tar.gz)</name>
       <filename>php-5.4.41.tar.gz</filename>
       <date>2015-05-14</date>
       <sha256>638cf19c865bc4eba2a4bab8952116a62691d1a72e1e2c9a9a2aadee92d1ce2e</sha256>
-    </source>
-    <source>
-      <name>Windows 5.4.41 binaries and source</name>
-      <filename/>
-      <date>2020-01-07</date>
-      <md5/>
-    </source>
-  </sources>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en"/>
   </announcements>
@@ -92,5 +87,6 @@
       </module>
     </modules>
   </changes>
+  <windows_builds/>
   <tags/>
 </release>

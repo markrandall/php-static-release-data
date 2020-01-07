@@ -2,26 +2,27 @@
 <release version="7.3.10">
   <version>7.3.10</version>
   <date>2019-09-26</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>PHP 7.3.10 (tar.bz2)</name>
       <filename>php-7.3.10.tar.bz2</filename>
       <date>2019-09-26</date>
       <sha256>506dd871c0fb8f00f872f53dd3b1dfa5f23a9edb4dfc521e5669c78a78c45448</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.gz">
       <name>PHP 7.3.10 (tar.gz)</name>
       <filename>php-7.3.10.tar.gz</filename>
       <date>2019-09-26</date>
       <sha256>fb670723a9b8fda31c89529f27e0dda289d8af4b6ce9f152c8010876639c0fb4</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.xz">
       <name>PHP 7.3.10 (tar.xz)</name>
       <filename>php-7.3.10.tar.xz</filename>
       <date>2019-09-26</date>
       <sha256>42f00a15419e05771734b7159c8d39d639b8a5a6770413adfa2615f6f923d906</sha256>
-    </source>
-  </sources>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en">The PHP development team announces the immediate availability of PHP 7.3.10. This is a security release which also contains several bug fixes.</announcement>
   </announcements>
@@ -115,6 +116,7 @@
       </module>
     </modules>
   </changes>
+  <windows_builds/>
   <tags>
     <tag>security</tag>
   </tags>

@@ -2,26 +2,27 @@
 <release version="7.2.20">
   <version>7.2.20</version>
   <date>2019-07-04</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>PHP 7.2.20 (tar.bz2)</name>
       <filename>php-7.2.20.tar.bz2</filename>
       <date>2019-07-04</date>
       <sha256>9fb829e54e54c483ae8892d1db0f7d79115cc698f2f3591a8a5e58d9410dca84</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.gz">
       <name>PHP 7.2.20 (tar.gz)</name>
       <filename>php-7.2.20.tar.gz</filename>
       <date>2019-07-04</date>
       <sha256>d1dbf6f299514c9aa55b2995928b798b27c21811a0447f0688993cdf36be0749</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.xz">
       <name>PHP 7.2.20 (tar.xz)</name>
       <filename>php-7.2.20.tar.xz</filename>
       <date>2019-07-04</date>
       <sha256>eff09da83e235c2ba25c85deea1d4f663bd71d50fd51ad11e1acebe26d733494</sha256>
-    </source>
-  </sources>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en">The PHP development team announces the immediate availability of PHP 7.2.20. This is a bugfix release.</announcement>
   </announcements>
@@ -105,5 +106,6 @@
       </module>
     </modules>
   </changes>
+  <windows_builds/>
   <tags/>
 </release>

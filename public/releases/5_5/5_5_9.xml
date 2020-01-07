@@ -2,26 +2,27 @@
 <release version="5.5.9">
   <version>5.5.9</version>
   <date>2014-02-06</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>PHP 5.5.9 (tar.bz2)</name>
       <filename>php-5.5.9.tar.bz2</filename>
       <date>2014-02-06</date>
       <sha256>9d1dea5195e2bcd928416130a6e19173d02bd36fb76c382522bf145c458fbed3</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.gz">
       <name>PHP 5.5.9 (tar.gz)</name>
       <filename>php-5.5.9.tar.gz</filename>
       <date>2014-02-06</date>
       <sha256>ec1bf0cb3be80240049dbd92c272d4bf242a614fa5f9dcc42a15adb5fd01ccde</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.xz">
       <name>PHP 5.5.9 (tar.xz)</name>
       <filename>php-5.5.9.tar.xz</filename>
       <date>2014-02-06</date>
       <sha256>7f7a7b1189472e59b234233daab9aa9692bb5eb8404485e9a78221f75ee4664a</sha256>
-    </source>
-  </sources>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en">The PHP Development Team announces the immediate availability of PHP 5.5.9. This release fixes several bugs against PHP 5.5.8.</announcement>
   </announcements>
@@ -120,5 +121,6 @@
       </module>
     </modules>
   </changes>
+  <windows_builds/>
   <tags/>
 </release>

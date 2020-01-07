@@ -2,26 +2,21 @@
 <release version="5.3.19">
   <version>5.3.19</version>
   <date>2012-11-22</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>PHP 5.3.19 (tar.bz2)</name>
       <filename>php-5.3.19.tar.bz2</filename>
       <date>2012-11-22</date>
-      <md5/>
-    </source>
-    <source>
+      <md5>e1d2a3ec7849d4b3032bd1abf1916aa4</md5>
+    </file>
+    <file compression="tar.gz">
       <name>PHP 5.3.19 (tar.gz)</name>
       <filename>php-5.3.19.tar.gz</filename>
       <date>2012-11-22</date>
-      <md5/>
-    </source>
-    <source>
-      <name>Windows 5.3.19 binaries and source</name>
-      <filename/>
-      <date>2020-01-07</date>
-      <md5/>
-    </source>
-  </sources>
+      <md5>e1bcda4f14bb39ba041297abbf18f8d1</md5>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en"/>
   </announcements>
@@ -119,5 +114,6 @@
       </module>
     </modules>
   </changes>
+  <windows_builds/>
   <tags/>
 </release>

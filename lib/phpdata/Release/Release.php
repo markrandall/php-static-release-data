@@ -15,14 +15,19 @@
 		
 		private DateTimeImmutable $date;
 		
+		private string $stage = 'stable';
+		
 		/** @var string[] */
 		private array $tags = [];
 		
 		/** @var Announcement[] */
 		private array $announcements = [];
 		
-		/** @var Source[] */
+		/** @var SourceFile[] */
 		private array $sources = [];
+		
+		/** @var WindowsBuild[] */
+		private array $windows_builds = [];
 		
 		/** @var ChangeModule[] */
 		private array $changed_modules = [];
@@ -66,6 +71,7 @@
 			$release          = new Release();
 			$release->version = (string)$xml->attributes()->version;
 			$release->date    = new DateTimeImmutable((string)$xml->date);
+			$release->stage   = (string)$xml->stage ?: 'stable';
 			
 			foreach ($xml->announcements->announcement as $announcement) {
 				$release->setAnnouncementForLanguage(
@@ -74,15 +80,8 @@
 				);
 			}
 			
-			foreach ($xml->sources->source as $xml_source) {
-				$source = new Source(
-					(string)$xml_source->name ?: '',
-					(string)$xml_source->filename ?: '',
-					new DateTimeImmutable((string)$xml_source->date),
-					(string)$xml_source->sha256,
-					(string)$xml_source->md5
-				);
-				
+			foreach ($xml->source->file as $xml_source) {
+				$source                                   = SourceFile::FromXmlElement($xml_source);
 				$release->sources[$source->getFilename()] = $source;
 			}
 			
@@ -92,25 +91,15 @@
 				: $xml->changes->modules->module;
 			
 			foreach ($xml_module_changes as $module) {
-				$changes = [];
-				
-				foreach ($module->change as $change) {
-					$refs = [];
-					foreach ($change->references->reference as $ref) {
-						$refs[] = new ChangeReference(
-							(string)$ref->attributes()->type,
-							(string)$ref
-						);
-					}
-					
-					$changes[] = new Change((string)$change->description, $refs);
-				}
-				
-				$release->changed_modules[] = new  ChangeModule((string)$module->attributes()->id, $changes);
+				$release->changed_modules[] = ChangeModule::FromXmlElement($module);
 			}
 			
 			foreach ($xml->tags->tag as $tag) {
 				$release->tags[] = (string)$tag;
+			}
+			
+			foreach ($xml->windows_builds->build as $xml_build) {
+				$release->windows_builds[] = WindowsBuild::FromXmlElement($xml_build);
 			}
 			
 			return $release;
@@ -126,10 +115,16 @@
 			$element->addAttribute('version', $this->getVersionString());
 			$element->addChild('version', $this->getVersionString());
 			$element->addChild('date', $this->date->format('Y-m-d'));
+			$element->addChild('stage', $this->stage ?: 'stable');
 			
-			$sources = $element->addChild('sources');
+			$sources = $element->addChild('source');
 			foreach ($this->sources as $source) {
-				$xml_source = $sources->addChild('source');
+				$xml_source = $sources->addChild('file');
+				
+				if (preg_match('/\(tar\.(.+?)\)/', $source->getName(), $m)) {
+					$xml_source->addAttribute('compression', 'tar.' . $m[1]);
+				}
+				
 				$xml_source->addChild('name', $ee($source->getName()));
 				$xml_source->addChild('filename', $ee($source->getFilename()));
 				$xml_source->addChild('date', $ee($source->getDate()->format('Y-m-d')));
@@ -166,6 +161,11 @@
 				}
 			}
 			
+			$xml_windows_build = $element->addChild('windows_builds');
+			foreach ($this->windows_builds as $windows_build) {
+				$windows_build->writeToElement($xml_windows_build->addChild('build'));
+			}
+			
 			$xml_tags = $element->addChild('tags');
 			foreach ($this->tags as $tag) {
 				$xml_tags->addChild('tag', $ee($tag));
@@ -182,7 +182,7 @@
 			
 			$changes = [];
 			foreach ($this->changed_modules as $module) {
-				$changes['modules'][strtolower($module->getModuleId())] = $module->toJson();
+				$changes[strtolower($module->getModuleId())] = $module->toJson();
 			}
 			
 			$sources = [];
@@ -190,27 +190,52 @@
 				$sources[] = $source->toJson();
 			}
 			
+			$windows_builds = [];
+			foreach ($this->windows_builds as $build) {
+				$windows_builds[$build->getBuildName()] = $build->toJson();
+			}
+			
 			return (object)[
-				'version'       => $this->getVersionString(),
-				'date'          => $this->date->format('Y-m-d'),
-				'changes'       => $changes,
-				'announcements' => $announcements,
-				'tags'          => $this->tags,
-				'source'        => $sources,
+				'version'        => $this->getVersionString(),
+				'date'           => $this->date->format('Y-m-d'),
+				'stage'          => $this->stage,
+				'changes'        => [
+					'modules' => $changes,
+				],
+				'announcements'  => $announcements,
+				'tags'           => $this->tags,
+				'source'         => [
+					'files' => $sources,
+				],
+				'windows_builds' => (object)$windows_builds,
 			];
 		}
 		
-		public function save() {
+		/**
+		 * @return bool - True if written, false if no changes detected
+		 */
+		
+		public function save(): bool {
 			$xml = $this->toXml();
 			
 			$xml_str  = XmlHelpers::SimpleXmlToFormatted($xml);
 			$xml_path = self::PathFromVersion($this->version);
 			
-			file_put_contents($xml_path, $xml_str);
+			if (!file_exists($xml_path) || file_get_contents($xml_path) !== $xml_str) {
+				file_put_contents($xml_path, $xml_str);
+				return true;
+			}
+			
+			return false;
 		}
 		
 		public function getVersionString(): string {
 			return $this->version;
+		}
+		
+		public function getBranchString(): string {
+			$ex = explode('.', $this->version);
+			return $ex[0] . '.' . $ex[1];
 		}
 		
 		/**
@@ -257,18 +282,18 @@
 		}
 		
 		/**
-		 * @return Source[]
+		 * @return SourceFile[]
 		 */
 		public function getSources(): array {
 			return $this->sources;
 		}
 		
-		public function addSource(Source $source) {
+		public function addSource(SourceFile $source) {
 			$this->sources[$source->getFilename()] = $source;
 			return $this;
 		}
 		
-		public function getSource(string $filename): ?Source {
+		public function getSource(string $filename): ?SourceFile {
 			return $this->sources[$filename] ?? null;
 		}
 		
@@ -317,7 +342,7 @@
 		}
 		
 		/**
-		 * @param Source[] $sources
+		 * @param SourceFile[] $sources
 		 * @return $this
 		 */
 		public function setSources(array $sources) {
@@ -332,5 +357,26 @@
 		public function setChangedModules(array $changed_modules) {
 			$this->changed_modules = $changed_modules;
 			return $this;
+		}
+		
+		/**
+		 * @return WindowsBuild[]
+		 */
+		public function getWindowsBuilds(): array {
+			return $this->windows_builds;
+		}
+		
+		/**
+		 * @param WindowsBuild[] $windows_builds
+		 */
+		public function replaceWindowsBuilds(array $windows_builds): void {
+			$this->windows_builds = $windows_builds;
+		}
+		
+		/**
+		 * @return string
+		 */
+		public function getStage(): string {
+			return $this->stage;
 		}
 	}

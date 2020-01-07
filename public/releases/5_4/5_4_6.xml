@@ -2,26 +2,21 @@
 <release version="5.4.6">
   <version>5.4.6</version>
   <date>2012-08-16</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>PHP 5.4.6 (tar.bz2)</name>
       <filename>php-5.4.6.tar.bz2</filename>
       <date>2012-08-16</date>
-      <md5/>
-    </source>
-    <source>
+      <md5>c9aa0f4996d1b91ee9e45afcfaeb5d2e</md5>
+    </file>
+    <file compression="tar.gz">
       <name>PHP 5.4.6 (tar.gz)</name>
       <filename>php-5.4.6.tar.gz</filename>
       <date>2012-08-16</date>
-      <md5/>
-    </source>
-    <source>
-      <name>Windows 5.4.6 binaries and source</name>
-      <filename/>
-      <date>2020-01-07</date>
-      <md5/>
-    </source>
-  </sources>
+      <md5>efe59afb73190c9bd6d50614998ffceb</md5>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en"/>
   </announcements>
@@ -149,5 +144,6 @@
       </module>
     </modules>
   </changes>
+  <windows_builds/>
   <tags/>
 </release>

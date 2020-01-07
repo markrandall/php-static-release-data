@@ -2,26 +2,27 @@
 <release version="7.1.9">
   <version>7.1.9</version>
   <date>2017-08-31</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>PHP 7.1.9 (tar.bz2)</name>
       <filename>php-7.1.9.tar.bz2</filename>
       <date>2017-08-31</date>
       <sha256>314dcc10dfdd7c4443edb4fe1e133a44f2b2a8351be8c9eb6ab9222d45fd9bae</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.gz">
       <name>PHP 7.1.9 (tar.gz)</name>
       <filename>php-7.1.9.tar.gz</filename>
       <date>2017-08-31</date>
       <sha256>499c31ad19b2ff553ae686ebf53749aa2351af7d955ee9f1986f144089561a4b</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.xz">
       <name>PHP 7.1.9 (tar.xz)</name>
       <filename>php-7.1.9.tar.xz</filename>
       <date>2017-08-31</date>
       <sha256>ec9ca348dd51f19a84dc5d33acfff1fba1f977300604bdac08ed46ae2c281e8c</sha256>
-    </source>
-  </sources>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en"/>
   </announcements>
@@ -226,5 +227,6 @@
       </module>
     </modules>
   </changes>
+  <windows_builds/>
   <tags/>
 </release>

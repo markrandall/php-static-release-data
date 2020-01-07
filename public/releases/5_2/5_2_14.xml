@@ -2,20 +2,21 @@
 <release version="5.2.14">
   <version>5.2.14</version>
   <date>2010-07-22</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>PHP 5.2.14 (tar.bz2)</name>
       <filename>php-5.2.14.tar.bz2</filename>
       <date>2010-07-22</date>
-      <md5/>
-    </source>
-    <source>
+      <md5>21ceeeb232813c10283a5ca1b4c87b48</md5>
+    </file>
+    <file compression="tar.gz">
       <name>PHP 5.2.14 (tar.gz)</name>
       <filename>php-5.2.14.tar.gz</filename>
       <date>2010-07-22</date>
-      <md5/>
-    </source>
-  </sources>
+      <md5>5adf1a537895c2ec933fddd48e78d8a2</md5>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en">The PHP development team would like to announce the immediate availability of PHP 5.2.14. This release focuses on improving the stability of the PHP 5.2.x branch with over 60 bug fixes, some of which are security related.
 
@@ -49,5 +50,6 @@ For a full list of changes in PHP 5.2.14 see the ChangeLog at .</announcement>
   <changes>
     <modules/>
   </changes>
+  <windows_builds/>
   <tags/>
 </release>

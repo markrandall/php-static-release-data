@@ -2,20 +2,21 @@
 <release version="5.2.12">
   <version>5.2.12</version>
   <date>2009-12-17</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>PHP 5.2.12 (tar.bz2)</name>
       <filename>php-5.2.12.tar.bz2</filename>
       <date>2009-12-17</date>
-      <md5/>
-    </source>
-    <source>
+      <md5>5b7077e366c7eeab34da31dd860a1923</md5>
+    </file>
+    <file compression="tar.gz">
       <name>PHP 5.2.12 (tar.gz)</name>
       <filename>php-5.2.12.tar.gz</filename>
       <date>2009-12-17</date>
-      <md5/>
-    </source>
-  </sources>
+      <md5>e6d6cc6570c77f60d8d4c99565d42ffd</md5>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en">**Security Enhancements and Fixes in PHP 5.2.12:**
 
@@ -72,5 +73,6 @@ For users upgrading from PHP 5.0 and PHP 5.1, an upgrade guide is available [her
       </module>
     </modules>
   </changes>
+  <windows_builds/>
   <tags/>
 </release>

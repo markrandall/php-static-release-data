@@ -2,26 +2,27 @@
 <release version="5.5.16">
   <version>5.5.16</version>
   <date>2014-08-21</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>PHP 5.5.16 (tar.bz2)</name>
       <filename>php-5.5.16.tar.bz2</filename>
       <date>2014-08-21</date>
       <sha256>a1d7c4556a80bed744a348211b33bc35303edd56dd0a34e0a75a948c879cc5f6</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.gz">
       <name>PHP 5.5.16 (tar.gz)</name>
       <filename>php-5.5.16.tar.gz</filename>
       <date>2014-08-21</date>
       <sha256>cdea80ab1b0466f4656b46155e341b700799e78569a5cc582eeaededb448086c</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.xz">
       <name>PHP 5.5.16 (tar.xz)</name>
       <filename>php-5.5.16.tar.xz</filename>
       <date>2014-08-21</date>
       <sha256>8276e8de4928e8e7011d1ac6c841c5adfc4561c7329ef2f5e055e7f4e1af0e48</sha256>
-    </source>
-  </sources>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en">The PHP Development Team announces the immediate availability of PHP 5.5.16. This release fixes several bugs against PHP 5.5.15 and resolves CVE-2014-3538, CVE-2014-3587, CVE-2014-2497, CVE-2014-5120 and CVE-2014-3597.</announcement>
   </announcements>
@@ -132,5 +133,6 @@
       </module>
     </modules>
   </changes>
+  <windows_builds/>
   <tags/>
 </release>

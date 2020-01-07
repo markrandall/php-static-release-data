@@ -2,20 +2,21 @@
 <release version="5.4.0">
   <version>5.4.0</version>
   <date>2012-03-01</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>PHP 5.4.0 (tar.bz2)</name>
       <filename>php-5.4.0.tar.bz2</filename>
       <date>2012-03-01</date>
-      <md5/>
-    </source>
-    <source>
+      <md5>04bb6f9d71ea86ba05685439d50db074</md5>
+    </file>
+    <file compression="tar.gz">
       <name>PHP 5.4.0 (tar.gz)</name>
       <filename>php-5.4.0.tar.gz</filename>
       <date>2012-03-01</date>
-      <md5/>
-    </source>
-  </sources>
+      <md5>46b72e274c6ea7e775245ffdb81c9ce5</md5>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en">The PHP development team is proud to announce the immediate availability of PHP [5.4.0](http://php.net/downloads.php#v5.4.0). This release is a major leap forward in the 5.x series, and includes a large number of new features and bug fixes.
 
@@ -1444,5 +1445,6 @@ For users upgrading from PHP 5.3 there is a migration guide available [here](htt
       </module>
     </modules>
   </changes>
+  <windows_builds/>
   <tags/>
 </release>

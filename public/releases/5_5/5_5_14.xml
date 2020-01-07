@@ -2,20 +2,21 @@
 <release version="5.5.14">
   <version>5.5.14</version>
   <date>2014-06-26</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>PHP 5.5.14 (tar.bz2)</name>
       <filename>php-5.5.14.tar.bz2</filename>
       <date>2014-06-26</date>
       <sha256>df5a057877f827549e0a60b43fb01e4bd440814bcf04fbd70bacbddf74482610</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.gz">
       <name>PHP 5.5.14 (tar.gz)</name>
       <filename>php-5.5.14.tar.gz</filename>
       <date>2014-06-26</date>
       <sha256>ef7e4f4942c5767e01b96650a5bd4178c663738436f99b5695c3144732ff7166</sha256>
-    </source>
-  </sources>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en">The PHP Development Team announces the immediate availability of PHP 5.5.14. This release fixes several bugs against PHP 5.5.13. Also, this release fixes a total of 8 CVEs, half of them concerning the FileInfo extension.
 
@@ -196,5 +197,6 @@ Please, note that this release also fixes a backward compatibility issue that ha
       </module>
     </modules>
   </changes>
+  <windows_builds/>
   <tags/>
 </release>

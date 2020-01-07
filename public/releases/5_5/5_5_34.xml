@@ -2,26 +2,27 @@
 <release version="5.5.34">
   <version>5.5.34</version>
   <date>2016-03-31</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>PHP 5.5.34 (tar.bz2)</name>
       <filename>php-5.5.34.tar.bz2</filename>
       <date>2016-03-31</date>
       <sha256>af88884416a92619de842ad0fd23f7f7e8140efb0b9194f98a38a78781e5851c</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.gz">
       <name>PHP 5.5.34 (tar.gz)</name>
       <filename>php-5.5.34.tar.gz</filename>
       <date>2016-03-31</date>
       <sha256>0e573b406441294b233e35e1f2e12d7896d68457e3e10bf6e1f4825e75271cca</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.xz">
       <name>PHP 5.5.34 (tar.xz)</name>
       <filename>php-5.5.34.tar.xz</filename>
       <date>2016-03-31</date>
       <sha256>6989a4f9900e6ddec7248790449bbb4aa55728730bff4973acb49d236c9e9e2a</sha256>
-    </source>
-  </sources>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en"/>
   </announcements>
@@ -74,5 +75,6 @@
       </module>
     </modules>
   </changes>
+  <windows_builds/>
   <tags/>
 </release>

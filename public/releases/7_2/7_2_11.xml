@@ -2,26 +2,27 @@
 <release version="7.2.11">
   <version>7.2.11</version>
   <date>2018-10-11</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>PHP 7.2.11 (tar.bz2)</name>
       <filename>php-7.2.11.tar.bz2</filename>
       <date>2018-10-11</date>
       <sha256>4a0d7f402d07966b37a600796283f4ca4079d955d96d5bec024dd02009d8b4c5</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.gz">
       <name>PHP 7.2.11 (tar.gz)</name>
       <filename>php-7.2.11.tar.gz</filename>
       <date>2018-10-11</date>
       <sha256>180c63a9647c0a50d438b6bd5c7a8e7a11bceee8ad613a59d3ef15151fc158d4</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.xz">
       <name>PHP 7.2.11 (tar.xz)</name>
       <filename>php-7.2.11.tar.xz</filename>
       <date>2018-10-11</date>
       <sha256>da1a705c0bc46410e330fc6baa967666c8cd2985378fb9707c01a8e33b01d985</sha256>
-    </source>
-  </sources>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en">The PHP development team announces the immediate availability of PHP 7.2.11. This is a bugfix release.</announcement>
   </announcements>
@@ -125,5 +126,6 @@
       </module>
     </modules>
   </changes>
+  <windows_builds/>
   <tags/>
 </release>

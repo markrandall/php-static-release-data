@@ -2,14 +2,15 @@
 <release version="4.1.1">
   <version>4.1.1</version>
   <date>2001-12-26</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.gz">
       <name>Source (tar.gz)</name>
       <filename>php-4.1.1.tar.gz</filename>
-      <date>2020-01-07</date>
+      <date>2001-01-01</date>
       <md5/>
-    </source>
-  </sources>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en">Due to a few bugs in PHP 4.1.0, we decided to release PHP 4.1.1. The bugs that were fixed are not major ones but minor ones, which could be annoying if you get bitten by them.
 
@@ -34,5 +35,6 @@ Full list of fixes:
   <changes>
     <modules/>
   </changes>
+  <windows_builds/>
   <tags/>
 </release>

@@ -2,26 +2,27 @@
 <release version="7.2.0">
   <version>7.2.0</version>
   <date>2017-11-30</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>PHP 7.2.0 (tar.bz2)</name>
       <filename>php-7.2.0.tar.bz2</filename>
       <date>2017-11-30</date>
       <sha256>2bfefae4226b9b97879c9d33078e50bdb5c17f45ff6e255951062a529720c64a</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.gz">
       <name>PHP 7.2.0 (tar.gz)</name>
       <filename>php-7.2.0.tar.gz</filename>
       <date>2017-11-30</date>
       <sha256>801876abd52e0dc58a44701344252035fd50702d8f510cda7fdb317ab79897bc</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.xz">
       <name>PHP 7.2.0 (tar.xz)</name>
       <filename>php-7.2.0.tar.xz</filename>
       <date>2017-11-30</date>
       <sha256>87572a6b924670a5d4aac276aaa4a94321936283df391d702c845ffc112db095</sha256>
-    </source>
-  </sources>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en">The PHP development team announces the immediate availability of PHP 7.2.0. This release marks the second feature update to the PHP 7 series.
 
@@ -914,5 +915,6 @@ Many thanks to all the contributors and supporters!</announcement>
       </module>
     </modules>
   </changes>
+  <windows_builds/>
   <tags/>
 </release>

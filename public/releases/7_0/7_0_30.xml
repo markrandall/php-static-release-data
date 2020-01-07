@@ -2,26 +2,27 @@
 <release version="7.0.30">
   <version>7.0.30</version>
   <date>2018-04-26</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>PHP 7.0.30 (tar.bz2)</name>
       <filename>php-7.0.30.tar.bz2</filename>
       <date>2018-04-26</date>
       <sha256>213f38400c239b8fab2f6f59d6f4d4bd463d0a75bd4edf723dd4d5fea8850b50</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.gz">
       <name>PHP 7.0.30 (tar.gz)</name>
       <filename>php-7.0.30.tar.gz</filename>
       <date>2018-04-26</date>
       <sha256>54e7615205123b940b996300bf99c707c2317b6b78388061a204b23ab3388a26</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.xz">
       <name>PHP 7.0.30 (tar.xz)</name>
       <filename>php-7.0.30.tar.xz</filename>
       <date>2018-04-26</date>
       <sha256>c90892fb68ab9b8476519658d3f78f6388f2609ae1309bdc2a2e1cc9f92dd686</sha256>
-    </source>
-  </sources>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en"/>
   </announcements>
@@ -65,6 +66,7 @@
       </module>
     </modules>
   </changes>
+  <windows_builds/>
   <tags>
     <tag>security</tag>
   </tags>

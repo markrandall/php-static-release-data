@@ -83,7 +83,7 @@
 			}
 			
 			$xml_path = __DIR__ . '/../../../../public/releases/releases.xml';
-			$xml_str = XmlHelpers::SimpleXmlToFormatted($xml_releases);
+			$xml_str  = XmlHelpers::SimpleXmlToFormatted($xml_releases);
 			
 			if (!file_exists($xml_path) || file_get_contents($xml_path) !== $xml_str) {
 				$output->writeln('Writing to ' . $xml_path);

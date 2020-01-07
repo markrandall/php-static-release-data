@@ -2,32 +2,27 @@
 <release version="5.3.29">
   <version>5.3.29</version>
   <date>2014-08-14</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>PHP 5.3.29 (tar.bz2)</name>
       <filename>php-5.3.29.tar.bz2</filename>
       <date>2014-08-14</date>
       <sha256>c4e1cf6972b2a9c7f2777a18497d83bf713cdbecabb65d3ff62ba441aebb0091</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.gz">
       <name>PHP 5.3.29 (tar.gz)</name>
       <filename>php-5.3.29.tar.gz</filename>
       <date>2014-08-14</date>
       <sha256>57cf097de3d6c3152dda342f62b1b2e9c988f4cfe300ccfe3c11f3c207a0e317</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.xz">
       <name>PHP 5.3.29 (tar.xz)</name>
       <filename>php-5.3.29.tar.xz</filename>
       <date>2014-08-14</date>
       <sha256>8438c2f14ab8f3d6cd2495aa37de7b559e33b610f9ab264f0c61b531bf0c262d</sha256>
-    </source>
-    <source>
-      <name>Windows 5.3.29 binaries and source</name>
-      <filename/>
-      <date>2020-01-07</date>
-      <md5/>
-    </source>
-  </sources>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en">PHP 5.3.29 contains about 25 potentially security related fixes backported from PHP 5.4 and 5.5.
 
@@ -229,5 +224,6 @@ For helping your migration to newer versions please refer to our migration guide
       </module>
     </modules>
   </changes>
+  <windows_builds/>
   <tags/>
 </release>

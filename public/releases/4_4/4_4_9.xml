@@ -2,20 +2,21 @@
 <release version="4.4.9">
   <version>4.4.9</version>
   <date>2008-08-07</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>PHP 4.4.9 (tar.bz2)</name>
       <filename>php-4.4.9.tar.bz2</filename>
       <date>2008-08-07</date>
-      <md5/>
-    </source>
-    <source>
+      <md5>2e3b2a0e27f10cb84fd00e5ecd7a1880</md5>
+    </file>
+    <file compression="tar.gz">
       <name>PHP 4.4.9 (tar.gz)</name>
       <filename>php-4.4.9.tar.gz</filename>
       <date>2008-08-07</date>
-      <md5/>
-    </source>
-  </sources>
+      <md5>9bcc1aba50be0dfeeea551d018375548</md5>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en">The PHP development team would like to announce the immediate availability of PHP 4.4.9. It continues to improve the security and the stability of the 4.4 branch and all users are strongly encouraged to upgrade to it as soon as possible. This release wraps up all the outstanding patches for the PHP 4.4 series, and is therefore the **last** PHP 4.4 release.
 
@@ -32,5 +33,6 @@
   <changes>
     <modules/>
   </changes>
+  <windows_builds/>
   <tags/>
 </release>

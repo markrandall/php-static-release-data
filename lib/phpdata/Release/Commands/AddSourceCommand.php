@@ -7,7 +7,7 @@
 	use DateTimeImmutable;
 	use Exception;
 	use phpdata\Release\Release;
-	use phpdata\Release\Source;
+	use phpdata\Release\SourceFile;
 	use Symfony\Component\Console\Input\InputArgument;
 	use Symfony\Component\Console\Input\InputInterface;
 	use Symfony\Component\Console\Input\InputOption;
@@ -49,7 +49,7 @@
 				return 1;
 			}
 			
-			$source = new Source($name, $filename, $date_time, $sha256, '');
+			$source = new SourceFile($name, $filename, $date_time, $sha256, '');
 			$release->addSource($source);
 			
 			$output->writeln('Added source file');

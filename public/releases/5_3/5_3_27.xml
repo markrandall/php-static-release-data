@@ -2,26 +2,21 @@
 <release version="5.3.27">
   <version>5.3.27</version>
   <date>2013-07-11</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>PHP 5.3.27 (tar.bz2)</name>
       <filename>php-5.3.27.tar.bz2</filename>
       <date>2013-07-11</date>
       <sha256>e12db21c623b82a2244c4dd9b06bb75af20868c1b748a105a6829a5acc36b287</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.gz">
       <name>PHP 5.3.27 (tar.gz)</name>
       <filename>php-5.3.27.tar.gz</filename>
       <date>2013-07-11</date>
       <sha256>5ecd737fc79ad33b5c79a9784c0b4211d211ba682d4d721ac6ce975907a5b12b</sha256>
-    </source>
-    <source>
-      <name>Windows 5.3.27 binaries and source</name>
-      <filename/>
-      <date>2020-01-07</date>
-      <md5/>
-    </source>
-  </sources>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en">The PHP development team announces the immediate availability of PHP 5.3.27. About 10 bugs were fixed, including a security fix in the XML parser (Bug #65236).</announcement>
   </announcements>
@@ -110,5 +105,6 @@
       </module>
     </modules>
   </changes>
+  <windows_builds/>
   <tags/>
 </release>

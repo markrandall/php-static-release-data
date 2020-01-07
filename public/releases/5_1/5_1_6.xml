@@ -2,20 +2,21 @@
 <release version="5.1.6">
   <version>5.1.6</version>
   <date>2006-08-24</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>Source (tar.bz2)</name>
       <filename>php-5.1.6.tar.bz2</filename>
-      <date>2020-01-07</date>
+      <date>2001-01-01</date>
       <md5/>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.gz">
       <name>Source (tar.gz)</name>
       <filename>php-5.1.6.tar.gz</filename>
-      <date>2020-01-07</date>
+      <date>2001-01-01</date>
       <md5/>
-    </source>
-  </sources>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en">This release is a re-release of PHP 5.1.5, which was missing the fix for memory_limit restriction on 64 bit systems. If you rely on this functionality and use 64bit machines, you are advised to upgrade.
 
@@ -24,5 +25,6 @@
   <changes>
     <modules/>
   </changes>
+  <windows_builds/>
   <tags/>
 </release>

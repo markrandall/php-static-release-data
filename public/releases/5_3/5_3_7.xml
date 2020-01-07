@@ -2,20 +2,21 @@
 <release version="5.3.7">
   <version>5.3.7</version>
   <date>2011-08-18</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>PHP 5.3.7 (tar.bz2)</name>
       <filename>php-5.3.7.tar.bz2</filename>
       <date>2011-08-18</date>
-      <md5/>
-    </source>
-    <source>
+      <md5>2d47d003c96de4e88863ff38da61af33</md5>
+    </file>
+    <file compression="tar.gz">
       <name>PHP 5.3.7 (tar.gz)</name>
       <filename>php-5.3.7.tar.gz</filename>
       <date>2011-08-18</date>
-      <md5/>
-    </source>
-  </sources>
+      <md5>1ec460bf3a40cea4079ee80076558d51</md5>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en">The PHP development team would like to announce the immediate availability of PHP 5.3.7. This release focuses on improving the stability of the PHP 5.3.x branch with over 90 bug fixes, some of which are security related.
 
@@ -810,5 +811,6 @@ All PHP users should note that the PHP 5.2 series is NOT supported anymore. All 
       </module>
     </modules>
   </changes>
+  <windows_builds/>
   <tags/>
 </release>

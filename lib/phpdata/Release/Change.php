@@ -4,6 +4,8 @@
 	
 	namespace phpdata\Release;
 	
+	use SimpleXMLElement;
+	
 	class Change
 	{
 		private string $description;
@@ -40,5 +42,17 @@
 				'description' => $this->description,
 				'references'  => $refs,
 			];
+		}
+		
+		public static function FromXmlElement(SimpleXMLElement $element): self {
+			$refs = [];
+			foreach ($element->references->reference as $ref) {
+				$refs[] = new ChangeReference(
+					(string)$ref->attributes()->type,
+					(string)$ref
+				);
+			}
+			
+			return new Change((string)$element->description, $refs);
 		}
 	}

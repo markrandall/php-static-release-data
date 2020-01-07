@@ -2,20 +2,21 @@
 <release version="5.2.15">
   <version>5.2.15</version>
   <date>2010-12-09</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>PHP 5.2.15 (tar.bz2)</name>
       <filename>php-5.2.15.tar.bz2</filename>
       <date>2010-12-09</date>
-      <md5/>
-    </source>
-    <source>
+      <md5>d4ccad187b12835024980a0cea362893</md5>
+    </file>
+    <file compression="tar.gz">
       <name>PHP 5.2.15 (tar.gz)</name>
       <filename>php-5.2.15.tar.gz</filename>
       <date>2010-12-09</date>
-      <md5/>
-    </source>
-  </sources>
+      <md5>dbbb2beed6b51e05d134744f137091a9</md5>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en">This release focuses on improving the security and stability of the PHP 5.2.x branch with a small number, of predominatly security fixes.
 
@@ -40,5 +41,6 @@ For a full list of changes in PHP 5.2.15 see the ChangeLog at &lt;http://www.php
   <changes>
     <modules/>
   </changes>
+  <windows_builds/>
   <tags/>
 </release>

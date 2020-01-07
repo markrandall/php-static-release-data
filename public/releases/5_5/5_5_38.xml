@@ -2,26 +2,27 @@
 <release version="5.5.38">
   <version>5.5.38</version>
   <date>2016-07-21</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>PHP 5.5.38 (tar.bz2)</name>
       <filename>php-5.5.38.tar.bz2</filename>
       <date>2016-07-21</date>
       <sha256>473c81ebb2e48ca468caee031762266651843d7227c18a824add9b07b9393e38</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.gz">
       <name>PHP 5.5.38 (tar.gz)</name>
       <filename>php-5.5.38.tar.gz</filename>
       <date>2016-07-21</date>
       <sha256>4f458c9b504269615715a62f182b7c2f89bb8284f484befc221b56a1571b506e</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.xz">
       <name>PHP 5.5.38 (tar.xz)</name>
       <filename>php-5.5.38.tar.xz</filename>
       <date>2016-07-21</date>
       <sha256>cb527c44b48343c8557fe2446464ff1d4695155a95601083e5d1f175df95580f</sha256>
-    </source>
-  </sources>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en">The PHP development team announces the immediate availability of PHP 5.5.38. This is a security release that fixes some security related bugs.
 
@@ -152,5 +153,6 @@
       </module>
     </modules>
   </changes>
+  <windows_builds/>
   <tags/>
 </release>

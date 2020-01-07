@@ -2,32 +2,27 @@
 <release version="5.5.2">
   <version>5.5.2</version>
   <date>2013-08-15</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>PHP 5.5.2 (tar.bz2)</name>
       <filename>php-5.5.2.tar.bz2</filename>
       <date>2013-08-15</date>
-      <md5/>
-    </source>
-    <source>
+      <md5>caf7f4d86514a568fb3c8021b096a9f0</md5>
+    </file>
+    <file compression="tar.gz">
       <name>PHP 5.5.2 (tar.gz)</name>
       <filename>php-5.5.2.tar.gz</filename>
       <date>2013-08-15</date>
-      <md5/>
-    </source>
-    <source>
+      <md5>2a90884749f97868071538098b3debc1</md5>
+    </file>
+    <file compression="tar.xz">
       <name>PHP 5.5.2 (tar.xz)</name>
       <filename>php-5.5.2.tar.xz</filename>
       <date>2013-08-15</date>
-      <md5/>
-    </source>
-    <source>
-      <name>Windows 5.5.2 binaries and source</name>
-      <filename/>
-      <date>2020-01-07</date>
-      <md5/>
-    </source>
-  </sources>
+      <md5>95c6d7a4c36c475b10447954dea056a5</md5>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en">The PHP development team announces the immediate availability of PHP 5.5.2. About 20 bugs were fixed, including security issue in OpenSSL module (CVE-2013-4248) and session fixation problem (CVE-2011-4718).
 
@@ -189,5 +184,6 @@
       </module>
     </modules>
   </changes>
+  <windows_builds/>
   <tags/>
 </release>

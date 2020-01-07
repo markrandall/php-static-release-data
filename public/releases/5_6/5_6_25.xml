@@ -2,26 +2,27 @@
 <release version="5.6.25">
   <version>5.6.25</version>
   <date>2016-08-18</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>PHP 5.6.25 (tar.bz2)</name>
       <filename>php-5.6.25.tar.bz2</filename>
       <date>2016-08-18</date>
       <sha256>58ce6032aced7f3e42ced492bd9820e5b3f2a3cd3ef71429aa92fd7b3eb18dde</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.gz">
       <name>PHP 5.6.25 (tar.gz)</name>
       <filename>php-5.6.25.tar.gz</filename>
       <date>2016-08-18</date>
       <sha256>733f1c811d51c2d4031a0c058dc94d09d03858d781ca2eb2cce78853bc76db58</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.xz">
       <name>PHP 5.6.25 (tar.xz)</name>
       <filename>php-5.6.25.tar.xz</filename>
       <date>2016-08-18</date>
       <sha256>7535cd6e20040ccec4594cc386c6f15c3f2c88f24163294a31068cf7dfe7f644</sha256>
-    </source>
-  </sources>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en"/>
   </announcements>
@@ -422,5 +423,6 @@
       </module>
     </modules>
   </changes>
+  <windows_builds/>
   <tags/>
 </release>

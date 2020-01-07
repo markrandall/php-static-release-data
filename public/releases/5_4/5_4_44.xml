@@ -2,26 +2,21 @@
 <release version="5.4.44">
   <version>5.4.44</version>
   <date>2015-08-06</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>PHP 5.4.44 (tar.bz2)</name>
       <filename>php-5.4.44.tar.bz2</filename>
       <date>2015-08-06</date>
       <sha256>8dd59e5ce9248cf36ac3de5412a518b8b24c01ace6c46ce3d12e4ce981a3856d</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.gz">
       <name>PHP 5.4.44 (tar.gz)</name>
       <filename>php-5.4.44.tar.gz</filename>
       <date>2015-08-06</date>
       <sha256>1799998e48da3d8f34722840628e18789e26ea21741d4e498ade6749b3266602</sha256>
-    </source>
-    <source>
-      <name>Windows 5.4.44 binaries and source</name>
-      <filename/>
-      <date>2020-01-07</date>
-      <md5/>
-    </source>
-  </sources>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en">Please note that PHP 5.4 branch is nearing the end of its [support timeframe](http://php.net/supported-versions.php). Either September or October release, depending on discovered issues, will be the last official release of PHP 5.4. If your PHP installation is based on PHP 5.4, it may be a good time to start making the plans for the upgrade.</announcement>
   </announcements>
@@ -109,5 +104,6 @@
       </module>
     </modules>
   </changes>
+  <windows_builds/>
   <tags/>
 </release>

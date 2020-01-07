@@ -5,8 +5,15 @@
 	namespace phpdata\Release;
 	
 	use DateTimeImmutable;
+	use SimpleXMLElement;
 	
-	class Source
+	/**
+	 * Represents a source code release
+	 *
+	 * Every release of PHP has its source code distributed in several different
+	 * compression formats (bz2, gz, xz).
+	 */
+	class SourceFile
 	{
 		private string $name;
 		
@@ -54,5 +61,15 @@
 				'sha256'   => $this->sha256,
 				'md5'      => $this->md5,
 			];
+		}
+		
+		public static function FromXmlElement(SimpleXMLElement $element): self {
+			return new SourceFile(
+				(string)$element->name ?: '',
+				(string)$element->filename ?: '',
+				new DateTimeImmutable((string)$element->date),
+				(string)$element->sha256,
+				(string)$element->md5
+			);
 		}
 	}

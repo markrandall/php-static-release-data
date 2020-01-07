@@ -2,20 +2,21 @@
 <release version="5.3.3">
   <version>5.3.3</version>
   <date>2010-07-22</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>PHP 5.3.3 (tar.bz2)</name>
       <filename>php-5.3.3.tar.bz2</filename>
       <date>2010-07-22</date>
-      <md5/>
-    </source>
-    <source>
+      <md5>21ceeeb232813c10283a5ca1b4c87b48</md5>
+    </file>
+    <file compression="tar.gz">
       <name>PHP 5.3.3 (tar.gz)</name>
       <filename>php-5.3.3.tar.gz</filename>
       <date>2010-07-22</date>
-      <md5/>
-    </source>
-  </sources>
+      <md5>5adf1a537895c2ec933fddd48e78d8a2</md5>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en">**Backwards incompatible change:**
 
@@ -66,5 +67,6 @@ For users upgrading from PHP 5.2 there is a migration guide available on [http:/
   <changes>
     <modules/>
   </changes>
+  <windows_builds/>
   <tags/>
 </release>

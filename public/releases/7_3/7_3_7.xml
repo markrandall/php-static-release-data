@@ -2,26 +2,27 @@
 <release version="7.3.7">
   <version>7.3.7</version>
   <date>2019-07-04</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>PHP 7.3.7 (tar.bz2)</name>
       <filename>php-7.3.7.tar.bz2</filename>
       <date>2019-07-04</date>
       <sha256>c3608fa7114642725854119ccffe722f42fc7c31e5e4c00d5cb4cb1a0d16bf18</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.gz">
       <name>PHP 7.3.7 (tar.gz)</name>
       <filename>php-7.3.7.tar.gz</filename>
       <date>2019-07-04</date>
       <sha256>4230bbc862df712b013369de94b131eddea1e5e946a8c5e286b82d441c313328</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.xz">
       <name>PHP 7.3.7 (tar.xz)</name>
       <filename>php-7.3.7.tar.xz</filename>
       <date>2019-07-04</date>
       <sha256>ba067200ba649956b3a92ec8b71a6ed8ce8a099921212443c1bcf3260a29274c</sha256>
-    </source>
-  </sources>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en">The PHP development team announces the immediate availability of PHP 7.3.7. This is a bug fix release.</announcement>
   </announcements>
@@ -135,5 +136,6 @@
       </module>
     </modules>
   </changes>
+  <windows_builds/>
   <tags/>
 </release>

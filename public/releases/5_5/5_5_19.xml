@@ -2,26 +2,27 @@
 <release version="5.5.19">
   <version>5.5.19</version>
   <date>2014-11-13</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>PHP 5.5.19 (tar.bz2)</name>
       <filename>php-5.5.19.tar.bz2</filename>
       <date>2014-11-13</date>
       <sha256>4366dbb904cba8c8dd32224ac9408495d20aecaed86a871d78df420f5a23bbff</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.gz">
       <name>PHP 5.5.19 (tar.gz)</name>
       <filename>php-5.5.19.tar.gz</filename>
       <date>2014-11-13</date>
       <sha256>8d39f224424f37644da913353f1e773c20b7fc55bb3cc81526c18f91d1d6394e</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.xz">
       <name>PHP 5.5.19 (tar.xz)</name>
       <filename>php-5.5.19.tar.xz</filename>
       <date>2014-11-13</date>
       <sha256>ccff8dfcd342e48a5b1e8b85c1c8c95d2e2eefab869757dcaa5224f11bb30e21</sha256>
-    </source>
-  </sources>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en"/>
   </announcements>
@@ -122,5 +123,6 @@
       </module>
     </modules>
   </changes>
+  <windows_builds/>
   <tags/>
 </release>

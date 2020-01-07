@@ -2,26 +2,27 @@
 <release version="7.2.8">
   <version>7.2.8</version>
   <date>2018-07-19</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>PHP 7.2.8 (tar.bz2)</name>
       <filename>php-7.2.8.tar.bz2</filename>
       <date>2018-07-19</date>
       <sha256>1f8068f520a60fff3db19be1b849f0c02a33a0fd8b34b7ae05556ef682187ee6</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.gz">
       <name>PHP 7.2.8 (tar.gz)</name>
       <filename>php-7.2.8.tar.gz</filename>
       <date>2018-07-19</date>
       <sha256>a0cb9bf2f78498fc090eb553df03cdacc198785dec0818efa7a1804c2b7a8722</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.xz">
       <name>PHP 7.2.8 (tar.xz)</name>
       <filename>php-7.2.8.tar.xz</filename>
       <date>2018-07-19</date>
       <sha256>53ba0708be8a7db44256e3ae9fcecc91b811e5b5119e6080c951ffe7910ffb0f</sha256>
-    </source>
-  </sources>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en">The PHP development team announces the immediate availability of PHP 7.2.8. This is a security release which also contains several minor bug fixes.</announcement>
   </announcements>
@@ -179,6 +180,7 @@
       </module>
     </modules>
   </changes>
+  <windows_builds/>
   <tags>
     <tag>security</tag>
   </tags>

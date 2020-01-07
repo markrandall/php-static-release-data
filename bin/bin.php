@@ -6,6 +6,8 @@
 	use phpdata\Release\Commands\AddTagsConsoleCommand;
 	use phpdata\Release\Commands\CreateReleaseCommand;
 	use phpdata\Release\Commands\ImportNewsCommand;
+	use phpdata\Release\Commands\ImportSourcesCommand;
+	use phpdata\Release\Commands\ImportWindowsBuildsCommand;
 	use phpdata\Release\Commands\RemoveTagsConsoleCommand;
 	use phpdata\Tools\Commands\CompileCommand;
 	use Symfony\Component\Console\Application;
@@ -19,13 +21,15 @@
 	$app = new Application('PHP Web Data Updater');
 	$app->addCommands(
 		[
-			/* create release */
+			/* shared release based */
 			new CreateReleaseCommand(),
+			new ImportWindowsBuildsCommand(),
+			new ImportSourcesCommand(),
+			new ImportNewsCommand(),
 			
 			/* modify release */
 			new AddAnnouncementCommand(),
 			new AddSourceCommand(),
-			new ImportNewsCommand(),
 			new AddTagsConsoleCommand(),
 			new RemoveTagsConsoleCommand(),
 			

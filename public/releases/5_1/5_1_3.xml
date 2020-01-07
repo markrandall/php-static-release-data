@@ -2,14 +2,15 @@
 <release version="5.1.3">
   <version>5.1.3</version>
   <date>2006-05-02</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.gz">
       <name>Source (tar.gz)</name>
       <filename>php-5.1.3.tar.gz</filename>
-      <date>2020-01-07</date>
+      <date>2001-01-01</date>
       <md5/>
-    </source>
-  </sources>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en">PHP 5.1.3. Release Announcement
 
@@ -151,5 +152,6 @@ The release also includes over 120 bug fixes with a focus on:
       </module>
     </modules>
   </changes>
+  <windows_builds/>
   <tags/>
 </release>

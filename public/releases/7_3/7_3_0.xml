@@ -2,26 +2,27 @@
 <release version="7.3.0">
   <version>7.3.0</version>
   <date>2018-12-06</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>PHP 7.3.0 (tar.bz2)</name>
       <filename>php-7.3.0.tar.bz2</filename>
       <date>2018-12-06</date>
       <sha256>7a267daec9969a997c5c8028c350229646748e0fcc71e2f2dbb157ddcee87c67</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.gz">
       <name>PHP 7.3.0 (tar.gz)</name>
       <filename>php-7.3.0.tar.gz</filename>
       <date>2018-12-06</date>
       <sha256>391bd0f91d9bdd01ab47ef9607bad8c65e35bc9bb098fb7777b2556e2c847b11</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.xz">
       <name>PHP 7.3.0 (tar.xz)</name>
       <filename>php-7.3.0.tar.xz</filename>
       <date>2018-12-06</date>
       <sha256>7d195cad55af8b288c3919c67023a14ff870a73e3acc2165a6d17a4850a560b5</sha256>
-    </source>
-  </sources>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en">The PHP development team announces the immediate availability of PHP 7.3.0. This release marks the third feature update to the PHP 7 series.
 
@@ -1125,5 +1126,6 @@ Many thanks to all the contributors and supporters!</announcement>
       </module>
     </modules>
   </changes>
+  <windows_builds/>
   <tags/>
 </release>

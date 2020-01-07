@@ -2,26 +2,21 @@
 <release version="5.4.30">
   <version>5.4.30</version>
   <date>2014-06-26</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>PHP 5.4.30 (tar.bz2)</name>
       <filename>php-5.4.30.tar.bz2</filename>
       <date>2014-06-26</date>
       <sha256>32b83644e42d57388d6e5ec700c3502cde5f5e1207395b1e361e4cb2ce496ce6</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.gz">
       <name>PHP 5.4.30 (tar.gz)</name>
       <filename>php-5.4.30.tar.gz</filename>
       <date>2014-06-26</date>
       <sha256>c17da64890b728bdc146bdc69b37085412d4e2585fac98848ac2e824bb564c85</sha256>
-    </source>
-    <source>
-      <name>Windows 5.4.30 binaries and source</name>
-      <filename/>
-      <date>2020-01-07</date>
-      <md5/>
-    </source>
-  </sources>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en">Please, note that this release also fixes a backward compatibility issue that has been detected in the PHP 5.4.29 release. Still, the fix in PHP 5.4.30 may break some very rare situations. As this tiny compatibility break involves security, and as security is our primary concern, we had to fix it. This concerns [bug 67072](https://bugs.php.net/bug.php?id=67072). For more information about this bug and its actual resolution, please refer to our [upgrading guide](http://git.php.net/?p=php-src.git;a=blob_plain;f=UPGRADING;hb=refs/heads/PHP-5.4), section 4a. We apologize for any inconvenience you may have experienced with this behavior.</announcement>
   </announcements>
@@ -188,5 +183,6 @@
       </module>
     </modules>
   </changes>
+  <windows_builds/>
   <tags/>
 </release>

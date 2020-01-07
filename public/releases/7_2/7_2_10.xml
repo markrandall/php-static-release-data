@@ -2,26 +2,27 @@
 <release version="7.2.10">
   <version>7.2.10</version>
   <date>2018-09-13</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>PHP 7.2.10 (tar.bz2)</name>
       <filename>php-7.2.10.tar.bz2</filename>
       <date>2018-09-13</date>
       <sha256>01b6129a0921a1636b07da9bc598a876669e45a462cef4b5844fc26862dbda9d</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.gz">
       <name>PHP 7.2.10 (tar.gz)</name>
       <filename>php-7.2.10.tar.gz</filename>
       <date>2018-09-13</date>
       <sha256>d2d908b49b6005e65dcc46cdc986603a19b7ff103119fce8ddd4648586d430a4</sha256>
-    </source>
-    <source>
+    </file>
+    <file compression="tar.xz">
       <name>PHP 7.2.10 (tar.xz)</name>
       <filename>php-7.2.10.tar.xz</filename>
       <date>2018-09-13</date>
       <sha256>01c2154a3a8e3c0818acbdbc1a956832c828a0380ce6d1d14fea495ea21804f0</sha256>
-    </source>
-  </sources>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en">The PHP development team announces the immediate availability of PHP 7.2.10. This is a security release which also contains several minor bug fixes.</announcement>
   </announcements>
@@ -182,6 +183,7 @@
       </module>
     </modules>
   </changes>
+  <windows_builds/>
   <tags>
     <tag>security</tag>
   </tags>

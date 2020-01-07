@@ -2,32 +2,27 @@
 <release version="5.5.4">
   <version>5.5.4</version>
   <date>2013-09-19</date>
-  <sources>
-    <source>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
       <name>PHP 5.5.4 (tar.bz2)</name>
       <filename>php-5.5.4.tar.bz2</filename>
       <date>2013-09-19</date>
-      <md5/>
-    </source>
-    <source>
+      <md5>456f2eb1ee36f2a277bd4cc778e720eb</md5>
+    </file>
+    <file compression="tar.gz">
       <name>PHP 5.5.4 (tar.gz)</name>
       <filename>php-5.5.4.tar.gz</filename>
       <date>2013-09-19</date>
-      <md5/>
-    </source>
-    <source>
+      <md5>bf842770ac64a47ff599f463e6cf1334</md5>
+    </file>
+    <file compression="tar.xz">
       <name>PHP 5.5.4 (tar.xz)</name>
       <filename>php-5.5.4.tar.xz</filename>
       <date>2013-09-19</date>
-      <md5/>
-    </source>
-    <source>
-      <name>Windows 5.5.4 binaries and source</name>
-      <filename/>
-      <date>2020-01-07</date>
-      <md5/>
-    </source>
-  </sources>
+      <md5>32c1dc56701d21def91a39a312392b54</md5>
+    </file>
+  </source>
   <announcements>
     <announcement lang="en">The PHP development team announces the immediate availability of PHP 5.5.4. This release fixes several bugs against PHP 5.5.3.</announcement>
   </announcements>
@@ -147,5 +142,6 @@
       </module>
     </modules>
   </changes>
+  <windows_builds/>
   <tags/>
 </release>
