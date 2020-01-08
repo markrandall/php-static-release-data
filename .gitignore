@@ -1,2 +1,4 @@
 lib/vendor/
 composer.phar
+docker/.env
+.idea

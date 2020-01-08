@@ -1,0 +1,15 @@
+version: "3.4"
+volumes:
+  php_internals_data:
+    external:
+      name: php_internals_meta
+
+services:
+  nginx:
+    build:
+      context: ./nginx
+    restart: "always"
+    ports:
+    - "${expose_port}:80"
+    volumes:
+    - php_internals_data:/app
