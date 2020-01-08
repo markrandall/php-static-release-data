@@ -64,11 +64,13 @@
 					$release = Release::LoadFromFile($xml_path);
 					$release->save();
 					
-					$xml_branch_releases
+					$rc = $xml_branch_releases
 						->addChild(
 							'release', $branch_name . '/' . str_replace('.', '_', $release->getVersionString()) . '.xml'
-						)
-						->addAttribute('version', $release->getVersionString());
+						);
+					
+					$rc->addAttribute('version', $release->getVersionString());
+					$rc->addAttribute('sha256', hash_file('sha256', Release::PathFromVersion($release->getVersionString())));
 					
 					$all_branches[$branch_ver]['releases'][$release->getVersionString()] = $release->toJson();
 				}
