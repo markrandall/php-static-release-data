@@ -1,0 +1,288 @@
+<?xml version="1.0"?>
+<release version="7.3.14">
+  <version>7.3.14</version>
+  <date>2020-01-23</date>
+  <stage>stable</stage>
+  <source/>
+  <announcements/>
+  <changes>
+    <modules>
+      <module id="cor">
+        <change>
+          <description>(Cycle leak when using function result as temporary).(Dmitry)</description>
+          <references>
+            <reference type="bugfix">78999</reference>
+          </references>
+        </change>
+      </module>
+      <module id="curl">
+        <change>
+          <description>(Curl timeout error with specific url and post)</description>
+          <references>
+            <reference type="bugfix">79033</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+      </module>
+      <module id="date">
+        <change>
+          <description>(undefined-behavior in php_date.c)</description>
+          <references>
+            <reference type="bugfix">79015</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+      </module>
+      <module id="dba">
+        <change>
+          <description>([LMDB] MDB_MAP_FULL: Environment mapsize limit reached).(cmb)</description>
+          <references>
+            <reference type="bugfix">78808</reference>
+          </references>
+        </change>
+      </module>
+      <module id="fileinfo">
+        <change>
+          <description>(locale information change after mime_content_type).(Sergei Turchanov)</description>
+          <references>
+            <reference type="bugfix">74170</reference>
+          </references>
+        </change>
+      </module>
+      <module id="gd">
+        <change>
+          <description>(Artifacts when convoluting image with transparency).(wilson chen)</description>
+          <references>
+            <reference type="bugfix">78923</reference>
+          </references>
+        </change>
+        <change>
+          <description>(gdTransformAffineCopy() may use unitialized values)</description>
+          <references>
+            <reference type="bugfix">79067</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+        <change>
+          <description>(gdTransformAffineCopy() changes interpolation method).(cmb)</description>
+          <references>
+            <reference type="bugfix">79068</reference>
+          </references>
+        </change>
+      </module>
+      <module id="libxml">
+        <change>
+          <description>(Use After Free's in XMLReader / XMLWriter)</description>
+          <references>
+            <reference type="bugfix">79029</reference>
+            <reference type="author">Laruence</reference>
+          </references>
+        </change>
+      </module>
+      <module id="mbstring">
+        <change>
+          <description>(global buffer-overflow in `mbfl_filt_conv_big5_wchar`)</description>
+          <references>
+            <reference type="bugfix">79037</reference>
+            <reference type="cve">CVE-2020-7060</reference>
+            <reference type="author">Nikita</reference>
+          </references>
+        </change>
+      </module>
+      <module id="opcache">
+        <change>
+          <description>(Warning Opcode handlers are unusable due to ASLR)</description>
+          <references>
+            <reference type="bugfix">79040</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+      </module>
+      <module id="pcntl">
+        <change>
+          <description>(Converting null to string in error message is bad DX).(SAT&#x14C; Kentar&#x14D;)</description>
+          <references>
+            <reference type="bugfix">78402</reference>
+          </references>
+        </change>
+      </module>
+      <module id="pdo_pgsql">
+        <change>
+          <description>(pdo_pgsql config.w32 cannot find libpq-fe.h)</description>
+          <references>
+            <reference type="bugfix">78983</reference>
+            <reference type="author">SAT&#x14C;Kentar&#x14D;</reference>
+          </references>
+        </change>
+        <change>
+          <description>(pgsqlGetNotify() overlooks dead connection)</description>
+          <references>
+            <reference type="bugfix">78980</reference>
+            <reference type="author">SAT&#x14C;Kentar&#x14D;</reference>
+          </references>
+        </change>
+        <change>
+          <description>(pdo_pgsql returns dead persistent connection)</description>
+          <references>
+            <reference type="bugfix">78982</reference>
+            <reference type="author">SAT&#x14C;Kentar&#x14D;</reference>
+          </references>
+        </change>
+      </module>
+      <module id="session">
+        <change>
+          <description>(heap use-after-free in session_create_id())</description>
+          <references>
+            <reference type="bugfix">79091</reference>
+            <reference type="author">cmb</reference>
+            <reference type="author">Nikita</reference>
+          </references>
+        </change>
+      </module>
+      <module id="shmop">
+        <change>
+          <description>(shmop memory leak)</description>
+          <references>
+            <reference type="bugfix">78538</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+      </module>
+      <module id="standard">
+        <change>
+          <description>(OOB read in php_strip_tags_ex).</description>
+          <references>
+            <reference type="bugfix">79099</reference>
+            <reference type="cve">CVE-2020-7059</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+        <change>
+          <description>(Using empty additional_headers adding extraneous CRLF).(cmb)</description>
+          <references>
+            <reference type="bugfix">54298</reference>
+          </references>
+        </change>
+      </module>
+    </modules>
+  </changes>
+  <windows_builds>
+    <build name="ts-VC15-x64">
+      <label>Thread-Safe - Win64 - vc15</label>
+      <files>
+        <file name="zip">
+          <path>php-7.3.14-Win32-VC15-x64.zip</path>
+          <size>25165824</size>
+          <sha256>10272a9ff747363688c0726c9324fcd426d707d6afb575288c65d6d0c5f6c8d1</sha256>
+          <url>https://windows.php.net/downloads/releases/php-7.3.14-Win32-VC15-x64.zip</url>
+        </file>
+        <file name="debug_pack">
+          <path>php-debug-pack-7.3.14-Win32-VC15-x64.zip</path>
+          <size>24117248</size>
+          <sha256>568a13fd5fbd21b1d08d98cf01a9259577f6bd3dffdec9310bcde788b38f0cbc</sha256>
+          <url>https://windows.php.net/downloads/releases/php-debug-pack-7.3.14-Win32-VC15-x64.zip</url>
+        </file>
+        <file name="devel_pack">
+          <path>php-devel-pack-7.3.14-Win32-VC15-x64.zip</path>
+          <size>1048576</size>
+          <sha256>59886bed12af2bc343ac5f0f0014ef738f22b4eb50449860da821124552d79e1</sha256>
+          <url>https://windows.php.net/downloads/releases/php-devel-pack-7.3.14-Win32-VC15-x64.zip</url>
+        </file>
+      </files>
+      <dependencies>
+        <dependency>
+          <label>x64 Redistributable for Visual Studio 2015-2019</label>
+          <url>https://aka.ms/vs/16/release/VC_redist.x64.exe</url>
+        </dependency>
+      </dependencies>
+    </build>
+    <build name="ts-VC15-x86">
+      <label>Thread-Safe - Win32 - vc15</label>
+      <files>
+        <file name="zip">
+          <path>php-7.3.14-Win32-VC15-x86.zip</path>
+          <size>23068672</size>
+          <sha256>ddfc3c3d9091cd371a579ae5f5851157eee0072e07f2bf3d98c9a5239ca6de3d</sha256>
+          <url>https://windows.php.net/downloads/releases/php-7.3.14-Win32-VC15-x86.zip</url>
+        </file>
+        <file name="debug_pack">
+          <path>php-debug-pack-7.3.14-Win32-VC15-x86.zip</path>
+          <size>25165824</size>
+          <sha256>6f3f2d1dc4ee7f7dce6cf1dea1274c55ba662e5bdda36404e5c3de2b7488ea34</sha256>
+          <url>https://windows.php.net/downloads/releases/php-debug-pack-7.3.14-Win32-VC15-x86.zip</url>
+        </file>
+        <file name="devel_pack">
+          <path>php-devel-pack-7.3.14-Win32-VC15-x86.zip</path>
+          <size>1048576</size>
+          <sha256>b0d68e31dd93b27903cb3ce39dfd090fb57277cc02a6872b4e522b6af1c25f92</sha256>
+          <url>https://windows.php.net/downloads/releases/php-devel-pack-7.3.14-Win32-VC15-x86.zip</url>
+        </file>
+      </files>
+      <dependencies>
+        <dependency>
+          <label>x86 Redistributable for Visual Studio 2015-2019</label>
+          <url>https://aka.ms/vs/16/release/VC_redist.x86.exe</url>
+        </dependency>
+      </dependencies>
+    </build>
+    <build name="nts-VC15-x64">
+      <label>Non Thread Safe - Win64 - vc15</label>
+      <files>
+        <file name="zip">
+          <path>php-7.3.14-nts-Win32-VC15-x64.zip</path>
+          <size>25165824</size>
+          <sha256>32810d2e589a4977843a5df033f10d3646283fe6859af5fadf397388c47e4c75</sha256>
+          <url>https://windows.php.net/downloads/releases/php-7.3.14-nts-Win32-VC15-x64.zip</url>
+        </file>
+        <file name="debug_pack">
+          <path>php-debug-pack-7.3.14-nts-Win32-VC15-x64.zip</path>
+          <size>24117248</size>
+          <sha256>9b5c19d358b42198afb5aa8462c6bfa90179e4c54e19085a8948a4a1a9863093</sha256>
+          <url>https://windows.php.net/downloads/releases/php-debug-pack-7.3.14-nts-Win32-VC15-x64.zip</url>
+        </file>
+        <file name="devel_pack">
+          <path>php-devel-pack-7.3.14-nts-Win32-VC15-x64.zip</path>
+          <size>1048576</size>
+          <sha256>6b2787ef163e47015d3bd797069f1c4dfa52fd75a57aa8cf67186a323a77f225</sha256>
+          <url>https://windows.php.net/downloads/releases/php-devel-pack-7.3.14-nts-Win32-VC15-x64.zip</url>
+        </file>
+      </files>
+      <dependencies>
+        <dependency>
+          <label>x64 Redistributable for Visual Studio 2015-2019</label>
+          <url>https://aka.ms/vs/16/release/VC_redist.x64.exe</url>
+        </dependency>
+      </dependencies>
+    </build>
+    <build name="nts-VC15-x86">
+      <label>Non Thread Safe - Win32 - vc15</label>
+      <files>
+        <file name="zip">
+          <path>php-7.3.14-nts-Win32-VC15-x86.zip</path>
+          <size>23068672</size>
+          <sha256>0f3fe6c1d314f73ca94da33a660094d818c7e03d7cf16ada34117178236e3129</sha256>
+          <url>https://windows.php.net/downloads/releases/php-7.3.14-nts-Win32-VC15-x86.zip</url>
+        </file>
+        <file name="debug_pack">
+          <path>php-debug-pack-7.3.14-nts-Win32-VC15-x86.zip</path>
+          <size>24117248</size>
+          <sha256>387c9d60768fa29998a186bb1c9f5865df9056fea8e594809b51bcefeb6b9928</sha256>
+          <url>https://windows.php.net/downloads/releases/php-debug-pack-7.3.14-nts-Win32-VC15-x86.zip</url>
+        </file>
+        <file name="devel_pack">
+          <path>php-devel-pack-7.3.14-nts-Win32-VC15-x86.zip</path>
+          <size>1048576</size>
+          <sha256>dfb54096f79ae079815da1765aaa37d46728361b5ae524121df61357ed22ca7d</sha256>
+          <url>https://windows.php.net/downloads/releases/php-devel-pack-7.3.14-nts-Win32-VC15-x86.zip</url>
+        </file>
+      </files>
+      <dependencies>
+        <dependency>
+          <label>x86 Redistributable for Visual Studio 2015-2019</label>
+          <url>https://aka.ms/vs/16/release/VC_redist.x86.exe</url>
+        </dependency>
+      </dependencies>
+    </build>
+  </windows_builds>
+  <tags/>
+</release>
