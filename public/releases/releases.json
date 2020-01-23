@@ -69164,6 +69164,153 @@
                     }
                 }
             },
+            "7.2.27": {
+                "version": "7.2.27",
+                "date": "2020-01-23",
+                "stage": "stable",
+                "changes": {
+                    "modules": []
+                },
+                "announcements": [],
+                "tags": [],
+                "source": {
+                    "files": []
+                },
+                "windows_builds": {
+                    "ts-VC15-x64": {
+                        "name": "ts-VC15-x64",
+                        "label": "Thread-Safe - Win64 - vc15",
+                        "files": [
+                            {
+                                "name": "zip",
+                                "path": "php-7.2.27-Win32-VC15-x64.zip",
+                                "size": 26214400,
+                                "sha256": "0d51347e393991a41c36df0854a504e2c1a1de060e0e82c014a80ddcb80472e0",
+                                "url": "https:\/\/windows.php.net\/downloads\/releases\/php-7.2.27-Win32-VC15-x64.zip"
+                            },
+                            {
+                                "name": "debug_pack",
+                                "path": "php-debug-pack-7.2.27-Win32-VC15-x64.zip",
+                                "size": 24117248,
+                                "sha256": "cc6a2d2dfe27f8802d54c6d9177da5e4d9c5654556c64f3d79c3693366702c83",
+                                "url": "https:\/\/windows.php.net\/downloads\/releases\/php-debug-pack-7.2.27-Win32-VC15-x64.zip"
+                            },
+                            {
+                                "name": "devel_pack",
+                                "path": "php-devel-pack-7.2.27-Win32-VC15-x64.zip",
+                                "size": 1048576,
+                                "sha256": "29e0fe07b56e6c2c790350ed87f11a3a2544004b6e831b7dabd96de7044d2950",
+                                "url": "https:\/\/windows.php.net\/downloads\/releases\/php-devel-pack-7.2.27-Win32-VC15-x64.zip"
+                            }
+                        ],
+                        "dependencies": [
+                            {
+                                "label": "x64 Redistributable for Visual Studio 2015-2019",
+                                "url": "https:\/\/aka.ms\/vs\/16\/release\/VC_redist.x64.exe"
+                            }
+                        ]
+                    },
+                    "ts-VC15-x86": {
+                        "name": "ts-VC15-x86",
+                        "label": "Thread-Safe - Win32 - vc15",
+                        "files": [
+                            {
+                                "name": "zip",
+                                "path": "php-7.2.27-Win32-VC15-x86.zip",
+                                "size": 24117248,
+                                "sha256": "893414018d0d5019b878cea54db6ad9a0f14942ea716ba70712738aa76228dd9",
+                                "url": "https:\/\/windows.php.net\/downloads\/releases\/php-7.2.27-Win32-VC15-x86.zip"
+                            },
+                            {
+                                "name": "debug_pack",
+                                "path": "php-debug-pack-7.2.27-Win32-VC15-x86.zip",
+                                "size": 25165824,
+                                "sha256": "13d8fa8cdcbd47c438a85079c6bbc2250f386fb2df5f0bfbe896ecce2ee27b5c",
+                                "url": "https:\/\/windows.php.net\/downloads\/releases\/php-debug-pack-7.2.27-Win32-VC15-x86.zip"
+                            },
+                            {
+                                "name": "devel_pack",
+                                "path": "php-devel-pack-7.2.27-Win32-VC15-x86.zip",
+                                "size": 1048576,
+                                "sha256": "d247a026daabdafce517372da4e435cd6fc14110daea07c36b38f13f8f33ba47",
+                                "url": "https:\/\/windows.php.net\/downloads\/releases\/php-devel-pack-7.2.27-Win32-VC15-x86.zip"
+                            }
+                        ],
+                        "dependencies": [
+                            {
+                                "label": "x86 Redistributable for Visual Studio 2015-2019",
+                                "url": "https:\/\/aka.ms\/vs\/16\/release\/VC_redist.x86.exe"
+                            }
+                        ]
+                    },
+                    "nts-VC15-x64": {
+                        "name": "nts-VC15-x64",
+                        "label": "Non Thread Safe - Win64 - vc15",
+                        "files": [
+                            {
+                                "name": "zip",
+                                "path": "php-7.2.27-nts-Win32-VC15-x64.zip",
+                                "size": 25165824,
+                                "sha256": "3a1214ddd8b8dcfd13a11b38a2a2c12e114915d37bc35e6a6d863611fdc1f8c7",
+                                "url": "https:\/\/windows.php.net\/downloads\/releases\/php-7.2.27-nts-Win32-VC15-x64.zip"
+                            },
+                            {
+                                "name": "debug_pack",
+                                "path": "php-debug-pack-7.2.27-nts-Win32-VC15-x64.zip",
+                                "size": 24117248,
+                                "sha256": "6428b2a47f75714fc1a9f8d664b7a50ebb255a644c954a020469bf5dfe347972",
+                                "url": "https:\/\/windows.php.net\/downloads\/releases\/php-debug-pack-7.2.27-nts-Win32-VC15-x64.zip"
+                            },
+                            {
+                                "name": "devel_pack",
+                                "path": "php-devel-pack-7.2.27-nts-Win32-VC15-x64.zip",
+                                "size": 1048576,
+                                "sha256": "09298db5c6f8101c84e1dfcc02f591ec38cb2eb7ee45065a4d43cb40e7f4abf2",
+                                "url": "https:\/\/windows.php.net\/downloads\/releases\/php-devel-pack-7.2.27-nts-Win32-VC15-x64.zip"
+                            }
+                        ],
+                        "dependencies": [
+                            {
+                                "label": "x64 Redistributable for Visual Studio 2015-2019",
+                                "url": "https:\/\/aka.ms\/vs\/16\/release\/VC_redist.x64.exe"
+                            }
+                        ]
+                    },
+                    "nts-VC15-x86": {
+                        "name": "nts-VC15-x86",
+                        "label": "Non Thread Safe - Win32 - vc15",
+                        "files": [
+                            {
+                                "name": "zip",
+                                "path": "php-7.2.27-nts-Win32-VC15-x86.zip",
+                                "size": 24117248,
+                                "sha256": "807394509e154b0fa7f8c3c653a5b07baec41adff7443fe63c8e675b36dc7bc7",
+                                "url": "https:\/\/windows.php.net\/downloads\/releases\/php-7.2.27-nts-Win32-VC15-x86.zip"
+                            },
+                            {
+                                "name": "debug_pack",
+                                "path": "php-debug-pack-7.2.27-nts-Win32-VC15-x86.zip",
+                                "size": 25165824,
+                                "sha256": "9c8ef1a108e65bc893b660cae4c7568ebdfe0efe363140ca91cfbe3e988772cf",
+                                "url": "https:\/\/windows.php.net\/downloads\/releases\/php-debug-pack-7.2.27-nts-Win32-VC15-x86.zip"
+                            },
+                            {
+                                "name": "devel_pack",
+                                "path": "php-devel-pack-7.2.27-nts-Win32-VC15-x86.zip",
+                                "size": 1048576,
+                                "sha256": "efc25bfbfd10926ecfbdba7160ef77aa93fbefaf8d1c5f76d2f97eb2f4eb5792",
+                                "url": "https:\/\/windows.php.net\/downloads\/releases\/php-devel-pack-7.2.27-nts-Win32-VC15-x86.zip"
+                            }
+                        ],
+                        "dependencies": [
+                            {
+                                "label": "x86 Redistributable for Visual Studio 2015-2019",
+                                "url": "https:\/\/aka.ms\/vs\/16\/release\/VC_redist.x86.exe"
+                            }
+                        ]
+                    }
+                }
+            },
             "7.2.3": {
                 "version": "7.2.3",
                 "date": "2018-03-01",
@@ -73316,6 +73463,413 @@
                                 "size": 1048576,
                                 "sha256": "9c5ba9b3fb711bb1ad230a2aeacf38da498a0474570a979590715aa800d947f7",
                                 "url": "https:\/\/windows.php.net\/downloads\/releases\/php-devel-pack-7.3.13-nts-Win32-VC15-x86.zip"
+                            }
+                        ],
+                        "dependencies": [
+                            {
+                                "label": "x86 Redistributable for Visual Studio 2015-2019",
+                                "url": "https:\/\/aka.ms\/vs\/16\/release\/VC_redist.x86.exe"
+                            }
+                        ]
+                    }
+                }
+            },
+            "7.3.14": {
+                "version": "7.3.14",
+                "date": "2020-01-23",
+                "stage": "stable",
+                "changes": {
+                    "modules": {
+                        "cor": [
+                            {
+                                "description": "(Cycle leak when using function result as temporary).(Dmitry)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "78999"
+                                    }
+                                ]
+                            }
+                        ],
+                        "curl": [
+                            {
+                                "description": "(Curl timeout error with specific url and post)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "79033"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "cmb"
+                                    }
+                                ]
+                            }
+                        ],
+                        "date": [
+                            {
+                                "description": "(undefined-behavior in php_date.c)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "79015"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "cmb"
+                                    }
+                                ]
+                            }
+                        ],
+                        "dba": [
+                            {
+                                "description": "([LMDB] MDB_MAP_FULL: Environment mapsize limit reached).(cmb)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "78808"
+                                    }
+                                ]
+                            }
+                        ],
+                        "fileinfo": [
+                            {
+                                "description": "(locale information change after mime_content_type).(Sergei Turchanov)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "74170"
+                                    }
+                                ]
+                            }
+                        ],
+                        "gd": [
+                            {
+                                "description": "(Artifacts when convoluting image with transparency).(wilson chen)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "78923"
+                                    }
+                                ]
+                            },
+                            {
+                                "description": "(gdTransformAffineCopy() may use unitialized values)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "79067"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "cmb"
+                                    }
+                                ]
+                            },
+                            {
+                                "description": "(gdTransformAffineCopy() changes interpolation method).(cmb)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "79068"
+                                    }
+                                ]
+                            }
+                        ],
+                        "libxml": [
+                            {
+                                "description": "(Use After Free's in XMLReader \/ XMLWriter)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "79029"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "Laruence"
+                                    }
+                                ]
+                            }
+                        ],
+                        "mbstring": [
+                            {
+                                "description": "(global buffer-overflow in `mbfl_filt_conv_big5_wchar`)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "79037"
+                                    },
+                                    {
+                                        "type": "cve",
+                                        "value": "CVE-2020-7060"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "Nikita"
+                                    }
+                                ]
+                            }
+                        ],
+                        "opcache": [
+                            {
+                                "description": "(Warning Opcode handlers are unusable due to ASLR)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "79040"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "cmb"
+                                    }
+                                ]
+                            }
+                        ],
+                        "pcntl": [
+                            {
+                                "description": "(Converting null to string in error message is bad DX).(SAT\u014c Kentar\u014d)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "78402"
+                                    }
+                                ]
+                            }
+                        ],
+                        "pdo_pgsql": [
+                            {
+                                "description": "(pdo_pgsql config.w32 cannot find libpq-fe.h)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "78983"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "SAT\u014cKentar\u014d"
+                                    }
+                                ]
+                            },
+                            {
+                                "description": "(pgsqlGetNotify() overlooks dead connection)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "78980"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "SAT\u014cKentar\u014d"
+                                    }
+                                ]
+                            },
+                            {
+                                "description": "(pdo_pgsql returns dead persistent connection)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "78982"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "SAT\u014cKentar\u014d"
+                                    }
+                                ]
+                            }
+                        ],
+                        "session": [
+                            {
+                                "description": "(heap use-after-free in session_create_id())",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "79091"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "cmb"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "Nikita"
+                                    }
+                                ]
+                            }
+                        ],
+                        "shmop": [
+                            {
+                                "description": "(shmop memory leak)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "78538"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "cmb"
+                                    }
+                                ]
+                            }
+                        ],
+                        "standard": [
+                            {
+                                "description": "(OOB read in php_strip_tags_ex).",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "79099"
+                                    },
+                                    {
+                                        "type": "cve",
+                                        "value": "CVE-2020-7059"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "cmb"
+                                    }
+                                ]
+                            },
+                            {
+                                "description": "(Using empty additional_headers adding extraneous CRLF).(cmb)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "54298"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                },
+                "announcements": [],
+                "tags": [],
+                "source": {
+                    "files": []
+                },
+                "windows_builds": {
+                    "ts-VC15-x64": {
+                        "name": "ts-VC15-x64",
+                        "label": "Thread-Safe - Win64 - vc15",
+                        "files": [
+                            {
+                                "name": "zip",
+                                "path": "php-7.3.14-Win32-VC15-x64.zip",
+                                "size": 25165824,
+                                "sha256": "10272a9ff747363688c0726c9324fcd426d707d6afb575288c65d6d0c5f6c8d1",
+                                "url": "https:\/\/windows.php.net\/downloads\/releases\/php-7.3.14-Win32-VC15-x64.zip"
+                            },
+                            {
+                                "name": "debug_pack",
+                                "path": "php-debug-pack-7.3.14-Win32-VC15-x64.zip",
+                                "size": 24117248,
+                                "sha256": "568a13fd5fbd21b1d08d98cf01a9259577f6bd3dffdec9310bcde788b38f0cbc",
+                                "url": "https:\/\/windows.php.net\/downloads\/releases\/php-debug-pack-7.3.14-Win32-VC15-x64.zip"
+                            },
+                            {
+                                "name": "devel_pack",
+                                "path": "php-devel-pack-7.3.14-Win32-VC15-x64.zip",
+                                "size": 1048576,
+                                "sha256": "59886bed12af2bc343ac5f0f0014ef738f22b4eb50449860da821124552d79e1",
+                                "url": "https:\/\/windows.php.net\/downloads\/releases\/php-devel-pack-7.3.14-Win32-VC15-x64.zip"
+                            }
+                        ],
+                        "dependencies": [
+                            {
+                                "label": "x64 Redistributable for Visual Studio 2015-2019",
+                                "url": "https:\/\/aka.ms\/vs\/16\/release\/VC_redist.x64.exe"
+                            }
+                        ]
+                    },
+                    "ts-VC15-x86": {
+                        "name": "ts-VC15-x86",
+                        "label": "Thread-Safe - Win32 - vc15",
+                        "files": [
+                            {
+                                "name": "zip",
+                                "path": "php-7.3.14-Win32-VC15-x86.zip",
+                                "size": 23068672,
+                                "sha256": "ddfc3c3d9091cd371a579ae5f5851157eee0072e07f2bf3d98c9a5239ca6de3d",
+                                "url": "https:\/\/windows.php.net\/downloads\/releases\/php-7.3.14-Win32-VC15-x86.zip"
+                            },
+                            {
+                                "name": "debug_pack",
+                                "path": "php-debug-pack-7.3.14-Win32-VC15-x86.zip",
+                                "size": 25165824,
+                                "sha256": "6f3f2d1dc4ee7f7dce6cf1dea1274c55ba662e5bdda36404e5c3de2b7488ea34",
+                                "url": "https:\/\/windows.php.net\/downloads\/releases\/php-debug-pack-7.3.14-Win32-VC15-x86.zip"
+                            },
+                            {
+                                "name": "devel_pack",
+                                "path": "php-devel-pack-7.3.14-Win32-VC15-x86.zip",
+                                "size": 1048576,
+                                "sha256": "b0d68e31dd93b27903cb3ce39dfd090fb57277cc02a6872b4e522b6af1c25f92",
+                                "url": "https:\/\/windows.php.net\/downloads\/releases\/php-devel-pack-7.3.14-Win32-VC15-x86.zip"
+                            }
+                        ],
+                        "dependencies": [
+                            {
+                                "label": "x86 Redistributable for Visual Studio 2015-2019",
+                                "url": "https:\/\/aka.ms\/vs\/16\/release\/VC_redist.x86.exe"
+                            }
+                        ]
+                    },
+                    "nts-VC15-x64": {
+                        "name": "nts-VC15-x64",
+                        "label": "Non Thread Safe - Win64 - vc15",
+                        "files": [
+                            {
+                                "name": "zip",
+                                "path": "php-7.3.14-nts-Win32-VC15-x64.zip",
+                                "size": 25165824,
+                                "sha256": "32810d2e589a4977843a5df033f10d3646283fe6859af5fadf397388c47e4c75",
+                                "url": "https:\/\/windows.php.net\/downloads\/releases\/php-7.3.14-nts-Win32-VC15-x64.zip"
+                            },
+                            {
+                                "name": "debug_pack",
+                                "path": "php-debug-pack-7.3.14-nts-Win32-VC15-x64.zip",
+                                "size": 24117248,
+                                "sha256": "9b5c19d358b42198afb5aa8462c6bfa90179e4c54e19085a8948a4a1a9863093",
+                                "url": "https:\/\/windows.php.net\/downloads\/releases\/php-debug-pack-7.3.14-nts-Win32-VC15-x64.zip"
+                            },
+                            {
+                                "name": "devel_pack",
+                                "path": "php-devel-pack-7.3.14-nts-Win32-VC15-x64.zip",
+                                "size": 1048576,
+                                "sha256": "6b2787ef163e47015d3bd797069f1c4dfa52fd75a57aa8cf67186a323a77f225",
+                                "url": "https:\/\/windows.php.net\/downloads\/releases\/php-devel-pack-7.3.14-nts-Win32-VC15-x64.zip"
+                            }
+                        ],
+                        "dependencies": [
+                            {
+                                "label": "x64 Redistributable for Visual Studio 2015-2019",
+                                "url": "https:\/\/aka.ms\/vs\/16\/release\/VC_redist.x64.exe"
+                            }
+                        ]
+                    },
+                    "nts-VC15-x86": {
+                        "name": "nts-VC15-x86",
+                        "label": "Non Thread Safe - Win32 - vc15",
+                        "files": [
+                            {
+                                "name": "zip",
+                                "path": "php-7.3.14-nts-Win32-VC15-x86.zip",
+                                "size": 23068672,
+                                "sha256": "0f3fe6c1d314f73ca94da33a660094d818c7e03d7cf16ada34117178236e3129",
+                                "url": "https:\/\/windows.php.net\/downloads\/releases\/php-7.3.14-nts-Win32-VC15-x86.zip"
+                            },
+                            {
+                                "name": "debug_pack",
+                                "path": "php-debug-pack-7.3.14-nts-Win32-VC15-x86.zip",
+                                "size": 24117248,
+                                "sha256": "387c9d60768fa29998a186bb1c9f5865df9056fea8e594809b51bcefeb6b9928",
+                                "url": "https:\/\/windows.php.net\/downloads\/releases\/php-debug-pack-7.3.14-nts-Win32-VC15-x86.zip"
+                            },
+                            {
+                                "name": "devel_pack",
+                                "path": "php-devel-pack-7.3.14-nts-Win32-VC15-x86.zip",
+                                "size": 1048576,
+                                "sha256": "dfb54096f79ae079815da1765aaa37d46728361b5ae524121df61357ed22ca7d",
+                                "url": "https:\/\/windows.php.net\/downloads\/releases\/php-devel-pack-7.3.14-nts-Win32-VC15-x86.zip"
                             }
                         ],
                         "dependencies": [
@@ -78344,6 +78898,642 @@
                                 "size": 1048576,
                                 "sha256": "32c3c6d22ba366de1256bdf8f2c86497e8b33609791a95a18d2bb1e78893b754",
                                 "url": "https:\/\/windows.php.net\/downloads\/releases\/php-devel-pack-7.4.1-nts-Win32-vc15-x86.zip"
+                            }
+                        ],
+                        "dependencies": [
+                            {
+                                "label": "x86 Redistributable for Visual Studio 2015-2019",
+                                "url": "https:\/\/aka.ms\/vs\/16\/release\/VC_redist.x86.exe"
+                            }
+                        ]
+                    }
+                }
+            },
+            "7.4.2": {
+                "version": "7.4.2",
+                "date": "2020-01-23",
+                "stage": "stable",
+                "changes": {
+                    "modules": {
+                        "core": [
+                            {
+                                "description": "Preloading support on Windows has been disabled",
+                                "references": [
+                                    {
+                                        "type": "author",
+                                        "value": "Nikita"
+                                    }
+                                ]
+                            },
+                            {
+                                "description": "(class_exists returns True for classes that are not readyto be used)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "79022"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "Laruence"
+                                    }
+                                ]
+                            },
+                            {
+                                "description": "(plus signs in cookie values are converted to spaces).(Alexey Kachalin)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "78929"
+                                    }
+                                ]
+                            },
+                            {
+                                "description": "(Destructor during CV freeing causes segfault if oplinenever saved)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "78973"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "Nikita"
+                                    }
+                                ]
+                            },
+                            {
+                                "description": "(Abstract method implementation from trait does not check\"static\")",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "78776"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "Nikita"
+                                    }
+                                ]
+                            },
+                            {
+                                "description": "(Cycle leak when using function result as temporary).(Dmitry)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "78999"
+                                    }
+                                ]
+                            },
+                            {
+                                "description": "(General performance regression with PHP 7.4 on Windows).(cmb)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "79008"
+                                    }
+                                ]
+                            },
+                            {
+                                "description": "(Serializing uninitialized typed properties with __sleepmakes unserialize throw)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "79002"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "Nikita"
+                                    }
+                                ]
+                            }
+                        ],
+                        "curl": [
+                            {
+                                "description": "(Curl timeout error with specific url and post)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "79033"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "cmb"
+                                    }
+                                ]
+                            },
+                            {
+                                "description": "(curl openssl does not respect PKG_CONFIG_PATH)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "79063"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "Nikita"
+                                    }
+                                ]
+                            }
+                        ],
+                        "date": [
+                            {
+                                "description": "(undefined-behavior in php_date.c)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "79015"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "cmb"
+                                    }
+                                ]
+                            }
+                        ],
+                        "dba": [
+                            {
+                                "description": "([LMDB] MDB_MAP_FULL: Environment mapsize limit reached).(cmb)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "78808"
+                                    }
+                                ]
+                            }
+                        ],
+                        "exif": [
+                            {
+                                "description": "(NaN to int cast undefined behavior in exif)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "79046"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "Nikita"
+                                    }
+                                ]
+                            }
+                        ],
+                        "fileinfo": [
+                            {
+                                "description": "(locale information change after mime_content_type).(Sergei Turchanov)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "74170"
+                                    }
+                                ]
+                            }
+                        ],
+                        "gd": [
+                            {
+                                "description": "(gdTransformAffineCopy() may use unitialized values)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "79067"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "cmb"
+                                    }
+                                ]
+                            },
+                            {
+                                "description": "(gdTransformAffineCopy() changes interpolation method).(cmb)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "79068"
+                                    }
+                                ]
+                            }
+                        ],
+                        "libxml": [
+                            {
+                                "description": "(Use After Free's in XMLReader \/ XMLWriter)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "79029"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "Laruence"
+                                    }
+                                ]
+                            }
+                        ],
+                        "mbstring": [
+                            {
+                                "description": "(global buffer-overflow in `mbfl_filt_conv_big5_wchar`)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "79037"
+                                    },
+                                    {
+                                        "type": "cve",
+                                        "value": "CVE-2020-7060"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "Nikita"
+                                    }
+                                ]
+                            }
+                        ],
+                        "opcache": [
+                            {
+                                "description": "(erroneous optimization of re-assigned $GLOBALS)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "78961"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "Dmitry"
+                                    }
+                                ]
+                            },
+                            {
+                                "description": "(Preloading trait method with static variables)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "78950"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "Nikita"
+                                    }
+                                ]
+                            },
+                            {
+                                "description": "(Conflict in RTD key for closures results in crash).(Nikita)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "78903"
+                                    }
+                                ]
+                            },
+                            {
+                                "description": "(Opcache segfaults when inheriting ctor from immutableinto mutable class)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "78986"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "Nikita"
+                                    }
+                                ]
+                            },
+                            {
+                                "description": "(Warning Opcode handlers are unusable due to ASLR)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "79040"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "cmb"
+                                    }
+                                ]
+                            },
+                            {
+                                "description": "(Typed property become unknown with OPcache file cache).(Nikita)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "79055"
+                                    }
+                                ]
+                            }
+                        ],
+                        "pcntl": [
+                            {
+                                "description": "(Converting null to string in error message is bad DX).(SAT\u014c Kentar\u014d)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "78402"
+                                    }
+                                ]
+                            }
+                        ],
+                        "pdo_pgsql": [
+                            {
+                                "description": "(pdo_pgsql config.w32 cannot find libpq-fe.h)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "78983"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "SAT\u014cKentar\u014d"
+                                    }
+                                ]
+                            },
+                            {
+                                "description": "(pgsqlGetNotify() overlooks dead connection)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "78980"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "SAT\u014cKentar\u014d"
+                                    }
+                                ]
+                            },
+                            {
+                                "description": "(pdo_pgsql returns dead persistent connection)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "78982"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "SAT\u014cKentar\u014d"
+                                    }
+                                ]
+                            }
+                        ],
+                        "session": [
+                            {
+                                "description": "(heap use-after-free in session_create_id())",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "79091"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "cmb"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "Nikita"
+                                    }
+                                ]
+                            },
+                            {
+                                "description": "(Session unserialization problem)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "79031"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "Nikita"
+                                    }
+                                ]
+                            }
+                        ],
+                        "shmop": [
+                            {
+                                "description": "(shmop memory leak)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "78538"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "cmb"
+                                    }
+                                ]
+                            }
+                        ],
+                        "sqlite3": [
+                            {
+                                "description": "(sqlite does not respect PKG_CONFIG_PATH duringcompilation)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "79056"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "Nikita"
+                                    }
+                                ]
+                            }
+                        ],
+                        "spl": [
+                            {
+                                "description": "(SplFileObject::fputcsv returns -1 on failure)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "78976"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "cmb"
+                                    }
+                                ]
+                            }
+                        ],
+                        "standard": [
+                            {
+                                "description": "(OOB read in php_strip_tags_ex).",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "79099"
+                                    },
+                                    {
+                                        "type": "cve",
+                                        "value": "CVE-2020-7059"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "cmb"
+                                    }
+                                ]
+                            },
+                            {
+                                "description": "(Non-blocking socket stream reports EAGAIN as error).(Nikita)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "79000"
+                                    }
+                                ]
+                            },
+                            {
+                                "description": "(Using empty additional_headers adding extraneous CRLF).(cmb)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "54298"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                },
+                "announcements": [],
+                "tags": [],
+                "source": {
+                    "files": [
+                        {
+                            "name": "PHP 7.4.2 (tar.bz2)",
+                            "filename": "php-7.4.2.tar.bz2",
+                            "date": "2020-01-23",
+                            "sha256": "02909974be9c70814ed5652a6bdae9c74220d41c1e5ed5ad921e15d028f8e816",
+                            "md5": ""
+                        },
+                        {
+                            "name": "PHP 7.4.2 (tar.gz)",
+                            "filename": "php-7.4.2.tar.gz",
+                            "date": "2020-01-23",
+                            "sha256": "e1b8dbf561ac1d871362054ff4cd62dca5e19c8c896567996525dda7c4b320f9",
+                            "md5": ""
+                        },
+                        {
+                            "name": "PHP 7.4.2 (tar.xz)",
+                            "filename": "php-7.4.2.tar.xz",
+                            "date": "2020-01-23",
+                            "sha256": "98284deac017da0d426117ecae7599a1f1bf62ae3911e8bc16c4403a8f4bdf13",
+                            "md5": ""
+                        }
+                    ]
+                },
+                "windows_builds": {
+                    "ts-vc15-x64": {
+                        "name": "ts-vc15-x64",
+                        "label": "Thread-Safe - Win64 - vc15",
+                        "files": [
+                            {
+                                "name": "zip",
+                                "path": "php-7.4.2-Win32-vc15-x64.zip",
+                                "size": 25165824,
+                                "sha256": "034dc3ffb5583ee9e65f23ecae72ec93ecf1c31f694d1bdb7f90b81bc2b78897",
+                                "url": "https:\/\/windows.php.net\/downloads\/releases\/php-7.4.2-Win32-vc15-x64.zip"
+                            },
+                            {
+                                "name": "debug_pack",
+                                "path": "php-debug-pack-7.4.2-Win32-vc15-x64.zip",
+                                "size": 22020096,
+                                "sha256": "e06ed246deb825e7bcdfe342b607e9215c9c4abeb124d31720d412f6b801fa78",
+                                "url": "https:\/\/windows.php.net\/downloads\/releases\/php-debug-pack-7.4.2-Win32-vc15-x64.zip"
+                            },
+                            {
+                                "name": "devel_pack",
+                                "path": "php-devel-pack-7.4.2-Win32-vc15-x64.zip",
+                                "size": 1048576,
+                                "sha256": "1a4dea31343e0d378e4ef11a6afd3d8edf9eb819d5800e466a018e62afe48213",
+                                "url": "https:\/\/windows.php.net\/downloads\/releases\/php-devel-pack-7.4.2-Win32-vc15-x64.zip"
+                            }
+                        ],
+                        "dependencies": [
+                            {
+                                "label": "x64 Redistributable for Visual Studio 2015-2019",
+                                "url": "https:\/\/aka.ms\/vs\/16\/release\/VC_redist.x64.exe"
+                            }
+                        ]
+                    },
+                    "ts-vc15-x86": {
+                        "name": "ts-vc15-x86",
+                        "label": "Thread-Safe - Win32 - vc15",
+                        "files": [
+                            {
+                                "name": "zip",
+                                "path": "php-7.4.2-Win32-vc15-x86.zip",
+                                "size": 24117248,
+                                "sha256": "217782a1ba2ea73370dce55fe0489e92ef6e27b5f3d359a3393d886f14959b25",
+                                "url": "https:\/\/windows.php.net\/downloads\/releases\/php-7.4.2-Win32-vc15-x86.zip"
+                            },
+                            {
+                                "name": "debug_pack",
+                                "path": "php-debug-pack-7.4.2-Win32-vc15-x86.zip",
+                                "size": 23068672,
+                                "sha256": "a91f40fbae67654de34d6dddfde675a32a9b26f25a6844acb147eeb117dac94c",
+                                "url": "https:\/\/windows.php.net\/downloads\/releases\/php-debug-pack-7.4.2-Win32-vc15-x86.zip"
+                            },
+                            {
+                                "name": "devel_pack",
+                                "path": "php-devel-pack-7.4.2-Win32-vc15-x86.zip",
+                                "size": 1048576,
+                                "sha256": "365686589d9c9e3f0d67d81f5a2ee0d157d90f68c647411cd83902b8a4b7419e",
+                                "url": "https:\/\/windows.php.net\/downloads\/releases\/php-devel-pack-7.4.2-Win32-vc15-x86.zip"
+                            }
+                        ],
+                        "dependencies": [
+                            {
+                                "label": "x86 Redistributable for Visual Studio 2015-2019",
+                                "url": "https:\/\/aka.ms\/vs\/16\/release\/VC_redist.x86.exe"
+                            }
+                        ]
+                    },
+                    "nts-vc15-x64": {
+                        "name": "nts-vc15-x64",
+                        "label": "Non Thread Safe - Win64 - vc15",
+                        "files": [
+                            {
+                                "name": "zip",
+                                "path": "php-7.4.2-nts-Win32-vc15-x64.zip",
+                                "size": 25165824,
+                                "sha256": "eee846d9bdc8baafe8f726a750433f3aaff8de7edd3a7918ca3dea4c99fdd1a4",
+                                "url": "https:\/\/windows.php.net\/downloads\/releases\/php-7.4.2-nts-Win32-vc15-x64.zip"
+                            },
+                            {
+                                "name": "debug_pack",
+                                "path": "php-debug-pack-7.4.2-nts-Win32-vc15-x64.zip",
+                                "size": 22020096,
+                                "sha256": "d184a13e4ff65311b6d944ccf5ec3e1725cfbe0c3e9a0a771c331c6092e92497",
+                                "url": "https:\/\/windows.php.net\/downloads\/releases\/php-debug-pack-7.4.2-nts-Win32-vc15-x64.zip"
+                            },
+                            {
+                                "name": "devel_pack",
+                                "path": "php-devel-pack-7.4.2-nts-Win32-vc15-x64.zip",
+                                "size": 1048576,
+                                "sha256": "e93eafedebabc0e6008043a0b6de5db60e6a47841871a8f91bfb94b92e8d1db1",
+                                "url": "https:\/\/windows.php.net\/downloads\/releases\/php-devel-pack-7.4.2-nts-Win32-vc15-x64.zip"
+                            }
+                        ],
+                        "dependencies": [
+                            {
+                                "label": "x64 Redistributable for Visual Studio 2015-2019",
+                                "url": "https:\/\/aka.ms\/vs\/16\/release\/VC_redist.x64.exe"
+                            }
+                        ]
+                    },
+                    "nts-vc15-x86": {
+                        "name": "nts-vc15-x86",
+                        "label": "Non Thread Safe - Win32 - vc15",
+                        "files": [
+                            {
+                                "name": "zip",
+                                "path": "php-7.4.2-nts-Win32-vc15-x86.zip",
+                                "size": 24117248,
+                                "sha256": "6b96b556cf564392e4ed3f9d58186eb36d22ecb83af9820f5e7ea83907d70164",
+                                "url": "https:\/\/windows.php.net\/downloads\/releases\/php-7.4.2-nts-Win32-vc15-x86.zip"
+                            },
+                            {
+                                "name": "debug_pack",
+                                "path": "php-debug-pack-7.4.2-nts-Win32-vc15-x86.zip",
+                                "size": 23068672,
+                                "sha256": "9df51c2d3d0b7e4a0c9c7f78e42b9cee1457f69c6f2ed85785383b8b8c9fb8a0",
+                                "url": "https:\/\/windows.php.net\/downloads\/releases\/php-debug-pack-7.4.2-nts-Win32-vc15-x86.zip"
+                            },
+                            {
+                                "name": "devel_pack",
+                                "path": "php-devel-pack-7.4.2-nts-Win32-vc15-x86.zip",
+                                "size": 1048576,
+                                "sha256": "54f227dc3685e2a00295b5683e263942dc10fded4dd6a814065932df075c577e",
+                                "url": "https:\/\/windows.php.net\/downloads\/releases\/php-devel-pack-7.4.2-nts-Win32-vc15-x86.zip"
                             }
                         ],
                         "dependencies": [
