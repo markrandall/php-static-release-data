@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<release version="7.2.28">
+  <version>7.2.28</version>
+  <date>2020-03-07</date>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
+      <name>PHP 7.2.28 (tar.bz2)</name>
+      <filename>php-7.2.28.tar.bz2</filename>
+      <date>2020-02-20</date>
+      <sha256>7c953a5b79db3d8d45c65014aef382a48e1c3435cf0c2574e942957f0cdd52a3</sha256>
+    </file>
+    <file compression="tar.gz">
+      <name>PHP 7.2.28 (tar.gz)</name>
+      <filename>php-7.2.28.tar.gz</filename>
+      <date>2020-02-20</date>
+      <sha256>ed5fede7602ccd8d1294b4e4aef7f92f4e3af58ab040bd349264b3f5dbef3261</sha256>
+    </file>
+    <file compression="tar.xz">
+      <name>PHP 7.2.28 (tar.xz)</name>
+      <filename>php-7.2.28.tar.xz</filename>
+      <date>2020-02-20</date>
+      <sha256>afe1863301da572dee2e0bad8014813bcced162f980ddc8ec8e41fd72263eb2d</sha256>
+    </file>
+  </source>
+  <announcements/>
+  <changes>
+    <modules>
+      <module id="dom">
+        <change>
+          <description>: (Write Access Violation in DomImplementation)</description>
+          <references>
+            <reference type="bugfix">77569</reference>
+            <reference type="author">Nikita</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+      </module>
+      <module id="phar">
+        <change>
+          <description>(Files added to tar with Phar::buildFromIterator haveall-access permissions)</description>
+          <references>
+            <reference type="bugfix">79082</reference>
+            <reference type="cve">CVE-2020-7063</reference>
+            <reference type="author">stas</reference>
+          </references>
+        </change>
+      </module>
+      <module id="session">
+        <change>
+          <description>(Null Pointer Dereference in PHP Session Upload Progress)</description>
+          <references>
+            <reference type="bugfix">79221</reference>
+            <reference type="cve">CVE-2020-7062</reference>
+            <reference type="author">stas</reference>
+          </references>
+        </change>
+      </module>
+    </modules>
+  </changes>
+  <windows_builds/>
+  <tags/>
+</release>

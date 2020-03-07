@@ -69174,7 +69174,29 @@
                 "announcements": [],
                 "tags": [],
                 "source": {
-                    "files": []
+                    "files": [
+                        {
+                            "name": "PHP 7.2.27 (tar.bz2)",
+                            "filename": "php-7.2.27.tar.bz2",
+                            "date": "2020-01-23",
+                            "sha256": "5bc0695b171b870ceb083c5432c6a758d3dbd3830a0cf6cf35bd9b283a627049",
+                            "md5": ""
+                        },
+                        {
+                            "name": "PHP 7.2.27 (tar.gz)",
+                            "filename": "php-7.2.27.tar.gz",
+                            "date": "2020-01-23",
+                            "sha256": "e00ace5e89cb162cba0aebd17144541e1c4d965589155a44ca706d9f9c5a8981",
+                            "md5": ""
+                        },
+                        {
+                            "name": "PHP 7.2.27 (tar.xz)",
+                            "filename": "php-7.2.27.tar.xz",
+                            "date": "2020-01-23",
+                            "sha256": "7bd0fb9e3b63cfe53176d1f3565cd686f90b3926217158de5ba57091f49e4c32",
+                            "md5": ""
+                        }
+                    ]
                 },
                 "windows_builds": {
                     "ts-VC15-x64": {
@@ -69310,6 +69332,100 @@
                         ]
                     }
                 }
+            },
+            "7.2.28": {
+                "version": "7.2.28",
+                "date": "2020-03-07",
+                "stage": "stable",
+                "changes": {
+                    "modules": {
+                        "dom": [
+                            {
+                                "description": ": (Write Access Violation in DomImplementation)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "77569"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "Nikita"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "cmb"
+                                    }
+                                ]
+                            }
+                        ],
+                        "phar": [
+                            {
+                                "description": "(Files added to tar with Phar::buildFromIterator haveall-access permissions)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "79082"
+                                    },
+                                    {
+                                        "type": "cve",
+                                        "value": "CVE-2020-7063"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "stas"
+                                    }
+                                ]
+                            }
+                        ],
+                        "session": [
+                            {
+                                "description": "(Null Pointer Dereference in PHP Session Upload Progress)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "79221"
+                                    },
+                                    {
+                                        "type": "cve",
+                                        "value": "CVE-2020-7062"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "stas"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                },
+                "announcements": [],
+                "tags": [],
+                "source": {
+                    "files": [
+                        {
+                            "name": "PHP 7.2.28 (tar.bz2)",
+                            "filename": "php-7.2.28.tar.bz2",
+                            "date": "2020-02-20",
+                            "sha256": "7c953a5b79db3d8d45c65014aef382a48e1c3435cf0c2574e942957f0cdd52a3",
+                            "md5": ""
+                        },
+                        {
+                            "name": "PHP 7.2.28 (tar.gz)",
+                            "filename": "php-7.2.28.tar.gz",
+                            "date": "2020-02-20",
+                            "sha256": "ed5fede7602ccd8d1294b4e4aef7f92f4e3af58ab040bd349264b3f5dbef3261",
+                            "md5": ""
+                        },
+                        {
+                            "name": "PHP 7.2.28 (tar.xz)",
+                            "filename": "php-7.2.28.tar.xz",
+                            "date": "2020-02-20",
+                            "sha256": "afe1863301da572dee2e0bad8014813bcced162f980ddc8ec8e41fd72263eb2d",
+                            "md5": ""
+                        }
+                    ]
+                },
+                "windows_builds": {}
             },
             "7.2.3": {
                 "version": "7.2.3",
@@ -73880,6 +73996,308 @@
                         ]
                     }
                 }
+            },
+            "7.3.15": {
+                "version": "7.3.15",
+                "date": "2020-03-07",
+                "stage": "stable",
+                "changes": {
+                    "modules": {
+                        "core": [
+                            {
+                                "description": "(Memory corruption htmlspecialchars(): charset `*' notsupported)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "71876"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "Nikita"
+                                    }
+                                ]
+                            },
+                            {
+                                "description": "Fixed bug ##79146 (cscript can fail to run on some systems)",
+                                "references": [
+                                    {
+                                        "type": "author",
+                                        "value": "clarodeus"
+                                    }
+                                ]
+                            },
+                            {
+                                "description": "(Code 0 is returned on invalid options)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "78323"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "Ivan Mikheykin"
+                                    }
+                                ]
+                            },
+                            {
+                                "description": "(Use-after-free when accessing already destructedbacktrace arguments)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "76047"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "Nikita"
+                                    }
+                                ]
+                            }
+                        ],
+                        "curl": [
+                            {
+                                "description": "(Hypothetical use-after-free in curl_multi_add_handle()).(cmb)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "79078"
+                                    }
+                                ]
+                            },
+                            {
+                                "description": "(NumberFormatter::format() may detect wrong type)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "79212"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "cmb"
+                                    }
+                                ]
+                            }
+                        ],
+                        "libxml": [
+                            {
+                                "description": "(Error in SoapClient ctor disables DOMDocument::save()).(Nikita, cmb)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "79191"
+                                    }
+                                ]
+                            }
+                        ],
+                        "mbstring": [
+                            {
+                                "description": "(mb_convert_encoding() can modify $from_encoding)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "79154"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "cmb"
+                                    }
+                                ]
+                            }
+                        ],
+                        "mysqlnd": [
+                            {
+                                "description": "(mysqlnd may fetch wrong column indexes with MYSQLI_BOTH).(cmb)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "79084"
+                                    }
+                                ]
+                            }
+                        ],
+                        "openssl": [
+                            {
+                                "description": "(openssl memory leak)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "79145"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "cmb"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "Nikita"
+                                    }
+                                ]
+                            }
+                        ],
+                        "phar": [
+                            {
+                                "description": "(Files added to tar with Phar::buildFromIterator haveall-access permissions)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "79082"
+                                    },
+                                    {
+                                        "type": "cve",
+                                        "value": "CVE-2020-7063"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "stas"
+                                    }
+                                ]
+                            },
+                            {
+                                "description": "(heap-buffer-overflow in phar_extract_file).(CVE-\t2020-7061) (cmb)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "79171"
+                                    }
+                                ]
+                            },
+                            {
+                                "description": "(PharFileInfo::decompress not working)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "76584"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "cmb"
+                                    }
+                                ]
+                            }
+                        ],
+                        "reflection": [
+                            {
+                                "description": "(ReflectionClass::isCloneable call reflected class__destruct)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "79115"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "Nikita"
+                                    }
+                                ]
+                            }
+                        ],
+                        "session": [
+                            {
+                                "description": "(Null Pointer Dereference in PHP Session Upload Progress)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "79221"
+                                    },
+                                    {
+                                        "type": "cve",
+                                        "value": "CVE-2020-7062"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "stas"
+                                    }
+                                ]
+                            }
+                        ],
+                        "spl": [
+                            {
+                                "description": "(heap use after free caused byspl_dllist_it_helper_move_forward)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "79151"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "Nikita"
+                                    }
+                                ]
+                            }
+                        ],
+                        "standard": [
+                            {
+                                "description": "(Memory leak when using stream_filter_append)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "78902"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "liudaixiao"
+                                    }
+                                ]
+                            }
+                        ],
+                        "testing": [
+                            {
+                                "description": "(bug45161.phpt takes forever to finish)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "78090"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "cmb"
+                                    }
+                                ]
+                            }
+                        ],
+                        "xsl": [
+                            {
+                                "description": "(XSL callbacks with nodes as parameter leak memory)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "70078"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "cmb"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                },
+                "announcements": [],
+                "tags": [],
+                "source": {
+                    "files": [
+                        {
+                            "name": "PHP 7.3.15 (tar.bz2)",
+                            "filename": "php-7.3.15.tar.bz2",
+                            "date": "2020-02-20",
+                            "sha256": "8dbe1507ea0035f4211faa0db80fe95f39df0e39d8408223820fe9123487043d",
+                            "md5": ""
+                        },
+                        {
+                            "name": "PHP 7.3.15 (tar.gz)",
+                            "filename": "php-7.3.15.tar.gz",
+                            "date": "2020-02-20",
+                            "sha256": "c606dd09de2edff1e6b6c5b9f0076214a59f6f1a3272e15d681ed16257737ef6",
+                            "md5": ""
+                        },
+                        {
+                            "name": "PHP 7.3.15 (tar.xz)",
+                            "filename": "php-7.3.15.tar.xz",
+                            "date": "2020-02-20",
+                            "sha256": "de7ae7cf3d1dbb2824975b26b32991dac2b732886ec22075b8c53b261b018166",
+                            "md5": ""
+                        }
+                    ]
+                },
+                "windows_builds": {}
             },
             "7.3.2": {
                 "version": "7.3.2",
@@ -79544,6 +79962,497 @@
                         ]
                     }
                 }
+            },
+            "7.4.3": {
+                "version": "7.4.3",
+                "date": "2020-03-07",
+                "stage": "stable",
+                "changes": {
+                    "modules": {
+                        "core": [
+                            {
+                                "description": "(cscript can fail to run on some systems)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "79146"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "clarodeus"
+                                    }
+                                ]
+                            },
+                            {
+                                "description": "(Property nullability lost when using multiple propertydefinition)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "79155"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "Nikita"
+                                    }
+                                ]
+                            },
+                            {
+                                "description": "(Code 0 is returned on invalid options)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "78323"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "Ivan Mikheykin"
+                                    }
+                                ]
+                            },
+                            {
+                                "description": "(Delayed variance check involving trait segfaults).(Nikita)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "78989"
+                                    }
+                                ]
+                            },
+                            {
+                                "description": "(cookie values with spaces fail to round-trip)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "79174"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "cmb"
+                                    }
+                                ]
+                            },
+                            {
+                                "description": "(Use-after-free when accessing already destructedbacktrace arguments)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "76047"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "Nikita"
+                                    }
+                                ]
+                            }
+                        ],
+                        "com": [
+                            {
+                                "description": "(Garbage collecting variant objects segfaults)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "79247"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "cmb"
+                                    }
+                                ]
+                            }
+                        ],
+                        "curl": [
+                            {
+                                "description": "(Hypothetical use-after-free in curl_multi_add_handle()).(cmb)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "79078"
+                                    }
+                                ]
+                            }
+                        ],
+                        "ffi": [
+                            {
+                                "description": "(FFI Struct Segfault)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "79096"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "cmb"
+                                    }
+                                ]
+                            }
+                        ],
+                        "imap": [
+                            {
+                                "description": "(IMAP extension can't find OpenSSL libraries at configuretime)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "79112"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "Nikita"
+                                    }
+                                ]
+                            },
+                            {
+                                "description": "(NumberFormatter::format() may detect wrong type)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "79212"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "cmb"
+                                    }
+                                ]
+                            }
+                        ],
+                        "libxml": [
+                            {
+                                "description": "(Error in SoapClient ctor disables DOMDocument::save()).(Nikita, cmb)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "79191"
+                                    }
+                                ]
+                            }
+                        ],
+                        "mbstring": [
+                            {
+                                "description": "(SEGV in mb_convert_encoding with non-string encodings).(cmb)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "79149"
+                                    }
+                                ]
+                            }
+                        ],
+                        "mysqli": [
+                            {
+                                "description": "(Properties may emit a warning on var_dump())",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "78666"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "kocsismate"
+                                    }
+                                ]
+                            }
+                        ],
+                        "mysqlnd": [
+                            {
+                                "description": "(mysqlnd may fetch wrong column indexes with MYSQLI_BOTH).(cmb)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "79084"
+                                    }
+                                ]
+                            },
+                            {
+                                "description": "(MySQL caching_sha2_password Access denied for passwordwith more than 20 chars)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "79011"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "Nikita"
+                                    }
+                                ]
+                            }
+                        ],
+                        "opcache": [
+                            {
+                                "description": "(Eval class during preload causes class to be only halfavailable)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "79114"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "Laruence"
+                                    }
+                                ]
+                            },
+                            {
+                                "description": "(Preloading segfaults if preload_user is used)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "79128"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "Nikita"
+                                    }
+                                ]
+                            },
+                            {
+                                "description": "(Incorrect type inference for self::$field =& $field).(Nikita)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "79193"
+                                    }
+                                ]
+                            }
+                        ],
+                        "openssl": [
+                            {
+                                "description": "(openssl memory leak)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "79145"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "cmb"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "Nikita"
+                                    }
+                                ]
+                            }
+                        ],
+                        "phar": [
+                            {
+                                "description": "(Files added to tar with Phar::buildFromIterator haveall-access permissions)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "79082"
+                                    },
+                                    {
+                                        "type": "cve",
+                                        "value": "CVE-2020-7063"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "stas"
+                                    }
+                                ]
+                            },
+                            {
+                                "description": "(heap-buffer-overflow in phar_extract_file)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "79171"
+                                    },
+                                    {
+                                        "type": "cve",
+                                        "value": "CVE-2020-7061"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "cmb"
+                                    }
+                                ]
+                            },
+                            {
+                                "description": "(PharFileInfo::decompress not working)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "76584"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "cmb"
+                                    }
+                                ]
+                            }
+                        ],
+                        "reflection": [
+                            {
+                                "description": "(ReflectionClass::isCloneable call reflected class__destruct)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "79115"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "Nikita"
+                                    }
+                                ]
+                            }
+                        ],
+                        "session": [
+                            {
+                                "description": "(Null Pointer Dereference in PHP Session Upload Progress)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "79221"
+                                    },
+                                    {
+                                        "type": "cve",
+                                        "value": "CVE-2020-7062"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "stas"
+                                    }
+                                ]
+                            }
+                        ],
+                        "standard": [
+                            {
+                                "description": "(Memory leak when using stream_filter_append)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "78902"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "liudaixiao"
+                                    }
+                                ]
+                            },
+                            {
+                                "description": "(PASSWORD_DEFAULT should match PASSWORD_BCRYPT instead of being null)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "78969"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "kocsismate"
+                                    }
+                                ]
+                            }
+                        ],
+                        "testing": [
+                            {
+                                "description": "(bug45161.phpt takes forever to finish)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "78090"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "cmb"
+                                    }
+                                ]
+                            }
+                        ],
+                        "xsl": [
+                            {
+                                "description": "(XSL callbacks with nodes as parameter leak memory)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "70078"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "cmb"
+                                    }
+                                ]
+                            }
+                        ],
+                        "zip": [
+                            {
+                                "description": "Add ZipArchive::CM_LZMA2 and ZipArchive::CM_XZ constants (since libzip 1.6.0)",
+                                "references": [
+                                    {
+                                        "type": "author",
+                                        "value": "Remi"
+                                    }
+                                ]
+                            },
+                            {
+                                "description": "Add ZipArchive::RDONLY (since libzip 1.0.0)",
+                                "references": [
+                                    {
+                                        "type": "author",
+                                        "value": "Remi"
+                                    }
+                                ]
+                            },
+                            {
+                                "description": "Add ZipArchive::ER_* missing constants",
+                                "references": [
+                                    {
+                                        "type": "author",
+                                        "value": "Remi"
+                                    }
+                                ]
+                            },
+                            {
+                                "description": "Add ZipArchive::LIBZIP_VERSION constant",
+                                "references": [
+                                    {
+                                        "type": "author",
+                                        "value": "Remi"
+                                    }
+                                ]
+                            },
+                            {
+                                "description": "(Wrong return for ZipArchive::addEmptyDir Method)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "73119"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "Remi"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                },
+                "announcements": [],
+                "tags": [],
+                "source": {
+                    "files": [
+                        {
+                            "name": "PHP 7.4.3 (tar.bz2)",
+                            "filename": "php-7.4.3.tar.bz2",
+                            "date": "2020-02-20",
+                            "sha256": "c1517ba49578fb2dcc64c73a3edc76d4fc507c4a7ac639981584cc7d3b4c6d14",
+                            "md5": ""
+                        },
+                        {
+                            "name": "PHP 7.4.3 (tar.gz)",
+                            "filename": "php-7.4.3.tar.gz",
+                            "date": "2020-02-20",
+                            "sha256": "58e421a1dba10da8542a014535cac77a78f0271afb901cc2bd363b881895a9ed",
+                            "md5": ""
+                        },
+                        {
+                            "name": "PHP 7.4.3 (tar.xz)",
+                            "filename": "php-7.4.3.tar.xz",
+                            "date": "2020-02-20",
+                            "sha256": "cf1f856d877c268124ded1ede40c9fb6142b125fdaafdc54f855120b8bc6982a",
+                            "md5": ""
+                        }
+                    ]
+                },
+                "windows_builds": {}
             }
         }
     }

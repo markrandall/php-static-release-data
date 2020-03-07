@@ -1,0 +1,190 @@
+<?xml version="1.0"?>
+<release version="7.3.15">
+  <version>7.3.15</version>
+  <date>2020-03-07</date>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
+      <name>PHP 7.3.15 (tar.bz2)</name>
+      <filename>php-7.3.15.tar.bz2</filename>
+      <date>2020-02-20</date>
+      <sha256>8dbe1507ea0035f4211faa0db80fe95f39df0e39d8408223820fe9123487043d</sha256>
+    </file>
+    <file compression="tar.gz">
+      <name>PHP 7.3.15 (tar.gz)</name>
+      <filename>php-7.3.15.tar.gz</filename>
+      <date>2020-02-20</date>
+      <sha256>c606dd09de2edff1e6b6c5b9f0076214a59f6f1a3272e15d681ed16257737ef6</sha256>
+    </file>
+    <file compression="tar.xz">
+      <name>PHP 7.3.15 (tar.xz)</name>
+      <filename>php-7.3.15.tar.xz</filename>
+      <date>2020-02-20</date>
+      <sha256>de7ae7cf3d1dbb2824975b26b32991dac2b732886ec22075b8c53b261b018166</sha256>
+    </file>
+  </source>
+  <announcements/>
+  <changes>
+    <modules>
+      <module id="core">
+        <change>
+          <description>(Memory corruption htmlspecialchars(): charset `*' notsupported)</description>
+          <references>
+            <reference type="bugfix">71876</reference>
+            <reference type="author">Nikita</reference>
+          </references>
+        </change>
+        <change>
+          <description>Fixed bug ##79146 (cscript can fail to run on some systems)</description>
+          <references>
+            <reference type="author">clarodeus</reference>
+          </references>
+        </change>
+        <change>
+          <description>(Code 0 is returned on invalid options)</description>
+          <references>
+            <reference type="bugfix">78323</reference>
+            <reference type="author">Ivan Mikheykin</reference>
+          </references>
+        </change>
+        <change>
+          <description>(Use-after-free when accessing already destructedbacktrace arguments)</description>
+          <references>
+            <reference type="bugfix">76047</reference>
+            <reference type="author">Nikita</reference>
+          </references>
+        </change>
+      </module>
+      <module id="curl">
+        <change>
+          <description>(Hypothetical use-after-free in curl_multi_add_handle()).(cmb)</description>
+          <references>
+            <reference type="bugfix">79078</reference>
+          </references>
+        </change>
+        <change>
+          <description>(NumberFormatter::format() may detect wrong type)</description>
+          <references>
+            <reference type="bugfix">79212</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+      </module>
+      <module id="libxml">
+        <change>
+          <description>(Error in SoapClient ctor disables DOMDocument::save()).(Nikita, cmb)</description>
+          <references>
+            <reference type="bugfix">79191</reference>
+          </references>
+        </change>
+      </module>
+      <module id="mbstring">
+        <change>
+          <description>(mb_convert_encoding() can modify $from_encoding)</description>
+          <references>
+            <reference type="bugfix">79154</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+      </module>
+      <module id="mysqlnd">
+        <change>
+          <description>(mysqlnd may fetch wrong column indexes with MYSQLI_BOTH).(cmb)</description>
+          <references>
+            <reference type="bugfix">79084</reference>
+          </references>
+        </change>
+      </module>
+      <module id="openssl">
+        <change>
+          <description>(openssl memory leak)</description>
+          <references>
+            <reference type="bugfix">79145</reference>
+            <reference type="author">cmb</reference>
+            <reference type="author">Nikita</reference>
+          </references>
+        </change>
+      </module>
+      <module id="phar">
+        <change>
+          <description>(Files added to tar with Phar::buildFromIterator haveall-access permissions)</description>
+          <references>
+            <reference type="bugfix">79082</reference>
+            <reference type="cve">CVE-2020-7063</reference>
+            <reference type="author">stas</reference>
+          </references>
+        </change>
+        <change>
+          <description>(heap-buffer-overflow in phar_extract_file).(CVE-	2020-7061) (cmb)</description>
+          <references>
+            <reference type="bugfix">79171</reference>
+          </references>
+        </change>
+        <change>
+          <description>(PharFileInfo::decompress not working)</description>
+          <references>
+            <reference type="bugfix">76584</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+      </module>
+      <module id="reflection">
+        <change>
+          <description>(ReflectionClass::isCloneable call reflected class__destruct)</description>
+          <references>
+            <reference type="bugfix">79115</reference>
+            <reference type="author">Nikita</reference>
+          </references>
+        </change>
+      </module>
+      <module id="session">
+        <change>
+          <description>(Null Pointer Dereference in PHP Session Upload Progress)</description>
+          <references>
+            <reference type="bugfix">79221</reference>
+            <reference type="cve">CVE-2020-7062</reference>
+            <reference type="author">stas</reference>
+          </references>
+        </change>
+      </module>
+      <module id="spl">
+        <change>
+          <description>(heap use after free caused byspl_dllist_it_helper_move_forward)</description>
+          <references>
+            <reference type="bugfix">79151</reference>
+            <reference type="author">Nikita</reference>
+          </references>
+        </change>
+      </module>
+      <module id="standard">
+        <change>
+          <description>(Memory leak when using stream_filter_append)</description>
+          <references>
+            <reference type="bugfix">78902</reference>
+            <reference type="author">liudaixiao</reference>
+          </references>
+        </change>
+      </module>
+      <module id="testing">
+        <change>
+          <description>(bug45161.phpt takes forever to finish)</description>
+          <references>
+            <reference type="bugfix">78090</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+      </module>
+      <module id="xsl">
+        <change>
+          <description>(XSL callbacks with nodes as parameter leak memory)</description>
+          <references>
+            <reference type="bugfix">70078</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+      </module>
+    </modules>
+  </changes>
+  <windows_builds/>
+  <tags/>
+</release>

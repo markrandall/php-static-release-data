@@ -1,0 +1,301 @@
+<?xml version="1.0"?>
+<release version="7.4.3">
+  <version>7.4.3</version>
+  <date>2020-03-07</date>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
+      <name>PHP 7.4.3 (tar.bz2)</name>
+      <filename>php-7.4.3.tar.bz2</filename>
+      <date>2020-02-20</date>
+      <sha256>c1517ba49578fb2dcc64c73a3edc76d4fc507c4a7ac639981584cc7d3b4c6d14</sha256>
+    </file>
+    <file compression="tar.gz">
+      <name>PHP 7.4.3 (tar.gz)</name>
+      <filename>php-7.4.3.tar.gz</filename>
+      <date>2020-02-20</date>
+      <sha256>58e421a1dba10da8542a014535cac77a78f0271afb901cc2bd363b881895a9ed</sha256>
+    </file>
+    <file compression="tar.xz">
+      <name>PHP 7.4.3 (tar.xz)</name>
+      <filename>php-7.4.3.tar.xz</filename>
+      <date>2020-02-20</date>
+      <sha256>cf1f856d877c268124ded1ede40c9fb6142b125fdaafdc54f855120b8bc6982a</sha256>
+    </file>
+  </source>
+  <announcements/>
+  <changes>
+    <modules>
+      <module id="core">
+        <change>
+          <description>(cscript can fail to run on some systems)</description>
+          <references>
+            <reference type="bugfix">79146</reference>
+            <reference type="author">clarodeus</reference>
+          </references>
+        </change>
+        <change>
+          <description>(Property nullability lost when using multiple propertydefinition)</description>
+          <references>
+            <reference type="bugfix">79155</reference>
+            <reference type="author">Nikita</reference>
+          </references>
+        </change>
+        <change>
+          <description>(Code 0 is returned on invalid options)</description>
+          <references>
+            <reference type="bugfix">78323</reference>
+            <reference type="author">Ivan Mikheykin</reference>
+          </references>
+        </change>
+        <change>
+          <description>(Delayed variance check involving trait segfaults).(Nikita)</description>
+          <references>
+            <reference type="bugfix">78989</reference>
+          </references>
+        </change>
+        <change>
+          <description>(cookie values with spaces fail to round-trip)</description>
+          <references>
+            <reference type="bugfix">79174</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+        <change>
+          <description>(Use-after-free when accessing already destructedbacktrace arguments)</description>
+          <references>
+            <reference type="bugfix">76047</reference>
+            <reference type="author">Nikita</reference>
+          </references>
+        </change>
+      </module>
+      <module id="com">
+        <change>
+          <description>(Garbage collecting variant objects segfaults)</description>
+          <references>
+            <reference type="bugfix">79247</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+      </module>
+      <module id="curl">
+        <change>
+          <description>(Hypothetical use-after-free in curl_multi_add_handle()).(cmb)</description>
+          <references>
+            <reference type="bugfix">79078</reference>
+          </references>
+        </change>
+      </module>
+      <module id="ffi">
+        <change>
+          <description>(FFI Struct Segfault)</description>
+          <references>
+            <reference type="bugfix">79096</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+      </module>
+      <module id="imap">
+        <change>
+          <description>(IMAP extension can't find OpenSSL libraries at configuretime)</description>
+          <references>
+            <reference type="bugfix">79112</reference>
+            <reference type="author">Nikita</reference>
+          </references>
+        </change>
+        <change>
+          <description>(NumberFormatter::format() may detect wrong type)</description>
+          <references>
+            <reference type="bugfix">79212</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+      </module>
+      <module id="libxml">
+        <change>
+          <description>(Error in SoapClient ctor disables DOMDocument::save()).(Nikita, cmb)</description>
+          <references>
+            <reference type="bugfix">79191</reference>
+          </references>
+        </change>
+      </module>
+      <module id="mbstring">
+        <change>
+          <description>(SEGV in mb_convert_encoding with non-string encodings).(cmb)</description>
+          <references>
+            <reference type="bugfix">79149</reference>
+          </references>
+        </change>
+      </module>
+      <module id="mysqli">
+        <change>
+          <description>(Properties may emit a warning on var_dump())</description>
+          <references>
+            <reference type="bugfix">78666</reference>
+            <reference type="author">kocsismate</reference>
+          </references>
+        </change>
+      </module>
+      <module id="mysqlnd">
+        <change>
+          <description>(mysqlnd may fetch wrong column indexes with MYSQLI_BOTH).(cmb)</description>
+          <references>
+            <reference type="bugfix">79084</reference>
+          </references>
+        </change>
+        <change>
+          <description>(MySQL caching_sha2_password Access denied for passwordwith more than 20 chars)</description>
+          <references>
+            <reference type="bugfix">79011</reference>
+            <reference type="author">Nikita</reference>
+          </references>
+        </change>
+      </module>
+      <module id="opcache">
+        <change>
+          <description>(Eval class during preload causes class to be only halfavailable)</description>
+          <references>
+            <reference type="bugfix">79114</reference>
+            <reference type="author">Laruence</reference>
+          </references>
+        </change>
+        <change>
+          <description>(Preloading segfaults if preload_user is used)</description>
+          <references>
+            <reference type="bugfix">79128</reference>
+            <reference type="author">Nikita</reference>
+          </references>
+        </change>
+        <change>
+          <description>(Incorrect type inference for self::$field =&amp; $field).(Nikita)</description>
+          <references>
+            <reference type="bugfix">79193</reference>
+          </references>
+        </change>
+      </module>
+      <module id="openssl">
+        <change>
+          <description>(openssl memory leak)</description>
+          <references>
+            <reference type="bugfix">79145</reference>
+            <reference type="author">cmb</reference>
+            <reference type="author">Nikita</reference>
+          </references>
+        </change>
+      </module>
+      <module id="phar">
+        <change>
+          <description>(Files added to tar with Phar::buildFromIterator haveall-access permissions)</description>
+          <references>
+            <reference type="bugfix">79082</reference>
+            <reference type="cve">CVE-2020-7063</reference>
+            <reference type="author">stas</reference>
+          </references>
+        </change>
+        <change>
+          <description>(heap-buffer-overflow in phar_extract_file)</description>
+          <references>
+            <reference type="bugfix">79171</reference>
+            <reference type="cve">CVE-2020-7061</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+        <change>
+          <description>(PharFileInfo::decompress not working)</description>
+          <references>
+            <reference type="bugfix">76584</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+      </module>
+      <module id="reflection">
+        <change>
+          <description>(ReflectionClass::isCloneable call reflected class__destruct)</description>
+          <references>
+            <reference type="bugfix">79115</reference>
+            <reference type="author">Nikita</reference>
+          </references>
+        </change>
+      </module>
+      <module id="session">
+        <change>
+          <description>(Null Pointer Dereference in PHP Session Upload Progress)</description>
+          <references>
+            <reference type="bugfix">79221</reference>
+            <reference type="cve">CVE-2020-7062</reference>
+            <reference type="author">stas</reference>
+          </references>
+        </change>
+      </module>
+      <module id="standard">
+        <change>
+          <description>(Memory leak when using stream_filter_append)</description>
+          <references>
+            <reference type="bugfix">78902</reference>
+            <reference type="author">liudaixiao</reference>
+          </references>
+        </change>
+        <change>
+          <description>(PASSWORD_DEFAULT should match PASSWORD_BCRYPT instead of being null)</description>
+          <references>
+            <reference type="bugfix">78969</reference>
+            <reference type="author">kocsismate</reference>
+          </references>
+        </change>
+      </module>
+      <module id="testing">
+        <change>
+          <description>(bug45161.phpt takes forever to finish)</description>
+          <references>
+            <reference type="bugfix">78090</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+      </module>
+      <module id="xsl">
+        <change>
+          <description>(XSL callbacks with nodes as parameter leak memory)</description>
+          <references>
+            <reference type="bugfix">70078</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+      </module>
+      <module id="zip">
+        <change>
+          <description>Add ZipArchive::CM_LZMA2 and ZipArchive::CM_XZ constants (since libzip 1.6.0)</description>
+          <references>
+            <reference type="author">Remi</reference>
+          </references>
+        </change>
+        <change>
+          <description>Add ZipArchive::RDONLY (since libzip 1.0.0)</description>
+          <references>
+            <reference type="author">Remi</reference>
+          </references>
+        </change>
+        <change>
+          <description>Add ZipArchive::ER_* missing constants</description>
+          <references>
+            <reference type="author">Remi</reference>
+          </references>
+        </change>
+        <change>
+          <description>Add ZipArchive::LIBZIP_VERSION constant</description>
+          <references>
+            <reference type="author">Remi</reference>
+          </references>
+        </change>
+        <change>
+          <description>(Wrong return for ZipArchive::addEmptyDir Method)</description>
+          <references>
+            <reference type="bugfix">73119</reference>
+            <reference type="author">Remi</reference>
+          </references>
+        </change>
+      </module>
+    </modules>
+  </changes>
+  <windows_builds/>
+  <tags/>
+</release>
