@@ -243,9 +243,9 @@
       <release version="5.6.16" sha256="9e4ed7cc12037c259d58ea54c052826a373297d9ac51a8a964206d3741464da1">5_6/5_6_16.xml</release>
       <release version="5.6.17" sha256="567c69a85d4560da4c3c6aebd70ac3cda3fedda478ae47abbf31d9dc0bae7e8d">5_6/5_6_17.xml</release>
       <release version="5.6.18" sha256="aa9dce5ee88fad0d61291cdbb94c096703c07be16a9937e775020cfa64770e2f">5_6/5_6_18.xml</release>
-      <release version="5.6.19" sha256="f6eb00a07b1da6242c07c0b732c3f46e5f55108de65f93e8deade35055ee769d">5_6/5_6_19.xml</release>
+      <release version="5.6.19" sha256="0cc95c70bcd3ca6e515392180ae31b54831affa89dfda15ee0db11c8efd7bf67">5_6/5_6_19.xml</release>
       <release version="5.6.2" sha256="a66e246b429cc4576fb628dfa4bd6cdefdf793867bd6e99e3b6c9006553347ed">5_6/5_6_2.xml</release>
-      <release version="5.6.20" sha256="e4c82fd7a65a8e70202445eece3db10352f0a93756a58e035e571147b4d41ad7">5_6/5_6_20.xml</release>
+      <release version="5.6.20" sha256="de955349f389dc6f9f702545cd1bdcfba9586fcebfced8c4fb03c4b312913fc6">5_6/5_6_20.xml</release>
       <release version="5.6.21" sha256="ebc4f49b662f1350e3dca66fbee35c50dd5ce3c693e9ea484f3ca70ff4f09402">5_6/5_6_21.xml</release>
       <release version="5.6.22" sha256="8fbbf51627bad69ae2d7553eea55f7a9b365d9a5bc262498bbd1cacdddc242bf">5_6/5_6_22.xml</release>
       <release version="5.6.23" sha256="8fb7edaa9c5cded60a9142f614178697be9e94773b5b8169dee2d263f55e48f9">5_6/5_6_23.xml</release>
@@ -375,7 +375,11 @@
       <release version="7.2.26" sha256="15cd151cdaa3fa3ef1cac61340464e8405dabf1523d19af8869aec0889ce629c">7_2/7_2_26.xml</release>
       <release version="7.2.27" sha256="7a6aca051ac8e17dd0b96049a96a416eece63390fcf645d62a5125c104e1f394">7_2/7_2_27.xml</release>
       <release version="7.2.28" sha256="a883b73bd5030c0adb939c03e420f16a71319ccd6e920c24265cdee3c5cc4290">7_2/7_2_28.xml</release>
+      <release version="7.2.29" sha256="86befcb2879a3f385ed59f468d6b1f12583d01c3669806b966cfc8257ff1cc89">7_2/7_2_29.xml</release>
       <release version="7.2.3" sha256="c4edfc4bec0739d4a3ddfac5c06783531a572a9b0f60b5f94808f16b381450f6">7_2/7_2_3.xml</release>
+      <release version="7.2.30" sha256="45429d30664622ec8126c0e16f9808f48b5d475382479c6c1424cf73f2d5ce00">7_2/7_2_30.xml</release>
+      <release version="7.2.31" sha256="2325fcbab91b429ba93b72a4fc07263c707cd6725d13cde4ec0f6b975f97d85f">7_2/7_2_31.xml</release>
+      <release version="7.2.32" sha256="3a885fa8c3f42214add1deed71328462704e03153ec6ba6804f3b330a3ab594a">7_2/7_2_32.xml</release>
       <release version="7.2.4" sha256="88d2abbb59d1c81387477348f8bd8acc2db997a6c407798b2ad97d37c0f36ca2">7_2/7_2_4.xml</release>
       <release version="7.2.5" sha256="292f9bde69e193d90049a33acbfb5d49c737cfbc176dc3cfcbaa21f93d3b45c8">7_2/7_2_5.xml</release>
       <release version="7.2.6" sha256="537abe52657810ccc55ada1a60a0e5747c34f49c4b2cddf019738a83999e607f">7_2/7_2_6.xml</release>
@@ -392,9 +396,14 @@
       <release version="7.3.11" sha256="6acbada5f46822c3991fe9585cc3cb7f14175db96ad6f3be31768bdb0d4aa437">7_3/7_3_11.xml</release>
       <release version="7.3.12" sha256="371daad5d082897bd1931e37b0c01a59ab25de7d3e31fb5d4dc8826c2f205471">7_3/7_3_12.xml</release>
       <release version="7.3.13" sha256="3fbed3e8ab93e481531496138fb018cd9436492103957952e1140f3a5d951b44">7_3/7_3_13.xml</release>
-      <release version="7.3.14" sha256="40bee276f35c42f17af37924b6f1502e214ad0e02bea311297ac9fcd5be80606">7_3/7_3_14.xml</release>
+      <release version="7.3.14" sha256="0e927985af35786277f6db3b0fdc6f7579f92e9612ce8f4a883d09fb4c4dc813">7_3/7_3_14.xml</release>
       <release version="7.3.15" sha256="2cc7fe74c2a119e7dd64da4bc8aefab92dbe5a28db528b456b9053f5986672be">7_3/7_3_15.xml</release>
+      <release version="7.3.16" sha256="8e00dc2b0c00b0e03075d754333ccc32a2c3015bc3c0c5692f9a2713d05c2447">7_3/7_3_16.xml</release>
+      <release version="7.3.17" sha256="aa5b9f61c346edccedd4e8f7300459d014e59027f9e8aebecacca116aed74796">7_3/7_3_17.xml</release>
+      <release version="7.3.18" sha256="1ce51140e5bec03dc07ec74bbb47e7c9e7544dde97dadc7707a08ff5892224c4">7_3/7_3_18.xml</release>
+      <release version="7.3.19" sha256="9373a9686163166d7157cf867730fd0b8783dcf8600bca6132d6083d9027b5ac">7_3/7_3_19.xml</release>
       <release version="7.3.2" sha256="168e5008b2bddba861c65ffbca4119d4be047d2788a264539a9b5bea16954b21">7_3/7_3_2.xml</release>
+      <release version="7.3.20" sha256="347190c643ef04e1d6cb4882072c505283cfa56c72adf10f3fcc212bcef08837">7_3/7_3_20.xml</release>
       <release version="7.3.3" sha256="aa7a167cc25f5ff4941fe094fbc0d9db0b53141c151d89b65925e2476347392f">7_3/7_3_3.xml</release>
       <release version="7.3.4" sha256="5504b80f395f1b32009349cc3401ab7a4b31ae0e409be044aa142c038547c7d7">7_3/7_3_4.xml</release>
       <release version="7.3.5" sha256="795171ae7af5b5b4e8c21e9eb468765e4209478ca98c77639e67f0d4dcb42f53">7_3/7_3_5.xml</release>
@@ -410,6 +419,11 @@
       <release version="7.4.1" sha256="ec5fd532c9b84737d14c033588a64fd01ef46f6658f5120413e61d1797ff7adc">7_4/7_4_1.xml</release>
       <release version="7.4.2" sha256="137a91b220bd2e64a9531ec30c143c09f5f56a978c120510ce33141e9137c07d">7_4/7_4_2.xml</release>
       <release version="7.4.3" sha256="8843fa1e28d4e1496dab763f5219b6bfaaf64905f305e187a7984622a40d9667">7_4/7_4_3.xml</release>
+      <release version="7.4.4" sha256="1692937429fd76d3b43046d9810142a200fc6fa4b91ac72c88dca3413ddcfc0d">7_4/7_4_4.xml</release>
+      <release version="7.4.5" sha256="d860e98377916821edc138bb12d71636f935b3b649d3db30de3421b64bb1c757">7_4/7_4_5.xml</release>
+      <release version="7.4.6" sha256="a95439141731370150301759f40c85aa402831fd10eabd3e7810d2e4f7889439">7_4/7_4_6.xml</release>
+      <release version="7.4.7" sha256="d6e81a1a8359c0f97074903bd5fb5d771b7263b4a80fa7156aa156710c5365b4">7_4/7_4_7.xml</release>
+      <release version="7.4.8" sha256="7e691f3da13d68385c1734cd681738926165a185b4a6a8a5a9fb64a13d18dfb6">7_4/7_4_8.xml</release>
     </releases>
   </branch>
 </branches>

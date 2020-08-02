@@ -1,0 +1,120 @@
+<?xml version="1.0"?>
+<release version="7.4.7">
+  <version>7.4.7</version>
+  <date>2020-08-02</date>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
+      <name>PHP 7.4.7 (tar.bz2)</name>
+      <filename>php-7.4.7.tar.bz2</filename>
+      <date>2020-06-11</date>
+      <sha256>800e0d01f359c8ec41540925c0d4a24c34d5f21ef6addd6d82ff4a52be23d87a</sha256>
+    </file>
+    <file compression="tar.gz">
+      <name>PHP 7.4.7 (tar.gz)</name>
+      <filename>php-7.4.7.tar.gz</filename>
+      <date>2020-06-11</date>
+      <sha256>a554a510190e726ebe7157fb00b4aceabdb50c679430510a3b93cbf5d7546e44</sha256>
+    </file>
+    <file compression="tar.xz">
+      <name>PHP 7.4.7 (tar.xz)</name>
+      <filename>php-7.4.7.tar.xz</filename>
+      <date>2020-06-11</date>
+      <sha256>53558f8f24cd8ab6fa0ea252ca8198e2650160649681ce5230c1df1dc2b52faf</sha256>
+    </file>
+  </source>
+  <announcements/>
+  <changes>
+    <modules>
+      <module id="core">
+        <change>
+          <description>(coredump in set_error_handler)</description>
+          <references>
+            <reference type="bugfix">79599</reference>
+            <reference type="author">Laruence</reference>
+          </references>
+        </change>
+        <change>
+          <description>(Private SHM is not private on Windows)</description>
+          <references>
+            <reference type="bugfix">79566</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+        <change>
+          <description>(.user.ini does not inherit)</description>
+          <references>
+            <reference type="bugfix">79489</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+        <change>
+          <description>(Regression in 7.4.6 when yielding an array basedgenerator)</description>
+          <references>
+            <reference type="bugfix">79600</reference>
+            <reference type="author">Nikita</reference>
+          </references>
+        </change>
+        <change>
+          <description>("yield from" hangs when invalid value encountered).(Nikita)</description>
+          <references>
+            <reference type="bugfix">79657</reference>
+          </references>
+        </change>
+      </module>
+      <module id="ffi">
+        <change>
+          <description>(FFI: var_dumping unions may segfault)</description>
+          <references>
+            <reference type="bugfix">79571</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+      </module>
+      <module id="gd">
+        <change>
+          <description>(Wrong GIF header written in GD GIFEncode)</description>
+          <references>
+            <reference type="bugfix">79615</reference>
+            <reference type="author">sageptr</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+      </module>
+      <module id="opcache">
+        <change>
+          <description>(Boolean opcache settings ignore on/off values)</description>
+          <references>
+            <reference type="bugfix">79588</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+        <change>
+          <description>(Preloading segfault with inherited method using staticvariable)</description>
+          <references>
+            <reference type="bugfix">79548</reference>
+            <reference type="author">Nikita</reference>
+          </references>
+        </change>
+        <change>
+          <description>(RTD collision with opcache)</description>
+          <references>
+            <reference type="bugfix">79603</reference>
+            <reference type="author">Nikita</reference>
+          </references>
+        </change>
+      </module>
+      <module id="standard">
+        <change>
+          <description>(dns_get_record() fails with DNS_ALL)</description>
+          <references>
+            <reference type="bugfix">79561</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+      </module>
+    </modules>
+  </changes>
+  <windows_builds/>
+  <tags/>
+</release>

@@ -1,0 +1,199 @@
+<?xml version="1.0"?>
+<release version="7.3.16">
+  <version>7.3.16</version>
+  <date>2020-08-02</date>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
+      <name>PHP 7.3.16 (tar.bz2)</name>
+      <filename>php-7.3.16.tar.bz2</filename>
+      <date>2020-03-19</date>
+      <sha256>b8072d526a283182963b03960b7982392daa43cb31131eca4cf0b996764a042e</sha256>
+    </file>
+    <file compression="tar.gz">
+      <name>PHP 7.3.16 (tar.gz)</name>
+      <filename>php-7.3.16.tar.gz</filename>
+      <date>2020-03-19</date>
+      <sha256>a01ae4f6baf427413c28f8cfddbae86aeff61cdb88658e75404f2d93d98e3255</sha256>
+    </file>
+    <file compression="tar.xz">
+      <name>PHP 7.3.16 (tar.xz)</name>
+      <filename>php-7.3.16.tar.xz</filename>
+      <date>2020-03-19</date>
+      <sha256>91aaee3dbdc71b69b4f3292f9d99211172a2fa926c3f3bbdb0e85dab03dd2bcb</sha256>
+    </file>
+  </source>
+  <announcements/>
+  <changes>
+    <modules>
+      <module id="core">
+        <change>
+          <description>(restore_error_handler does not restore previous errorsmask)</description>
+          <references>
+            <reference type="bugfix">63206</reference>
+            <reference type="author">Mark Plomer</reference>
+          </references>
+        </change>
+      </module>
+      <module id="com">
+        <change>
+          <description>(COMPersistHelper::SaveToFile can save to wrong location).(cmb)</description>
+          <references>
+            <reference type="bugfix">66322</reference>
+          </references>
+        </change>
+        <change>
+          <description>(COM error constants don't match com_exception codes onx86)</description>
+          <references>
+            <reference type="bugfix">79242</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+        <change>
+          <description>(Traversing empty VT_ARRAY throws com_exception)</description>
+          <references>
+            <reference type="bugfix">79248</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+        <change>
+          <description>(com_print_typeinfo prints duplicate variables)</description>
+          <references>
+            <reference type="bugfix">79299</reference>
+            <reference type="author">LitianoMoura</reference>
+          </references>
+        </change>
+        <change>
+          <description>(php_istreams are never freed)</description>
+          <references>
+            <reference type="bugfix">79332</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+        <change>
+          <description>(com_print_typeinfo() leaks memory)</description>
+          <references>
+            <reference type="bugfix">79333</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+      </module>
+      <module id="dom">
+        <change>
+          <description>: (Write Access Violation in DomImplementation)</description>
+          <references>
+            <reference type="bugfix">77569</reference>
+            <reference type="author">Nikita</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+        <change>
+          <description>(DOMDocumentType::$childNodes is NULL)</description>
+          <references>
+            <reference type="bugfix">79271</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+      </module>
+      <module id="enchant">
+        <change>
+          <description>(enchant_dict_suggest() fails on big endian architecture).(cmb)</description>
+          <references>
+            <reference type="bugfix">79311</reference>
+          </references>
+        </change>
+      </module>
+      <module id="exif">
+        <change>
+          <description>(Use-of-uninitialized-value in exif)</description>
+          <references>
+            <reference type="bugfix">79282</reference>
+            <reference type="cve">CVE-2020-7064</reference>
+            <reference type="author">Nikita</reference>
+          </references>
+        </change>
+      </module>
+      <module id="mbstring">
+        <change>
+          <description>(mb_strtolower (UTF-32LE): stack-buffer-overflow at php_unicode_tolower_full)</description>
+          <references>
+            <reference type="bugfix">79371</reference>
+            <reference type="cve">CVE-2020-7065</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+      </module>
+      <module id="mysqli">
+        <change>
+          <description>(mysqli reports different client_version)</description>
+          <references>
+            <reference type="bugfix">64032</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+      </module>
+      <module id="pcre">
+        <change>
+          <description>(Memory corruption in preg_replace/preg_replace_callbackand unicode)</description>
+          <references>
+            <reference type="bugfix">79188</reference>
+            <reference type="author">Nikita</reference>
+          </references>
+        </change>
+      </module>
+      <module id="pdo_odbc">
+        <change>
+          <description>(PDOStatement::nextRowset() leaks column values)</description>
+          <references>
+            <reference type="bugfix">79038</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+      </module>
+      <module id="reflection">
+        <change>
+          <description>(Property with heredoc default value returns false forgetDocComment)</description>
+          <references>
+            <reference type="bugfix">79062</reference>
+            <reference type="author">Nikita</reference>
+          </references>
+        </change>
+      </module>
+      <module id="sqlite3">
+        <change>
+          <description>(::columnType() may fail after SQLite3Stmt::reset())</description>
+          <references>
+            <reference type="bugfix">79294</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+      </module>
+      <module id="standard">
+        <change>
+          <description>(get_headers() silently truncates after a null byte)</description>
+          <references>
+            <reference type="bugfix">79329</reference>
+            <reference type="cve">CVE-2020-7066</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+        <change>
+          <description>(getenv() w/o arguments not showing changes)</description>
+          <references>
+            <reference type="bugfix">79254</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+        <change>
+          <description>(Improper injection of Host header when using fopen forhttp requests)</description>
+          <references>
+            <reference type="bugfix">79265</reference>
+            <reference type="author">Miguel Xavier Penha Neto</reference>
+          </references>
+        </change>
+      </module>
+    </modules>
+  </changes>
+  <windows_builds/>
+  <tags/>
+</release>

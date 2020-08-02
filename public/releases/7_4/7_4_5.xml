@@ -1,0 +1,186 @@
+<?xml version="1.0"?>
+<release version="7.4.5">
+  <version>7.4.5</version>
+  <date>2020-08-02</date>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
+      <name>PHP 7.4.5 (tar.bz2)</name>
+      <filename>php-7.4.5.tar.bz2</filename>
+      <date>2020-04-16</date>
+      <sha256>39daa533d5b63c3394da711dc12867dd76c2ec31c940bbba16f14e577df13d6f</sha256>
+    </file>
+    <file compression="tar.gz">
+      <name>PHP 7.4.5 (tar.gz)</name>
+      <filename>php-7.4.5.tar.gz</filename>
+      <date>2020-04-16</date>
+      <sha256>1ef619411b0bd68c0fbfd2a6c622ad6bc524d0bceb8476fb9807a23a0fe9a343</sha256>
+    </file>
+    <file compression="tar.xz">
+      <name>PHP 7.4.5 (tar.xz)</name>
+      <filename>php-7.4.5.tar.xz</filename>
+      <date>2020-04-16</date>
+      <sha256>d059fd7f55bdc4d2eada15a00a2976697010d3631ef6f83149cc5289e1f23c2c</sha256>
+    </file>
+  </source>
+  <announcements/>
+  <changes>
+    <modules>
+      <module id="core">
+        <change>
+          <description>(When copy empty array, next key is unspecified)</description>
+          <references>
+            <reference type="bugfix">79364</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+        <change>
+          <description>(Invalid pointer address)</description>
+          <references>
+            <reference type="bugfix">78210</reference>
+            <reference type="author">cmb</reference>
+            <reference type="author">Nikita</reference>
+          </references>
+        </change>
+      </module>
+      <module id="curl">
+        <change>
+          <description>(curl_copy_handle() memory leak)</description>
+          <references>
+            <reference type="bugfix">79199</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+      </module>
+      <module id="date">
+        <change>
+          <description>(DateTime hour incorrect during DST jump forward)</description>
+          <references>
+            <reference type="bugfix">79396</reference>
+            <reference type="author">NateBrunette</reference>
+          </references>
+        </change>
+        <change>
+          <description>(DateTimeZone loose comparison always true)</description>
+          <references>
+            <reference type="bugfix">74940</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+      </module>
+      <module id="fpm">
+        <change>
+          <description>Implement request #77062 (Allow numeric [UG]ID in FPM listen.{owner,group})(Andre Nathan)</description>
+          <references/>
+        </change>
+      </module>
+      <module id="iconv">
+        <change>
+          <description>(Some iconv functions cut Windows-1258)</description>
+          <references>
+            <reference type="bugfix">79200</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+      </module>
+      <module id="opcache">
+        <change>
+          <description>(Opcache chokes and uses 100% CPU on specific script).(Dmitry)</description>
+          <references>
+            <reference type="bugfix">79412</reference>
+          </references>
+        </change>
+      </module>
+      <module id="session">
+        <change>
+          <description>(session_create_id() fails for active sessions)</description>
+          <references>
+            <reference type="bugfix">79413</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+      </module>
+      <module id="shmop">
+        <change>
+          <description>(Integer Overflow in shmop_open())</description>
+          <references>
+            <reference type="bugfix">79427</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+      </module>
+      <module id="simplexml">
+        <change>
+          <description>(SXE properties may lack attributes and content)</description>
+          <references>
+            <reference type="bugfix">61597</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+      </module>
+      <module id="soap">
+        <change>
+          <description>(SOAP request segfaults when any request parameter ismissing)</description>
+          <references>
+            <reference type="bugfix">79357</reference>
+            <reference type="author">Nikita</reference>
+          </references>
+        </change>
+      </module>
+      <module id="spl">
+        <change>
+          <description>(SplStack::unserialize() behavior)</description>
+          <references>
+            <reference type="bugfix">75673</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+        <change>
+          <description>(Null coalescing operator failing with SplFixedArray).(cmb)</description>
+          <references>
+            <reference type="bugfix">79393</reference>
+          </references>
+        </change>
+      </module>
+      <module id="standard">
+        <change>
+          <description>(shell_exec() silently truncates after a null byte)</description>
+          <references>
+            <reference type="bugfix">79330</reference>
+            <reference type="author">stas</reference>
+          </references>
+        </change>
+        <change>
+          <description>(system() swallows last chunk if it is exactly 4095 byteswithout newline)</description>
+          <references>
+            <reference type="bugfix">79410</reference>
+            <reference type="author">Christian Schneider</reference>
+          </references>
+        </change>
+        <change>
+          <description>(OOB Read in urldecode())</description>
+          <references>
+            <reference type="bugfix">79465</reference>
+            <reference type="author">stas</reference>
+          </references>
+        </change>
+      </module>
+      <module id="zip">
+        <change>
+          <description>Fixed Bug #79296 (ZipArchive::open fails on empty file)</description>
+          <references>
+            <reference type="author">Remi</reference>
+          </references>
+        </change>
+        <change>
+          <description>(php_zip_glob uses gl_pathc after call to globfree).(Max Rees)</description>
+          <references>
+            <reference type="bugfix">79424</reference>
+          </references>
+        </change>
+      </module>
+    </modules>
+  </changes>
+  <windows_builds/>
+  <tags/>
+</release>

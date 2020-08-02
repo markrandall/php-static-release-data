@@ -1,0 +1,241 @@
+<?xml version="1.0"?>
+<release version="7.3.20">
+  <version>7.3.20</version>
+  <date>2020-08-02</date>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
+      <name>PHP 7.3.20 (tar.bz2)</name>
+      <filename>php-7.3.20.tar.bz2</filename>
+      <date>2020-07-09</date>
+      <sha256>c6ed7894911acfe075381c01b07745d92e9259fac510a849f742edb6b95c89de</sha256>
+    </file>
+    <file compression="tar.gz">
+      <name>PHP 7.3.20 (tar.gz)</name>
+      <filename>php-7.3.20.tar.gz</filename>
+      <date>2020-07-09</date>
+      <sha256>d0579b8a6bcdd5e1ae334d83261f2389b0d3d4fd54cc808e20a5031121f97d87</sha256>
+    </file>
+    <file compression="tar.xz">
+      <name>PHP 7.3.20 (tar.xz)</name>
+      <filename>php-7.3.20.tar.xz</filename>
+      <date>2020-07-09</date>
+      <sha256>43292046f6684eb13acb637276d4aa1dd9f66b0b7045e6f1493bc90db389b888</sha256>
+    </file>
+  </source>
+  <announcements/>
+  <changes>
+    <modules>
+      <module id="core">
+        <change>
+          <description>(php-win.exe 100% cpu lockup)</description>
+          <references>
+            <reference type="bugfix">79650</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+        <change>
+          <description>(get_defined_functions(true) may miss functions)</description>
+          <references>
+            <reference type="bugfix">79668</reference>
+            <reference type="author">cmb</reference>
+            <reference type="author">Nikita</reference>
+          </references>
+        </change>
+        <change>
+          <description>Fixed possibly unsupported timercmp() usage</description>
+          <references>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+      </module>
+      <module id="exif">
+        <change>
+          <description>(Sony picture - PHP Warning - Make, Model, MakerNotes)</description>
+          <references>
+            <reference type="bugfix">79687</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+      </module>
+      <module id="filter">
+        <change>
+          <description>(Invalid memory access in php_filter_strip)</description>
+          <references>
+            <reference type="bugfix">73527</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+      </module>
+      <module id="gd">
+        <change>
+          <description>(imagescale adds black border with IMG_BICUBIC)</description>
+          <references>
+            <reference type="bugfix">79676</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+      </module>
+      <module id="openssl">
+        <change>
+          <description>(default_socket_timeout=-1 causes connection to timeout).(cmb)</description>
+          <references>
+            <reference type="bugfix">62890</reference>
+          </references>
+        </change>
+      </module>
+      <module id="pdo sqlite">
+        <change>
+          <description>(PDOStatement::getColumnMeta fails on empty result set).(cmb)</description>
+          <references>
+            <reference type="bugfix">79664</reference>
+          </references>
+        </change>
+      </module>
+      <module id="spl">
+        <change>
+          <description>(Reproducible segfault in error_handler during GCinvolved an SplFileObject)</description>
+          <references>
+            <reference type="bugfix">79710</reference>
+            <reference type="author">Nikita</reference>
+          </references>
+        </change>
+      </module>
+      <module id="standard">
+        <change>
+          <description>(segfault with streams and invalid data)</description>
+          <references>
+            <reference type="bugfix">74267</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+        <change>
+          <description>(ZTS build of PHP 7.3.17 doesn't handle ERANGE forposix_getgrgid and others)</description>
+          <references>
+            <reference type="bugfix">79579</reference>
+            <reference type="author">B&#xF6;sz&#xF6;rm&#xE9;nyi Zolt&#xE1;n</reference>
+          </references>
+        </change>
+      </module>
+    </modules>
+  </changes>
+  <windows_builds>
+    <build name="ts-VC15-x64">
+      <label>Thread-Safe - Win64 - vc15</label>
+      <files>
+        <file name="zip">
+          <path>php-7.3.20-Win32-VC15-x64.zip</path>
+          <size>25165824</size>
+          <sha256>57b6206bdcd410209bd085cb091c1341384b7d227a9329bb68daa05b9a8bdead</sha256>
+          <url>https://windows.php.net/downloads/releases/php-7.3.20-Win32-VC15-x64.zip</url>
+        </file>
+        <file name="debug_pack">
+          <path>php-debug-pack-7.3.20-Win32-VC15-x64.zip</path>
+          <size>24117248</size>
+          <sha256>08a995e9287f87e1c9cfd36b290552c29ed122665f9ab514f103565b147d08b2</sha256>
+          <url>https://windows.php.net/downloads/releases/php-debug-pack-7.3.20-Win32-VC15-x64.zip</url>
+        </file>
+        <file name="devel_pack">
+          <path>php-devel-pack-7.3.20-Win32-VC15-x64.zip</path>
+          <size>1048576</size>
+          <sha256>7df651794733f2abbd17782937def6c9fd807d9d57a5272bb72f49ad184999ad</sha256>
+          <url>https://windows.php.net/downloads/releases/php-devel-pack-7.3.20-Win32-VC15-x64.zip</url>
+        </file>
+      </files>
+      <dependencies>
+        <dependency>
+          <label>x64 Redistributable for Visual Studio 2015-2019</label>
+          <url>https://aka.ms/vs/16/release/VC_redist.x64.exe</url>
+        </dependency>
+      </dependencies>
+    </build>
+    <build name="ts-VC15-x86">
+      <label>Thread-Safe - Win32 - vc15</label>
+      <files>
+        <file name="zip">
+          <path>php-7.3.20-Win32-VC15-x86.zip</path>
+          <size>23068672</size>
+          <sha256>e85c0a7d4fc1125348b74df291fe7d886d7c3b499093d7174fa3c98bd35625b6</sha256>
+          <url>https://windows.php.net/downloads/releases/php-7.3.20-Win32-VC15-x86.zip</url>
+        </file>
+        <file name="debug_pack">
+          <path>php-debug-pack-7.3.20-Win32-VC15-x86.zip</path>
+          <size>25165824</size>
+          <sha256>dff215511e172e006e5f6ca766382e48dc7c3185211bac3e2a0639e8b1fa0319</sha256>
+          <url>https://windows.php.net/downloads/releases/php-debug-pack-7.3.20-Win32-VC15-x86.zip</url>
+        </file>
+        <file name="devel_pack">
+          <path>php-devel-pack-7.3.20-Win32-VC15-x86.zip</path>
+          <size>1048576</size>
+          <sha256>a48f85a011a2c96aca34d8ef00e02c3fa2dc4d8c1b5c6df9e03e9258d63305fe</sha256>
+          <url>https://windows.php.net/downloads/releases/php-devel-pack-7.3.20-Win32-VC15-x86.zip</url>
+        </file>
+      </files>
+      <dependencies>
+        <dependency>
+          <label>x86 Redistributable for Visual Studio 2015-2019</label>
+          <url>https://aka.ms/vs/16/release/VC_redist.x86.exe</url>
+        </dependency>
+      </dependencies>
+    </build>
+    <build name="nts-VC15-x64">
+      <label>Non Thread Safe - Win64 - vc15</label>
+      <files>
+        <file name="zip">
+          <path>php-7.3.20-nts-Win32-VC15-x64.zip</path>
+          <size>25165824</size>
+          <sha256>744df2e5e9df76b9d06906171b3e9a99700794ee0dd048d8046ef9ae13110b78</sha256>
+          <url>https://windows.php.net/downloads/releases/php-7.3.20-nts-Win32-VC15-x64.zip</url>
+        </file>
+        <file name="debug_pack">
+          <path>php-debug-pack-7.3.20-nts-Win32-VC15-x64.zip</path>
+          <size>24117248</size>
+          <sha256>c676e2022079a362d001dcc62574fc860037d56c06e8ad9f592376a3ae29ae2c</sha256>
+          <url>https://windows.php.net/downloads/releases/php-debug-pack-7.3.20-nts-Win32-VC15-x64.zip</url>
+        </file>
+        <file name="devel_pack">
+          <path>php-devel-pack-7.3.20-nts-Win32-VC15-x64.zip</path>
+          <size>1048576</size>
+          <sha256>e1dedaf0aa82f211df99e3da17160e5266eea7826066f50efa2bceb249f6d921</sha256>
+          <url>https://windows.php.net/downloads/releases/php-devel-pack-7.3.20-nts-Win32-VC15-x64.zip</url>
+        </file>
+      </files>
+      <dependencies>
+        <dependency>
+          <label>x64 Redistributable for Visual Studio 2015-2019</label>
+          <url>https://aka.ms/vs/16/release/VC_redist.x64.exe</url>
+        </dependency>
+      </dependencies>
+    </build>
+    <build name="nts-VC15-x86">
+      <label>Non Thread Safe - Win32 - vc15</label>
+      <files>
+        <file name="zip">
+          <path>php-7.3.20-nts-Win32-VC15-x86.zip</path>
+          <size>23068672</size>
+          <sha256>ed90c7471d47e2bcabaa5e165595f03d84bff29c84a2e6555a161949f16c1589</sha256>
+          <url>https://windows.php.net/downloads/releases/php-7.3.20-nts-Win32-VC15-x86.zip</url>
+        </file>
+        <file name="debug_pack">
+          <path>php-debug-pack-7.3.20-nts-Win32-VC15-x86.zip</path>
+          <size>24117248</size>
+          <sha256>1e8124ba2d0b30911d959dcd8d611ca04ae3d29f2d44367dc4ed0e8ccd3a7ce6</sha256>
+          <url>https://windows.php.net/downloads/releases/php-debug-pack-7.3.20-nts-Win32-VC15-x86.zip</url>
+        </file>
+        <file name="devel_pack">
+          <path>php-devel-pack-7.3.20-nts-Win32-VC15-x86.zip</path>
+          <size>1048576</size>
+          <sha256>17796b4ce838ba2a57540d03aa185e12d142a14b1377c1f64dac3b42eb7b20bb</sha256>
+          <url>https://windows.php.net/downloads/releases/php-devel-pack-7.3.20-nts-Win32-VC15-x86.zip</url>
+        </file>
+      </files>
+      <dependencies>
+        <dependency>
+          <label>x86 Redistributable for Visual Studio 2015-2019</label>
+          <url>https://aka.ms/vs/16/release/VC_redist.x86.exe</url>
+        </dependency>
+      </dependencies>
+    </build>
+  </windows_builds>
+  <tags/>
+</release>

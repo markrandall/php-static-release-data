@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<release version="7.2.29">
+  <version>7.2.29</version>
+  <date>2020-08-02</date>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
+      <name>PHP 7.2.29 (tar.bz2)</name>
+      <filename>php-7.2.29.tar.bz2</filename>
+      <date>2020-03-19</date>
+      <sha256>eaa1f5503f2bf0c8569ec4ae80ffd8ca8cbc260f01c2503dd0e83dfc9cf0b923</sha256>
+    </file>
+    <file compression="tar.gz">
+      <name>PHP 7.2.29 (tar.gz)</name>
+      <filename>php-7.2.29.tar.gz</filename>
+      <date>2020-03-19</date>
+      <sha256>ea5c96309394a03a38828cc182058be0c09dde1f00f35809622c2d05c50ee890</sha256>
+    </file>
+    <file compression="tar.xz">
+      <name>PHP 7.2.29 (tar.xz)</name>
+      <filename>php-7.2.29.tar.xz</filename>
+      <date>2020-03-19</date>
+      <sha256>b117de74136bf4b439d663be9cf0c8e06a260c1f340f6b75ccadb609153a7fe8</sha256>
+    </file>
+  </source>
+  <announcements/>
+  <changes>
+    <modules>
+      <module id="core:">
+        <change>
+          <description>(get_headers() silently truncates after a null byte)  (cmb)</description>
+          <references>
+            <reference type="bugfix">79329</reference>
+            <reference type="cve">CVE-2020-7066</reference>
+          </references>
+        </change>
+      </module>
+      <module id="exif">
+        <change>
+          <description>(Use-of-uninitialized-value in exif)  (Nikita)</description>
+          <references>
+            <reference type="bugfix">79282</reference>
+            <reference type="cve">CVE-2020-7064</reference>
+          </references>
+        </change>
+      </module>
+    </modules>
+  </changes>
+  <windows_builds/>
+  <tags/>
+</release>

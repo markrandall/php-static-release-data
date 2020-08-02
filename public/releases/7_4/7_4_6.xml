@@ -1,0 +1,183 @@
+<?xml version="1.0"?>
+<release version="7.4.6">
+  <version>7.4.6</version>
+  <date>2020-08-02</date>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
+      <name>PHP 7.4.6 (tar.bz2)</name>
+      <filename>php-7.4.6.tar.bz2</filename>
+      <date>2020-05-14</date>
+      <sha256>a6ed9475695d2056322a3f2c00fee61a122a7fce138a0e25694320c5dd1d2348</sha256>
+    </file>
+    <file compression="tar.gz">
+      <name>PHP 7.4.6 (tar.gz)</name>
+      <filename>php-7.4.6.tar.gz</filename>
+      <date>2020-05-14</date>
+      <sha256>2a37bab4e308c4e3867083137b7cce4a3f1d996ae231b383c1a83609cec3fed0</sha256>
+    </file>
+    <file compression="tar.xz">
+      <name>PHP 7.4.6 (tar.xz)</name>
+      <filename>php-7.4.6.tar.xz</filename>
+      <date>2020-05-14</date>
+      <sha256>d740322f84f63019622b9f369d64ea5ab676547d2bdcf12be77a5a4cffd06832</sha256>
+    </file>
+  </source>
+  <announcements/>
+  <changes>
+    <modules>
+      <module id="core">
+        <change>
+          <description>(Generator yields no items after valid() call)</description>
+          <references>
+            <reference type="bugfix">78434</reference>
+            <reference type="author">Nikita</reference>
+          </references>
+        </change>
+        <change>
+          <description>(casting object into array creates references)</description>
+          <references>
+            <reference type="bugfix">79477</reference>
+            <reference type="author">Nikita</reference>
+          </references>
+        </change>
+        <change>
+          <description>(Memory leaks while including unexistent file)</description>
+          <references>
+            <reference type="bugfix">79514</reference>
+            <reference type="author">cmb</reference>
+            <reference type="author">Nikita</reference>
+          </references>
+        </change>
+        <change>
+          <description>(PHP incompatible with 3rd party file system on demand).(cmb)</description>
+          <references>
+            <reference type="bugfix">79470</reference>
+          </references>
+        </change>
+        <change>
+          <description>(Unable to interact with files inside a VFS for Gitrepository)</description>
+          <references>
+            <reference type="bugfix">78784</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+        <change>
+          <description>(Long variables cause OOM and temp files are not cleaned).(cmb)</description>
+          <references>
+            <reference type="bugfix">78875</reference>
+            <reference type="cve">CVE-2019-11048</reference>
+          </references>
+        </change>
+        <change>
+          <description>(Long variables cause OOM and temp files are not cleaned).(cmb)</description>
+          <references>
+            <reference type="bugfix">78876</reference>
+            <reference type="cve">CVE-2019-11048</reference>
+          </references>
+        </change>
+      </module>
+      <module id="dom">
+        <change>
+          <description>(DOMNode::normalize() doesn't remove empty text nodes).(cmb)</description>
+          <references>
+            <reference type="bugfix">78221</reference>
+          </references>
+        </change>
+      </module>
+      <module id="exif">
+        <change>
+          <description>(ext/exif/tests/bug79046.phpt fails on Big endian arch).(Nikita)</description>
+          <references>
+            <reference type="bugfix">79336</reference>
+          </references>
+        </change>
+      </module>
+      <module id="fcgi">
+        <change>
+          <description>(Search for .user.ini extends up to root dir)</description>
+          <references>
+            <reference type="bugfix">79491</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+      </module>
+      <module id="mbstring">
+        <change>
+          <description>(Segfault in mb_chr() if internal encoding is unsupported).(Girgias)</description>
+          <references>
+            <reference type="bugfix">79441</reference>
+          </references>
+        </change>
+      </module>
+      <module id="openssl">
+        <change>
+          <description>(stream_socket_client() throws an unknown error sometimeswith &lt;1s timeout)</description>
+          <references>
+            <reference type="bugfix">79497</reference>
+            <reference type="author">Joe Cai</reference>
+          </references>
+        </change>
+      </module>
+      <module id="pcre">
+        <change>
+          <description>Upgraded to PCRE2 10.34</description>
+          <references>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+      </module>
+      <module id="phar">
+        <change>
+          <description>(Memory leak on duplicate metadata)</description>
+          <references>
+            <reference type="bugfix">79503</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+      </module>
+      <module id="simplexml">
+        <change>
+          <description>(Different object of the same xml between 7.4.5 and7.4.4)</description>
+          <references>
+            <reference type="bugfix">79528</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+      </module>
+      <module id="spl">
+        <change>
+          <description>(__debugInfo() ignored while extending SPL classes)</description>
+          <references>
+            <reference type="bugfix">69264</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+        <change>
+          <description>(ArrayObject serialization drops the iterator class).(Alex Dowad)</description>
+          <references>
+            <reference type="bugfix">67369</reference>
+          </references>
+        </change>
+      </module>
+      <module id="standard">
+        <change>
+          <description>(SIGSEGV when closing stream handle with a stream filterappended)</description>
+          <references>
+            <reference type="bugfix">79468</reference>
+            <reference type="author">dinosaur</reference>
+          </references>
+        </change>
+        <change>
+          <description>(Serializing uninitialized typed properties with __sleepshould not throw)</description>
+          <references>
+            <reference type="bugfix">79447</reference>
+            <reference type="author">nicolas-grekas</reference>
+          </references>
+        </change>
+      </module>
+    </modules>
+  </changes>
+  <windows_builds/>
+  <tags/>
+</release>

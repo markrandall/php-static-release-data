@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<release version="7.3.19">
+  <version>7.3.19</version>
+  <date>2020-08-02</date>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
+      <name>PHP 7.3.19 (tar.bz2)</name>
+      <filename>php-7.3.19.tar.bz2</filename>
+      <date>2020-06-11</date>
+      <sha256>0d9c1e31e29fb46ff660b48051d169d50cb0285e611d16591449d578320d34a5</sha256>
+    </file>
+    <file compression="tar.gz">
+      <name>PHP 7.3.19 (tar.gz)</name>
+      <filename>php-7.3.19.tar.gz</filename>
+      <date>2020-06-11</date>
+      <sha256>809126b46d62a1a06c2d5a0f9d7ba61aba40e165f24d2d185396d0f9646d3280</sha256>
+    </file>
+    <file compression="tar.xz">
+      <name>PHP 7.3.19 (tar.xz)</name>
+      <filename>php-7.3.19.tar.xz</filename>
+      <date>2020-06-11</date>
+      <sha256>6402faa19b1a8c4317c7612632bce985684a5bbae0980a5779a4019439882422</sha256>
+    </file>
+  </source>
+  <announcements/>
+  <changes>
+    <modules>
+      <module id="core">
+        <change>
+          <description>(Private SHM is not private on Windows)</description>
+          <references>
+            <reference type="bugfix">79566</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+        <change>
+          <description>(.user.ini does not inherit)</description>
+          <references>
+            <reference type="bugfix">79489</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+      </module>
+      <module id="gd">
+        <change>
+          <description>(Wrong GIF header written in GD GIFEncode)</description>
+          <references>
+            <reference type="bugfix">79615</reference>
+            <reference type="author">sageptr</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+      </module>
+      <module id="mysqlnd">
+        <change>
+          <description>(MySQL FLOAT truncates to int some locales)</description>
+          <references>
+            <reference type="bugfix">79596</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+      </module>
+      <module id="opcache">
+        <change>
+          <description>(PHP crashes with specific opcache.optimization_level).(Nikita)</description>
+          <references>
+            <reference type="bugfix">79535</reference>
+          </references>
+        </change>
+        <change>
+          <description>(Boolean opcache settings ignore on/off values)</description>
+          <references>
+            <reference type="bugfix">79588</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+      </module>
+      <module id="standard">
+        <change>
+          <description>(dns_get_record() fails with DNS_ALL)</description>
+          <references>
+            <reference type="bugfix">79561</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+      </module>
+    </modules>
+  </changes>
+  <windows_builds/>
+  <tags/>
+</release>

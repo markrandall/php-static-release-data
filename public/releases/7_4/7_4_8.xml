@@ -1,0 +1,298 @@
+<?xml version="1.0"?>
+<release version="7.4.8">
+  <version>7.4.8</version>
+  <date>2020-08-02</date>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
+      <name>PHP 7.4.8 (tar.bz2)</name>
+      <filename>php-7.4.8.tar.bz2</filename>
+      <date>2020-07-09</date>
+      <sha256>6a48d3a605c003b088984ceb53be5df1e698b8b35ddacadd12fe50f49c0e8062</sha256>
+    </file>
+    <file compression="tar.gz">
+      <name>PHP 7.4.8 (tar.gz)</name>
+      <filename>php-7.4.8.tar.gz</filename>
+      <date>2020-07-09</date>
+      <sha256>649f6bcdb60dc38d5edd7f3a7b2905d15d88c1d13e40307e8972ede347cea6ba</sha256>
+    </file>
+    <file compression="tar.xz">
+      <name>PHP 7.4.8 (tar.xz)</name>
+      <filename>php-7.4.8.tar.xz</filename>
+      <date>2020-07-09</date>
+      <sha256>642843890b732e8af01cb661e823ae01472af1402f211c83009c9b3abd073245</sha256>
+    </file>
+  </source>
+  <announcements/>
+  <changes>
+    <modules>
+      <module id="core">
+        <change>
+          <description>(Altering disable_functions from module init corruptsmemory)</description>
+          <references>
+            <reference type="bugfix">79649</reference>
+            <reference type="author">Laruence</reference>
+          </references>
+        </change>
+        <change>
+          <description>(zend_init_fpu() alters FPU precision)</description>
+          <references>
+            <reference type="bugfix">79595</reference>
+            <reference type="author">cmb</reference>
+            <reference type="author">Nikita</reference>
+          </references>
+        </change>
+        <change>
+          <description>(php-win.exe 100% cpu lockup)</description>
+          <references>
+            <reference type="bugfix">79650</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+        <change>
+          <description>(get_defined_functions(true) may miss functions)</description>
+          <references>
+            <reference type="bugfix">79668</reference>
+            <reference type="author">cmb</reference>
+            <reference type="author">Nikita</reference>
+          </references>
+        </change>
+        <change>
+          <description>("yield from" hangs when invalid value encountered).(Nikita)</description>
+          <references>
+            <reference type="bugfix">79657</reference>
+          </references>
+        </change>
+        <change>
+          <description>(Fake reflection scope affects __toString())</description>
+          <references>
+            <reference type="bugfix">79683</reference>
+            <reference type="author">Nikita</reference>
+          </references>
+        </change>
+        <change>
+          <description>Fixed possibly unsupported timercmp() usage</description>
+          <references>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+      </module>
+      <module id="exif">
+        <change>
+          <description>(Sony picture - PHP Warning - Make, Model, MakerNotes)</description>
+          <references>
+            <reference type="bugfix">79687</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+      </module>
+      <module id="fileinfo">
+        <change>
+          <description>(mime_content_type/finfo returning incorrect mimetype).(cmb)</description>
+          <references>
+            <reference type="bugfix">79681</reference>
+          </references>
+        </change>
+      </module>
+      <module id="filter">
+        <change>
+          <description>(Invalid memory access in php_filter_strip)</description>
+          <references>
+            <reference type="bugfix">73527</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+      </module>
+      <module id="gd">
+        <change>
+          <description>(imagescale adds black border with IMG_BICUBIC)</description>
+          <references>
+            <reference type="bugfix">79676</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+      </module>
+      <module id="openssl">
+        <change>
+          <description>(default_socket_timeout=-1 causes connection to timeout).(cmb)</description>
+          <references>
+            <reference type="bugfix">62890</reference>
+          </references>
+        </change>
+      </module>
+      <module id="pdo sqlite">
+        <change>
+          <description>(PDOStatement::getColumnMeta fails on empty result set).(cmb)</description>
+          <references>
+            <reference type="bugfix">79664</reference>
+          </references>
+        </change>
+      </module>
+      <module id="phpdbg">
+        <change>
+          <description>(phpdbg will not accept input on restart execution)</description>
+          <references>
+            <reference type="bugfix">73926</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+        <change>
+          <description>(phpdbg fails with windows error prompt at "watch array").(cmb)</description>
+          <references>
+            <reference type="bugfix">73927</reference>
+          </references>
+        </change>
+        <change>
+          <description>Fixed several mostly Windows related phpdbg bugs</description>
+          <references>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+      </module>
+      <module id="spl">
+        <change>
+          <description>(Reproducible segfault in error_handler during GCinvolved an SplFileObject)</description>
+          <references>
+            <reference type="bugfix">79710</reference>
+            <reference type="author">Nikita</reference>
+          </references>
+        </change>
+      </module>
+      <module id="standard">
+        <change>
+          <description>(segfault with streams and invalid data)</description>
+          <references>
+            <reference type="bugfix">74267</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+        <change>
+          <description>(ZTS build of PHP 7.3.17 doesn't handle ERANGE forposix_getgrgid and others)</description>
+          <references>
+            <reference type="bugfix">79579</reference>
+            <reference type="author">B&#xF6;sz&#xF6;rm&#xE9;nyi Zolt&#xE1;n</reference>
+          </references>
+        </change>
+      </module>
+    </modules>
+  </changes>
+  <windows_builds>
+    <build name="ts-vc15-x64">
+      <label>Thread-Safe - Win64 - vc15</label>
+      <files>
+        <file name="zip">
+          <path>php-7.4.8-Win32-vc15-x64.zip</path>
+          <size>25165824</size>
+          <sha256>553767b9f8c4b55a23141e78b449cdd4a460e21521d3734fe91012ca715df4bf</sha256>
+          <url>https://windows.php.net/downloads/releases/php-7.4.8-Win32-vc15-x64.zip</url>
+        </file>
+        <file name="debug_pack">
+          <path>php-debug-pack-7.4.8-Win32-vc15-x64.zip</path>
+          <size>22020096</size>
+          <sha256>e5d71114dcb0ac8a10021bb323fc9ecd2dfb1cffe5651ee98161691fc6fc2a56</sha256>
+          <url>https://windows.php.net/downloads/releases/php-debug-pack-7.4.8-Win32-vc15-x64.zip</url>
+        </file>
+        <file name="devel_pack">
+          <path>php-devel-pack-7.4.8-Win32-vc15-x64.zip</path>
+          <size>1048576</size>
+          <sha256>1842f129cd88e0264b4f299d43cbf863bc771e29bd20a8b4dbdff86edd14536c</sha256>
+          <url>https://windows.php.net/downloads/releases/php-devel-pack-7.4.8-Win32-vc15-x64.zip</url>
+        </file>
+      </files>
+      <dependencies>
+        <dependency>
+          <label>x64 Redistributable for Visual Studio 2015-2019</label>
+          <url>https://aka.ms/vs/16/release/VC_redist.x64.exe</url>
+        </dependency>
+      </dependencies>
+    </build>
+    <build name="ts-vc15-x86">
+      <label>Thread-Safe - Win32 - vc15</label>
+      <files>
+        <file name="zip">
+          <path>php-7.4.8-Win32-vc15-x86.zip</path>
+          <size>24117248</size>
+          <sha256>46f8f620cbbe78121af9e71b3beba48b45f7c5c9ce639a8a48a69be12f3034ac</sha256>
+          <url>https://windows.php.net/downloads/releases/php-7.4.8-Win32-vc15-x86.zip</url>
+        </file>
+        <file name="debug_pack">
+          <path>php-debug-pack-7.4.8-Win32-vc15-x86.zip</path>
+          <size>23068672</size>
+          <sha256>62b5da655043f2550c45b1ad1493b702b0452d41741511dd4de4d8dbf2bc1d64</sha256>
+          <url>https://windows.php.net/downloads/releases/php-debug-pack-7.4.8-Win32-vc15-x86.zip</url>
+        </file>
+        <file name="devel_pack">
+          <path>php-devel-pack-7.4.8-Win32-vc15-x86.zip</path>
+          <size>1048576</size>
+          <sha256>5c5e04670bca1a22688e5d363ff0181d187c262de0c6e36e3eaf684ec6942da3</sha256>
+          <url>https://windows.php.net/downloads/releases/php-devel-pack-7.4.8-Win32-vc15-x86.zip</url>
+        </file>
+      </files>
+      <dependencies>
+        <dependency>
+          <label>x86 Redistributable for Visual Studio 2015-2019</label>
+          <url>https://aka.ms/vs/16/release/VC_redist.x86.exe</url>
+        </dependency>
+      </dependencies>
+    </build>
+    <build name="nts-vc15-x64">
+      <label>Non Thread Safe - Win64 - vc15</label>
+      <files>
+        <file name="zip">
+          <path>php-7.4.8-nts-Win32-vc15-x64.zip</path>
+          <size>25165824</size>
+          <sha256>7029bcddd42ed7d9051e3fa85386ba73c6bef3eb9736263d2deb725853c63659</sha256>
+          <url>https://windows.php.net/downloads/releases/php-7.4.8-nts-Win32-vc15-x64.zip</url>
+        </file>
+        <file name="debug_pack">
+          <path>php-debug-pack-7.4.8-nts-Win32-vc15-x64.zip</path>
+          <size>22020096</size>
+          <sha256>bed802418163327450151d27c4723fa992260313994e50dde744e6eb56edaf44</sha256>
+          <url>https://windows.php.net/downloads/releases/php-debug-pack-7.4.8-nts-Win32-vc15-x64.zip</url>
+        </file>
+        <file name="devel_pack">
+          <path>php-devel-pack-7.4.8-nts-Win32-vc15-x64.zip</path>
+          <size>1048576</size>
+          <sha256>5f5b1cc5f05f76d3edc177cfc79822c38b7f4a1a1b1eb41db5c51e9b1ccf6fbd</sha256>
+          <url>https://windows.php.net/downloads/releases/php-devel-pack-7.4.8-nts-Win32-vc15-x64.zip</url>
+        </file>
+      </files>
+      <dependencies>
+        <dependency>
+          <label>x64 Redistributable for Visual Studio 2015-2019</label>
+          <url>https://aka.ms/vs/16/release/VC_redist.x64.exe</url>
+        </dependency>
+      </dependencies>
+    </build>
+    <build name="nts-vc15-x86">
+      <label>Non Thread Safe - Win32 - vc15</label>
+      <files>
+        <file name="zip">
+          <path>php-7.4.8-nts-Win32-vc15-x86.zip</path>
+          <size>24117248</size>
+          <sha256>dcc170219a423d53faf2540a1c0963883cb001ad445eb14953990b9aa8368c99</sha256>
+          <url>https://windows.php.net/downloads/releases/php-7.4.8-nts-Win32-vc15-x86.zip</url>
+        </file>
+        <file name="debug_pack">
+          <path>php-debug-pack-7.4.8-nts-Win32-vc15-x86.zip</path>
+          <size>23068672</size>
+          <sha256>07ce9a80d7876cedfad03b2fe679d405edf370e7f6fe10520a5022de858bb1c0</sha256>
+          <url>https://windows.php.net/downloads/releases/php-debug-pack-7.4.8-nts-Win32-vc15-x86.zip</url>
+        </file>
+        <file name="devel_pack">
+          <path>php-devel-pack-7.4.8-nts-Win32-vc15-x86.zip</path>
+          <size>1048576</size>
+          <sha256>d7049e231ec1e1b95d7ff82460f66a16b1265c5434f251deae278bfe88f175cf</sha256>
+          <url>https://windows.php.net/downloads/releases/php-devel-pack-7.4.8-nts-Win32-vc15-x86.zip</url>
+        </file>
+      </files>
+      <dependencies>
+        <dependency>
+          <label>x86 Redistributable for Visual Studio 2015-2019</label>
+          <url>https://aka.ms/vs/16/release/VC_redist.x86.exe</url>
+        </dependency>
+      </dependencies>
+    </build>
+  </windows_builds>
+  <tags/>
+</release>

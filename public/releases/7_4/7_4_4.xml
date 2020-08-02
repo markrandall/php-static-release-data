@@ -1,0 +1,289 @@
+<?xml version="1.0"?>
+<release version="7.4.4">
+  <version>7.4.4</version>
+  <date>2020-08-02</date>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
+      <name>PHP 7.4.4 (tar.bz2)</name>
+      <filename>php-7.4.4.tar.bz2</filename>
+      <date>2020-03-19</date>
+      <sha256>308e8f4182ec8a2767b0b1b8e1e7c69fb149b37cfb98ee4a37475e082fa9829f</sha256>
+    </file>
+    <file compression="tar.gz">
+      <name>PHP 7.4.4 (tar.gz)</name>
+      <filename>php-7.4.4.tar.gz</filename>
+      <date>2020-03-19</date>
+      <sha256>1581b3e10c7854597e1086937d5753cdf92d132865c06a50aed4f4f407138616</sha256>
+    </file>
+    <file compression="tar.xz">
+      <name>PHP 7.4.4 (tar.xz)</name>
+      <filename>php-7.4.4.tar.xz</filename>
+      <date>2020-03-19</date>
+      <sha256>1873c4cefdd3df9a78dcffb2198bba5c2f0464f55c9c960720c84df483fca74c</sha256>
+    </file>
+  </source>
+  <announcements/>
+  <changes>
+    <modules>
+      <module id="core">
+        <change>
+          <description>(get_headers() silently truncates after a null byte) (cmb)</description>
+          <references>
+            <reference type="bugfix">79329</reference>
+            <reference type="cve">CVE-2020-7066</reference>
+          </references>
+        </change>
+        <change>
+          <description>(php crashes during parsing INI file)</description>
+          <references>
+            <reference type="bugfix">79244</reference>
+            <reference type="author">Laruence</reference>
+          </references>
+        </change>
+        <change>
+          <description>(restore_error_handler does not restore previous errorsmask)</description>
+          <references>
+            <reference type="bugfix">63206</reference>
+            <reference type="author">Mark Plomer</reference>
+          </references>
+        </change>
+      </module>
+      <module id="com">
+        <change>
+          <description>(COMPersistHelper::SaveToFile can save to wrong location).(cmb)</description>
+          <references>
+            <reference type="bugfix">66322</reference>
+          </references>
+        </change>
+        <change>
+          <description>(COM error constants don't match com_exception codes onx86)</description>
+          <references>
+            <reference type="bugfix">79242</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+        <change>
+          <description>(Garbage collecting variant objects segfaults)</description>
+          <references>
+            <reference type="bugfix">79247</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+        <change>
+          <description>(Traversing empty VT_ARRAY throws com_exception)</description>
+          <references>
+            <reference type="bugfix">79248</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+        <change>
+          <description>(com_print_typeinfo prints duplicate variables)</description>
+          <references>
+            <reference type="bugfix">79299</reference>
+            <reference type="author">LitianoMoura</reference>
+          </references>
+        </change>
+        <change>
+          <description>(php_istreams are never freed)</description>
+          <references>
+            <reference type="bugfix">79332</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+        <change>
+          <description>(com_print_typeinfo() leaks memory)</description>
+          <references>
+            <reference type="bugfix">79333</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+      </module>
+      <module id="curl">
+        <change>
+          <description>(Copied cURL handles upload empty file)</description>
+          <references>
+            <reference type="bugfix">79019</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+        <change>
+          <description>(Content-Length missing when posting a curlFile withcurl)</description>
+          <references>
+            <reference type="bugfix">79013</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+      </module>
+      <module id="dom">
+        <change>
+          <description>: (Write Access Violation in DomImplementation)</description>
+          <references>
+            <reference type="bugfix">77569</reference>
+            <reference type="author">Nikita</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+        <change>
+          <description>(DOMDocumentType::$childNodes is NULL)</description>
+          <references>
+            <reference type="bugfix">79271</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+      </module>
+      <module id="enchant">
+        <change>
+          <description>(enchant_dict_suggest() fails on big endian architecture).(cmb)</description>
+          <references>
+            <reference type="bugfix">79311</reference>
+          </references>
+        </change>
+      </module>
+      <module id="exif">
+        <change>
+          <description>(Use-of-uninitialized-value in exif) (Nikita)</description>
+          <references>
+            <reference type="bugfix">79282</reference>
+            <reference type="cve">CVE-2020-7064</reference>
+          </references>
+        </change>
+      </module>
+      <module id="fileinfo">
+        <change>
+          <description>(Segfault in libmagic patch contains a bufferoverflow) (cmb)</description>
+          <references>
+            <reference type="bugfix">79283</reference>
+          </references>
+        </change>
+      </module>
+      <module id="fpm">
+        <change>
+          <description>(operator displayed instead of the real error message).(Jakub Zelenka)</description>
+          <references>
+            <reference type="bugfix">77653</reference>
+          </references>
+        </change>
+        <change>
+          <description>(PHP-FPM &amp; Primary script unknown)</description>
+          <references>
+            <reference type="bugfix">79014</reference>
+            <reference type="author">Jakub Zelenka</reference>
+          </references>
+        </change>
+      </module>
+      <module id="mbstring">
+        <change>
+          <description>(mb_strtolower (UTF-32LE): stack-buffer-overflow atphp_unicode_tolower_full)  (cmb)</description>
+          <references>
+            <reference type="bugfix">79371</reference>
+            <reference type="cve">CVE-2020-7065</reference>
+          </references>
+        </change>
+      </module>
+      <module id="mysqli">
+        <change>
+          <description>(mysqli reports different client_version)</description>
+          <references>
+            <reference type="bugfix">64032</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+      </module>
+      <module id="mysqlnd">
+        <change>
+          <description>(Support auth_plugin_caching_sha2_password onWindows)</description>
+          <references>
+            <reference type="feature-request">79275</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+      </module>
+      <module id="opcache">
+        <change>
+          <description>(preloading causes php-fpm to segfault during exit).(Nikita)</description>
+          <references>
+            <reference type="bugfix">79252</reference>
+          </references>
+        </change>
+      </module>
+      <module id="pcre">
+        <change>
+          <description>(Memory corruption in preg_replace/preg_replace_callbackand unicode)</description>
+          <references>
+            <reference type="bugfix">79188</reference>
+            <reference type="author">Nikita</reference>
+          </references>
+        </change>
+        <change>
+          <description>(Segmentation fault on preg_match())</description>
+          <references>
+            <reference type="bugfix">79241</reference>
+            <reference type="author">Nikita</reference>
+          </references>
+        </change>
+        <change>
+          <description>(Duplicate named groups (?J) prefer last alternative evenif not matched)</description>
+          <references>
+            <reference type="bugfix">79257</reference>
+            <reference type="author">Nikita</reference>
+          </references>
+        </change>
+      </module>
+      <module id="pdo_odbc">
+        <change>
+          <description>(PDOStatement::nextRowset() leaks column values)</description>
+          <references>
+            <reference type="bugfix">79038</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+      </module>
+      <module id="reflection">
+        <change>
+          <description>(Property with heredoc default value returns false forgetDocComment)</description>
+          <references>
+            <reference type="bugfix">79062</reference>
+            <reference type="author">Nikita</reference>
+          </references>
+        </change>
+      </module>
+      <module id="sqlite3">
+        <change>
+          <description>(::columnType() may fail after SQLite3Stmt::reset())</description>
+          <references>
+            <reference type="bugfix">79294</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+      </module>
+      <module id="standard">
+        <change>
+          <description>(getenv() w/o arguments not showing changes)</description>
+          <references>
+            <reference type="bugfix">79254</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+        <change>
+          <description>(Improper injection of Host header when using fopen forhttp requests)</description>
+          <references>
+            <reference type="bugfix">79265</reference>
+            <reference type="author">Miguel Xavier Penha Neto</reference>
+          </references>
+        </change>
+      </module>
+      <module id="zip">
+        <change>
+          <description>(ZipArchive::addFile doesn't honor start/lengthparameters)</description>
+          <references>
+            <reference type="bugfix">79315</reference>
+            <reference type="author">Remi</reference>
+          </references>
+        </change>
+      </module>
+    </modules>
+  </changes>
+  <windows_builds/>
+  <tags/>
+</release>

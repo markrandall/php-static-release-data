@@ -1,0 +1,138 @@
+<?xml version="1.0"?>
+<release version="7.3.18">
+  <version>7.3.18</version>
+  <date>2020-08-02</date>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
+      <name>PHP 7.3.18 (tar.bz2)</name>
+      <filename>php-7.3.18.tar.bz2</filename>
+      <date>2020-05-14</date>
+      <sha256>749d21f65deb57153b575f846705f5db54732c6b672e80612b29dcf1a53be8a4</sha256>
+    </file>
+    <file compression="tar.gz">
+      <name>PHP 7.3.18 (tar.gz)</name>
+      <filename>php-7.3.18.tar.gz</filename>
+      <date>2020-05-14</date>
+      <sha256>3211d5d6ea8a27c2794498a551bf26e334bc2b986741971809c9bb650eaa47a3</sha256>
+    </file>
+    <file compression="tar.xz">
+      <name>PHP 7.3.18 (tar.xz)</name>
+      <filename>php-7.3.18.tar.xz</filename>
+      <date>2020-05-14</date>
+      <sha256>7b3e2479a8d6fd7666dcdef8aec50d49c4599cc6ee86e48d41724cfd99cc9e58</sha256>
+    </file>
+  </source>
+  <announcements/>
+  <changes>
+    <modules>
+      <module id="core">
+        <change>
+          <description>(Long filenames cause OOM and temp files are not cleaned)</description>
+          <references>
+            <reference type="bugfix">78875</reference>
+            <reference type="cve">CVE-2019-11048</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+        <change>
+          <description>(Long variables in multipart/form-data cause OOM and temp files are not cleaned)</description>
+          <references>
+            <reference type="bugfix">78876</reference>
+            <reference type="cve">CVE-2019-11048</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+        <change>
+          <description>(PHP 7.3 and PHP-7.4 crash with NULL-pointer dereferenceon !CS constant)</description>
+          <references>
+            <reference type="bugfix">79434</reference>
+            <reference type="author">Nikita</reference>
+          </references>
+        </change>
+        <change>
+          <description>(casting object into array creates references)</description>
+          <references>
+            <reference type="bugfix">79477</reference>
+            <reference type="author">Nikita</reference>
+          </references>
+        </change>
+        <change>
+          <description>(PHP incompatible with 3rd party file system on demand).(cmb)</description>
+          <references>
+            <reference type="bugfix">79470</reference>
+          </references>
+        </change>
+        <change>
+          <description>(Unable to interact with files inside a VFS for Gitrepository)</description>
+          <references>
+            <reference type="bugfix">78784</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+      </module>
+      <module id="dom">
+        <change>
+          <description>(DOMNode::normalize() doesn't remove empty text nodes).(cmb)</description>
+          <references>
+            <reference type="bugfix">78221</reference>
+          </references>
+        </change>
+      </module>
+      <module id="fcgi">
+        <change>
+          <description>(Search for .user.ini extends up to root dir)</description>
+          <references>
+            <reference type="bugfix">79491</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+      </module>
+      <module id="mbstring">
+        <change>
+          <description>(Segfault in mb_chr() if internal encoding is unsupported).(Girgias)</description>
+          <references>
+            <reference type="bugfix">79441</reference>
+          </references>
+        </change>
+      </module>
+      <module id="openssl">
+        <change>
+          <description>(stream_socket_client() throws an unknown error sometimeswith &lt;1s timeout)</description>
+          <references>
+            <reference type="bugfix">79497</reference>
+            <reference type="author">Joe Cai</reference>
+          </references>
+        </change>
+      </module>
+      <module id="phar">
+        <change>
+          <description>Fix bug #79503 (Memory leak on duplicate metadata)</description>
+          <references>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+      </module>
+      <module id="simplexml">
+        <change>
+          <description>(Different object of the same xml between 7.4.5 and7.4.4)</description>
+          <references>
+            <reference type="bugfix">79528</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+      </module>
+      <module id="standard">
+        <change>
+          <description>(SIGSEGV when closing stream handle with a stream filterappended)</description>
+          <references>
+            <reference type="bugfix">79468</reference>
+            <reference type="author">dinosaur</reference>
+          </references>
+        </change>
+      </module>
+    </modules>
+  </changes>
+  <windows_builds/>
+  <tags/>
+</release>

@@ -1,0 +1,158 @@
+<?xml version="1.0"?>
+<release version="7.2.32">
+  <version>7.2.32</version>
+  <date>2020-08-02</date>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
+      <name>PHP 7.2.32 (tar.bz2)</name>
+      <filename>php-7.2.32.tar.bz2</filename>
+      <date>2020-07-09</date>
+      <sha256>715c0a4274ad17ce449cd0f16b8a7428936e3ba80002d0948a8699a6f75d98a7</sha256>
+    </file>
+    <file compression="tar.gz">
+      <name>PHP 7.2.32 (tar.gz)</name>
+      <filename>php-7.2.32.tar.gz</filename>
+      <date>2020-07-09</date>
+      <sha256>b3aabb99e574c407dd58ad071fc52e27c489608fe06f1330d688d0fb7349089c</sha256>
+    </file>
+    <file compression="tar.xz">
+      <name>PHP 7.2.32 (tar.xz)</name>
+      <filename>php-7.2.32.tar.xz</filename>
+      <date>2020-07-09</date>
+      <sha256>050fc16ca56d8d2365d980998220a4eb06439da71dfd38de49b42fea72310ef1</sha256>
+    </file>
+  </source>
+  <announcements/>
+  <changes>
+    <modules>
+      <module id="core">
+        <change>
+          <description>No source changes to this release.Vesion number added for reproduction of Windows builds</description>
+          <references>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+      </module>
+    </modules>
+  </changes>
+  <windows_builds>
+    <build name="ts-VC15-x64">
+      <label>Thread-Safe - Win64 - vc15</label>
+      <files>
+        <file name="zip">
+          <path>php-7.2.32-Win32-VC15-x64.zip</path>
+          <size>26214400</size>
+          <sha256>9571ceaa71320a073cb2bb54758c447c307b04a4e7a0745d65a15f425a799700</sha256>
+          <url>https://windows.php.net/downloads/releases/php-7.2.32-Win32-VC15-x64.zip</url>
+        </file>
+        <file name="debug_pack">
+          <path>php-debug-pack-7.2.32-Win32-VC15-x64.zip</path>
+          <size>24117248</size>
+          <sha256>a01361583328a9ff310f458a6e363efd82ad8f0822b02592f9184775e21698d1</sha256>
+          <url>https://windows.php.net/downloads/releases/php-debug-pack-7.2.32-Win32-VC15-x64.zip</url>
+        </file>
+        <file name="devel_pack">
+          <path>php-devel-pack-7.2.32-Win32-VC15-x64.zip</path>
+          <size>1048576</size>
+          <sha256>68b7d96a3d05d25cc11c41337878595704b8c0652895cb4ac3c6f62c3a6c6f5e</sha256>
+          <url>https://windows.php.net/downloads/releases/php-devel-pack-7.2.32-Win32-VC15-x64.zip</url>
+        </file>
+      </files>
+      <dependencies>
+        <dependency>
+          <label>x64 Redistributable for Visual Studio 2015-2019</label>
+          <url>https://aka.ms/vs/16/release/VC_redist.x64.exe</url>
+        </dependency>
+      </dependencies>
+    </build>
+    <build name="ts-VC15-x86">
+      <label>Thread-Safe - Win32 - vc15</label>
+      <files>
+        <file name="zip">
+          <path>php-7.2.32-Win32-VC15-x86.zip</path>
+          <size>24117248</size>
+          <sha256>412ee141e222d785b146788167bfcfc2b69f77c0cde3c34d5cf2c5d0eb78bcb9</sha256>
+          <url>https://windows.php.net/downloads/releases/php-7.2.32-Win32-VC15-x86.zip</url>
+        </file>
+        <file name="debug_pack">
+          <path>php-debug-pack-7.2.32-Win32-VC15-x86.zip</path>
+          <size>25165824</size>
+          <sha256>6e6f1c7e29ae8832a38b0035700ac8e7dd0d32f90a07c25f80ed3fa6c5986fc0</sha256>
+          <url>https://windows.php.net/downloads/releases/php-debug-pack-7.2.32-Win32-VC15-x86.zip</url>
+        </file>
+        <file name="devel_pack">
+          <path>php-devel-pack-7.2.32-Win32-VC15-x86.zip</path>
+          <size>1048576</size>
+          <sha256>4af1bf1d197a8fe0baeaa462b5fcab4eb85b78df12e9fa56921f37253e4586c0</sha256>
+          <url>https://windows.php.net/downloads/releases/php-devel-pack-7.2.32-Win32-VC15-x86.zip</url>
+        </file>
+      </files>
+      <dependencies>
+        <dependency>
+          <label>x86 Redistributable for Visual Studio 2015-2019</label>
+          <url>https://aka.ms/vs/16/release/VC_redist.x86.exe</url>
+        </dependency>
+      </dependencies>
+    </build>
+    <build name="nts-VC15-x64">
+      <label>Non Thread Safe - Win64 - vc15</label>
+      <files>
+        <file name="zip">
+          <path>php-7.2.32-nts-Win32-VC15-x64.zip</path>
+          <size>25165824</size>
+          <sha256>70b1f6cb4a75a0351ec0ff008a213b600abf9fdedd022925f24808b9c3f05d58</sha256>
+          <url>https://windows.php.net/downloads/releases/php-7.2.32-nts-Win32-VC15-x64.zip</url>
+        </file>
+        <file name="debug_pack">
+          <path>php-debug-pack-7.2.32-nts-Win32-VC15-x64.zip</path>
+          <size>24117248</size>
+          <sha256>eb80bd76aea968984bdc997ba415a7bcc43e384bf98aab2674c9df0b7ec5d1a4</sha256>
+          <url>https://windows.php.net/downloads/releases/php-debug-pack-7.2.32-nts-Win32-VC15-x64.zip</url>
+        </file>
+        <file name="devel_pack">
+          <path>php-devel-pack-7.2.32-nts-Win32-VC15-x64.zip</path>
+          <size>1048576</size>
+          <sha256>50be1fa1a261065e0603e4ba012490fa41dd9a05a584dc8398b6663208d60eec</sha256>
+          <url>https://windows.php.net/downloads/releases/php-devel-pack-7.2.32-nts-Win32-VC15-x64.zip</url>
+        </file>
+      </files>
+      <dependencies>
+        <dependency>
+          <label>x64 Redistributable for Visual Studio 2015-2019</label>
+          <url>https://aka.ms/vs/16/release/VC_redist.x64.exe</url>
+        </dependency>
+      </dependencies>
+    </build>
+    <build name="nts-VC15-x86">
+      <label>Non Thread Safe - Win32 - vc15</label>
+      <files>
+        <file name="zip">
+          <path>php-7.2.32-nts-Win32-VC15-x86.zip</path>
+          <size>24117248</size>
+          <sha256>ff4f2dd30c76d835d190e34b33d12b8c976a1fff55c210d0f743c9420b8d6ebd</sha256>
+          <url>https://windows.php.net/downloads/releases/php-7.2.32-nts-Win32-VC15-x86.zip</url>
+        </file>
+        <file name="debug_pack">
+          <path>php-debug-pack-7.2.32-nts-Win32-VC15-x86.zip</path>
+          <size>25165824</size>
+          <sha256>89fc807de0a21684883b6266b3f016ac1c6060899fad8afb4a725317c7e629f8</sha256>
+          <url>https://windows.php.net/downloads/releases/php-debug-pack-7.2.32-nts-Win32-VC15-x86.zip</url>
+        </file>
+        <file name="devel_pack">
+          <path>php-devel-pack-7.2.32-nts-Win32-VC15-x86.zip</path>
+          <size>1048576</size>
+          <sha256>885421809bc712ddc60c00bf89e1fb9d4f72fa028db25a14b87e8a8c422b0a9b</sha256>
+          <url>https://windows.php.net/downloads/releases/php-devel-pack-7.2.32-nts-Win32-VC15-x86.zip</url>
+        </file>
+      </files>
+      <dependencies>
+        <dependency>
+          <label>x86 Redistributable for Visual Studio 2015-2019</label>
+          <url>https://aka.ms/vs/16/release/VC_redist.x86.exe</url>
+        </dependency>
+      </dependencies>
+    </build>
+  </windows_builds>
+  <tags/>
+</release>

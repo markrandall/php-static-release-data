@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<release version="7.2.31">
+  <version>7.2.31</version>
+  <date>2020-08-02</date>
+  <stage>stable</stage>
+  <source>
+    <file compression="tar.bz2">
+      <name>PHP 7.2.31 (tar.bz2)</name>
+      <filename>php-7.2.31.tar.bz2</filename>
+      <date>2020-05-14</date>
+      <sha256>1ba7559745d704f39764a5deb002eb94f5cb8d9aaa219a6b8b32b94174e8a700</sha256>
+    </file>
+    <file compression="tar.gz">
+      <name>PHP 7.2.31 (tar.gz)</name>
+      <filename>php-7.2.31.tar.gz</filename>
+      <date>2020-05-14</date>
+      <sha256>796837831ccebf00dc15921ed327cfbac59177da41b33044d9a6c7134cdd250c</sha256>
+    </file>
+    <file compression="tar.xz">
+      <name>PHP 7.2.31 (tar.xz)</name>
+      <filename>php-7.2.31.tar.xz</filename>
+      <date>2020-05-14</date>
+      <sha256>8beaa634bb878a96af9bc8643811ea46973f5f41ad2bfb6ab4cfd290e5a39806</sha256>
+    </file>
+  </source>
+  <announcements/>
+  <changes>
+    <modules>
+      <module id="core">
+        <change>
+          <description>(Long filenames cause OOM and temp files are not cleaned)</description>
+          <references>
+            <reference type="bugfix">78875</reference>
+            <reference type="cve">CVE-2019-11048</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+        <change>
+          <description>(Long variables in multipart/form-data cause OOM and temp files are not cleaned)</description>
+          <references>
+            <reference type="bugfix">78876</reference>
+            <reference type="cve">CVE-2019-11048</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+      </module>
+    </modules>
+  </changes>
+  <windows_builds/>
+  <tags/>
+</release>

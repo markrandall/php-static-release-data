@@ -7,19 +7,19 @@
     <file compression="tar.bz2">
       <name>PHP 5.6.19 (tar.bz2)</name>
       <filename>php-5.6.19.tar.bz2</filename>
-      <date>2020-03-03</date>
+      <date>2016-03-03</date>
       <sha256>2a24a3f84971680ac0a4c71050067de4f76ee235aa4a041fae21bfa69975c168</sha256>
     </file>
     <file compression="tar.gz">
       <name>PHP 5.6.19 (tar.gz)</name>
       <filename>php-5.6.19.tar.gz</filename>
-      <date>2020-03-03</date>
+      <date>2016-03-03</date>
       <sha256>fce49cddac9337f0c83afbafac5acfb82ba9f876a5a880c88240feac8c9b7a22</sha256>
     </file>
     <file compression="tar.xz">
       <name>PHP 5.6.19 (tar.xz)</name>
       <filename>php-5.6.19.tar.xz</filename>
-      <date>2020-03-03</date>
+      <date>2016-03-03</date>
       <sha256>bb32337f93a00b71789f116bddafa8848139120e7fb6f4f98a84f52dbcb8329f</sha256>
     </file>
   </source>
