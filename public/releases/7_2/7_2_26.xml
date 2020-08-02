@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <release version="7.2.26">
   <version>7.2.26</version>
-  <date>2019-12-18</date>
+  <date>2019-12-19</date>
   <stage>stable</stage>
   <source>
     <file compression="tar.bz2">
@@ -28,39 +28,44 @@
   </announcements>
   <changes>
     <modules>
-      <module id="core">
+      <module id="bcmath">
         <change>
-          <description>(Buffer underflow in bc_shift_addsub). (CVE-2019-11046)</description>
+          <description>(Buffer underflow in bc_shift_addsub). .(cmb)</description>
           <references>
             <reference type="bugfix">78878</reference>
             <reference type="cve">CVE-2019-11046</reference>
           </references>
         </change>
+      </module>
+      <module id="core">
         <change>
-          <description>(link() silently truncates after a null byte on Windows). (CVE-2019-11044)</description>
+          <description>(link() silently truncates after a null byte on Windows).</description>
           <references>
             <reference type="bugfix">78862</reference>
             <reference type="cve">CVE-2019-11044</reference>
+            <reference type="author">cmb</reference>
           </references>
         </change>
         <change>
-          <description>(DirectoryIterator class silently truncates after a null byte). (CVE-2019-11045)</description>
+          <description>(DirectoryIterator class silently truncates after a nullbyte).</description>
           <references>
             <reference type="bugfix">78863</reference>
             <reference type="cve">CVE-2019-11045</reference>
+            <reference type="author">cmb</reference>
           </references>
         </change>
       </module>
       <module id="exif">
         <change>
-          <description>(Use-after-free in exif parsing under memory sanitizer). (CVE-2019-11050)</description>
+          <description>(Use-after-free in exif parsing under memory sanitizer).</description>
           <references>
             <reference type="bugfix">78793</reference>
             <reference type="cve">CVE-2019-11050</reference>
+            <reference type="author">Nikita</reference>
           </references>
         </change>
         <change>
-          <description>(Heap-buffer-overflow READ in exif). (CVE-2019-11047)</description>
+          <description>(Heap-buffer-overflow READ in exif). .(Nikita)</description>
           <references>
             <reference type="bugfix">78910</reference>
             <reference type="cve">CVE-2019-11047</reference>
@@ -69,41 +74,44 @@
       </module>
       <module id="gd">
         <change>
-          <description>(GD build broken with -D SIGNED_COMPARE_SLOW).</description>
+          <description>(GD build broken with -D SIGNED_COMPARE_SLOW)</description>
           <references>
             <reference type="bugfix">78849</reference>
+            <reference type="author">cmb</reference>
           </references>
         </change>
       </module>
       <module id="intl">
         <change>
-          <description>(Segmentation fault in Locale::filterMatches).</description>
+          <description>(Segmentation fault in Locale::filterMatches)</description>
           <references>
             <reference type="bugfix">78804</reference>
+            <reference type="author">Stas</reference>
           </references>
         </change>
       </module>
       <module id="opcache">
         <change>
-          <description>Fixed $x = (bool)$x; with opcache (should emit undeclared variable notice).</description>
+          <description>Fixed $x = (bool)$x; with opcache (should emit undeclared variable notice).(Tyson Andre)</description>
           <references/>
         </change>
       </module>
       <module id="standard">
         <change>
-          <description>(array_search in $GLOBALS).</description>
+          <description>(array_search in $GLOBALS)</description>
           <references>
             <reference type="bugfix">78759</reference>
+            <reference type="author">Nikita</reference>
           </references>
         </change>
         <change>
-          <description>(Integer overflow in pack causes out-of-bound access).</description>
+          <description>(Integer overflow in pack causes out-of-bound access).(cmb)</description>
           <references>
             <reference type="bugfix">78833</reference>
           </references>
         </change>
         <change>
-          <description>(strip_tags allows / in tag name =&gt; whitelist bypass).</description>
+          <description>(strip_tags allows / in tag name =&gt; whitelist bypass).(cmb)</description>
           <references>
             <reference type="bugfix">78814</reference>
           </references>

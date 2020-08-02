@@ -25,7 +25,38 @@
   </source>
   <announcements/>
   <changes>
-    <modules/>
+    <modules>
+      <module id="mbstring">
+        <change>
+          <description>(global buffer-overflow in `mbfl_filt_conv_big5_wchar`)</description>
+          <references>
+            <reference type="bugfix">79037</reference>
+            <reference type="cve">CVE-2020-7060</reference>
+            <reference type="author">Nikita</reference>
+          </references>
+        </change>
+      </module>
+      <module id="session">
+        <change>
+          <description>(heap use-after-free in session_create_id())</description>
+          <references>
+            <reference type="bugfix">79091</reference>
+            <reference type="author">cmb</reference>
+            <reference type="author">Nikita</reference>
+          </references>
+        </change>
+      </module>
+      <module id="standard">
+        <change>
+          <description>(OOB read in php_strip_tags_ex).</description>
+          <references>
+            <reference type="bugfix">79099</reference>
+            <reference type="cve">CVE-2020-7059</reference>
+            <reference type="author">cmb</reference>
+          </references>
+        </change>
+      </module>
+    </modules>
   </changes>
   <windows_builds>
     <build name="ts-VC15-x64">

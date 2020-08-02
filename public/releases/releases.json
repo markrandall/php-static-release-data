@@ -68866,13 +68866,13 @@
             },
             "7.2.26": {
                 "version": "7.2.26",
-                "date": "2019-12-18",
+                "date": "2019-12-19",
                 "stage": "stable",
                 "changes": {
                     "modules": {
-                        "core": [
+                        "bcmath": [
                             {
-                                "description": "(Buffer underflow in bc_shift_addsub). (CVE-2019-11046)",
+                                "description": "(Buffer underflow in bc_shift_addsub). .(cmb)",
                                 "references": [
                                     {
                                         "type": "bugfix",
@@ -68883,9 +68883,11 @@
                                         "value": "CVE-2019-11046"
                                     }
                                 ]
-                            },
+                            }
+                        ],
+                        "core": [
                             {
-                                "description": "(link() silently truncates after a null byte on Windows). (CVE-2019-11044)",
+                                "description": "(link() silently truncates after a null byte on Windows).",
                                 "references": [
                                     {
                                         "type": "bugfix",
@@ -68894,11 +68896,15 @@
                                     {
                                         "type": "cve",
                                         "value": "CVE-2019-11044"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "cmb"
                                     }
                                 ]
                             },
                             {
-                                "description": "(DirectoryIterator class silently truncates after a null byte). (CVE-2019-11045)",
+                                "description": "(DirectoryIterator class silently truncates after a nullbyte).",
                                 "references": [
                                     {
                                         "type": "bugfix",
@@ -68907,13 +68913,17 @@
                                     {
                                         "type": "cve",
                                         "value": "CVE-2019-11045"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "cmb"
                                     }
                                 ]
                             }
                         ],
                         "exif": [
                             {
-                                "description": "(Use-after-free in exif parsing under memory sanitizer). (CVE-2019-11050)",
+                                "description": "(Use-after-free in exif parsing under memory sanitizer).",
                                 "references": [
                                     {
                                         "type": "bugfix",
@@ -68922,11 +68932,15 @@
                                     {
                                         "type": "cve",
                                         "value": "CVE-2019-11050"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "Nikita"
                                     }
                                 ]
                             },
                             {
-                                "description": "(Heap-buffer-overflow READ in exif). (CVE-2019-11047)",
+                                "description": "(Heap-buffer-overflow READ in exif). .(Nikita)",
                                 "references": [
                                     {
                                         "type": "bugfix",
@@ -68941,44 +68955,56 @@
                         ],
                         "gd": [
                             {
-                                "description": "(GD build broken with -D SIGNED_COMPARE_SLOW).",
+                                "description": "(GD build broken with -D SIGNED_COMPARE_SLOW)",
                                 "references": [
                                     {
                                         "type": "bugfix",
                                         "value": "78849"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "cmb"
                                     }
                                 ]
                             }
                         ],
                         "intl": [
                             {
-                                "description": "(Segmentation fault in Locale::filterMatches).",
+                                "description": "(Segmentation fault in Locale::filterMatches)",
                                 "references": [
                                     {
                                         "type": "bugfix",
                                         "value": "78804"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "Stas"
                                     }
                                 ]
                             }
                         ],
                         "opcache": [
                             {
-                                "description": "Fixed $x = (bool)$x; with opcache (should emit undeclared variable notice).",
+                                "description": "Fixed $x = (bool)$x; with opcache (should emit undeclared variable notice).(Tyson Andre)",
                                 "references": []
                             }
                         ],
                         "standard": [
                             {
-                                "description": "(array_search in $GLOBALS).",
+                                "description": "(array_search in $GLOBALS)",
                                 "references": [
                                     {
                                         "type": "bugfix",
                                         "value": "78759"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "Nikita"
                                     }
                                 ]
                             },
                             {
-                                "description": "(Integer overflow in pack causes out-of-bound access).",
+                                "description": "(Integer overflow in pack causes out-of-bound access).(cmb)",
                                 "references": [
                                     {
                                         "type": "bugfix",
@@ -68987,7 +69013,7 @@
                                 ]
                             },
                             {
-                                "description": "(strip_tags allows \/ in tag name => whitelist bypass).",
+                                "description": "(strip_tags allows \/ in tag name => whitelist bypass).(cmb)",
                                 "references": [
                                     {
                                         "type": "bugfix",
@@ -69169,7 +69195,65 @@
                 "date": "2020-01-23",
                 "stage": "stable",
                 "changes": {
-                    "modules": []
+                    "modules": {
+                        "mbstring": [
+                            {
+                                "description": "(global buffer-overflow in `mbfl_filt_conv_big5_wchar`)",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "79037"
+                                    },
+                                    {
+                                        "type": "cve",
+                                        "value": "CVE-2020-7060"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "Nikita"
+                                    }
+                                ]
+                            }
+                        ],
+                        "session": [
+                            {
+                                "description": "(heap use-after-free in session_create_id())",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "79091"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "cmb"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "Nikita"
+                                    }
+                                ]
+                            }
+                        ],
+                        "standard": [
+                            {
+                                "description": "(OOB read in php_strip_tags_ex).",
+                                "references": [
+                                    {
+                                        "type": "bugfix",
+                                        "value": "79099"
+                                    },
+                                    {
+                                        "type": "cve",
+                                        "value": "CVE-2020-7059"
+                                    },
+                                    {
+                                        "type": "author",
+                                        "value": "cmb"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
                 },
                 "announcements": [],
                 "tags": [],
@@ -69335,7 +69419,7 @@
             },
             "7.2.28": {
                 "version": "7.2.28",
-                "date": "2020-03-07",
+                "date": "2020-02-20",
                 "stage": "stable",
                 "changes": {
                     "modules": {
@@ -69429,7 +69513,7 @@
             },
             "7.2.29": {
                 "version": "7.2.29",
-                "date": "2020-08-02",
+                "date": "2020-03-19",
                 "stage": "stable",
                 "changes": {
                     "modules": {
@@ -69761,7 +69845,7 @@
             },
             "7.2.31": {
                 "version": "7.2.31",
-                "date": "2020-08-02",
+                "date": "2020-05-14",
                 "stage": "stable",
                 "changes": {
                     "modules": {
@@ -69834,7 +69918,7 @@
             },
             "7.2.32": {
                 "version": "7.2.32",
-                "date": "2020-08-02",
+                "date": "2020-07-09",
                 "stage": "stable",
                 "changes": {
                     "modules": {
@@ -74378,7 +74462,7 @@
             },
             "7.3.15": {
                 "version": "7.3.15",
-                "date": "2020-03-07",
+                "date": "2020-02-20",
                 "stage": "stable",
                 "changes": {
                     "modules": {
@@ -74680,7 +74764,7 @@
             },
             "7.3.16": {
                 "version": "7.3.16",
-                "date": "2020-08-02",
+                "date": "2020-03-19",
                 "stage": "stable",
                 "changes": {
                     "modules": {
@@ -75009,7 +75093,7 @@
             },
             "7.3.17": {
                 "version": "7.3.17",
-                "date": "2020-08-02",
+                "date": "2020-04-16",
                 "stage": "stable",
                 "changes": {
                     "modules": {
@@ -75264,7 +75348,7 @@
             },
             "7.3.18": {
                 "version": "7.3.18",
-                "date": "2020-08-02",
+                "date": "2020-05-14",
                 "stage": "stable",
                 "changes": {
                     "modules": {
@@ -75478,7 +75562,7 @@
             },
             "7.3.19": {
                 "version": "7.3.19",
-                "date": "2020-08-02",
+                "date": "2020-06-11",
                 "stage": "stable",
                 "changes": {
                     "modules": {
@@ -76006,7 +76090,7 @@
             },
             "7.3.20": {
                 "version": "7.3.20",
-                "date": "2020-08-02",
+                "date": "2020-07-09",
                 "stage": "stable",
                 "changes": {
                     "modules": {
@@ -81601,7 +81685,7 @@
             },
             "7.4.3": {
                 "version": "7.4.3",
-                "date": "2020-03-07",
+                "date": "2020-02-20",
                 "stage": "stable",
                 "changes": {
                     "modules": {
@@ -82092,7 +82176,7 @@
             },
             "7.4.4": {
                 "version": "7.4.4",
-                "date": "2020-08-02",
+                "date": "2020-03-19",
                 "stage": "stable",
                 "changes": {
                     "modules": {
@@ -82565,7 +82649,7 @@
             },
             "7.4.5": {
                 "version": "7.4.5",
-                "date": "2020-08-02",
+                "date": "2020-04-16",
                 "stage": "stable",
                 "changes": {
                     "modules": {
@@ -82854,7 +82938,7 @@
             },
             "7.4.6": {
                 "version": "7.4.6",
-                "date": "2020-08-02",
+                "date": "2020-05-14",
                 "stage": "stable",
                 "changes": {
                     "modules": {
@@ -83140,7 +83224,7 @@
             },
             "7.4.7": {
                 "version": "7.4.7",
-                "date": "2020-08-02",
+                "date": "2020-06-11",
                 "stage": "stable",
                 "changes": {
                     "modules": {
@@ -83330,7 +83414,7 @@
             },
             "7.4.8": {
                 "version": "7.4.8",
-                "date": "2020-08-02",
+                "date": "2020-07-09",
                 "stage": "stable",
                 "changes": {
                     "modules": {
