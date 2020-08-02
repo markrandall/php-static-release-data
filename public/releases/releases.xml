@@ -377,7 +377,7 @@
       <release version="7.2.28" sha256="97ab307ec9888f1413fb9f184a6f20dae07ea0363a65b5e610ba641c58e686bd">7_2/7_2_28.xml</release>
       <release version="7.2.29" sha256="31293a22bce57d4d431170295c6dd9ed189338060478a6c1c0aaa39608fd0c7d">7_2/7_2_29.xml</release>
       <release version="7.2.3" sha256="c4edfc4bec0739d4a3ddfac5c06783531a572a9b0f60b5f94808f16b381450f6">7_2/7_2_3.xml</release>
-      <release version="7.2.30" sha256="45429d30664622ec8126c0e16f9808f48b5d475382479c6c1424cf73f2d5ce00">7_2/7_2_30.xml</release>
+      <release version="7.2.30" sha256="05fde3b5e55772312a519cf1c914b524a1128950355baa1e3dc9ae20bebee2fd">7_2/7_2_30.xml</release>
       <release version="7.2.31" sha256="be068488db130196583cd2ef54b2ba655257fb9eff91c416c07fc753ebfe1801">7_2/7_2_31.xml</release>
       <release version="7.2.32" sha256="b3ae7f1eabf22b361efba236dd1dea6feb83a71ed7138a110989030dac2704d4">7_2/7_2_32.xml</release>
       <release version="7.2.4" sha256="88d2abbb59d1c81387477348f8bd8acc2db997a6c407798b2ad97d37c0f36ca2">7_2/7_2_4.xml</release>
